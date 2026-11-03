@@ -1,0 +1,6 @@
+{
+  "name": "E Se Bugasse? Studio",
+  "description": "Sistema de produção audiovisual com inteligência artificial para criação de animações 2D do personagem Bugi com exportação para Codex e Remotion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

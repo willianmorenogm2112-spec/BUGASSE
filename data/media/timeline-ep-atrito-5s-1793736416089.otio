@@ -1,0 +1,790 @@
+{
+  "OTIO_SCHEMA": "Timeline.1",
+  "global_start_time": {
+    "OTIO_SCHEMA": "RationalTime.1",
+    "rate": 30.0,
+    "value": 0.0
+  },
+  "metadata": {
+    "filmcraft": {
+      "custom_color_names": {},
+      "custom_colors": [],
+      "custom_label_color": null,
+      "item": 4,
+      "label": "Forest",
+      "master_effects": [],
+      "master_volume_db": 0.0,
+      "settings": {
+        "audio_master": "Stereo",
+        "color": {
+          "auto_tone_map": true,
+          "wide_gamut": false,
+          "working": "Rec709"
+        },
+        "drop_frame": false,
+        "frame_rate": {
+          "den": 1,
+          "num": 30
+        },
+        "height": 1920,
+        "max_bit_depth": false,
+        "max_render_quality": false,
+        "par": [
+          1,
+          1
+        ],
+        "preset": "1080x1920 30",
+        "preview_codec": "ProRes 422",
+        "sample_rate": 24000,
+        "width": 1080,
+        "working_space": "Rec. 709"
+      },
+      "start_timecode": 0
+    }
+  },
+  "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+  "tracks": {
+    "OTIO_SCHEMA": "Stack.1",
+    "children": [
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "children": [
+          {
+            "OTIO_SCHEMA": "Clip.2",
+            "active_media_reference_key": "DEFAULT_MEDIA",
+            "effects": [],
+            "enabled": true,
+            "markers": [],
+            "media_references": {
+              "DEFAULT_MEDIA": {
+                "OTIO_SCHEMA": "ExternalReference.1",
+                "available_image_bounds": null,
+                "available_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 30.0,
+                    "value": 360.0
+                  },
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 30.0,
+                    "value": 0.0
+                  }
+                },
+                "metadata": {
+                  "filmcraft": {
+                    "custom_label_color": null,
+                    "info": {
+                      "audio_streams": [
+                        {
+                          "bits_per_sample": null,
+                          "channels": 1,
+                          "codec": "AAC",
+                          "sample_rate": 24000
+                        }
+                      ],
+                      "container": "MPEG-4",
+                      "duration": 3048192000000,
+                      "file_size": 7294830,
+                      "kind": "Movie",
+                      "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+                      "start_timecode": null,
+                      "video": {
+                        "bitrate": 4772579,
+                        "codec": "H.264 (Baseline)",
+                        "color": {
+                          "matrix": "Bt601",
+                          "primaries": "Bt709",
+                          "range": "Limited",
+                          "transfer": "Bt709"
+                        },
+                        "frame_rate": {
+                          "den": 1,
+                          "num": 30
+                        },
+                        "has_alpha": false,
+                        "height": 1920,
+                        "par": [
+                          1,
+                          1
+                        ],
+                        "pixel_format": "YUV 4:2:0 8-bit",
+                        "width": 1080
+                      }
+                    },
+                    "item": 1,
+                    "label": "Iris",
+                    "offline": false
+                  }
+                },
+                "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+                "target_url": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4"
+              }
+            },
+            "metadata": {
+              "filmcraft": {
+                "custom_label_color": null,
+                "duration_ticks": 3048192000000,
+                "effects": [
+                  {
+                    "effect": "motion",
+                    "enabled": true,
+                    "params": {
+                      "anchor": {
+                        "value": {
+                          "Vec2": {
+                            "x": 540.0,
+                            "y": 960.0
+                          }
+                        }
+                      },
+                      "anti_flicker": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "position": {
+                        "value": {
+                          "Vec2": {
+                            "x": 540.0,
+                            "y": 960.0
+                          }
+                        }
+                      },
+                      "rotation": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "scale": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "scale_width": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "uniform_scale": {
+                        "value": {
+                          "Bool": true
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "effect": "opacity",
+                    "enabled": true,
+                    "params": {
+                      "blend": {
+                        "value": {
+                          "Choice": 0
+                        }
+                      },
+                      "opacity": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "effect": "time_remap",
+                    "enabled": true,
+                    "params": {
+                      "speed": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "effect": "lumetri",
+                    "enabled": true,
+                    "params": {
+                      "basic_on": {
+                        "value": {
+                          "Bool": true
+                        }
+                      },
+                      "blacks": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "contrast": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "creative_on": {
+                        "value": {
+                          "Bool": true
+                        }
+                      },
+                      "creative_sat": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "curve_blue": {
+                        "value": {
+                          "Curve": [
+                            [
+                              0.0,
+                              0.0
+                            ],
+                            [
+                              1.0,
+                              1.0
+                            ]
+                          ]
+                        }
+                      },
+                      "curve_green": {
+                        "value": {
+                          "Curve": [
+                            [
+                              0.0,
+                              0.0
+                            ],
+                            [
+                              1.0,
+                              1.0
+                            ]
+                          ]
+                        }
+                      },
+                      "curve_luma": {
+                        "value": {
+                          "Curve": [
+                            [
+                              0.0,
+                              0.0
+                            ],
+                            [
+                              1.0,
+                              1.0
+                            ]
+                          ]
+                        }
+                      },
+                      "curve_red": {
+                        "value": {
+                          "Curve": [
+                            [
+                              0.0,
+                              0.0
+                            ],
+                            [
+                              1.0,
+                              1.0
+                            ]
+                          ]
+                        }
+                      },
+                      "curves_hdr_range": {
+                        "value": {
+                          "Float": 1000.0
+                        }
+                      },
+                      "curves_on": {
+                        "value": {
+                          "Bool": true
+                        }
+                      },
+                      "exposure": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "faded_film": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hdr_specular": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hdr_white": {
+                        "value": {
+                          "Float": 1000.0
+                        }
+                      },
+                      "highlight_tint": {
+                        "value": {
+                          "Color": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                          ]
+                        }
+                      },
+                      "highlights": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_blur": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_denoise": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_hue": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_hue_range": {
+                        "value": {
+                          "Float": 30.0
+                        }
+                      },
+                      "hsl_hue_shift": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_luma_max": {
+                        "value": {
+                          "Float": 95.0
+                        }
+                      },
+                      "hsl_luma_min": {
+                        "value": {
+                          "Float": 5.0
+                        }
+                      },
+                      "hsl_on": {
+                        "value": {
+                          "Bool": false
+                        }
+                      },
+                      "hsl_sat": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "hsl_sat_min": {
+                        "value": {
+                          "Float": 10.0
+                        }
+                      },
+                      "hsl_show_mask": {
+                        "value": {
+                          "Choice": 0
+                        }
+                      },
+                      "hsl_soft": {
+                        "value": {
+                          "Float": 20.0
+                        }
+                      },
+                      "hsl_temp": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hsl_tint": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "hue_vs_hue": {
+                        "value": {
+                          "Curve": []
+                        }
+                      },
+                      "hue_vs_luma": {
+                        "value": {
+                          "Curve": []
+                        }
+                      },
+                      "hue_vs_sat": {
+                        "value": {
+                          "Curve": []
+                        }
+                      },
+                      "input_lut": {
+                        "value": {
+                          "Text": ""
+                        }
+                      },
+                      "look": {
+                        "value": {
+                          "Choice": 0
+                        }
+                      },
+                      "look_intensity": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "look_lut": {
+                        "value": {
+                          "Text": ""
+                        }
+                      },
+                      "luma_vs_sat": {
+                        "value": {
+                          "Curve": []
+                        }
+                      },
+                      "sat_vs_sat": {
+                        "value": {
+                          "Curve": []
+                        }
+                      },
+                      "saturation": {
+                        "value": {
+                          "Float": 100.0
+                        }
+                      },
+                      "shadow_tint": {
+                        "value": {
+                          "Color": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1.0
+                          ]
+                        }
+                      },
+                      "shadows": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "sharpen": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "temperature": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "tint": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "vibrance": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "vignette_amount": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "vignette_feather": {
+                        "value": {
+                          "Float": 50.0
+                        }
+                      },
+                      "vignette_midpoint": {
+                        "value": {
+                          "Float": 50.0
+                        }
+                      },
+                      "vignette_on": {
+                        "value": {
+                          "Bool": true
+                        }
+                      },
+                      "vignette_roundness": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "wheel_highlights": {
+                        "value": {
+                          "Vec2": {
+                            "x": 0.0,
+                            "y": 0.0
+                          }
+                        }
+                      },
+                      "wheel_highlights_l": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "wheel_midtones": {
+                        "value": {
+                          "Vec2": {
+                            "x": 0.0,
+                            "y": 0.0
+                          }
+                        }
+                      },
+                      "wheel_midtones_l": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "wheel_shadows": {
+                        "value": {
+                          "Vec2": {
+                            "x": 0.0,
+                            "y": 0.0
+                          }
+                        }
+                      },
+                      "wheel_shadows_l": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "wheels_on": {
+                        "value": {
+                          "Bool": true
+                        }
+                      },
+                      "whites": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "gain_db": 0.0,
+                "group": null,
+                "label": "Iris",
+                "link": 5,
+                "scale_to_frame": false,
+                "source_in_ticks": 0
+              }
+            },
+            "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 360.0
+              },
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 0.0
+              }
+            }
+          }
+        ],
+        "effects": [],
+        "enabled": true,
+        "kind": "Video",
+        "markers": [],
+        "metadata": {
+          "filmcraft": {
+            "channels": "Stereo",
+            "effects": [],
+            "locked": false,
+            "muted": false,
+            "pan": 0.0,
+            "solo": false,
+            "sync_lock": true,
+            "volume_db": 0.0
+          }
+        },
+        "name": "Video 1",
+        "source_range": null
+      },
+      {
+        "OTIO_SCHEMA": "Track.1",
+        "children": [
+          {
+            "OTIO_SCHEMA": "Clip.2",
+            "active_media_reference_key": "DEFAULT_MEDIA",
+            "effects": [],
+            "enabled": true,
+            "markers": [],
+            "media_references": {
+              "DEFAULT_MEDIA": {
+                "OTIO_SCHEMA": "ExternalReference.1",
+                "available_image_bounds": null,
+                "available_range": {
+                  "OTIO_SCHEMA": "TimeRange.1",
+                  "duration": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 30.0,
+                    "value": 360.0
+                  },
+                  "start_time": {
+                    "OTIO_SCHEMA": "RationalTime.1",
+                    "rate": 30.0,
+                    "value": 0.0
+                  }
+                },
+                "metadata": {
+                  "filmcraft": {
+                    "custom_label_color": null,
+                    "info": {
+                      "audio_streams": [
+                        {
+                          "bits_per_sample": null,
+                          "channels": 1,
+                          "codec": "AAC",
+                          "sample_rate": 24000
+                        }
+                      ],
+                      "container": "MPEG-4",
+                      "duration": 3048192000000,
+                      "file_size": 7294830,
+                      "kind": "Movie",
+                      "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+                      "start_timecode": null,
+                      "video": {
+                        "bitrate": 4772579,
+                        "codec": "H.264 (Baseline)",
+                        "color": {
+                          "matrix": "Bt601",
+                          "primaries": "Bt709",
+                          "range": "Limited",
+                          "transfer": "Bt709"
+                        },
+                        "frame_rate": {
+                          "den": 1,
+                          "num": 30
+                        },
+                        "has_alpha": false,
+                        "height": 1920,
+                        "par": [
+                          1,
+                          1
+                        ],
+                        "pixel_format": "YUV 4:2:0 8-bit",
+                        "width": 1080
+                      }
+                    },
+                    "item": 1,
+                    "label": "Iris",
+                    "offline": false
+                  }
+                },
+                "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+                "target_url": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4"
+              }
+            },
+            "metadata": {
+              "filmcraft": {
+                "custom_label_color": null,
+                "duration_ticks": 3048192000000,
+                "effects": [
+                  {
+                    "effect": "volume",
+                    "enabled": true,
+                    "params": {
+                      "bypass": {
+                        "value": {
+                          "Bool": false
+                        }
+                      },
+                      "level": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "effect": "channel_volume",
+                    "enabled": true,
+                    "params": {
+                      "bypass": {
+                        "value": {
+                          "Bool": false
+                        }
+                      },
+                      "left": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      },
+                      "right": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "effect": "panner",
+                    "enabled": true,
+                    "params": {
+                      "balance": {
+                        "value": {
+                          "Float": 0.0
+                        }
+                      }
+                    }
+                  }
+                ],
+                "gain_db": 4.391029864837301,
+                "group": null,
+                "label": "Iris",
+                "link": 5,
+                "scale_to_frame": false,
+                "source_in_ticks": 0
+              }
+            },
+            "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+            "source_range": {
+              "OTIO_SCHEMA": "TimeRange.1",
+              "duration": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 360.0
+              },
+              "start_time": {
+                "OTIO_SCHEMA": "RationalTime.1",
+                "rate": 30.0,
+                "value": 0.0
+              }
+            }
+          }
+        ],
+        "effects": [],
+        "enabled": true,
+        "kind": "Audio",
+        "markers": [],
+        "metadata": {
+          "filmcraft": {
+            "channels": "Stereo",
+            "effects": [],
+            "locked": false,
+            "muted": false,
+            "pan": 0.0,
+            "solo": false,
+            "sync_lock": true,
+            "volume_db": 0.0
+          }
+        },
+        "name": "Audio 1",
+        "source_range": null
+      }
+    ],
+    "effects": [],
+    "enabled": true,
+    "markers": [],
+    "metadata": {},
+    "name": "render-ep-atrito-5s-pilot_12s-1793736412700.mp4",
+    "source_range": null
+  }
+}

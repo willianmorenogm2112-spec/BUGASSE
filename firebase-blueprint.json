@@ -1,0 +1,115 @@
+{
+  "entities": {
+    "Episode": {
+      "title": "Episode",
+      "description": "Represents an animation episode in E Se Bugasse? Studio.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique episode identifier",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the creator who owns this episode",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "title": {
+          "type": "string",
+          "description": "Working title of the episode",
+          "minLength": 3,
+          "maxLength": 200
+        },
+        "hypothesis": {
+          "type": "string",
+          "description": "Core physics rule change hypothesis",
+          "minLength": 5,
+          "maxLength": 500
+        },
+        "stage": {
+          "type": "string",
+          "description": "Current workflow stage of the episode",
+          "enum": [
+            "Ideia",
+            "Pesquisa",
+            "Roteiro",
+            "Revisao",
+            "Narracao",
+            "Storyboard",
+            "Pronto para Codex",
+            "Renderizando",
+            "Revisao final",
+            "Concluido"
+          ],
+          "maxLength": 40
+        },
+        "payloadJson": {
+          "type": "string",
+          "description": "Serialized studio data for script, storyboard, and metadata within document size limits",
+          "maxLength": 450000
+        },
+        "updatedAtIso": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of last modification",
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "id",
+        "ownerId",
+        "title",
+        "hypothesis",
+        "stage",
+        "payloadJson",
+        "updatedAtIso"
+      ]
+    },
+    "StudioConfig": {
+      "title": "StudioConfig",
+      "description": "Stores user-specific AI model settings, cost logs, and asset metadata references.",
+      "type": "object",
+      "properties": {
+        "ownerId": {
+          "type": "string",
+          "description": "UID of the studio owner",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "modelsJson": {
+          "type": "string",
+          "description": "JSON configuration of selected AI models per category",
+          "maxLength": 50000
+        },
+        "updatedAtIso": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO timestamp of last update",
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "ownerId",
+        "modelsJson",
+        "updatedAtIso"
+      ]
+    }
+  },
+  "firestore": {
+    "/episodes/{episodeId}": {
+      "schema": {
+        "$ref": "#/entities/Episode"
+      },
+      "description": "Collection of episodes owned by authenticated studio users."
+    },
+    "/studio_configs/{userId}": {
+      "schema": {
+        "$ref": "#/entities/StudioConfig"
+      },
+      "description": "Per-user AI model configurations and studio settings."
+    }
+  }
+}

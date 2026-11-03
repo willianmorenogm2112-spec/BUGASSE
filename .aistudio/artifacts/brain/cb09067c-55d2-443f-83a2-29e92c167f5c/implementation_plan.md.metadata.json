@@ -1,0 +1,6 @@
+{
+  "summary": "Plano de implementação para a reorganização completa do E Se Bugasse? Studio em 4 áreas principais (Criar vídeo, Meus vídeos, Identidade do canal, Configurações), implementação do ProductionOrchestrator com fila persistente de 15 etapas no servidor, reconstrução do rig multi-articulado do Bugi, direção por AnimationBeats e validação com piloto de 8 segundos e vídeos completos de 35 a 55 segundos.",
+  "updatedAt": "2026-11-03T18:27:08.492352079Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

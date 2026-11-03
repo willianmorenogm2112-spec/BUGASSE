@@ -1,0 +1,88 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Pillar 1: Global Default-Deny Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() >= 1 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidStage(stage) {
+      return stage is string && stage.size() <= 40 && (
+        stage == 'Ideia' ||
+        stage == 'Pesquisa' ||
+        stage == 'Roteiro' ||
+        stage == 'Revisao' ||
+        stage == 'Narracao' ||
+        stage == 'Storyboard' ||
+        stage == 'Pronto para Codex' ||
+        stage == 'Renderizando' ||
+        stage == 'Revisao final' ||
+        stage == 'Concluido'
+      );
+    }
+
+    function isValidEpisode(data) {
+      return data.keys().hasAll(['id', 'ownerId', 'title', 'hypothesis', 'stage', 'payloadJson', 'updatedAtIso']) &&
+        data.keys().hasOnly(['id', 'ownerId', 'title', 'hypothesis', 'stage', 'payloadJson', 'updatedAtIso']) &&
+        isValidId(data.id) &&
+        isValidId(data.ownerId) &&
+        data.ownerId == request.auth.uid &&
+        data.title is string && data.title.size() >= 3 && data.title.size() <= 200 &&
+        data.hypothesis is string && data.hypothesis.size() >= 5 && data.hypothesis.size() <= 500 &&
+        isValidStage(data.stage) &&
+        data.payloadJson is string && data.payloadJson.size() >= 2 && data.payloadJson.size() <= 450000 &&
+        data.updatedAtIso is string && data.updatedAtIso.size() >= 10 && data.updatedAtIso.size() <= 64;
+    }
+
+    function isValidStudioConfig(data) {
+      return data.keys().hasAll(['ownerId', 'modelsJson', 'updatedAtIso']) &&
+        data.keys().hasOnly(['ownerId', 'modelsJson', 'updatedAtIso']) &&
+        isValidId(data.ownerId) &&
+        data.ownerId == request.auth.uid &&
+        data.modelsJson is string && data.modelsJson.size() >= 2 && data.modelsJson.size() <= 50000 &&
+        data.updatedAtIso is string && data.updatedAtIso.size() >= 10 && data.updatedAtIso.size() <= 64;
+    }
+
+    match /episodes/{episodeId} {
+      allow get: if isSignedIn() && isValidId(episodeId) && existing().ownerId == request.auth.uid;
+      allow list: if isSignedIn() && existing().ownerId == request.auth.uid;
+      allow create: if isVerifiedUser() && isValidId(episodeId) && incoming().id == episodeId && isValidEpisode(incoming());
+      allow update: if isVerifiedUser() && isValidId(episodeId) && isValidEpisode(incoming()) &&
+        existing().ownerId == request.auth.uid &&
+        incoming().ownerId == existing().ownerId &&
+        incoming().id == existing().id &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['title', 'hypothesis', 'stage', 'payloadJson', 'updatedAtIso']);
+      allow delete: if isVerifiedUser() && isValidId(episodeId) && existing().ownerId == request.auth.uid;
+    }
+
+    match /studio_configs/{userId} {
+      allow get: if isSignedIn() && isValidId(userId) && userId == request.auth.uid && existing().ownerId == request.auth.uid;
+      allow create: if isVerifiedUser() && isValidId(userId) && userId == request.auth.uid && isValidStudioConfig(incoming());
+      allow update: if isVerifiedUser() && isValidId(userId) && userId == request.auth.uid && isValidStudioConfig(incoming()) &&
+        existing().ownerId == request.auth.uid &&
+        incoming().ownerId == existing().ownerId &&
+        incoming().diff(existing()).affectedKeys().hasOnly(['modelsJson', 'updatedAtIso']);
+      allow delete: if isVerifiedUser() && isValidId(userId) && userId == request.auth.uid && existing().ownerId == request.auth.uid;
+    }
+  }
+}
