@@ -51,7 +51,7 @@ export async function renderEpisodeWithRemotion(params: {
   const targetScenes = sceneToRender ? [sceneToRender] :
     mode === 'pilot_12s' || mode === 'pilot_8s' || mode === 'pilot_5s'
       ? episode.scenes.slice(0, 1) : episode.scenes;
-  const missingBackground = targetScenes.find((s) => !s.generatedBackgroundUrl);
+  const missingBackground = targetScenes.find((s) => !s.generatedBackgroundUrl || s.backgroundGenerationSource !== 'gemini_ai');
   if (missingBackground) {
     throw new Error(
       `A cena "${missingBackground.id}" não possui cenário gerado pela IA. Não será substituída silenciosamente por desenhos geométricos.`
