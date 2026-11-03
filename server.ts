@@ -838,11 +838,31 @@ ${JSON.stringify(segments, null, 2)}`;
         });
       }
 
-      // Unary TTS retorna um arquivo WAV completo (RIFF 44 bytes, 24kHz, mono, 16-bit)
+      // O TTS unário devolve WAV completo. Não rotular áudio PCM inválido
+      // como narração aprovada: um WAV genuíno é obrigatório.
       const wavBuffer = Buffer.from(base64Audio, 'base64');
-      const pcmBytes = Math.max(0, wavBuffer.byteLength - 44);
-      // 24.000 amostras/seg * 2 bytes (16-bit mono) = 48.000 bytes/segundo
-      const realDurationSec = Number(Math.max(1, pcmBytes / 48000).toFixed(2));
+      if (wavBuffer.length < 1024 ||
+          wavBuffer.subarray(0, 4).toString('ascii') !== 'RIFF' ||
+          wavBuffer.subarray(8, 12).toString('ascii') !== 'WAVE') {
+        throw new Error('O TTS não retornou um arquivo WAV válido.');
+      }
+      const durationProbePath = path.join(MEDIA_DIR, `tts-validation-${Date.now()}.wav`);
+      fs.writeFileSync(durationProbePath, wavBuffer);
+      let realDurationSec: number;
+      try {
+        const probe = JSON.parse(execFileSync('ffprobe', [
+          '-v', 'error', '-show_streams', '-show_format', '-of', 'json',
+          durationProbePath,
+        ], { encoding: 'utf8', timeout: 30000 }));
+        const audioStream = probe.streams?.find((st: any) => st.codec_type === 'audio');
+        realDurationSec = Number(probe.format?.duration || audioStream?.duration || 0);
+        if (!audioStream || !Number.isFinite(realDurationSec) || realDurationSec < 0.3) {
+          throw new Error('WAV de narração não contém áudio válido.');
+        }
+      } finally {
+        fs.rmSync(durationProbePath, { force: true });
+      }
+      realDurationSec = Number(realDurationSec.toFixed(2));
 
       const fileName = `narration-${episodeId || 'ep'}-${Date.now()}.wav`;
       const filePath = path.join(MEDIA_DIR, fileName);
@@ -1120,9 +1140,12 @@ ${JSON.stringify(segments, null, 2)}`;
               ],
             });
             if (trResp.text && trResp.text.trim().length > 5) {
-              alignmentType = 'word_aligned';
+              // Transcrição textual confirma palavras, mas NÃO fornece
+              // tempos acústicos. Mantenha o status estimado até existir
+              // alinhamento temporal real por palavra.
+              alignmentType = 'estimated_from_duration';
               transcribeNote =
-                'Alinhado com gemini-3.5-transcribe + Normalizado em -14 LUFS com ducking';
+                'Transcrição confirmada; tempos de palavras ainda estimados proporcionalmente';
             }
           } catch {
             // Mantém alinhamento acústico honesto sem inventar timestamps falsos
