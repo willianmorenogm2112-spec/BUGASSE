@@ -48,7 +48,9 @@ export async function renderEpisodeWithRemotion(params: {
     throw new Error('A cena selecionada para renderização não foi encontrada.');
   }
 
-  const targetScenes = sceneToRender ? [sceneToRender] : episode.scenes;
+  const targetScenes = sceneToRender ? [sceneToRender] :
+    mode === 'pilot_12s' || mode === 'pilot_8s' || mode === 'pilot_5s'
+      ? episode.scenes.slice(0, 1) : episode.scenes;
   const missingBackground = targetScenes.find((s) => !s.generatedBackgroundUrl);
   if (missingBackground) {
     throw new Error(
