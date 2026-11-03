@@ -552,7 +552,13 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
         if (!ep.scenes.length) throw new Error('Storyboard sem cenas para gerar fundos.');
         const generatedScenes = [];
         let totalCost = 0;
-        for (const scene of ep.scenes) {
+        for (const [idx, scene] of ep.scenes.entries()) {
+          // Os pilotos exibem apenas a primeira cena-base; não gastar geração
+          // de 6 fundos para entregar uma demonstração de 8/12 segundos.
+          if (durMode !== 'full_35_55s' && idx > 0) {
+            generatedScenes.push(scene);
+            continue;
+          }
           if (scene.generatedBackgroundUrl && !scene.generatedBackgroundUrl.includes('fallback')) {
             generatedScenes.push(scene);
             continue;
