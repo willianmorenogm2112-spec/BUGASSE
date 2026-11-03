@@ -559,7 +559,7 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
             generatedScenes.push(scene);
             continue;
           }
-          if (scene.generatedBackgroundUrl && !scene.generatedBackgroundUrl.includes('fallback')) {
+          if (scene.generatedBackgroundUrl && scene.backgroundGenerationSource === 'gemini_ai') {
             generatedScenes.push(scene);
             continue;
           }
@@ -576,7 +576,7 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
             throw new Error(result.fallbackReason || result.details || result.error ||
               `O Google não gerou o cenário da cena ${scene.order}. Não será usado fundo falso.`);
           }
-          generatedScenes.push({ ...scene, generatedBackgroundUrl: result.imageUrl });
+          generatedScenes.push({ ...scene, generatedBackgroundUrl: result.imageUrl, backgroundGenerationSource: 'gemini_ai' as const });
           totalCost += Number(result.costEntry?.recordedCostUsd || 0);
         }
         ep = { ...ep, scenes: generatedScenes };
@@ -733,7 +733,7 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
           hasRealRenderedMp4: true,
           renderedMp4Url: finalMp4Url,
           renderedVersions: updatedVersions,
-          stage: 'Concluido',
+          stage: 'Revisao final',
           updatedAt: new Date().toISOString(),
         };
 
