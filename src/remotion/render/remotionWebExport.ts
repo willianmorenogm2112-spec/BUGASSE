@@ -82,13 +82,15 @@ export async function renderEpisodeWithRemotion(params: {
       height: 1920,
       defaultProps: { episode, mode, targetSceneId, enableAudio: true },
     },
+    inputProps: { episode, mode, targetSceneId, enableAudio: true },
     container: 'mp4',
     videoCodec: 'h264',
+    videoBitrate: 'high',
     signal: abortSignal,
     onProgress: (state) => {
       onProgress({
         percent: Math.min(90, Math.round(state.progress * 90)),
-        renderedFrames: Math.min(totalFrames, state.renderedFrames),
+        renderedFrames: Math.min(totalFrames, state.encodedFrames),
         totalFrames,
         stageLabel: 'Renderizando cenas, personagem e áudio pelo Remotion...',
       });
