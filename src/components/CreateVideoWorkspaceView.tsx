@@ -44,7 +44,7 @@ import {
   PHOTOCRAFT_FILMCRAFT_AUDIT_REPORT,
 } from '../services/mediaFinishingService';
 import { ESeBugasseVideoComposition } from '../remotion/compositions/ESeBugasseVideoComposition';
-import { renderEpisodeToVerifiedMp4 } from '../remotion/render/mp4RenderEngine';
+import { renderEpisodeWithRemotion } from '../remotion/render/remotionWebExport';
 import {
   generateHalfSecondPilotCaptures,
   generateHalfSecondPilot12sCaptures,
@@ -314,7 +314,7 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
           `Cena 0${activeBeatIndex + 1} (${currentBeat.startTimeSec}–${currentBeat.endTimeSec}s) revalidada sem reiniciar o episódio`
         );
       } else if (actionType === 'export_1_scene') {
-        const singleOut = await renderEpisodeToVerifiedMp4({
+        const singleOut = await renderEpisodeWithRemotion({
           episode: activeEpisode,
           mode: 'single_scene',
           targetSceneId: activeEpisode.scenes[0]?.id,
@@ -397,97 +397,193 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
 
     switch (stepId) {
       case '01_research': {
+        const query = topicInput.trim() || ep.title;
+        const response = await fetch('/api/ai/research', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ topicQuery: query, model: defaultTextModel }),
+        });
+        const result = await response.json();
+        if (!response.ok || !Array.isArray(result.ideas) || !result.ideas.length) {
+          throw new Error(result.details || result.error || 'Pesquisa científica não retornou ideias.');
+        }
+        const choice = result.ideas.find((i: ResearchIdea) =>
+          i.provisionalTitle.toLowerCase().includes(query.toLowerCase())
+        ) || result.ideas[0];
+        ep = {
+          ...ep,
+          title: query,
+          hypothesis: query,
+          scientificSummary: choice.scientificSummary || '',
+          verifiedReferences: choice.references || [],
+          updatedAt: new Date().toISOString(),
+        };
         return {
-          updatedEpisode: {
-            ...ep,
-            title: topicInput.trim() || ep.title,
-            updatedAt: new Date().toISOString(),
-          },
-          outputSummary: `Tema validado: "${topicInput.trim() || ep.title}" (${ep.verifiedReferences.length} fontes verificadas)`,
-          costUsd: 0.0004,
+          updatedEpisode: ep,
+          outputSummary: `Pesquisa Gemini executada para "${query}" (${ep.verifiedReferences.length} referências retornadas; conferir fontes).`,
+          costUsd: Number(result.costEntry?.recordedCostUsd || 0),
         };
       }
 
       case '02_script': {
-        const sv =
-          ep.scriptVersions.find((v) => v.id === ep.activeScriptVersionId) ||
-          ep.scriptVersions[0];
+        const response = await fetch('/api/ai/script', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            title: ep.title,
+            hypothesis: ep.hypothesis || ep.title,
+            scientificSummary: ep.scientificSummary,
+            model: defaultTextModel,
+          }),
+        });
+        const result = await response.json();
+        const draft = result.generatedScript;
+        if (!response.ok || !draft || !Array.isArray(draft.segments) || !draft.segments.length) {
+          throw new Error(result.details || result.error || 'Gemini não gerou o roteiro solicitado.');
+        }
+        const id = `sv-auto-${Date.now()}`;
+        const generated = {
+          id,
+          versionNumber: ep.scriptVersions.length + 1,
+          createdAt: new Date().toISOString(),
+          authorNote: 'Roteiro gerado por Gemini durante produção automática.',
+          status: 'aprovado' as const,
+          targetDurationRangeSec: [35, 55] as [number, number],
+          alternativeTitles: draft.alternativeTitles || [ep.title],
+          selectedTitle: ep.title,
+          hookProposals: draft.hookProposals || [],
+          segments: draft.segments,
+          scientificNotes: draft.scientificNotes || [],
+          references: ep.verifiedReferences,
+        };
+        ep = { ...ep, scriptVersions: [...ep.scriptVersions, generated], activeScriptVersionId: id };
         return {
           updatedEpisode: ep,
-          outputSummary: `Roteiro estruturado (${sv?.segments.length || 5} segmentos, gancho forte no 1º segundo, sem "Você sabia que")`,
-          costUsd: 0.0008,
+          outputSummary: `Roteiro Gemini gerado: ${generated.segments.length} segmentos.`,
+          costUsd: Number(result.costEntry?.recordedCostUsd || 0),
         };
       }
 
       case '03_storyboard': {
+        const activeScript = ep.scriptVersions.find((s) => s.id === ep.activeScriptVersionId);
+        if (!activeScript?.segments.length) throw new Error('Roteiro aprovado ausente.');
+        const response = await fetch('/api/ai/storyboard', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            episodeId: ep.id, title: ep.title,
+            segments: activeScript.segments, model: defaultTextModel,
+          }),
+        });
+        const result = await response.json();
+        if (!response.ok || !Array.isArray(result.scenes) || !result.scenes.length) {
+          throw new Error(result.details || result.error || 'Storyboard não gerado pela IA.');
+        }
+        ep = { ...ep, scenes: result.scenes };
         return {
           updatedEpisode: ep,
-          outputSummary:
-            durMode === 'pilot_12s'
-              ? `5 AnimationBeats planejados (0–2s caminhada, 2–4s perda de aderência, 4–7s escorregão + flail, 7–10s agarra poste fixo + estica + solta com desespero, 10–12s queda + squash & stretch cômico)`
-              : durMode === 'pilot_8s'
-              ? `4 AnimationBeats planejados (0–2s caminhada, 2–4s perda de atrito, 4–6s deslize + flail, 6–8s queda + squash & stretch)`
-              : `${ep.scenes.length} cenas planejadas com poses, expressões e câmera`,
-          costUsd: 0,
+          outputSummary: `Storyboard Gemini gerado: ${result.scenes.length} cenas.`,
+          costUsd: Number(result.costEntry?.recordedCostUsd || 0),
         };
       }
 
       case '04_narration': {
-        if (ep.narrationTracks.length > 0 && ep.narrationTracks[0].audioDataUrl) {
-          return {
-            updatedEpisode: ep,
-            outputSummary: `Locução PT-BR gerada ANTES da animação definitiva (${ep.narrationTracks[0].voice}, ${durMode === 'pilot_12s' ? '12.0s' : ep.narrationTracks[0].durationSec + 's'})`,
-            costUsd: 0,
-          };
+        const script = ep.scriptVersions.find((s) => s.id === ep.activeScriptVersionId);
+        if (!script?.segments.length) throw new Error('Não há roteiro para a narração.');
+        const pilotText = 'E se o atrito sumisse por cinco segundos? Bugi tenta parar, mas os pés continuam deslizando! Ele agarra um poste, perde o equilíbrio e acaba no chão. Uma pequena mudança, um caos gigante!';
+        const text = durMode === 'full_35_55s'
+          ? script.segments.map((s) => s.sentenceText).join(' ')
+          : pilotText;
+        const response = await fetch('/api/ai/tts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            episodeId: ep.id, scriptVersionId: script.id,
+            model: defaultTtsModel, voice: 'Puck', text,
+            interpretationStyle: 'Narração brasileira natural, dinâmica e expressiva',
+          }),
+        });
+        const result = await response.json();
+        if (!response.ok || !result.narration?.audioDataUrl) {
+          throw new Error(result.details || result.error || 'Gemini TTS não gerou áudio válido.');
         }
+        const narration = { ...result.narration, temporalMarkers: [] };
+        ep = {
+          ...ep, narrationTracks: [...ep.narrationTracks, narration],
+          activeNarrationId: narration.id,
+        };
         return {
           updatedEpisode: ep,
-          outputSummary: `Locução e trilha guia PT-BR sintetizadas (${durMode === 'pilot_12s' ? '12.0s' : durMode === 'pilot_8s' ? '8.0s' : '43.0s'})`,
-          costUsd: 0.0015,
+          outputSummary: `Voz Gemini gerada e salva (${narration.durationSec}s, ${narration.fileName}).`,
+          costUsd: Number(result.costEntry?.recordedCostUsd || 0),
         };
       }
 
       case '05_alignment': {
+        const narration = ep.narrationTracks.find((n) => n.id === ep.activeNarrationId);
+        if (!narration?.audioDataUrl) throw new Error('Arquivo de narração não encontrado.');
+        const response = await fetch('/api/ai/align-narration', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            episodeId: ep.id, audioUrl: narration.audioDataUrl,
+            durationSec: narration.durationSec, scenes: ep.scenes,
+          }),
+        });
+        const result = await response.json();
+        if (!response.ok || !Array.isArray(result.scenes)) {
+          throw new Error(result.details || result.error || 'Falha ao analisar os tempos de áudio.');
+        }
+        ep = {
+          ...ep, scenes: result.scenes,
+          narrationTracks: ep.narrationTracks.map((track) => track.id === narration.id
+            ? { ...track, temporalMarkers: result.temporalMarkers || [],
+                alignmentType: result.alignmentType || 'estimated_from_duration' }
+            : track),
+        };
         return {
           updatedEpisode: ep,
-          outputSummary: `Alinhamento palavra por palavra + normalização em -14 LUFS e ducking (-10 dB)`,
-          costUsd: 0.0005,
+          outputSummary: `Áudio analisado; alinhamento ${result.alignmentType} (estimativas não são timestamps reais).`,
+          costUsd: 0,
         };
       }
 
       case '06_backgrounds': {
-        if (profileCfg.usePhotoCraft) {
-          try {
-            const pcRec = await mediaFinishingService.photocraft.processBackground({
-              episodeId: ep.id,
-              sceneId: ep.scenes[0]?.id || 'sc-1',
-              inputImageUrl: ep.scenes[0]?.generatedBackgroundUrl,
-              brightness: 6,
-              contrast: 14,
-              vibrance: 18,
-              saturation: 8,
-            });
-            const updatedScenes = ep.scenes.map((s, idx) =>
-              idx === 0 ? { ...s, generatedBackgroundUrl: pcRec.outputUrl } : s
-            );
-            ep = {
-              ...ep,
-              scenes: updatedScenes,
-              photocraftHistory: [pcRec, ...(ep.photocraftHistory || [])],
-            };
-            return {
-              updatedEpisode: ep,
-              outputSummary: `PhotoCraft v0.20.1 (${pcRec.width}×${pcRec.height} PNG): brightnessContrast + vibrance + colorBalance aplicados (${pcRec.outputUrl})`,
-              costUsd: 0.0012,
-            };
-          } catch {
-            // Fallback se CLI falhar
+        if (!ep.scenes.length) throw new Error('Storyboard sem cenas para gerar fundos.');
+        const generatedScenes = [];
+        let totalCost = 0;
+        for (const [idx, scene] of ep.scenes.entries()) {
+          // Os pilotos exibem apenas a primeira cena-base; não gastar geração
+          // de 6 fundos para entregar uma demonstração de 8/12 segundos.
+          if (durMode !== 'full_35_55s' && idx > 0) {
+            generatedScenes.push(scene);
+            continue;
           }
+          if (scene.generatedBackgroundUrl && scene.backgroundGenerationSource === 'gemini_ai') {
+            generatedScenes.push(scene);
+            continue;
+          }
+          const response = await fetch('/api/ai/scenario-image', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              scenarioDescription: scene.scenario,
+              model: defaultImageModel, aspectRatio: '9:16', assetType: 'background',
+            }),
+          });
+          const result = await response.json();
+          if (!response.ok || result.generationSource !== 'gemini_ai' || !result.imageUrl) {
+            throw new Error(result.fallbackReason || result.details || result.error ||
+              `O Google não gerou o cenário da cena ${scene.order}. Não será usado fundo falso.`);
+          }
+          generatedScenes.push({ ...scene, generatedBackgroundUrl: result.imageUrl, backgroundGenerationSource: 'gemini_ai' as const });
+          totalCost += Number(result.costEntry?.recordedCostUsd || 0);
         }
+        ep = { ...ep, scenes: generatedScenes };
         return {
           updatedEpisode: ep,
-          outputSummary: `Cenário ilustrado em 4 camadas de profundidade (perfil ${profileCfg.label})`,
-          costUsd: 0.0012,
+          outputSummary: `${generatedScenes.length} cenários vinculados ao episódio (Google AI; sem fallback silencioso).`,
+          costUsd: totalCost,
         };
       }
 
@@ -565,13 +661,13 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
             ...ep,
             qaReport: qa,
           },
-          outputSummary: `10 critérios de qualidade visual verificados (articulação, caminhada, perda de equilíbrio, esticamento no poste fixo, queda elástica e fundo em 4 camadas)`,
+          outputSummary: 'Verificação preliminar da estrutura concluída; inspeção artística do vídeo final ainda necessária.',
           costUsd: 0.0004,
         };
       }
 
       case '13_export_mp4': {
-        const renderOut = await renderEpisodeToVerifiedMp4({
+        const renderOut = await renderEpisodeWithRemotion({
           episode: ep,
           mode:
             durMode === 'pilot_12s'
@@ -637,7 +733,7 @@ export const CreateVideoWorkspaceView: React.FC<CreateVideoWorkspaceViewProps> =
           hasRealRenderedMp4: true,
           renderedMp4Url: finalMp4Url,
           renderedVersions: updatedVersions,
-          stage: 'Concluido',
+          stage: 'Revisao final',
           updatedAt: new Date().toISOString(),
         };
 

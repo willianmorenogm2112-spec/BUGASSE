@@ -1,5 +1,5 @@
 import React from 'react';
-import { Audio } from 'remotion';
+import { Audio } from '@remotion/media';
 
 interface EpisodeAudioControllerProps {
   narrationAudioUrl?: string;
@@ -18,5 +18,5 @@ export const EpisodeAudioController: React.FC<EpisodeAudioControllerProps> = ({
     return null;
   }
 
-  return <Audio src={narrationAudioUrl} volume={1.0} />;
+  return <Audio src={narrationAudioUrl} volume={1.0} onError={() => 'fail'} />;
 };
