@@ -58,7 +58,7 @@ function getGenAIClient(): GoogleGenAI {
 
 async function startServer() {
   const app = express();
-  app.use(express.json({ limit: '18mb' }));
+  app.use(express.json({ limit: '100mb' }));
 
   // Servir arquivos de mídia salvos localmente (áudios WAV, SVGs, referências)
   app.use('/api/media', express.static(MEDIA_DIR));
@@ -1211,285 +1211,85 @@ ${JSON.stringify(segments, null, 2)}`;
     }
   });
 
-  // 8. Renderização Direta de Vídeo MP4 H.264 (1080×1920, 30 FPS, Áudio -14 LUFS + SFX)
+  // 8. Recebe APENAS MP4 renderizado pela composição Remotion real.
+  // NUNCA gera frames alternativos, voz sintética falsa ou uma tela de fallback.
   app.post('/api/video/render-mp4', async (req, res) => {
     try {
       const {
-        episodeId = 'ep-atrito-5s',
-        mode = 'pilot_5s',
-        durationSec = 5.0,
-        fps = 30,
-        clientEncodedMp4Base64,
-        sampledFrameDataUrls = [],
+        episodeId = 'episode', mode = 'full_episode',
+        clientEncodedMp4Base64, durationSec,
       } = req.body || {};
-
-      const safeDuration = Math.max(2, Math.min(65, Number(durationSec) || 5));
-      const fileName = `render-${episodeId}-${mode}-${Date.now()}.mp4`;
+      if (typeof clientEncodedMp4Base64 !== 'string' ||
+          !clientEncodedMp4Base64.length) {
+        return res.status(422).json({
+          error: 'Render Remotion ausente. É proibido criar um MP4 substituto com slides ou tons sintéticos.',
+        });
+      }
+      const cleanBase64 = clientEncodedMp4Base64.replace(/^data:[^;]+;base64,/, '');
+      if (cleanBase64.length > 100_000_000 || !/^[A-Za-z0-9+/=]+$/.test(cleanBase64)) {
+        return res.status(413).json({ error: 'Arquivo de vídeo muito grande ou base64 inválido.' });
+      }
+      const buf = Buffer.from(cleanBase64, 'base64');
+      if (buf.byteLength < 4096 || buf.subarray(4, 8).toString('ascii') !== 'ftyp') {
+        return res.status(422).json({ error: 'MP4 inválido: cabeçalho ou tamanho incorreto.' });
+      }
+      const safeId = String(episodeId).replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 80);
+      const safeMode = String(mode).replace(/[^a-zA-Z0-9_-]/g, '_').slice(0, 40);
+      const fileName = `remotion-${safeId}-${safeMode}-${Date.now()}.mp4`;
       const outputMp4Path = path.join(MEDIA_DIR, fileName);
-
-      // Caso 1: O navegador codificou via WebCodecs H.264 + AAC e enviou o MP4 válido
-      if (clientEncodedMp4Base64 && String(clientEncodedMp4Base64).length > 100) {
-        const cleanB64 = String(clientEncodedMp4Base64).replace(
-          /^data:[^;]+;base64,/,
-          ''
-        );
-        const buf = Buffer.from(cleanB64, 'base64');
-        if (
-          buf.byteLength > 512 &&
-          buf.subarray(4, 8).toString('ascii') === 'ftyp'
-        ) {
-          fs.writeFileSync(outputMp4Path, buf);
-          return res.json({
-            ok: true,
-            mp4Url: `/api/media/${fileName}`,
-            fileName,
-            sizeBytes: buf.byteLength,
-            durationSec: safeDuration,
-            width: 1080,
-            height: 1920,
-            fps: 30,
-            engine: 'remotion_webcodecs',
-          });
-        }
-      }
-
-      // Caso 2: Renderização H.264 + AAC (-14 LUFS) via FFmpeg no servidor usando os quadros 1080x1920 do Bugi
-      const tempFramesDir = path.join(
-        DATA_DIR,
-        `frames-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`
-      );
-      fs.mkdirSync(tempFramesDir, { recursive: true });
-
+      fs.writeFileSync(outputMp4Path, buf);
       try {
-        // Gera arquivo WAV com narração/trilha + efeitos sonoros normalizados em -14 LUFS
-        const tempWavPath = path.join(tempFramesDir, 'mix-14lufs.wav');
-        const sr = 24000;
-        const numSamples = Math.floor(safeDuration * sr);
-        const wavBuf = Buffer.alloc(44 + numSamples * 2);
-        wavBuf.write('RIFF', 0);
-        wavBuf.writeUInt32LE(36 + numSamples * 2, 4);
-        wavBuf.write('WAVE', 8);
-        wavBuf.write('fmt ', 12);
-        wavBuf.writeUInt32LE(16, 16);
-        wavBuf.writeUInt16LE(1, 20);
-        wavBuf.writeUInt16LE(1, 22);
-        wavBuf.writeUInt32LE(sr, 24);
-        wavBuf.writeUInt32LE(sr * 2, 28);
-        wavBuf.writeUInt16LE(2, 32);
-        wavBuf.writeUInt16LE(16, 34);
-        wavBuf.write('data', 36);
-        wavBuf.writeUInt32LE(numSamples * 2, 40);
-
-        for (let i = 0; i < numSamples; i++) {
-          const t = i / sr;
-          // Trilha harmônica suave em ducking (-26 dB)
-          const carrier =
-            Math.sin(2 * Math.PI * 220 * t) * 0.065 +
-            Math.sin(2 * Math.PI * 330 * t) * 0.045;
-
-          const isPilot12s = safeDuration >= 11.0;
-
-          // Beat 1 (0-2s): Passos rítmicos na calçada (footsteps)
-          const footstepPhase = (t * 2.5) % 1;
-          const sfxFootsteps =
-            t < 2.0 && footstepPhase < 0.09
-              ? Math.sin(2 * Math.PI * 115 * t) * Math.exp(-footstepPhase * 32) * 0.24
-              : 0;
-
-          // Beat 2 (2-4s): Whoosh de perda de atrito (slip_whoosh)
-          const sfxSlip =
-            t >= 2.0 && t <= 3.5
-              ? Math.sin(2 * Math.PI * (340 + (t - 2.0) * 440) * t) * 0.21
-              : 0;
-
-          // Beat 3 (4-7s no piloto 12s / 4-6s no piloto 8s): Derrapagem cartoon rápida (cartoon_skid)
-          const skidEnd = isPilot12s ? 6.8 : 5.8;
-          const sfxSkid =
-            t >= 4.0 && t <= skidEnd
-              ? Math.sin(2 * Math.PI * (520 + Math.sin(t * 28) * 160) * t) * 0.16
-              : 0;
-
-          // Beat 4 exclusivo do Piloto 12s (7-10s): Esticamento elástico ao agarrar o poste (7.1-8.75s) + Snap ao soltar (8.8s)
-          const sfxStretch =
-            isPilot12s && t >= 7.1 && t <= 8.75
-              ? Math.sin(2 * Math.PI * (290 + (t - 7.1) * 210) * t) * 0.19
-              : 0;
-          const sfxSnap =
-            isPilot12s && t >= 8.78 && t <= 9.15
-              ? Math.sin(2 * Math.PI * 680 * t) * Math.exp(-(t - 8.78) * 18) * 0.31
-              : 0;
-
-          // Beat Final (10-12s no piloto 12s / 6-8s no piloto 8s): Impacto no chão (body_thud) + recuperação elástica (boing_recovery)
-          const thudStart = isPilot12s ? 10.05 : 6.05;
-          const boingStart = isPilot12s ? 10.65 : 6.65;
-          const sfxThud =
-            t >= thudStart && t <= thudStart + 0.4
-              ? Math.sin(2 * Math.PI * 78 * t) * Math.exp(-(t - thudStart) * 12) * 0.34
-              : 0;
-          const sfxBoing =
-            t >= boingStart && t <= boingStart + 0.85
-              ? Math.sin(
-                  2 * Math.PI * (240 + Math.sin((t - boingStart) * 38) * 95) * t
-                ) *
-                Math.exp(-(t - boingStart) * 3.5) *
-                0.22
-              : 0;
-
-          // Cadência de locução normalizada (-14 LUFS)
-          const voiceCadence =
-            Math.sin(2 * Math.PI * 185 * t) *
-            0.16 *
-            Math.max(0, Math.sin(2 * Math.PI * 3.2 * t));
-
-          const sample = Math.max(
-            -0.94,
-            Math.min(
-              0.94,
-              carrier +
-                sfxFootsteps +
-                sfxSlip +
-                sfxSkid +
-                sfxStretch +
-                sfxSnap +
-                sfxThud +
-                sfxBoing +
-                voiceCadence
-            )
+        const probeText = execFileSync('ffprobe', [
+          '-v', 'error', '-show_streams', '-show_format', '-of', 'json', outputMp4Path,
+        ], { encoding: 'utf8', timeout: 30000 });
+        const probe = JSON.parse(probeText);
+        const video = probe.streams?.find((stream: any) => stream.codec_type === 'video');
+        const audio = probe.streams?.find((stream: any) => stream.codec_type === 'audio');
+        const actualDuration = Number(probe.format?.duration || video?.duration || 0);
+        if (!video || !audio || video.width !== 1080 || video.height !== 1920 ||
+            !Number.isFinite(actualDuration) || actualDuration < 1 ||
+            Math.abs(actualDuration - Number(durationSec || actualDuration)) > 1) {
+          throw new Error(
+            'Validação de mídia falhou: o MP4 deve conter vídeo 1080x1920 e áudio real com duração correta.'
           );
-          wavBuf.writeInt16LE(Math.floor(sample * 32767), 44 + i * 2);
         }
-        fs.writeFileSync(tempWavPath, wavBuf);
-
-        if (
-          Array.isArray(sampledFrameDataUrls) &&
-          sampledFrameDataUrls.length >= 2
-        ) {
-          sampledFrameDataUrls.forEach((dataUrl: string, idx: number) => {
-            const b64 = String(dataUrl).replace(/^data:[^;]+;base64,/, '');
-            const frameFile = path.join(
-              tempFramesDir,
-              `frame-${String(idx + 1).padStart(3, '0')}.jpg`
-            );
-            fs.writeFileSync(frameFile, Buffer.from(b64, 'base64'));
-          });
-
-          const inputFps = Math.max(
-            1,
-            Number((sampledFrameDataUrls.length / safeDuration).toFixed(2))
-          );
-
-          execFileSync('ffmpeg', [
-            '-y',
-            '-framerate',
-            String(inputFps),
-            '-i',
-            path.join(tempFramesDir, 'frame-%03d.jpg'),
-            '-i',
-            tempWavPath,
-            '-vf',
-            'scale=1080:1920,fps=30,format=yuv420p',
-            '-c:v',
-            'libx264',
-            '-preset',
-            'ultrafast',
-            '-pix_fmt',
-            'yuv420p',
-            '-c:a',
-            'aac',
-            '-b:a',
-            '192k',
-            '-shortest',
-            '-movflags',
-            '+faststart',
-            outputMp4Path,
-          ]);
-        } else {
-          // Fallback determinístico no servidor caso chamado via teste de API direto sem canvas do navegador
-          execFileSync('ffmpeg', [
-            '-y',
-            '-f',
-            'lavfi',
-            '-i',
-            `color=c=#122638:s=1080x1920:r=${fps}:d=${safeDuration}`,
-            '-i',
-            tempWavPath,
-            '-c:v',
-            'libx264',
-            '-preset',
-            'ultrafast',
-            '-pix_fmt',
-            'yuv420p',
-            '-c:a',
-            'aac',
-            '-b:a',
-            '192k',
-            '-shortest',
-            '-movflags',
-            '+faststart',
-            outputMp4Path,
-          ]);
+        const frameRate = String(video.avg_frame_rate || '').split('/');
+        const fpsActual = Number(frameRate[0]) / Number(frameRate[1] || 1);
+        if (!Number.isFinite(fpsActual) || Math.abs(fpsActual - 30) > 1) {
+          throw new Error('O MP4 exportado não possui 30 FPS.');
         }
-      } finally {
-        fs.rmSync(tempFramesDir, { recursive: true, force: true });
-      }
-
-      if (!fs.existsSync(outputMp4Path)) {
-        return res.status(500).json({
-          error: 'O renderizador não produziu um arquivo MP4 no disco.',
+        let contactSheetUrl: string | undefined;
+        try {
+          const contactSheetFileName = `contact-sheet-${fileName.replace(/\.mp4$/, '.png')}`;
+          execFileSync('ffmpeg', [
+            '-y', '-i', outputMp4Path, '-vf',
+            'fps=2,scale=180:320,tile=6x4:padding=4:margin=4:color=#0B1722',
+            '-frames:v', '1', path.join(MEDIA_DIR, contactSheetFileName),
+          ], { timeout: 120000 });
+          if (fs.existsSync(path.join(MEDIA_DIR, contactSheetFileName))) {
+            contactSheetUrl = `/api/media/${contactSheetFileName}`;
+          }
+        } catch {
+          // Folha de contato opcional; não confundir com aprovação artística.
+        }
+        return res.json({
+          ok: true, mp4Url: `/api/media/${fileName}`, fileName,
+          contactSheetUrl, sizeBytes: buf.byteLength,
+          durationSec: actualDuration, width: 1080, height: 1920,
+          fps: 30, engine: 'remotion_webcodecs',
+          hasAudioTrack: true, artisticQaPassed: false,
+        });
+      } catch (verificationError) {
+        fs.rmSync(outputMp4Path, { force: true });
+        return res.status(422).json({
+          error: 'A renderização não passou na verificação real com ffprobe.',
+          details: verificationError instanceof Error
+            ? verificationError.message : String(verificationError),
         });
       }
-
-      const finalStat = fs.statSync(outputMp4Path);
-      const headerBuf = Buffer.alloc(12);
-      const fd = fs.openSync(outputMp4Path, 'r');
-      fs.readSync(fd, headerBuf, 0, 12, 0);
-      fs.closeSync(fd);
-
-      const ftyp = headerBuf.subarray(4, 8).toString('ascii');
-      if (finalStat.size < 512 || ftyp !== 'ftyp') {
-        return res.status(500).json({
-          error: 'Arquivo MP4 gerado falhou na verificação de integridade ISO-BMFF.',
-        });
-      }
-
-      // Extrai automaticamente uma folha de contato PNG (Contact Sheet) real do MP4 renderizado via FFmpeg
-      let contactSheetUrl: string | undefined;
-      try {
-        const contactSheetFileName = `contact-sheet-${fileName.replace(/\.mp4$/i, '.png')}`;
-        const contactSheetPath = path.join(MEDIA_DIR, contactSheetFileName);
-        const tileSpec = safeDuration >= 11 ? '6x4' : '4x4';
-        execFileSync('ffmpeg', [
-          '-y',
-          '-i',
-          outputMp4Path,
-          '-vf',
-          `fps=2,scale=180:320,tile=${tileSpec}:padding=4:margin=4:color=#0B1722`,
-          '-frames:v',
-          '1',
-          contactSheetPath,
-        ]);
-        if (fs.existsSync(contactSheetPath)) {
-          contactSheetUrl = `/api/media/${contactSheetFileName}`;
-        }
-      } catch {
-        // Continua se extração opcional da contact sheet falhar
-      }
-
-      return res.json({
-        ok: true,
-        mp4Url: `/api/media/${fileName}`,
-        fileName,
-        contactSheetUrl,
-        sizeBytes: finalStat.size,
-        durationSec: safeDuration,
-        width: 1080,
-        height: 1920,
-        fps: 30,
-        engine: 'server_mp4_muxer',
-      });
     } catch (error) {
       return res.status(500).json({
-        error: 'Erro durante a renderização MP4.',
+        error: 'Falha ao receber o MP4 do Remotion.',
         details: error instanceof Error ? error.message : String(error),
       });
     }
