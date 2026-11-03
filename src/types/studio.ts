@@ -396,6 +396,7 @@ export interface StoryboardScene {
   /** Novos campos de Produção Automática + Geometria + HyperFrames + Beats */
   productionStatus?: SceneProductionStatus;
   generatedBackgroundUrl?: string;
+  backgroundGenerationSource?: 'gemini_ai' | 'unknown_legacy';
   isolatedObjectUrls?: string[];
   geometry?: SceneGeometrySpec;
   hyperFramesOverlay?: HyperFramesOverlayConfig;
