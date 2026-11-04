@@ -22,11 +22,11 @@ export function pilotMotion(t:number):BugiArticulatedKinematics {
     t<2?'confiante':t<8?'surpreso':'comico');
   const keys=[0,1.8,2.1,2.6,4,6.8,7.3,8,8.8,9.5,10,10.3,10.8,11.4,12.5];
   k.rootX=at(t,keys,[220,280,290,320,400,575,625,668,690,740,775,780,780,780,780]);
-  k.rootY=at(t,keys,[496,496,511,482,497,497,495,487,488,510,555,568,540,537,537]);
-  k.torsoRotation=k.torsoRotationDeg=at(t,keys,[4,4,12,-24,-18,-18,2,18,24,-35,-62,-72,-17,-10,-10]);
+  k.rootY=at(t,keys,[496,496,511,482,497,497,495,487,488,510,595,622,570,537,537]);
+  k.torsoRotation=k.torsoRotationDeg=at(t,keys,[4,4,12,-24,-18,-18,2,18,24,-35,-70,-88,-25,-10,-10]);
   k.squashX=at(t,[0,2,2.15,2.6,7.4,8.5,9.1,10,10.25,10.6,11,12.5],[1,1,1.07,1,1,1.1,1,1,1.15,1.03,1,1]);
   k.stretchY=at(t,[0,2,2.15,2.6,7.4,8.5,9.1,10,10.25,10.6,11,12.5],[1,1,.94,1,1,.94,1,1,.82,.97,1,1]);
-  k.grabAnchorPoint=undefined; k.impactShockwave=false;k.recoveryStars=t>10.5;
+  k.grabAnchorPoint=undefined; k.impactShockwave=t>=10.2&&t<10.5;k.recoveryStars=t>10.5;
   k.sweatDrops=t>2.4&&t<9.7;k.stretchTensionLines=false;
   k.mouthOpenness=t<2?0.05:t<9.8?.5:.15;
   k.headRotation=k.headRotationDeg=at(t,[0,2,2.5,7,7.7,9.4,10.2,11.2,12.5],[0,0,13,5,-12,15,12,-8,-8]);
@@ -49,6 +49,10 @@ export function pilotMotion(t:number):BugiArticulatedKinematics {
   const rightSlide={x:k.rootX+57,y:673-at(t,[2,2.7,7.5,8.7,9.4,10.2,11],[0,56,42,8,55,12,8])};
   const foot=(walking:Point,sliding:Point):Point=>inv({x:walking.x*walkFade+sliding.x*(1-walkFade),y:walking.y*walkFade+sliding.y*(1-walkFade)});
   const l=foot(leftWalk,leftSlide),r=foot(rightWalk,rightSlide);
+  // Release both feet during the tumble instead of stretching a grounded leg.
+  const airborne=at(t,[9.75,10.15,10.5,11.35],[0,1,1,0]);
+  l.x=l.x*(1-airborne)-20*airborne;l.y=l.y*(1-airborne)+135*airborne;
+  r.x=r.x*(1-airborne)+45*airborne;r.y=r.y*(1-airborne)+100*airborne;
   const lk=joint(k.leftHip,l,68,66,-1),rk=joint(k.rightHip,r,68,66,-1);
   k.leftKnee={...lk,angleDeg:0};k.rightKnee={...rk,angleDeg:0};
   k.leftAnkle=l;k.rightAnkle=r;

@@ -24,7 +24,7 @@ test('hand contacts the same fixed world point throughout the grabbing hold',()=
 });
 
 test('sliding support foot remains on the ground after root rotation and squash',()=>{
-  for(let f=72;f<300;f++){
+  for(let f=72;f<292;f++){
     const k=pilotMotion(f/30),a=k.torsoRotation*Math.PI/180;
     const y=k.rootY+k.leftAnkle.x*k.squashX*Math.sin(a)+k.leftAnkle.y*k.stretchY*Math.cos(a);
     assert.ok(Math.abs(y-673)<1e-8,`lost ground at ${f}: ${y}`);
