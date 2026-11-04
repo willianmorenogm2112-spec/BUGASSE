@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Debate Ar v3
+
+Executado: render de 33,813s com tela cheia e cenas explicativas; lint e decode passaram. Evidência: out/debate-ar-v3-tela-inteira.mp4 e qa/debate-ar/contato-v3.png. Arquivos/limites: DEBATE-AR-V3.md. Revisão artística humana pendente.
+
 ## Debate Ar v2
 
 Executado: MP4 Remotion 1080×1920/30fps, 1014 quadros, 33,81s; decode sem erros, -14,0 LUFS e -2,5 dBFS true peak, lint aprovado. Evidência: out/debate-ar-v2.mp4 e qa/debate-ar/final-frame.png. Arquivos, fontes e limites em DEBATE-AR-CONDICIONADO.md. Escuta e aprovação artística humanas pendentes.

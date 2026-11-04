@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill,Audio,interpolate,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
 import transcript from '../../../public/assets/debate-ar/transcript.json';
+import {CarExplainer} from './CarExplainer';
 
 const norm=(s:string)=>s.toLocaleLowerCase('pt-BR').replace(/[^a-záéíóúâêôãõç]/g,'');
 const anchor=(s:string,fallback:number)=>transcript.find(w=>norm(w.text)===s)?.start??fallback;
@@ -47,7 +48,10 @@ export const CarDebate:React.FC=()=>{
   <Audio src={staticFile('assets/debate-ar/mix.wav')} volume={1.109}/>
   <svg viewBox="0 0 540 960" width="100%" height="100%" style={{position:'absolute'}}>
    <defs><linearGradient id="sky" x2="0" y2="1"><stop stopColor="#A9DEE0"/><stop offset="1" stopColor="#E9F0D3"/></linearGradient><linearGradient id="dash" x2="0" y2="1"><stop stopColor="#34505D"/><stop offset="1" stopColor="#132B3B"/></linearGradient></defs>
-   <rect width="540" height="960" fill="#F7E5C7"/>
+   <rect width="540" height="960" fill="#203E4E"/>
+   <path d="M0 50Q270 5 540 50V285Q270 245 0 285Z" fill="#142B3A"/>
+   <rect x="172" y="190" width="195" height="55" rx="15" fill="#486B78" stroke="#0D2535" strokeWidth="7"/>
+   <path d="M270 167V191" stroke="#0D2535" strokeWidth="12"/>
    <rect y="255" width="540" height="475" fill="url(#sky)"/>
    <circle cx="463" cy="320" r="44" fill="#FFD166"/>
    <g transform={`translate(${-t*(road?48:20)%180} 0)`} fill="#80AA96">{Array.from({length:6},(_,i)=><g key={i}><rect x={i*180-20} y="450" width="105" height="150"/><path d={`M${i*180-25} 450l58-36 57 36Z`}/><rect x={i*180+10} y="473" width="22" height="35" fill="#EAD7B4"/><circle cx={i*180+120} cy="475" r="42" fill="#507E6E"/></g>)}</g>
@@ -55,21 +59,24 @@ export const CarDebate:React.FC=()=>{
    <g transform={`translate(${focus},0) translate(270 500) scale(${zoom}) translate(-270 -500)`}>
     <path d="M0 285Q270 245 540 285V328Q270 294 0 328Z" fill="#132B3B"/>
     <path d="M5 302L36 655M535 302L504 655" stroke="#203E4E" strokeWidth="29"/>
-    <path d="M255 303V623" stroke="#203E4E" strokeWidth="14"/>
+    <path d="M0 620V960H540V620L504 655H36Z" fill="#294454"/>
+    <path d="M45 750H181V875H25M495 750H359V875H515" fill="#1B3545" stroke="#567482" strokeWidth="4"/>
+    <path d="M42 793H147M393 793H498" stroke="#94ADAE" strokeWidth="9" strokeLinecap="round"/>
     {[139,399].map(x=><g key={x}><rect x={x-68} y="427" width="136" height="204" rx="40" fill="#405763" stroke="#132B3B" strokeWidth="5"/><rect x={x-48} y="382" width="96" height="64" rx="22" fill="#405763" stroke="#132B3B" strokeWidth="5"/></g>)}
     <Person x={145} woman={false} talk={!woman&&speaking} t={t} hot={!ac}/><Person x={395} woman talk={woman&&speaking} t={t} hot={!ac}/>
     <ellipse cx="145" cy="602" rx="53" ry="39" fill="none" stroke="#102837" strokeWidth="13"/><path d="M97 603H193M145 603V636" stroke="#102837" strokeWidth="9"/>
-    <path d="M-5 638Q270 603 545 638V745H-5Z" fill="url(#dash)"/>
+    <path d="M-5 638Q270 603 545 638V768Q270 735-5 768Z" fill="url(#dash)"/>
+    <path d="M205 747H335L365 960H175Z" fill="#142B3A" stroke="#607B85" strokeWidth="3"/>
+    <rect x="227" y="798" width="86" height="70" rx="18" fill="#0D2535"/>
+    <path d="M270 842V800" stroke="#A5BBBE" strokeWidth="10"/><ellipse cx="270" cy="794" rx="19" ry="13" fill="#517480" stroke="#0D2535" strokeWidth="4"/>
     {[76,192,348,464].map(x=><g key={x}><rect x={x-32} y="649" width="64" height="34" rx="8" fill="#102837"/>{[-10,0,10].map(y=><path key={y} d={`M${x-22} ${665+y}h44`} stroke="#5C8990" strokeWidth="2"/>)}</g>)}
     <rect x="228" y="647" width="84" height="51" rx="9" fill="#102837" stroke="#5C8990" strokeWidth="2"/><text x="270" y="680" textAnchor="middle" fontFamily="Arial" fontWeight="bold" fontSize="27" fill={ac?'#39C8D5':'#7B9295'}>{ac?'A/C ON':'A/C OFF'}</text>
    </g>
    {ac&&<g fill="none" stroke="#39C8D5" strokeWidth="4" opacity=".65">{[65,195,348,473].map((x,i)=><path key={i} d={`M${x} 640q${Math.sin(t*5+i)*12} -30 0 -65`}/>)}</g>}
    {turn===2&&<g fill="none" stroke="#FFF7E9" strokeWidth="4" opacity=".8">{[0,1,2].map(i=><path key={i} d={`M530 ${390+i*25}q-80 ${Math.sin(t*6+i)*15} -130 0`}/>)}</g>}
   </svg>
-  <div style={{position:'absolute',left:104,top:228,fontWeight:800,fontSize:23,letterSpacing:4,color:'#183342'}}>E SE BUGASSE?</div>
-  <div key={turn} style={{position:'absolute',left:104,top:291,right:100,color:'#183342',fontSize:59,fontWeight:800,letterSpacing:-2,lineHeight:1.05}}>{title}</div>
-  <div style={{position:'absolute',left:104,top:386,color:'#A34E3A',fontSize:23,fontWeight:800}}>{explaining?'MITO OU VERDADE?':'UMA VIAGEM. DUAS OPINIÕES.'}</div>
-  {explaining&&<div style={{position:'absolute',left:104,right:104,top:450,padding:'22px 26px',background:'#183342',borderRadius:22,color:'#FFF7E9',display:'flex',alignItems:'center',justifyContent:'space-between',fontSize:27,fontWeight:800}}><span>{road?'CARRO + VELOCIDADE':'COMPRESSOR'}</span><span style={{color:'#FFD166'}}>↔</span><span style={{color:'#39C8D5'}}>{road?'CALOR':'RESISTÊNCIA DO AR'}</span></div>}
+  {explaining&&<CarExplainer t={t}/>}
+  {!explaining&&<><div style={{position:'absolute',left:104,top:228,fontWeight:800,fontSize:23,letterSpacing:4,color:'#39C8D5'}}>E SE BUGASSE?</div><div key={turn} style={{position:'absolute',left:104,top:291,right:100,color:'#FFF7E9',fontSize:59,fontWeight:800,letterSpacing:-2,lineHeight:1.05}}>{title}</div></>}
   {cap&&<div style={{position:'absolute',left:100,right:140,top:1390,minHeight:105,padding:'18px 10px',boxSizing:'border-box',background:'#F7E5C7',borderRadius:16,textAlign:'center',fontSize:47,lineHeight:1.15,fontWeight:800,color:'#183342'}}>{cap.words.map((w,i)=><React.Fragment key={i}><span style={{color:t>=w.start&&t<w.end?'#C4553C':'#183342'}}>{w.text}</span>{' '}</React.Fragment>)}</div>}
  </AbsoluteFill>;
 };
