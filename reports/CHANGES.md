@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Debate Ar
+
+Executado: CarDebate.tsx, entrada PilotRoot, assets em public/assets/debate-ar; voz Gemini com dois speakers e animação original 2D. Evidência e limitações: DEBATE-AR-CONDICIONADO.md. Branch codex/ar-condicionado-debate-20261104, sem publicação.
+
 ## Short Tempo v1
 
 Executado: nova composição `Bugi-Tempo-51s`, assets de voz/mix/transcrição, cenário e objetos SVG, atuação articulada e legendas. Evidência: `src/remotion/time/TimeShort.tsx`, `public/assets/short-tempo/` e `SHORT-TEMPO-V1.md`. Limitação: branch local, sem publicação ou merge.

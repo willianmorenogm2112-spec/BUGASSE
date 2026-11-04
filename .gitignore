@@ -12,4 +12,6 @@ coverage/
 /qa/pilot-atrito-v1/
 /out/short-tempo*.mp4
 /qa/short-tempo/
+/out/debate-ar*.mp4
+/qa/debate-ar/
 /.tmp-chrome-banner/

@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Debate Ar
+
+Executado: vídeo local de conversa de casal e explicação científica. Próximo: avaliar proximidade visual com referências e ouvir as duas vozes. Evidência e arquivos: DEBATE-AR-CONDICIONADO.md. Limite: aprovação humana pendente.
+
 ## Short Tempo v1
 
 Executado: primeiro episódio completo exportado. Próximo: ouvir integralmente e aprovar ritmo, legendas e arte antes de publicar. Evidência e limitações: `SHORT-TEMPO-V1.md`.

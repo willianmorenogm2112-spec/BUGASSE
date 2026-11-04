@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Debate Ar
+
+Executado sem novas instalações: Gemini TTS pela UI, transcrição local, Remotion. Evidência/arquivos: DEBATE-AR-CONDICIONADO.md. Limite: custos não medidos.
+
 ## Short Tempo v1
 
 Executado sem nova instalação. Remotion, FFmpeg, Chrome e transcrição local existentes produziram o vídeo. Evidência: lint/build, MP4 e `SHORT-TEMPO-V1.md`. Limitação: nenhuma revisão de dependências foi feita nesta etapa.

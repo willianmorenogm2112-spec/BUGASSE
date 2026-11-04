@@ -1,0 +1,578 @@
+[
+  {
+    "text": "Liga",
+    "start": 0.0,
+    "end": 0.38,
+    "probability": 0.9524419009685516
+  },
+  {
+    "text": "o",
+    "start": 0.38,
+    "end": 0.54,
+    "probability": 0.9147197008132935
+  },
+  {
+    "text": "ar,",
+    "start": 0.54,
+    "end": 0.72,
+    "probability": 0.992617666721344
+  },
+  {
+    "text": "tá",
+    "start": 0.9,
+    "end": 0.96,
+    "probability": 0.6456522345542908
+  },
+  {
+    "text": "um",
+    "start": 0.96,
+    "end": 1.08,
+    "probability": 0.7517035603523254
+  },
+  {
+    "text": "forno",
+    "start": 1.08,
+    "end": 1.46,
+    "probability": 0.9868776798248291
+  },
+  {
+    "text": "aqui.",
+    "start": 1.46,
+    "end": 1.66,
+    "probability": 0.9813097715377808
+  },
+  {
+    "text": "Abre",
+    "start": 2.3,
+    "end": 2.6,
+    "probability": 0.7545301914215088
+  },
+  {
+    "text": "o",
+    "start": 2.6,
+    "end": 2.74,
+    "probability": 0.9895774126052856
+  },
+  {
+    "text": "vidro,",
+    "start": 2.74,
+    "end": 3.08,
+    "probability": 0.9969490468502045
+  },
+  {
+    "text": "ar",
+    "start": 3.22,
+    "end": 3.3,
+    "probability": 0.987497091293335
+  },
+  {
+    "text": "condicionado,",
+    "start": 3.3,
+    "end": 3.76,
+    "probability": 0.8748623728752136
+  },
+  {
+    "text": "bebe",
+    "start": 3.88,
+    "end": 4.08,
+    "probability": 0.8128567039966583
+  },
+  {
+    "text": "gasolina.",
+    "start": 4.08,
+    "end": 4.5,
+    "probability": 0.8363586664199829
+  },
+  {
+    "text": "E",
+    "start": 5.18,
+    "end": 5.38,
+    "probability": 0.9509517550468445
+  },
+  {
+    "text": "esse",
+    "start": 5.38,
+    "end": 5.58,
+    "probability": 0.9804325103759766
+  },
+  {
+    "text": "vento",
+    "start": 5.58,
+    "end": 6.04,
+    "probability": 0.9801973700523376
+  },
+  {
+    "text": "me",
+    "start": 6.04,
+    "end": 6.14,
+    "probability": 0.9381597638130188
+  },
+  {
+    "text": "transformando",
+    "start": 6.14,
+    "end": 6.64,
+    "probability": 0.9966548085212708
+  },
+  {
+    "text": "numa",
+    "start": 6.64,
+    "end": 6.82,
+    "probability": 0.8489647507667542
+  },
+  {
+    "text": "bandeira",
+    "start": 6.82,
+    "end": 7.2,
+    "probability": 0.9953053891658783
+  },
+  {
+    "text": "é",
+    "start": 7.2,
+    "end": 7.3,
+    "probability": 0.9475505352020264
+  },
+  {
+    "text": "grátis?",
+    "start": 7.3,
+    "end": 7.74,
+    "probability": 0.8466100494066874
+  },
+  {
+    "text": "Ué,",
+    "start": 8.26,
+    "end": 8.56,
+    "probability": 0.8865186274051666
+  },
+  {
+    "text": "não",
+    "start": 8.78,
+    "end": 8.92,
+    "probability": 0.9916735291481018
+  },
+  {
+    "text": "é?",
+    "start": 8.92,
+    "end": 9.08,
+    "probability": 0.9980096220970154
+  },
+  {
+    "text": "O",
+    "start": 9.68,
+    "end": 9.84,
+    "probability": 0.9904663562774658
+  },
+  {
+    "text": "ar",
+    "start": 9.84,
+    "end": 9.98,
+    "probability": 0.9955001473426819
+  },
+  {
+    "text": "usa",
+    "start": 9.98,
+    "end": 10.14,
+    "probability": 0.98499596118927
+  },
+  {
+    "text": "energia,",
+    "start": 10.14,
+    "end": 10.6,
+    "probability": 0.9806908369064331
+  },
+  {
+    "text": "mas",
+    "start": 10.86,
+    "end": 10.94,
+    "probability": 0.9955263733863831
+  },
+  {
+    "text": "os",
+    "start": 10.94,
+    "end": 11.12,
+    "probability": 0.990980327129364
+  },
+  {
+    "text": "vidros",
+    "start": 11.12,
+    "end": 11.4,
+    "probability": 0.9971232414245605
+  },
+  {
+    "text": "abertos",
+    "start": 11.4,
+    "end": 11.86,
+    "probability": 0.9917107820510864
+  },
+  {
+    "text": "aumentam",
+    "start": 11.86,
+    "end": 12.44,
+    "probability": 0.991008847951889
+  },
+  {
+    "text": "a",
+    "start": 12.44,
+    "end": 12.56,
+    "probability": 0.994661271572113
+  },
+  {
+    "text": "resistência",
+    "start": 12.56,
+    "end": 13.06,
+    "probability": 0.9984767138957977
+  },
+  {
+    "text": "do",
+    "start": 13.06,
+    "end": 13.26,
+    "probability": 0.996107280254364
+  },
+  {
+    "text": "ar",
+    "start": 13.26,
+    "end": 13.5,
+    "probability": 0.9976392984390259
+  },
+  {
+    "text": "quando",
+    "start": 13.5,
+    "end": 13.64,
+    "probability": 0.9203600883483887
+  },
+  {
+    "text": "a",
+    "start": 13.64,
+    "end": 13.74,
+    "probability": 0.9982364177703857
+  },
+  {
+    "text": "velocidade",
+    "start": 13.74,
+    "end": 14.06,
+    "probability": 0.9978951215744019
+  },
+  {
+    "text": "sobe.",
+    "start": 14.06,
+    "end": 14.62,
+    "probability": 0.9780520796775818
+  },
+  {
+    "text": "Então",
+    "start": 15.24,
+    "end": 15.52,
+    "probability": 0.9910532832145691
+  },
+  {
+    "text": "quem",
+    "start": 15.52,
+    "end": 15.64,
+    "probability": 0.6524477005004883
+  },
+  {
+    "text": "tá",
+    "start": 15.64,
+    "end": 15.74,
+    "probability": 0.896837592124939
+  },
+  {
+    "text": "certo?",
+    "start": 15.74,
+    "end": 16.0,
+    "probability": 0.9968172311782837
+  },
+  {
+    "text": "Depende",
+    "start": 16.62,
+    "end": 17.02,
+    "probability": 0.9873159229755402
+  },
+  {
+    "text": "do",
+    "start": 17.02,
+    "end": 17.18,
+    "probability": 0.9971822500228882
+  },
+  {
+    "text": "carro,",
+    "start": 17.18,
+    "end": 17.54,
+    "probability": 0.9981364011764526
+  },
+  {
+    "text": "da",
+    "start": 17.72,
+    "end": 17.8,
+    "probability": 0.9973570704460144
+  },
+  {
+    "text": "velocidade",
+    "start": 17.8,
+    "end": 18.22,
+    "probability": 0.9985637068748474
+  },
+  {
+    "text": "e",
+    "start": 18.22,
+    "end": 18.62,
+    "probability": 0.9039129018783569
+  },
+  {
+    "text": "do",
+    "start": 18.62,
+    "end": 18.7,
+    "probability": 0.9885983467102051
+  },
+  {
+    "text": "calor.",
+    "start": 18.7,
+    "end": 18.94,
+    "probability": 0.9985798597335815
+  },
+  {
+    "text": "Devagar,",
+    "start": 19.64,
+    "end": 20.06,
+    "probability": 0.8849972784519196
+  },
+  {
+    "text": "abrir",
+    "start": 20.24,
+    "end": 20.4,
+    "probability": 0.8493926525115967
+  },
+  {
+    "text": "os",
+    "start": 20.4,
+    "end": 20.56,
+    "probability": 0.9797874689102173
+  },
+  {
+    "text": "vidros",
+    "start": 20.56,
+    "end": 20.8,
+    "probability": 0.9978262782096863
+  },
+  {
+    "text": "pode",
+    "start": 20.8,
+    "end": 21.04,
+    "probability": 0.9820802211761475
+  },
+  {
+    "text": "ajudar.",
+    "start": 21.04,
+    "end": 21.42,
+    "probability": 0.9942516088485718
+  },
+  {
+    "text": "Na",
+    "start": 21.96,
+    "end": 22.1,
+    "probability": 0.9950469732284546
+  },
+  {
+    "text": "estrada,",
+    "start": 22.1,
+    "end": 22.48,
+    "probability": 0.9922508597373962
+  },
+  {
+    "text": "usar",
+    "start": 22.64,
+    "end": 22.76,
+    "probability": 0.9829453825950623
+  },
+  {
+    "text": "o",
+    "start": 22.76,
+    "end": 22.9,
+    "probability": 0.9981301426887512
+  },
+  {
+    "text": "ar",
+    "start": 22.9,
+    "end": 23.1,
+    "probability": 0.996418833732605
+  },
+  {
+    "text": "pode",
+    "start": 23.1,
+    "end": 23.28,
+    "probability": 0.9945570230484009
+  },
+  {
+    "text": "ser",
+    "start": 23.28,
+    "end": 23.42,
+    "probability": 0.9943528175354004
+  },
+  {
+    "text": "melhor.",
+    "start": 23.42,
+    "end": 23.66,
+    "probability": 0.9989174604415894
+  },
+  {
+    "text": "Não",
+    "start": 24.28,
+    "end": 24.56,
+    "probability": 0.9965484738349915
+  },
+  {
+    "text": "existe",
+    "start": 24.56,
+    "end": 24.84,
+    "probability": 0.9969748258590698
+  },
+  {
+    "text": "uma",
+    "start": 24.84,
+    "end": 25.02,
+    "probability": 0.9977244734764099
+  },
+  {
+    "text": "velocidade",
+    "start": 25.02,
+    "end": 25.36,
+    "probability": 0.9975782036781311
+  },
+  {
+    "text": "mágica",
+    "start": 25.36,
+    "end": 25.96,
+    "probability": 0.9948221643765768
+  },
+  {
+    "text": "pra",
+    "start": 25.96,
+    "end": 26.1,
+    "probability": 0.7772722840309143
+  },
+  {
+    "text": "todo",
+    "start": 26.1,
+    "end": 26.24,
+    "probability": 0.9919731616973877
+  },
+  {
+    "text": "o",
+    "start": 26.24,
+    "end": 26.34,
+    "probability": 0.6658383011817932
+  },
+  {
+    "text": "carro.",
+    "start": 26.34,
+    "end": 26.56,
+    "probability": 0.9993194341659546
+  },
+  {
+    "text": "Ótimo,",
+    "start": 27.400000000000002,
+    "end": 27.84,
+    "probability": 0.9963763356208801
+  },
+  {
+    "text": "agora",
+    "start": 28.0,
+    "end": 28.18,
+    "probability": 0.9941030144691467
+  },
+  {
+    "text": "liga",
+    "start": 28.18,
+    "end": 28.48,
+    "probability": 0.8129741251468658
+  },
+  {
+    "text": "antes",
+    "start": 28.48,
+    "end": 28.74,
+    "probability": 0.8685439229011536
+  },
+  {
+    "text": "que",
+    "start": 28.74,
+    "end": 28.86,
+    "probability": 0.9935986995697021
+  },
+  {
+    "text": "eu",
+    "start": 28.86,
+    "end": 28.9,
+    "probability": 0.9753699898719788
+  },
+  {
+    "text": "derreta.",
+    "start": 28.9,
+    "end": 29.18,
+    "probability": 0.8395545879999796
+  },
+  {
+    "text": "Tá",
+    "start": 29.18,
+    "end": 30.08,
+    "probability": 0.7521047592163086
+  },
+  {
+    "text": "bom,",
+    "start": 30.08,
+    "end": 30.24,
+    "probability": 0.992375910282135
+  },
+  {
+    "text": "mas",
+    "start": 30.48,
+    "end": 30.62,
+    "probability": 0.9936906099319458
+  },
+  {
+    "text": "o",
+    "start": 30.62,
+    "end": 30.94,
+    "probability": 0.9709157347679138
+  },
+  {
+    "text": "próximo",
+    "start": 30.94,
+    "end": 31.22,
+    "probability": 0.9981263279914856
+  },
+  {
+    "text": "abastecimento",
+    "start": 31.22,
+    "end": 31.94,
+    "probability": 0.994779109954834
+  },
+  {
+    "text": "entra",
+    "start": 31.94,
+    "end": 32.2,
+    "probability": 0.9932044744491577
+  },
+  {
+    "text": "na",
+    "start": 32.2,
+    "end": 32.36,
+    "probability": 0.9935503005981445
+  },
+  {
+    "text": "divisão",
+    "start": 32.36,
+    "end": 32.74,
+    "probability": 0.9323981404304504
+  },
+  {
+    "text": "da",
+    "start": 32.74,
+    "end": 32.8,
+    "probability": 0.9975051283836365
+  },
+  {
+    "text": "viagem.",
+    "start": 32.8,
+    "end": 33.12,
+    "probability": 0.9876783490180969
+  }
+]

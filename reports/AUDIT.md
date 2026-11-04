@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Debate Ar
+
+Executado: composição isolada com dois personagens próprios; sem mudanças de Firebase/APIs. Evidência e arquivos em DEBATE-AR-CONDICIONADO.md. Limite: não resolve achados anteriores do app.
+
 ## Short Tempo v1
 
 Executado: implementação isolada em composição Remotion, sem alteração de Firebase, APIs ou navegação. Evidência: `src/remotion/time/TimeShort.tsx` e manifesto de assets. Limitação: não resolve achados anteriores do aplicativo; QA artístico permanece humano.

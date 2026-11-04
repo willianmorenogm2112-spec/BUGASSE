@@ -1,0 +1,8 @@
+{
+ "state":"awaiting_human_review",
+ "voice":{"generationSource":"Google AI Studio UI and native download","model":"gemini-3.8-flash-tts","speakers":["Nika","Rami"],"durationSec":33.52,"original":"dialogo-original.wav","sha256":"F809778D0078491FA017BF0CB63CB5CC95A867F18C08688053B29619157F7A76","chargedCost":null},
+ "transcript":{"source":"faster-whisper-small local CPU","timing":"ASR_estimates","file":"transcript.json"},
+ "visuals":{"source":"original_authored_svg","composition":"Debate-Ar-Condicionado","entry":"src/remotion/PilotRoot.tsx","component":"src/remotion/car/CarDebate.tsx","generatedVideo":false},
+ "sources":["https://www.energy.gov/articles/tips-your-tank-summer-driving-season","https://www.osti.gov/biblio/1092236"],
+ "qa":{"humanArtisticApproval":false,"humanListeningReview":false}
+}

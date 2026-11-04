@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Debate Ar v2
+
+Executado: MP4 Remotion 1080×1920/30fps, 1014 quadros, 33,81s; decode sem erros, -14,0 LUFS e -2,5 dBFS true peak, lint aprovado. Evidência: out/debate-ar-v2.mp4 e qa/debate-ar/final-frame.png. Arquivos, fontes e limites em DEBATE-AR-CONDICIONADO.md. Escuta e aprovação artística humanas pendentes.
+
 ## Short Tempo v1
 
 Executado: render Remotion real de 50,600s, 1515 quadros, 1080×1920/30 fps H.264/AAC; decode integral sem erros; −14,2 LUFS e true peak −2,5 dBFS. Evidência: `out/short-tempo-final.mp4`, `qa/short-tempo/contact-sheet-final.png` e `SHORT-TEMPO-V1.md`. Limitação: alinhamento ASR estimado, escuta humana e aprovação artística pendentes.
