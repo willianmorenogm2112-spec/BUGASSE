@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Primeiro Bugi — novo episódio
+
+Executado: nova voz real e montagem. Próximo: revisão humana integral de áudio, expressões e ritmo antes de publicar. Evidência, arquivos e limites: PRIMEIRO-BUGI-EPISODIO.md. O 403 anterior foi superado; não tratar como bloqueio atual.
+
 ## Debate Ar
 
 Executado: vídeo local de conversa de casal e explicação científica. Próximo: avaliar proximidade visual com referências e ouvir as duas vozes. Evidência e arquivos: DEBATE-AR-CONDICIONADO.md. Limite: aprovação humana pendente.

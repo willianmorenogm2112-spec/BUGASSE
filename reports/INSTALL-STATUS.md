@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Primeiro Bugi — nova voz real
+
+Executado: geração completa no AI Studio com Kore/Puck, download 52,44s, transcrição local e lint. Nenhuma instalação adicional. Evidência, arquivos e limitações: PRIMEIRO-BUGI-EPISODIO.md. Sem custo cobrado conhecido.
+
 ## Debate Ar
 
 Executado sem novas instalações: Gemini TTS pela UI, transcrição local, Remotion. Evidência/arquivos: DEBATE-AR-CONDICIONADO.md. Limite: custos não medidos.

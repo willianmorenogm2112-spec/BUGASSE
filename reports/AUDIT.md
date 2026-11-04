@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Primeiro Bugi — novo episódio
+
+Executado: voz real integral e animação do Bugi oficial em composição isolada; sem mudança de Firebase/API. Evidência e arquivos em PRIMEIRO-BUGI-EPISODIO.md. Limitação: movimento de boca por palavras e tempos ASR estimados; sem aprovação artística automática.
+
 ## Debate Ar
 
 Executado: composição isolada com dois personagens próprios; sem mudanças de Firebase/APIs. Evidência e arquivos em DEBATE-AR-CONDICIONADO.md. Limite: não resolve achados anteriores do app.

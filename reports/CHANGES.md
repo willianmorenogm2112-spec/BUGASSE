@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Primeiro Bugi — novo episódio
+
+Executado: rascunho silencioso substituído por composição Primeiro-Bugi-Ar-Condicionado com WAV real, onze falas, expressões faciais e transições. Evidência: FirstCarDebate.tsx, PilotRoot.tsx, assets/primeiro-bugi e PRIMEIRO-BUGI-EPISODIO.md. Limitação: branch local, sem publicação.
+
 ## Debate Ar
 
 Executado: CarDebate.tsx, entrada PilotRoot, assets em public/assets/debate-ar; voz Gemini com dois speakers e animação original 2D. Evidência e limitações: DEBATE-AR-CONDICIONADO.md. Branch codex/ar-condicionado-debate-20261104, sem publicação.

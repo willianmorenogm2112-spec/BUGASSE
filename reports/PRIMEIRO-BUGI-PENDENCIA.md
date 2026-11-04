@@ -1,5 +1,7 @@
 # Primeiro vídeo Bugi — rascunho e bloqueio real
 
+ATUALIZAÇÃO: bloqueio superado; novo WAV completo gerado com Kore/Puck e versão final em out/debate-ar-bugi-primeiro-final.mp4. Este documento é histórico. Ver PRIMEIRO-BUGI-EPISODIO.md.
+
 Branch codex/primeiro-video-bugi-20261104. Versão anterior preservada. Implementado FirstCarDebate.tsx com rig oficial Bugi no motorista, sobrancelhas da passageira com raiva/ironia, cabeça e expressões de Bugi por turno, transições de entrada nos gráficos. Composição Primeiro-Bugi-Rascunho é explicitamente técnica, silenciosa, com tempos provisórios e transcript vazio. Não entregar como vídeo final.
 
 Tentadas duas gerações de 11 blocos e depois diálogo dividido em seis blocos pela interface Google AI Studio. Modelo gemini-3.8-flash-tts, vozes Nika/Rami. Sem novo WAV produzido; erro mostrado pela página: HTTP 403. Sem custo cobrado conhecido, sem inventar sucesso. O roteiro parcial de seis blocos ficou aberto na aba para recuperação; roteiro integral abaixo.
