@@ -1,0 +1,10 @@
+{
+ "episode":"primeiro-bugi-ar-condicionado",
+ "state":"awaiting_human_review",
+ "voice":{"generationSource":"Google AI Studio browser UI","displayedModel":"gemini-3.8-flash-tts","speakers":{"passageira":"Kore","Bugi":"Puck"},"durationSec":52.44,"original":"dialogo-original.wav","sha256":"5B031D380B05EDDDB2CB18B329D056C8F56A6716FB1751B5991BDDBCEF75E850","chargedCost":null},
+ "transcript":{"file":"transcript.json","source":"faster-whisper-small CPU int8 local","timings":"ASR_estimates","humanListeningVerified":false},
+ "visual":{"source":"authored_SVG_and_official_Bugi_rig","component":"src/remotion/car/FirstCarDebate.tsx","explainer":"src/remotion/car/CarExplainer.tsx","engine":"Remotion","composition":"Primeiro-Bugi-Ar-Condicionado","fps":30,"frames":1578},
+ "scienceSources":["https://www.energy.gov/articles/tips-your-tank-summer-driving-season","https://www.osti.gov/biblio/1092236"],
+ "render":{"file":"out/debate-ar-bugi-primeiro-final.mp4","frames":1578,"width":1080,"height":1920,"fps":30,"durationSec":52.608,"integratedLufs":-14.0,"truePeakDbfs":-4.1,"sha256":"2AC5CB7D0854C0B280372CED83E2B1C3AB1EE66BB98571E2F98BBF7468C6A2A2","fullDecodePassed":true,"contactSheetInspected":true,"audioPostGainDb":-1.6,"previewAudio":"mix-final.wav"},
+ "limitations":["Boca guiada por atividade de palavras, não por fonemas.","Diagramas qualitativos; sem percentuais medidos de economia.","Aprovação artística e escuta humana pendentes."]
+}

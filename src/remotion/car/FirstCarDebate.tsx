@@ -1,18 +1,19 @@
 import React from 'react';
 import {AbsoluteFill,Audio,interpolate,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
-// Voice generation is blocked by HTTP 403. Empty transcript keeps draft timings explicitly provisional.
-const transcript:Array<{text:string;start:number;end:number}>=[];
+import rawTranscript from '../../../public/assets/primeiro-bugi/transcript.json';
+// Acoustic ASR estimates; text corrections follow the supplied screenplay, not new invented audio.
+const transcript=rawTranscript.map(w=>({...w,text:w.text==='cao'?'carro':w.text==='passageiro'?'passageira':w.text==='R'?'dois':w.text==='$2'?'reais':w.text==='-condicionado'?'condicionado':w.text}));
 import {CarExplainer} from './CarExplainer';
 import {BugiArticulatedSvgFigure,computeBugiArticulatedKinematics} from '../../components/BugiCharacterSvg';
 
 const norm=(s:string)=>s.toLocaleLowerCase('pt-BR').replace(/[^a-záéíóúâêôãõç]/g,'');
 const anchor=(s:string,fallback:number)=>transcript.find(w=>norm(w.text)===s)?.start??fallback;
-const turns=[0,anchor('abre',4),anchor('e',7),anchor('então',15),anchor('o',18),anchor('então',27),anchor('não',30),anchor('entendi',46),anchor('isso',49),anchor('tá',55),anchor('liga',58),65];
+const turns=[0,anchor('abre',4.68),anchor('e',8),anchor('então',15.06),16.88,24.3,26.58,anchor('entendi',41.38),anchor('isso',43.32),anchor('tá',48.6),anchor('liga',50.8),52.6];
 // Correct phrase anchors with context to avoid matching the opening "Tá" again.
 const phrase=(text:string[],fallback:number)=>{const i=transcript.findIndex((_,i)=>text.every((w,j)=>norm(transcript[i+j]?.text??'')===w));return i<0?fallback:transcript[i].start;};
-turns[2]=phrase(['e','o','vento'],7);turns[3]=phrase(['então','explica'],15);turns[4]=phrase(['o','arcondicionado','usa'],18);turns[5]=phrase(['então','ligar'],27);turns[6]=phrase(['não','cacete'],30);turns[9]=phrase(['tá','bom'],55);turns[10]=phrase(['liga','o','ar'],58);
+turns[2]=phrase(['e','o','vento'],8);turns[3]=phrase(['então','explica'],15.06);turns[4]=phrase(['o','ar','condicionado','usa'],16.88);turns[5]=phrase(['então','ligar'],24.3);turns[6]=phrase(['não','cacete'],26.58);turns[9]=phrase(['tá','bom'],48.6);turns[10]=phrase(['liga','o','ar'],50.8);
 const captions=Array.from({length:Math.ceil(transcript.length/3)},(_,i)=>{
- const words=transcript.slice(i*3,i*3+3);return {words,start:words[0].start,end:Math.min(words.at(-1)!.end+.12,transcript[i*3+3]?.start??34)};
+ const words=transcript.slice(i*3,i*3+3);return {words,start:words[0].start,end:Math.min(words.at(-1)!.end+.12,transcript[i*3+3]?.start??52.6)};
 });
 const cl={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
 
@@ -24,9 +25,14 @@ const Person:React.FC<{x:number;woman:boolean;talk:boolean;t:number;hot:boolean;
    const k=computeBugiArticulatedKinematics('confiante_parado',t*30,30,talk?.65:0,expression);
    k.rootX=0;k.rootY=0;k.mouthOpenness=talk?.2+Math.abs(Math.sin(t*17))*.55:0;
    k.headRotation=k.headRotationDeg=(turn===6?-12:turn===3?8:0)+Math.sin(t*2)*2;
+   k.pupilOffsetX=turn===6?5:turn===1?-2:3;k.pupilOffsetY=turn===5?-4:0;
+   k.leftBrowDeg=turn===1?-7:turn===3?-15:turn===6?18:0;
+   k.rightBrowDeg=turn===1?7:turn===3?0:turn===6?-18:0;
+   k.eyeScaleY=turn===6?1.24:turn===3?.8:1;k.mouthShape=turn===3?'grin':turn===6?'open_o':turn===1?'smile':'determined';
    return <g transform={`translate(${x},549) scale(.66)`}><BugiArticulatedSvgFigure kinematics={k}/></g>;
   }
   const angry=turn===0||turn===6||turn===10;const sarcastic=turn===2||turn===8;
+  const blink=(t*30+35)%113<3;const look=angry?-3:sarcastic?-5:-2;
  return <g transform={`translate(${x},465) rotate(${sway})`} stroke="#132B3B" strokeWidth="3.5" strokeLinejoin="round" strokeLinecap="round">
   <path d="M-69 161V85Q-61 46 0 46Q61 46 69 85V161" fill={woman?'#E5745F':'#24737D'}/>
   <path d="M-14 36V58Q0 70 14 58V36" fill="#E9AD88"/>
@@ -34,9 +40,9 @@ const Person:React.FC<{x:number;woman:boolean;talk:boolean;t:number;hot:boolean;
   <ellipse cy="-12" rx="43" ry="56" fill={hot?'#F1AD90':'#F4C49F'}/>
   {woman?<path d="M-43-17Q-53-82 4-81Q43-82 44-32Q3-38-17-61Q-30-32-43-17" fill="#57342D"/>:<path d="M-44-26Q-54-78 4-80L36-69L49-37L15-47L-6-57L-26-32Z" fill="#253441"/>}
   <path d={angry?'M-30-24l19 8M11-16l19-8':sarcastic?'M-29-24q10-9 19-2M11-16h19':'M-28-18q9-7 17-2M11-20q10-5 18 2'} fill="none"/>
-  <ellipse cx="-20" cy="-6" rx="4" ry="5" fill="#132B3B" stroke="none"/><ellipse cx="21" cy="-6" rx="4" ry="5" fill="#132B3B" stroke="none"/>
+  <g transform={`translate(${look},0)`}><ellipse cx="-20" cy="-6" rx="4" ry={blink?1:sarcastic?3:5} fill="#132B3B" stroke="none"/><ellipse cx="21" cy="-6" rx="4" ry={blink?1:5} fill="#132B3B" stroke="none"/></g>
   <path d="M1-2l-4 15h8" fill="none" stroke="#BD8269" strokeWidth="2"/>
-  <ellipse cy="29" rx={talk?12:10} ry={mouth} fill={talk?'#7C3436':'#D88276'} strokeWidth="2"/>
+  <ellipse cy={angry?28:29} rx={talk?12:sarcastic?13:10} ry={talk?mouth:angry?2:1.5} fill={talk?'#7C3436':'#D88276'} strokeWidth="2" transform={`rotate(${sarcastic?-8:0} 0 29)`}/>
   {talk&&<path d="M-7 25h14" stroke="#FFF7E9" strokeWidth="3"/>}
   <path d={woman?'M-51 84Q-87 95-90 30':'M-50 88Q-70 119-45 144'} fill="none" stroke={woman?'#E5745F':'#24737D'} strokeWidth="25"/>
   <circle cx={woman?-90:-45} cy={woman?30:144} r="11" fill="#F4C49F"/>
@@ -51,11 +57,12 @@ export const FirstCarDebate:React.FC=()=>{
  const woman=turn%2===0;const speaking=transcript.some(w=>t>=w.start&&t<w.end);
  const cap=captions.find(c=>t>=c.start&&t<c.end);
  const explaining=(turn===4||(turn===6&&t>=anchor('depende',35))),road=turn===6,ac=t>=turns[10]+1;
- const title=turn===0?'LIGA O AR!':turn===1?'GASTA MAIS?':turn===2?'E O VENTO?':turn===3?'OS DOIS GASTAM.':turn===4?'QUEM TEM RAZÃO?':turn===5?'DEPENDE.':turn===6?'AGORA LIGA!':'CONTA DIVIDIDA!';
- const zoom=explaining?1:1.035;const focus=woman?-7:7;
+ const title=['ECONOMIA OU BRIGA?','DICA DE TIO.','ENERGIA SOLAR?','EXPLICA, PROFESSORA.','OS DOIS GASTAM.','SEMPRE ECONOMIZA?','NÃO, CACETE!','ENTENDI. DEPENDE.','PASSAGEIRA AO PONTO.','MAS A GASOLINA…','LIGA. O. AR.'][turn];
+ const entry=interpolate(t-turns[turn],[0,.28],[0,1],cl);
+ const zoom=explaining?1:interpolate(entry,[0,1],[1.01,1.07]);const focus=woman?-13:13;
  return <AbsoluteFill style={{background:'#FFF4DF',fontFamily:'CarJakarta,Arial,sans-serif',overflow:'hidden'}}>
   <style>{`@font-face{font-family:CarJakarta;src:url('${staticFile('assets/pilot-atrito-v1/PlusJakartaSans.ttf')}') format('truetype');font-weight:200 800}`}</style>
-  {/* Draft is intentionally silent until a real new Gemini WAV is available. */}
+  <Audio src={staticFile('assets/primeiro-bugi/mix-final.wav')}/>
   <svg viewBox="0 0 540 960" width="100%" height="100%" style={{position:'absolute'}}>
    <defs><linearGradient id="sky" x2="0" y2="1"><stop stopColor="#A9DEE0"/><stop offset="1" stopColor="#E9F0D3"/></linearGradient><linearGradient id="dash" x2="0" y2="1"><stop stopColor="#34505D"/><stop offset="1" stopColor="#132B3B"/></linearGradient></defs>
    <rect width="540" height="960" fill="#203E4E"/>
@@ -86,7 +93,7 @@ export const FirstCarDebate:React.FC=()=>{
    {turn===2&&<g fill="none" stroke="#FFF7E9" strokeWidth="4" opacity=".8">{[0,1,2].map(i=><path key={i} d={`M530 ${390+i*25}q-80 ${Math.sin(t*6+i)*15} -130 0`}/>)}</g>}
   </svg>
   {explaining&&<div style={{position:'absolute',inset:0,opacity:interpolate(t-(turn===4?turns[4]:anchor('depende',35)),[0,.3],[0,1],cl),transform:`translateX(${interpolate(t-(turn===4?turns[4]:anchor('depende',35)),[0,.35],[80,0],cl)}px)`}}><CarExplainer t={turn===4?interpolate(t,[turns[4],turns[4]+2,turns[5]],[9.7,10.85,14.6],cl):interpolate(t,[anchor('depende',35),anchor('devagar',39),phrase(['na','estrada'],42),turns[7]],[17,19.64,22,26],cl)}/></div>}
-  {!explaining&&<><div style={{position:'absolute',left:104,top:228,fontWeight:800,fontSize:23,letterSpacing:4,color:'#39C8D5'}}>PRÉVIA TÉCNICA · SEM VOZ</div><div key={turn} style={{position:'absolute',left:104,top:291,right:100,color:'#FFF7E9',fontSize:59,fontWeight:800,letterSpacing:-2,lineHeight:1.05}}>{turn===0?'ECONOMIA OU BRIGA?':title}</div></>}
+  {!explaining&&<><div style={{position:'absolute',left:104,top:228,fontWeight:800,fontSize:23,letterSpacing:4,color:'#39C8D5'}}>E SE BUGASSE?</div><div key={turn} style={{position:'absolute',left:104,top:291,right:100,color:'#FFF7E9',fontSize:55,fontWeight:800,letterSpacing:-2,lineHeight:1.05,opacity:entry,transform:`translateY(${(1-entry)*12}px)`}}>{title}</div></>}
   {cap&&<div style={{position:'absolute',left:100,right:140,top:1390,minHeight:105,padding:'18px 10px',boxSizing:'border-box',background:'#F7E5C7',borderRadius:16,textAlign:'center',fontSize:47,lineHeight:1.15,fontWeight:800,color:'#183342'}}>{cap.words.map((w,i)=><React.Fragment key={i}><span style={{color:t>=w.start&&t<w.end?'#C4553C':'#183342'}}>{w.text}</span>{' '}</React.Fragment>)}</div>}
  </AbsoluteFill>;
 };
