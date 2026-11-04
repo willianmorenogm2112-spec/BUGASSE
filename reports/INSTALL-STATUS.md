@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Rechecagem em 2026-11-04
+
+Executado sem instalação: Node v24.14.1; npm 11.11.0; npm ls confirmou remotion, @remotion/player e @remotion/web-renderer em 4.0.540. FFmpeg/ffprobe executaram inspeção real de mídia. Lint, 17 testes e build passaram. Evidências: saída da análise e reports/RENDER-QA.md. Arquivos: package.json/lock local e mídia existente. Limitação: PhotoCraft/FilmCraft e serviços pagos não revalidados; chaves não exibidas. Informações abaixo são histórico de 2026-11-03, não nova comprovação.
+
 **Data de Execução:** 2026-11-03 22:00 (UTC-3)  
 **Branch de Trabalho:** `codex/qualidade-video-20261103`  
 **Base Commit:** `40db2b970e7b8666082c5a63450fd8afcf776725`  
