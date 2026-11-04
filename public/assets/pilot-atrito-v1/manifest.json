@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0",
+  "episodeId": "piloto-atrito-remotion-v1",
+  "state": "awaiting_visual_review",
+  "durationSec": 12.5,
+  "fps": 30,
+  "voice": {
+    "generationSource": "gemini_ai",
+    "model": "gemini-3.8-flash-tts",
+    "voice": "Enzo",
+    "method": "Google AI Studio browser generation and native WAV download",
+    "sourceUri": "https://aistudio.google.com/u/0/generate-speech?model=gemini-3.8-flash-tts",
+    "uri": "assets/pilot-atrito-v1/narration-original.wav",
+    "durationSec": 12.08,
+    "sampleRate": 24000,
+    "channels": 1,
+    "sha256": "5F7DEB0FB7ED2B8C13ED504D8DCA015D91DB41BE290F1A22C44818BE504C965B",
+    "text": "E se o atrito sumisse por cinco segundos? O Bugi tenta frear... mas continua deslizando! Tenta agarrar o poste, perde a pegada e... chão! A inércia não perdoa.",
+    "direction": "Narre em português brasileiro, voz masculina jovem adulta, calorosa e curiosa, com humor natural. Ritmo ágil e dicção clara, aproximadamente 12 segundos. Pronuncie Bugi como bú-gui. Pausas curtas nas reticências, surpresa em chão, sem gritar.",
+    "estimatedCostUsd": null,
+    "chargedCostUsd": null
+  },
+  "background": {
+    "generationSource": "openai_imagegen",
+    "model": "not_exposed_by_builtin_tool",
+    "prompt": "Use case: illustration-story. Asset type: original background plate for the Brazilian cartoon science channel E Se Bugasse?, animated character composited later by code. Generate a premium polished 2D editorial cartoon environment, VERTICAL 9:16 portrait, ideally 1080x1920 or higher. A charming Brazilian neighborhood plaza sidewalk on a warm late afternoon: richly designed cream stucco corner bakery with coral scalloped awning and petrol-blue framed windows on the left, a curved pale teal shop facade in the midground right, lush layered leafy trees, small distant rooftops, discreet potted plants by storefronts, hand-painted architectural details, warm sunlight and soft coherent contact shadows, calm pale turquoise sky. Clean bold controlled outlines and nuanced cel shaded volumes, adult editorial cartoon not preschool, highly polished background art for a real animated short. Composition: straight-on pedestrian side view, coherent horizontal ground contact line at about 63 percent image height. The top 23 percent must be uncluttered sky with very sparse distant foliage so titles can be overlaid. The central foreground from x=20 to80 percent and y=28 to65 percent must be EMPTY with no people, so a large character will occupy it. The bottom 37 percent is broad light cream paved sidewalk, subtle perspective joints, low-contrast so captions remain readable. Distinct depth layers, no giant foreground objects. Restrained palette anchored in #122638 petrol, #39C8D5 cyan, #FF6B50 coral, #FFD166 warm yellow, #FFF7E9 cream. Do not put a lamppost in the picture: it is a separate interaction prop added in animation. Absolutely NO humans, NO mascots, NO animals, NO characters, NO text, NO logos, NO watermarks, NO signs with lettering. Avoid generic geometric rectangle backgrounds, neon sci-fi, excessive texture, photorealism, gradients as the main scene. This is a production background plate, not a poster or a storyboard.",
+    "uri": "assets/pilot-atrito-v1/background-openai-v1.png",
+    "version": 1,
+    "sha256": "CAD37A39AB1B1C2BAC682647A4E9A217D41E06C69BB9DCD796DB6CF75DFA856A",
+    "userAuthorizedAlternativeToGoogle": true,
+    "priorGoogleAttempt": {
+      "model": "gemini-3.1-flash-lite-image",
+      "state": "failed",
+      "error": "Permissão negada. Verifique as permissões da sua conta e as configurações do projeto."
+    },
+    "estimatedCostUsd": null,
+    "chargedCostUsd": null
+  },
+  "animation": {
+    "engine": "Remotion",
+    "component": "ESeBugasseVideoComposition",
+    "entry": "src/remotion/PilotRoot.tsx",
+    "rig": "BugiArticulatedSvgFigure",
+    "motion": "src/remotion/pilot/motion.ts",
+    "generatedVideoFootage": false
+  },
+  "captions": {
+    "uri": "src/remotion/pilot/captions.json",
+    "alignmentType": "estimated",
+    "timestampSource": "manual_phrase_estimates_not_acoustic_alignment",
+    "humanAudioReview": false
+  },
+  "soundEffects": {
+    "source": "original_procedural",
+    "script": "scripts/prepare-pilot-audio.py",
+    "seed": 230,
+    "musicUsed": false
+  },
+  "scienceSources": [
+    "https://openstax.org/books/university-physics-volume-1/pages/6-2-friction",
+    "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-laws-of-motion/"
+  ],
+  "simplifications": [
+    "Shoe-ground friction is removed for five seconds; gravity and normal force remain.",
+    "The grab fails as a cartoon loss of grip/balance; mechanical support can still apply force without friction.",
+    "Body stretch, pose timing, and impact exaggeration are cartoon conventions, not a numerical dynamics prediction."
+  ],
+  "qa": {
+    "humanVisualApproved": false,
+    "artisticApproval": false,
+    "listenReviewCompleted": false,
+    "automatedTechnicalChecksPassed": true
+  },
+  "render": {
+    "file": "out/piloto-atrito-v3.mp4",
+    "sha256": "B2CA7A1596C505878B47A57237A4CE8FDD507CB44312AAD15FEDC7FBBBF3D2D9",
+    "frames": 375,
+    "width": 1080,
+    "height": 1920,
+    "integratedLufs": -14.0,
+    "truePeakDbfs": -3.4
+  }
+}

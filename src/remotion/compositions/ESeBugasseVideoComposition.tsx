@@ -16,12 +16,14 @@ import {
 } from '../animation/bugiRigAndBeatsEngine';
 import { RemotionSceneComposer } from '../scenes/RemotionSceneComposer';
 import { EpisodeAudioController } from '../audio/EpisodeAudioController';
+import {FrictionPilot, type PilotAssets} from '../pilot/FrictionPilot';
 
-export interface ESeBugasseVideoCompositionProps {
+export interface ESeBugasseVideoCompositionProps extends Record<string, unknown> {
   episode: Episode;
   mode?: 'full_episode' | 'pilot_12s' | 'pilot_8s' | 'pilot_5s' | 'single_scene';
   targetSceneId?: string;
   enableAudio?: boolean;
+  pilotAssets?: PilotAssets;
 }
 
 /**
@@ -40,10 +42,15 @@ export const ESeBugasseVideoComposition: React.FC<
   mode = 'full_episode',
   targetSceneId,
   enableAudio = true,
+  pilotAssets,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const currentEpisodeTimeSec = frame / Math.max(1, fps);
+
+  if (mode === 'pilot_12s' && pilotAssets) {
+    return <FrictionPilot assets={pilotAssets} enableAudio={enableAudio}/>;
+  }
 
   const activeNarration =
     episode.narrationTracks.find((n) => n.id === episode.activeNarrationId) ||

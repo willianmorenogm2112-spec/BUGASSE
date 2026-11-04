@@ -1,0 +1,13 @@
+import React from 'react';
+import {Composition, registerRoot, staticFile} from 'remotion';
+import {ESeBugasseVideoComposition} from './compositions/ESeBugasseVideoComposition';
+import {pilotEpisode} from './pilot/fixture';
+
+const PilotRoot = () => <Composition
+  id="Bugi-Atrito-12s" component={ESeBugasseVideoComposition}
+  width={1080} height={1920} fps={30} durationInFrames={375}
+  defaultProps={{episode: pilotEpisode, mode: 'pilot_12s' as const, enableAudio: true,
+    pilotAssets:{narrationUrl:staticFile('assets/pilot-atrito-v1/pilot-mix-v2.wav'),
+      backgroundUrl:staticFile('assets/pilot-atrito-v1/background-openai-v1.png'),technicalPreview:false}}}
+/>;
+registerRoot(PilotRoot);
