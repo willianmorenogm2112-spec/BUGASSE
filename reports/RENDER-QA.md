@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Casal Bugi v2
+
+Executado: render 52,608s, 1578 quadros, 1080×1920; lint e decode integral passaram. Nova passageira e boca do Bugi conferidas em quadros. Evidência: out/debate-ar-bugi-casal-v2.mp4 e qa/debate-ar/casal-v2-contato.png. Arquivos e limites: CASAL-BUGI-V2.md. Áudio preservado, sem nova medição nesta revisão; aprovação humana pendente.
+
 ## Primeiro Bugi — episódio com ironia
 
 Executado: MP4 completo 52,608s, 1578 quadros, 1080×1920/30fps, áudio real Kore/Puck. Decode integral e lint passaram. EBU R128: -14,0 LUFS, true peak -4,1 dBFS. Evidência: out/debate-ar-bugi-primeiro-final.mp4 e qa/debate-ar/primeiro-bugi-contato.png. Arquivos, origem e limites em PRIMEIRO-BUGI-EPISODIO.md. Revisão humana pendente.
