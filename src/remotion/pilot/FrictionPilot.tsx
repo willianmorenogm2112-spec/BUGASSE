@@ -2,23 +2,26 @@ import React from 'react';
 import {AbsoluteFill, Audio, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {BugiArticulatedSvgFigure} from '../../components/BugiCharacterSvg';
 import {pilotMotion} from './motion';
-import type {Caption} from '@remotion/captions';
-import estimatedCaptions from './captions.json';
+import {onset,reelTime,reelCaptions,reelHeadlines} from './reel';
 
 export interface PilotAssets {
   backgroundUrl?: string;
   narrationUrl?: string;
   technicalPreview: boolean;
+  hideReelOverlays?: boolean;
 }
-// Timing is explicitly estimated pending acoustic alignment; this is not word-aligned.
-const captions:Caption[]=estimatedCaptions;
+
 
 export const FrictionPilot:React.FC<{assets:PilotAssets;enableAudio:boolean}>=({assets,enableAudio})=>{
   const frame=useCurrentFrame(),{fps}=useVideoConfig(),t=frame/fps;
-  const k=pilotMotion(t),cameraX=interpolate(t,[0,1.8,4,7.3,9.5,10.5,12.5],[0,0,65,190,270,300,300],{extrapolateRight:'clamp'});
-  const active=t>=2&&t<7;
-  const phrase=captions.find(p=>t*1000>=p.startMs&&t*1000<p.endMs)?.text.split('\n');
-  const shake=t>10&&t<10.45?Math.sin((t-10)*65)*7*Math.exp(-(t-10)*7):0;
+  const motionTime=reelTime(t);
+  const k=pilotMotion(motionTime),cameraX=interpolate(motionTime,[0,1.8,4,7.3,9.5,10.5,12.5],[0,0,65,190,270,300,300],{extrapolateRight:'clamp'});
+  const active=motionTime>=2&&motionTime<7;
+  const caption=reelCaptions.find(c=>t>=c.start&&t<c.end);
+  const headline=reelHeadlines.find(h=>t>=h.start&&t<h.end)!;
+  const reveal=interpolate(t-headline.start,[0,.24],[0,1],{extrapolateLeft:'clamp',extrapolateRight:'clamp'});
+  const impact=onset('chão');
+  const shake=t>impact&&t<impact+.4?Math.sin((t-impact)*65)*5*Math.exp(-(t-impact)*8):0;
   return <AbsoluteFill style={{background:'#FFF7E9',fontFamily:'PilotJakarta, sans-serif',overflow:'hidden'}}>
     <style>{`@font-face{font-family:PilotJakarta;src:url('${staticFile('assets/pilot-atrito-v1/PlusJakartaSans.ttf')}') format('truetype');font-weight:200 800}`}</style>
     {enableAudio&&assets.narrationUrl&&<Audio src={assets.narrationUrl}/>}
@@ -69,14 +72,21 @@ export const FrictionPilot:React.FC<{assets:PilotAssets;enableAudio:boolean}>=({
         </g>
       </g>
     </svg>
-    <div style={{position:'absolute',left:108,top:195,color:'#122638',fontSize:25,fontWeight:800,letterSpacing:5}}>E SE BUGASSE?</div>
-    {t<3.8&&<div style={{position:'absolute',left:108,top:252,fontSize:72,lineHeight:1.02,fontWeight:800,color:'#122638',letterSpacing:-3}}>CADÊ O<br/><span style={{color:'#E85D48'}}>ATRITO?</span></div>}
-    {t>=3.8&&t<7&&<div style={{position:'absolute',left:108,top:260,fontSize:40,fontWeight:800,color:'#122638'}}>O chão não freia.<br/><span style={{color:'#D95943',fontSize:64}}>Bugi continua.</span></div>}
-    {t>=7&&t<10&&<div style={{position:'absolute',left:108,top:260,fontSize:40,fontWeight:800,color:'#122638'}}>Uma última<br/><span style={{color:'#D95943',fontSize:64}}>tentativa.</span></div>}
-    {t>=10&&<div style={{position:'absolute',left:108,top:260,fontSize:76,lineHeight:1.05,fontWeight:800,color:'#122638'}}>A INÉRCIA<br/><span style={{color:'#D95943'}}>GANHOU.</span></div>}
-    {phrase&&<div style={{position:'absolute',left:100,right:130,top:1430,textAlign:'center',fontSize:59,lineHeight:1.22,fontWeight:800,color:'#122638'}}>
-      <div>{phrase[0]}</div><div style={{color:'#C54835',fontSize:66}}>{phrase[1]}</div>
+    {!assets.hideReelOverlays&&<>
+    <div data-reel-safe="brand" style={{position:'absolute',left:108,top:230,color:'#122638',fontSize:25,lineHeight:'32px',fontWeight:800,letterSpacing:5}}>E SE BUGASSE?</div>
+    <div key={headline.start} data-reel-safe="headline" style={{position:'absolute',left:108,top:300,width:810,height:236,opacity:reveal,transform:`translateY(${(1-reveal)*18}px)`,filter:`blur(${(1-reveal)*5}px)`,color:'#122638'}}>
+      <div style={{fontSize:21,fontWeight:800,letterSpacing:2,marginBottom:22}}>{headline.kicker}</div>
+      <div style={{fontSize:62,lineHeight:1.08,fontWeight:800,letterSpacing:-2}}>{headline.lines[0]}<br/><span style={{color:'#D95943'}}>{headline.lines[1]}</span></div>
+    </div>
+    {t>=onset('cinco')&&motionTime<7&&<div data-reel-safe="rule" style={{position:'absolute',left:108,top:570,width:760,height:45,color:'#122638',fontSize:23,fontWeight:800,display:'flex',alignItems:'center',gap:14}}>
+      <span>SEM ATRITO</span><div style={{width:210,height:8,background:'#B9D9D1',borderRadius:4,overflow:'hidden'}}><div style={{width:`${Math.max(0,1-(motionTime-2)/5)*100}%`,height:'100%',background:'#D95943'}}/></div><span>5s</span>
     </div>}
-    <div style={{position:'absolute',left:108,bottom:155,color:'#122638',opacity:.65,fontSize:24,fontWeight:700}}>{assets.technicalPreview?'ESTUDO DE MOVIMENTO · CENÁRIO PROVISÓRIO':'MUDA UMA REGRA. COMEÇA O CAOS.'}</div>
+    {caption&&<div data-reel-safe="caption" style={{position:'absolute',left:108,top:1410,width:810,height:90,display:'flex',justifyContent:'center',alignItems:'center',gap:14,fontSize:54,lineHeight:1.15,fontWeight:800,color:'#122638'}}>
+      {caption.words.map((word,i)=>{
+        const speaking=t>=word.start&&t<word.end;
+        return <span key={i} style={{color:speaking?'#C54835':'#122638',transform:`translateY(${speaking?-3:0}px)`,whiteSpace:'nowrap'}}>{word.text}</span>;
+      })}
+    </div>}
+    </>}
   </AbsoluteFill>;
 };

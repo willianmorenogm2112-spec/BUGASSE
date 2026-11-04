@@ -7,7 +7,7 @@ const PilotRoot = () => <Composition
   id="Bugi-Atrito-12s" component={ESeBugasseVideoComposition}
   width={1080} height={1920} fps={30} durationInFrames={375}
   defaultProps={{episode: pilotEpisode, mode: 'pilot_12s' as const, enableAudio: true,
-    pilotAssets:{narrationUrl:staticFile('assets/pilot-atrito-v1/pilot-mix-v2.wav'),
+    pilotAssets:{narrationUrl:staticFile('assets/pilot-atrito-v5/pilot-mix.wav'),
       technicalPreview:false}}}
 />;
 registerRoot(PilotRoot);

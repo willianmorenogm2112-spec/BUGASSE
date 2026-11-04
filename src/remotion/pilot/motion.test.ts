@@ -1,6 +1,23 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {pilotMotion} from './motion';
+import {onset,reelTime,reelCaptions,speechWords} from './reel';
+
+test('reel speech anchors fail closed and map spoken impact to animated impact',()=>{
+  assert.throws(()=>onset('palavra-inexistente'));
+  assert.equal(reelTime(onset('chão')),10.2);
+  assert.equal(reelTime(onset('poste')),7.65);
+  assert.equal(reelTime(onset('pegada')),8.8);
+});
+
+test('short captions preserve every transcribed word once without overlapping groups',()=>{
+  assert.deepEqual(reelCaptions.flatMap(c=>c.words),speechWords);
+  reelCaptions.forEach((c,i)=>{
+    assert.ok(c.words.length>=1&&c.words.length<=3);
+    assert.ok(c.end>c.start);
+    if(i)assert.ok(reelCaptions[i-1].end<=c.start);
+  });
+});
 
 test('pilot is finite and deterministic when frames are requested out of order',()=>{
   const baseline=Array.from({length:375},(_,f)=>pilotMotion(f/30));

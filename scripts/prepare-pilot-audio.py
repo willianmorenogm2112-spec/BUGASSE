@@ -1,13 +1,20 @@
 """Original deterministic SFX, mixed with the genuine downloaded Gemini WAV. No synthetic voice."""
-import math, random, struct, wave
+import math, random, struct, wave, argparse, json
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
-folder = root / 'public/assets/pilot-atrito-v1'
+parser = argparse.ArgumentParser()
+parser.add_argument('--folder', default='public/assets/pilot-atrito-v1')
+parser.add_argument('--events')
+args = parser.parse_args()
+folder = root / args.folder
+folder.mkdir(parents=True, exist_ok=True)
 rate = 48000
 data = [0.0] * (rate * 25 // 2)
 rng = random.Random(230)
-for start, duration, kind in [(0.5,.1,'step'),(1.1,.1,'step'),(1.7,.1,'step'),(2.15,.35,'slip'),(8.95,.12,'snap'),(10.2,.32,'thud')]:
+events = json.loads((root / args.events).read_text(encoding='utf-8')) if args.events else [dict(start=s,duration=d,kind=k) for s,d,k in [(0.5,.1,'step'),(1.1,.1,'step'),(1.7,.1,'step'),(2.15,.35,'slip'),(8.95,.12,'snap'),(10.2,.32,'thud')]]
+for event in events:
+    start,duration,kind = event['start'],event['duration'],event['kind']
     for i in range(int(duration * rate)):
         t = i / rate
         noise = rng.uniform(-1, 1)
