@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Pesquisa posterior de Reels
+
+Executado: branch codex/pesquisa-reels-20261104 sobre f35e29d; pesquisa web/navegador, leitura de skills e diagnóstico local. Criados PESQUISA-REELS-CODIGO.md e MODELO-REELS-BUGI.md; complementados relatórios obrigatórios. Nenhuma mudança funcional ou render novo. Evidências/logs na conversa e pesquisa. Limitação: não há inspeção integral de todos os vídeos, nem instalação/validação de FilmCraft. Rollback: reverter somente o commit documental desta pesquisa. Nenhum push, PR remoto ou merge realizado; arquivos preexistentes preservados.
+
 Executado: branch `codex/analise-projeto-20261104` criada a partir de `daf71e1`; auditoria e relatórios. Nenhuma alteração funcional, instalação, chamada paga, push ou merge.
 
 Arquivos: AUDIT.md, RENDER-QA.md, NEXT-STEPS.md, CHANGES.md e complemento de INSTALL-STATUS.md. Build regenerou apenas saída ignorada em dist.

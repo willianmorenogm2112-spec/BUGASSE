@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Após a pesquisa de Reels
+
+Modelo recomendado documentado em MODELO-REELS-BUGI.md: cartoon 2D com profundidade por camadas + explicações curtas + montagem guiada pela voz. Pesquisa e referências em PESQUISA-REELS-CODIGO.md. Execução/evidência: consulta às fontes primárias, repositórios, skills e CLI. Limitações: sem novo vídeo; RAM livre muito baixa no diagnóstico; Whisper não funcional e editores nativos não validados. Próxima etapa de produção, conforme pedido do usuário: piloto de 12s no BUGASSE com composição Remotion compartilhada e assets reais. Não requer reescolher marca, paleta ou personagem.
+
 1. Autenticar Express, isolar estado/fila/mídias por proprietário e impor limites de requisição antes de expor o serviço.
 2. Remover conclusões sem artefato; distinguir estimativa de cobrança e aplicar orçamento antes de cada chamada paga.
 3. Executar fila em worker persistente com hash de entrada, checkpoint por asset e retomada idempotente.

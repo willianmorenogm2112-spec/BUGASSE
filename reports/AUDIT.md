@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Complemento: pesquisa de Reels e ferramentas
+
+Executado: comparação de exemplos com evidência de código/edição, catálogo HyperFrames e scripts de diagnóstico. Arquivos: PESQUISA-REELS-CODIGO.md e MODELO-REELS-BUGI.md. Logs na conversa. Novo achado: .agents/skills/reel-upstream/corte/scripts/0-checar.py aceita shutil.which('main'), que neste Windows retorna system32/main.CPL e gera falso positivo para Whisper. CLI Whisper/modelo não estão prontos. A adaptação local da Skill Reel também descreve mixagem e fallback que não correspondem integralmente à implementação atual; presença da skill não comprova essas funcionalidades. Nenhuma correção funcional aplicada nesta etapa de pesquisa.
+
 Base: `daf71e1`, branch de análise `codex/analise-projeto-20261104`. Escopo: análise local; nenhuma correção funcional ou chamada paga. Adições locais preexistentes preservadas.
 
 | Prioridade | Constatação | Evidência | Limitação / consequência |

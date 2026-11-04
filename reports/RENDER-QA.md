@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Complemento da pesquisa de Reels
+
+Não houve novo render. Executado ffprobe no exemplo local da Skill Reel: 38,8s, 540x960, 30 FPS, H.264/AAC, 3.125.937 bytes. Folha original anexos/quadros-01.png inspecionada, sem afirmar escuta ou reprodução integral. Referências externas tiveram inspeção por amostras/descrição/código conforme PESQUISA-REELS-CODIGO.md. Nenhum candidato recebeu aprovação artística do canal; MODELO-REELS-BUGI.md é especificação proposta, não vídeo entregue. Logs na conversa; limitação: paridade do piloto BUGASSE continua pendente.
+
 Executado: ffprobe, decodificação integral FFmpeg e medição ebur128 do `data/media/piloto-12s-premium-v2.mp4`; inspeção de `reports/qa-pilot-12s-v2/contato.png`.
 
 | Medida | Resultado |
