@@ -42,15 +42,15 @@ export const SkillReelCaptionsLayer: React.FC<SkillReelCaptionsLayerProps> = ({
 
   return (
     <div
-      className="absolute left-[56px] right-[56px] flex items-center justify-center pointer-events-none"
+      className="absolute left-[40px] right-[40px] flex items-center justify-center pointer-events-none"
       style={{
-        top: 1465,
-        height: 235,
+        top: 1480,
+        height: 190,
         zIndex: 80,
       }}
       data-testid="skill-reel-captions-safe-zone"
     >
-      <div className="w-full px-8 py-6 rounded-3xl bg-[#08121B]/92 border-[3px] border-[#FFD166] shadow-2xl flex flex-wrap items-center justify-center gap-x-3.5 gap-y-2 text-center">
+      <div className="w-full px-6 py-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center">
         {activePage.words.map((w, idx) => {
           const isSpeakingNow =
             currentEpisodeTimeSec >= w.startSec &&
@@ -64,10 +64,11 @@ export const SkillReelCaptionsLayer: React.FC<SkillReelCaptionsLayerProps> = ({
               key={`${w.word}-${idx}`}
               style={{
                 color,
-                transform: isSpeakingNow ? 'scale(1.1)' : 'scale(1.0)',
-                textShadow: '0 4px 0 #050B11',
+                transform: isSpeakingNow ? 'scale(1.15)' : 'scale(1.0)',
+                textShadow:
+                  '-3px -3px 0 #050B11, 3px -3px 0 #050B11, -3px 3px 0 #050B11, 3px 3px 0 #050B11, 0 6px 12px rgba(0,0,0,0.8)',
               }}
-              className="font-display font-extrabold text-[44px] leading-tight transition-transform inline-block"
+              className="font-display font-black text-[54px] tracking-wide leading-none transition-transform inline-block uppercase"
             >
               {w.word}
             </span>

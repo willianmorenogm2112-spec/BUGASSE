@@ -60,25 +60,33 @@ export const PhysicsEffectsLayer: React.FC<PhysicsEffectsLayerProps> = ({
       className="absolute inset-0 pointer-events-none"
       style={{ zIndex: 70 }}
     >
-      {/* HUD Superior da Regra Física Bugada (Zona Segura Topo) */}
-      <div
-        className="absolute left-[64px] right-[64px] top-[64px] flex items-center justify-between px-7 py-4 rounded-3xl bg-[#08121B]/90 border-[3px] border-[#39C8D5]"
-        style={{
-          transform: `scale(${0.94 + entryProgress * 0.06})`,
-        }}
-      >
-        <div>
-          <div className="text-[20px] font-mono font-bold text-[#39C8D5] tracking-wider uppercase">
-            REGRA ALTERADA · E SE BUGASSE?
-          </div>
-          <div className="text-[28px] font-display font-bold text-[#FFF7E9] leading-tight">
-            {hyperFramesOverlay?.headlineText || 'Atrito = 0.00 μ · Inércia Pura'}
+      {/* Intervenção de Impacto Cômico / Narrativo (Pop-in rápido nos frames 25..75 ao perder atrito) */}
+      {frameInScene >= 25 && frameInScene <= 75 && (
+        <div
+          className="absolute left-[80px] right-[80px] top-[90px] flex items-center justify-center pointer-events-none"
+          style={{
+            transform: `scale(${
+              frameInScene < 35
+                ? 0.7 + ((frameInScene - 25) / 10) * 0.4
+                : frameInScene > 65
+                ? 1.1 - ((frameInScene - 65) / 10) * 0.3
+                : 1.1
+            }) rotate(-2deg)`,
+            opacity:
+              frameInScene < 30
+                ? (frameInScene - 25) / 5
+                : frameInScene > 70
+                ? 1 - (frameInScene - 70) / 5
+                : 1,
+          }}
+        >
+          <div className="px-8 py-3 rounded-2xl bg-[#FF6B50] border-[4px] border-[#FFF7E9] shadow-2xl flex items-center gap-3">
+            <span className="text-[34px] font-display font-extrabold text-[#FFF7E9] tracking-wider uppercase drop-shadow-[0_3px_0_#060D14]">
+              ⚡ SEM ATRITO?!
+            </span>
           </div>
         </div>
-        <div className="px-5 py-2.5 rounded-2xl bg-[#FF6B50] text-[#FFF7E9] font-mono font-bold text-[32px] tabular-nums">
-          0{timerSeconds}.0s
-        </div>
-      </div>
+      )}
 
       {/* Infográfico Determinístico HyperFrames (HTML + GSAP) */}
       {hyperFramesOverlay?.enabled && (
