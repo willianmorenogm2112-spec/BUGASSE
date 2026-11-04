@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Skill Reel — revisão v5
+
+Executado: Skill Reel adaptada ao cartoon Remotion, sem instalações; transcrição acústica local, legendas curtas, âncoras de fala, ajuste de queda/SFX e zona segura. Evidência: reports/SKILL-REEL-PILOTO-V5.md e VERIFY-PILOTO-V5.md; MP4 out/piloto-atrito-v5-reel.mp4. Lint e 5 testes passaram; verificador original aprovado: -14,35 LUFS, -3,38 dBTP, 0 alertas de zona segura, 5 SFX. Arquivos: reel.ts, words.json, FrictionPilot.tsx, scripts de áudio/transcrição, assets v5. Limitação: tempos ASR estimados; escuta humana e aprovação artística pendentes; problemas anteriores do app não resolvidos. Próximo: revisão humana antes de expandir o episódio.
+
 ## Revisão v4 — cenário em código
 
 Executado: branch codex/cenario-codigo-20261104 a partir de 30e604b; cenário bitmap desativado na composição e preservado em disco, rua SVG, escala 0,78, câmera menor, poste alto visível desde o começo e queda sem prender pés. Evidência e arquivos: PILOTO-ATRITO-V4.md e MP4 v4. Limitação: revisão artística pendente; nenhuma publicação ou merge.
