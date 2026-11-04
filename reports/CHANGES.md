@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Revisão v4 — cenário em código
+
+Executado: branch codex/cenario-codigo-20261104 a partir de 30e604b; cenário bitmap desativado na composição e preservado em disco, rua SVG, escala 0,78, câmera menor, poste alto visível desde o começo e queda sem prender pés. Evidência e arquivos: PILOTO-ATRITO-V4.md e MP4 v4. Limitação: revisão artística pendente; nenhuma publicação ou merge.
+
 ## Primeiro piloto com voz e cenário — 2026-11-04
 
 Executado em codex/piloto-remotion-20261104 a partir de 0a8d781: tooling local Remotion alinhado, composição piloto no código existente, rig canônico com IK/continuidade, áudio Google real e cenário imagegen. Novo entry PilotRoot sem substituir navegação, Firebase ou dados do estúdio. Props opcionais isolam a apresentação nova; modos anteriores preservados. Arquivos: src/remotion/pilot/*, PilotRoot.tsx, composição principal, scripts/prepare-pilot-audio.py, public/assets/pilot-atrito-v1/*, package.json/lock e .gitignore. Export: out/piloto-atrito-v3.mp4. Evidências/logs e rollback em PILOTO-ATRITO-V3.md. Limitação: revisão auditiva e aprovação artística pendentes; timings das legendas estimados; paridade estrutural de composição comprovada, comparação pixel a pixel não executada. Sem push/merge/publicação, alterações locais preexistentes preservadas.

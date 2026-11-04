@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Revisão v4 — cenário em código
+
+Executado: corrigidos enquadramento e integração espacial no piloto v4; poste visível desde o primeiro quadro e fundo SVG. Evidência: contato-v4.png e PILOTO-ATRITO-V4.md. Arquivos: FrictionPilot.tsx, motion.ts, PilotRoot.tsx. Limitação: isto não resolve os problemas prévios de segurança e orquestração do app.
+
 ## Caminho validado para o primeiro piloto
 
 Executado: caminho Node/Chromium renderizou ESeBugasseVideoComposition registrada em PilotRoot, sem usar scripts/render_pilot_v2.ts. Assets atuais têm manifesto e hashes. Testes de determinismo fora de ordem e contatos da mão/pé passaram. Evidências: PILOTO-ATRITO-V3.md, src/remotion/pilot/motion.test.ts e qa/pilot-atrito-v1/render-v3.log. Limitação: essa entrega isola o piloto; não resolve autenticação Express, custos do orquestrador, worker persistente ou todos os modos de export do app. Não declarar esses achados anteriores corrigidos. npm audit apontou quatro entradas high relacionadas a Firebase/grpc; preservar atualização de segurança como tarefa própria.

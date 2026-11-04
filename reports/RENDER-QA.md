@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Revisão v4 — cenário em código
+
+Executado: revisão v4 com cenário inteiramente SVG, Bugi 22% menor, poste enquadrado desde o início e queda com pés livres. Evidência: out/piloto-atrito-v4-codigo.mp4; 375 frames, 1080x1920 H.264/30 FPS, AAC, 12,501s, 5.610.279 bytes. FFmpeg decodificou sem erros; lint e 3 testes do piloto passaram. Inspeção visual da folha qa/pilot-atrito-v1/contato-v4.png realizada. Arquivos e limites em PILOTO-ATRITO-V4.md; legendas estimadas e aprovação artística/escuta humana pendentes.
+
 ## Novo piloto Remotion v3 — 2026-11-04
 
 Executado: render real de ESeBugasseVideoComposition pelo PilotRoot; voz Gemini gerada/baixada no AI Studio e cenário via imagegen após autorização do usuário. `out/piloto-atrito-v3.mp4`: 11.803.789 bytes, 12,501s, 375 frames, 1080x1920 H.264/30 FPS, AAC; decode sem erros; -14,0 LUFS, true peak -3,4 dBFS medidos. Evidências e logs locais: qa/pilot-atrito-v1/render-v3.log, ffprobe-v3.json, loudness-v3.log, contato-v3.png e sequencia-pegada-v3.png. Arquivos, comandos, ajustes e limites completos em PILOTO-ATRITO-V3.md. Status: aguardando revisão visual e auditiva, legendas com tempos estimados; sem aprovação automática. O bloqueio de cenário Google foi substituído por fonte OpenAI explicitamente autorizada, não disfarçado como sucesso Google.

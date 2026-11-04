@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Revisão v4 — cenário em código
+
+Executado: exportada revisão v4 com cenário em código conforme feedback. Evidência/arquivos: PILOTO-ATRITO-V4.md e out/piloto-atrito-v4-codigo.mp4. Próximo: revisão humana da escala, ritmo, contato e áudio; alinhamento acústico das legendas antes do episódio completo. Limitação: ainda não aprovado artisticamente.
+
 ## Após o primeiro piloto v3
 
 Executado: piloto real de 12,5s com voz Google e cenário imagegen autorizado; código, assets e QA registrados em PILOTO-ATRITO-V3.md. Evidência: MP4, contato e sequência de pegada em qa/pilot-atrito-v1. Próximo: ouvir a faixa, ajustar legendas por alinhamento acústico/revisão e revisar atuação/contato/perspectiva com o usuário antes de avançar a 35–55s. Nenhuma aprovação artística presumida. Variar cenários por episódio mantendo a identidade do canal; imagem é asset, animação permanece por código. Pendências gerais de segurança/orquestração continuam na auditoria.
