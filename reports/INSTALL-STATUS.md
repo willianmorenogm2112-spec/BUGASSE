@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Preparação do primeiro piloto — 2026-11-04
+
+Executado: instalados localmente @remotion/cli e @remotion/renderer em 4.0.540. Instalação inicial encontrou conflito Vite 8.3.5/esbuild 0.25; esbuild foi ajustado apenas para 0.28.2, compatível com o peer declarado. package.json e lock anteriores copiados para .git/bugasse-backups/piloto-20261104. Nada global. npm ls confirmou alinhamento 4.0.540. Chrome local renderizou 375 frames com concurrency=1; memória livre rechecagem ~1,8 GB. Lint, 17 testes originais, 3 novos e build passaram. Evidência: PILOTO-ATRITO-V3.md e logs locais QA. npm audit detectou quatro entradas high associadas a Firebase/grpc; não aplicado upgrade/downgrade destrutivo fora do escopo. FilmCraft/PhotoCraft não usados; TTS veio do site por instrução do usuário, sem chave exposta. Nenhuma assinatura ativada e custos cobrados não informados pelos geradores.
+
 ## Rechecagem em 2026-11-04
 
 ### Complemento: pesquisa de Reels

@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Caminho validado para o primeiro piloto
+
+Executado: caminho Node/Chromium renderizou ESeBugasseVideoComposition registrada em PilotRoot, sem usar scripts/render_pilot_v2.ts. Assets atuais têm manifesto e hashes. Testes de determinismo fora de ordem e contatos da mão/pé passaram. Evidências: PILOTO-ATRITO-V3.md, src/remotion/pilot/motion.test.ts e qa/pilot-atrito-v1/render-v3.log. Limitação: essa entrega isola o piloto; não resolve autenticação Express, custos do orquestrador, worker persistente ou todos os modos de export do app. Não declarar esses achados anteriores corrigidos. npm audit apontou quatro entradas high relacionadas a Firebase/grpc; preservar atualização de segurança como tarefa própria.
+
 ## Complemento: pesquisa de Reels e ferramentas
 
 Executado: comparação de exemplos com evidência de código/edição, catálogo HyperFrames e scripts de diagnóstico. Arquivos: PESQUISA-REELS-CODIGO.md e MODELO-REELS-BUGI.md. Logs na conversa. Novo achado: .agents/skills/reel-upstream/corte/scripts/0-checar.py aceita shutil.which('main'), que neste Windows retorna system32/main.CPL e gera falso positivo para Whisper. CLI Whisper/modelo não estão prontos. A adaptação local da Skill Reel também descreve mixagem e fallback que não correspondem integralmente à implementação atual; presença da skill não comprova essas funcionalidades. Nenhuma correção funcional aplicada nesta etapa de pesquisa.
