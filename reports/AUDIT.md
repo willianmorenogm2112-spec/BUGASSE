@@ -1,5 +1,9 @@
 # Auditoria do projeto — 2026-11-04
 
+## Casal Bugi v2
+
+Corrigida causa visual da boca fixa: mouthShape smile/grin/determined não usa abertura variável. Durante fala, seleciona open_o. Evidência: FirstCarDebate.tsx. Limitação: aproximação por palavras, sem visemas fonéticos. Nova passageira original; ver CASAL-BUGI-V2.md.
+
 ## Primeiro Bugi — novo episódio
 
 Executado: voz real integral e animação do Bugi oficial em composição isolada; sem mudança de Firebase/API. Evidência e arquivos em PRIMEIRO-BUGI-EPISODIO.md. Limitação: movimento de boca por palavras e tempos ASR estimados; sem aprovação artística automática.

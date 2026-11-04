@@ -1,5 +1,9 @@
 # Mudanças da análise — 2026-11-04
 
+## Casal Bugi v2
+
+Executado: nova passageira em BugiCompanion.tsx e boca do Bugi animada durante fala. Evidência, arquivos e limites em CASAL-BUGI-V2.md. Escala compartilhada, roteiro e áudio preservados; revisão humana pendente.
+
 ## Primeiro Bugi — novo episódio
 
 Executado: rascunho silencioso substituído por composição Primeiro-Bugi-Ar-Condicionado com WAV real, onze falas, expressões faciais e transições. Evidência: FirstCarDebate.tsx, PilotRoot.tsx, assets/primeiro-bugi e PRIMEIRO-BUGI-EPISODIO.md. Limitação: branch local, sem publicação.

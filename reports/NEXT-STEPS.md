@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Casal Bugi v2
+
+Revisar a nova passageira, escala e abertura de boca do Bugi no MP4 antes de publicar. Evidência e arquivos: CASAL-BUGI-V2.md. Aprovação artística e auditiva humanas pendentes.
+
 ## Primeiro Bugi — novo episódio
 
 Executado: nova voz real e montagem. Próximo: revisão humana integral de áudio, expressões e ritmo antes de publicar. Evidência, arquivos e limites: PRIMEIRO-BUGI-EPISODIO.md. O 403 anterior foi superado; não tratar como bloqueio atual.

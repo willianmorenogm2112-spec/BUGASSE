@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Casal Bugi v2
+
+Sem nova instalação ou geração paga. Personagem SVG original, Remotion e assets existentes. Arquivos, evidência e limites: CASAL-BUGI-V2.md.
+
 ## Primeiro Bugi — nova voz real
 
 Executado: geração completa no AI Studio com Kore/Puck, download 52,44s, transcrição local e lint. Nenhuma instalação adicional. Evidência, arquivos e limitações: PRIMEIRO-BUGI-EPISODIO.md. Sem custo cobrado conhecido.

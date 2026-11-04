@@ -5,6 +5,7 @@ import rawTranscript from '../../../public/assets/primeiro-bugi/transcript.json'
 const transcript=rawTranscript.map(w=>({...w,text:w.text==='cao'?'carro':w.text==='passageiro'?'passageira':w.text==='R'?'dois':w.text==='$2'?'reais':w.text==='-condicionado'?'condicionado':w.text}));
 import {CarExplainer} from './CarExplainer';
 import {BugiArticulatedSvgFigure,computeBugiArticulatedKinematics} from '../../components/BugiCharacterSvg';
+import {BugiCompanion} from './BugiCompanion';
 
 const norm=(s:string)=>s.toLocaleLowerCase('pt-BR').replace(/[^a-záéíóúâêôãõç]/g,'');
 const anchor=(s:string,fallback:number)=>transcript.find(w=>norm(w.text)===s)?.start??fallback;
@@ -18,8 +19,6 @@ const captions=Array.from({length:Math.ceil(transcript.length/3)},(_,i)=>{
 const cl={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
 
 const Person:React.FC<{x:number;woman:boolean;talk:boolean;t:number;hot:boolean;turn:number}>=({x,woman,talk,t,hot,turn})=>{
- const sway=Math.sin(t*2.1+(woman?1:0))*1.4;
- const mouth=talk?3+Math.abs(Math.sin(t*15))*9:1.5;
   if(!woman){
    const expression=turn===1?'confiante':turn===3?'comico':turn===5?'curioso':turn===6?'surpreso':turn>=9?'panico_divertido':'curioso';
    const k=computeBugiArticulatedKinematics('confiante_parado',t*30,30,talk?.65:0,expression);
@@ -28,27 +27,10 @@ const Person:React.FC<{x:number;woman:boolean;talk:boolean;t:number;hot:boolean;
    k.pupilOffsetX=turn===6?5:turn===1?-2:3;k.pupilOffsetY=turn===5?-4:0;
    k.leftBrowDeg=turn===1?-7:turn===3?-15:turn===6?18:0;
    k.rightBrowDeg=turn===1?7:turn===3?0:turn===6?-18:0;
-   k.eyeScaleY=turn===6?1.24:turn===3?.8:1;k.mouthShape=turn===3?'grin':turn===6?'open_o':turn===1?'smile':'determined';
+   k.eyeScaleY=turn===6?1.24:turn===3?.8:1;k.mouthShape=talk?'open_o':turn===3?'grin':turn===1?'smile':'determined';
    return <g transform={`translate(${x},549) scale(.66)`}><BugiArticulatedSvgFigure kinematics={k}/></g>;
   }
-  const angry=turn===0||turn===6||turn===10;const sarcastic=turn===2||turn===8;
-  const blink=(t*30+35)%113<3;const look=angry?-3:sarcastic?-5:-2;
- return <g transform={`translate(${x},465) rotate(${sway})`} stroke="#132B3B" strokeWidth="3.5" strokeLinejoin="round" strokeLinecap="round">
-  <path d="M-69 161V85Q-61 46 0 46Q61 46 69 85V161" fill={woman?'#E5745F':'#24737D'}/>
-  <path d="M-14 36V58Q0 70 14 58V36" fill="#E9AD88"/>
-  {woman&&<path d="M-48 11Q-65-91 1-94Q68-88 47 60L30 86L-46 66Z" fill="#57342D"/>}
-  <ellipse cy="-12" rx="43" ry="56" fill={hot?'#F1AD90':'#F4C49F'}/>
-  {woman?<path d="M-43-17Q-53-82 4-81Q43-82 44-32Q3-38-17-61Q-30-32-43-17" fill="#57342D"/>:<path d="M-44-26Q-54-78 4-80L36-69L49-37L15-47L-6-57L-26-32Z" fill="#253441"/>}
-  <path d={angry?'M-30-24l19 8M11-16l19-8':sarcastic?'M-29-24q10-9 19-2M11-16h19':'M-28-18q9-7 17-2M11-20q10-5 18 2'} fill="none"/>
-  <g transform={`translate(${look},0)`}><ellipse cx="-20" cy="-6" rx="4" ry={blink?1:sarcastic?3:5} fill="#132B3B" stroke="none"/><ellipse cx="21" cy="-6" rx="4" ry={blink?1:5} fill="#132B3B" stroke="none"/></g>
-  <path d="M1-2l-4 15h8" fill="none" stroke="#BD8269" strokeWidth="2"/>
-  <ellipse cy={angry?28:29} rx={talk?12:sarcastic?13:10} ry={talk?mouth:angry?2:1.5} fill={talk?'#7C3436':'#D88276'} strokeWidth="2" transform={`rotate(${sarcastic?-8:0} 0 29)`}/>
-  {talk&&<path d="M-7 25h14" stroke="#FFF7E9" strokeWidth="3"/>}
-  <path d={woman?'M-51 84Q-87 95-90 30':'M-50 88Q-70 119-45 144'} fill="none" stroke={woman?'#E5745F':'#24737D'} strokeWidth="25"/>
-  <circle cx={woman?-90:-45} cy={woman?30:144} r="11" fill="#F4C49F"/>
-  <path d="M43 78L-35 154" stroke="#132B3B" strokeWidth="12"/>
-  {hot&&woman&&<path d="M47-8q-9 13 0 14q9-1 0-14" fill="#39C8D5" strokeWidth="1.5"/>}
- </g>;
+  return <BugiCompanion x={x} t={t} talk={talk} turn={turn} hot={hot}/>;
 };
 
 export const FirstCarDebate:React.FC=()=>{
