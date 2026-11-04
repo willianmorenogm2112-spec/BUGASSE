@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Short Tempo v1
+
+Executado sem nova instalação. Remotion, FFmpeg, Chrome e transcrição local existentes produziram o vídeo. Evidência: lint/build, MP4 e `SHORT-TEMPO-V1.md`. Limitação: nenhuma revisão de dependências foi feita nesta etapa.
+
 ## Skill Reel — revisão v5
 
 Executado: Skill Reel adaptada ao cartoon Remotion, sem instalações; transcrição acústica local, legendas curtas, âncoras de fala, ajuste de queda/SFX e zona segura. Evidência: reports/SKILL-REEL-PILOTO-V5.md e VERIFY-PILOTO-V5.md; MP4 out/piloto-atrito-v5-reel.mp4. Lint e 5 testes passaram; verificador original aprovado: -14,35 LUFS, -3,38 dBTP, 0 alertas de zona segura, 5 SFX. Arquivos: reel.ts, words.json, FrictionPilot.tsx, scripts de áudio/transcrição, assets v5. Limitação: tempos ASR estimados; escuta humana e aprovação artística pendentes; problemas anteriores do app não resolvidos. Próximo: revisão humana antes de expandir o episódio.
