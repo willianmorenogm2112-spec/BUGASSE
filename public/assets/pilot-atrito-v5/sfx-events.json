@@ -1,0 +1,27 @@
+[
+  {
+    "start": 0.3,
+    "duration": 0.1,
+    "kind": "step"
+  },
+  {
+    "start": 0.85,
+    "duration": 0.1,
+    "kind": "step"
+  },
+  {
+    "start": 1.14,
+    "duration": 0.35,
+    "kind": "slip"
+  },
+  {
+    "start": 8.56,
+    "duration": 0.12,
+    "kind": "snap"
+  },
+  {
+    "start": 9.7,
+    "duration": 0.32,
+    "kind": "thud"
+  }
+]

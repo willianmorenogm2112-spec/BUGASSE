@@ -1,0 +1,27 @@
+{
+  "version": 4,
+  "state": "awaiting_human_review",
+  "background": {
+    "generationSource": "authored_svg_code",
+    "file": "src/remotion/pilot/FrictionPilot.tsx",
+    "generatedImageUsed": false
+  },
+  "voiceManifest": "assets/pilot-atrito-v1/manifest.json",
+  "animationEngine": "Remotion",
+  "render": {
+    "path": "out\\piloto-atrito-v4-codigo.mp4",
+    "sha256": "D6FEDDE553CAB104A110676F9F2689497298998D08FD1F6202AFD53251B9960B",
+    "frames": 375,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "captionsAlignment": "estimated",
+  "checks": {
+    "lint": true,
+    "pilotTestsPassed": 3,
+    "ffmpegDecode": true,
+    "contactSheetInspected": true,
+    "humanArtisticApproval": false
+  }
+}

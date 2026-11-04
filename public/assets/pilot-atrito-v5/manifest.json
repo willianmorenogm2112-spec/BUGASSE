@@ -1,0 +1,50 @@
+{
+  "version": 5,
+  "state": "awaiting_human_review",
+  "skillSource": "https://github.com/felpborges/skill-reel",
+  "skillCommit": "b9c1222297ce8ff8d15f19f5218afc08cab279bf",
+  "application": "principles_adapted_to_existing_remotion_cartoon_not_original_hyperframes_vsl_engine",
+  "voiceSource": "assets/pilot-atrito-v1/narration-original.wav",
+  "voiceEdited": false,
+  "background": "authored_svg_code",
+  "transcript": {
+    "model": "faster-whisper-small",
+    "language": "pt",
+    "device": "cpu",
+    "precision": "int8",
+    "alignment": "acoustic_ASR_estimates_not_human_certified",
+    "textCorrections": [
+      "5 -> cinco"
+    ],
+    "lowConfidenceKnownName": "Bugi verified against supplied TTS script; timestamp remains ASR estimate"
+  },
+  "captions": "1-3 words; active spoken word accented; fixed zone below character to avoid moving overlays on face",
+  "sfx": {
+    "events": "assets/pilot-atrito-v5/sfx-events.json",
+    "count": 5,
+    "densityPerSecond": 0.4,
+    "source": "original_procedural"
+  },
+  "render": {
+    "file": "out\\piloto-atrito-v5-reel.mp4",
+    "sha256": "71588CF995046EA9ED31E625B14710ECC36153C9EAAAD953F54585F50AE4AACC",
+    "bytes": 5824645,
+    "durationSec": 12.501,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "frames": 375
+  },
+  "qa": {
+    "originalSkillVerifierPassed": true,
+    "safeZoneSampleIntervalSec": 0.25,
+    "safeZoneAlerts": 0,
+    "integratedLufs": -14.35,
+    "truePeakDbtp": -3.38,
+    "lintPassed": true,
+    "pilotTestsPassed": 5,
+    "fullDecodePassed": true,
+    "humanListening": false,
+    "artisticApproval": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "episodeId": "short-tempo-v1",
+  "state": "awaiting_human_review",
+  "title": "E se o tempo parasse por cinco segundos?",
+  "voice": {
+    "source": "user_provided_google_ai_studio_download",
+    "expectedModelFromSessionPrompt": "gemini-3.8-flash-tts",
+    "expectedVoiceFromSessionPrompt": "Enzo",
+    "modelMetadataEmbeddedInWav": false,
+    "file": "assets/short-tempo/narracao-original.wav",
+    "durationSec": 50.48,
+    "sampleRate": 24000,
+    "channels": 1,
+    "sha256": "E11D7D4F7EFD88E3D25B18B9F0F63339CAA3DDCFB7E473D4BAC32795BC5653C4"
+  },
+  "alignment": {
+    "source": "faster-whisper-small-local",
+    "type": "estimated_asr_word_timestamps",
+    "humanApproved": false,
+    "corrections": ["Esse/tempo -> E se/o tempo", "5 -> cinco", "post -> poste", "Pa -> PÁ"]
+  },
+  "visuals": {
+    "engine": "Remotion",
+    "component": "src/remotion/time/TimeShort.tsx",
+    "character": "BugiArticulatedSvgFigure",
+    "background": "authored_svg_code",
+    "generatedVideoFootage": false
+  },
+  "render": {
+    "file": "out/short-tempo-final.mp4",
+    "durationSec": 50.6,
+    "frames": 1515,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "integratedLufs": -14.2,
+    "truePeakDbfs": -2.5,
+    "sha256": "5E3418AD20DE6FDCD2ED900803DA667F17779B20082DB2B4F2F41CAFEEDD86E1"
+  },
+  "qa": {
+    "lintPassed": true,
+    "buildPassed": true,
+    "fullDecodePassed": true,
+    "contactSheetInspected": true,
+    "humanListeningCompleted": false,
+    "artisticApproval": false
+  },
+  "scienceNote": "A parada do tempo é uma premissa fictícia. O vídeo descreve apenas a continuidade narrativa da trajetória da bola quando a regra é desfeita."
+}

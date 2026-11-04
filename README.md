@@ -5,6 +5,8 @@ Sistema completo de produção audiovisual com inteligência artificial para o c
 - **Tema central**: *"E se uma regra ou condição física do mundo mudasse por alguns segundos?"*
 - **Slogan**: *"Muda uma regra. Começa o caos."*
 
+Para planejar e revisar animação, personagens, gráficos e legendas, siga o [workflow visual e de skills](docs/WORKFLOW-ANIMACAO-E-SKILLS.md). O status das ferramentas e suas limitações estão no [relatório de instalação](reports/ANIMACAO-FERRAMENTAS-20261104.md).
+
 ---
 
 ## 1. Arquitetura do Sistema
