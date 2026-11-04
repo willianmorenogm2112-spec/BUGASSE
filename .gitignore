@@ -10,4 +10,6 @@ coverage/
 # Local pilot renders / QA (source assets and manifests remain versioned).
 /out/piloto-atrito*.mp4
 /qa/pilot-atrito-v1/
+/out/short-tempo*.mp4
+/qa/short-tempo/
 /.tmp-chrome-banner/
