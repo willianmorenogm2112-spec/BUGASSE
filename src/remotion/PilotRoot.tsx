@@ -4,6 +4,7 @@ import {ESeBugasseVideoComposition} from './compositions/ESeBugasseVideoComposit
 import {pilotEpisode} from './pilot/fixture';
 import {TimeShort} from './time/TimeShort';
 import {CarDebate} from './car/CarDebate';
+import {FirstCarDebate} from './car/FirstCarDebate';
 
 const PilotRoot = () => <><Composition
   id="Bugi-Atrito-12s" component={ESeBugasseVideoComposition}
@@ -12,5 +13,5 @@ const PilotRoot = () => <><Composition
     pilotAssets:{narrationUrl:staticFile('assets/pilot-atrito-v5/pilot-mix.wav'),
       technicalPreview:false}}}
 /><Composition id="Bugi-Tempo-51s" component={TimeShort}
-  width={1080} height={1920} fps={30} durationInFrames={1515}/><Composition id="Debate-Ar-Condicionado" component={CarDebate} width={1080} height={1920} fps={30} durationInFrames={1014}/></>;
+  width={1080} height={1920} fps={30} durationInFrames={1515}/><Composition id="Debate-Ar-Condicionado" component={CarDebate} width={1080} height={1920} fps={30} durationInFrames={1014}/><Composition id="Primeiro-Bugi-Rascunho" component={FirstCarDebate} width={1080} height={1920} fps={30} durationInFrames={1950}/></>;
 registerRoot(PilotRoot);
