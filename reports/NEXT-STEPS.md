@@ -41,3 +41,7 @@ Modelo recomendado documentado em MODELO-REELS-BUGI.md: cartoon 2D com profundid
 7. Consolidar lockfile e artefatos aprovados em commits pequenos e PR após revisão do estado local.
 
 Executado nesta análise: inventário parcial, leitura de código, lint/test/build e QA técnico da mídia existente. Evidências: AUDIT.md e RENDER-QA.md. Bloqueios: integração paga não exercitada; sem comprovação de render ponta a ponta nem do processo de produção da referência externa.
+
+## Pesquisa e instalações de animação — 04/11/2026
+Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
+

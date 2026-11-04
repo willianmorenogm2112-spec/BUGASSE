@@ -52,3 +52,7 @@ Verificações executadas: `npm run lint` passou; `npm test` 17/17; `npm run bui
 Pontos positivos: Player e exportador web referenciam a mesma composição; export bloqueia fundos sem `gemini_ai`; alinhamento estimado identificado; QA artístico não é aprovado pelo exportador; pacotes Remotion principais instalados em 4.0.540; regras Firestore exigem proprietário.
 
 Referência adicional solicitada: https://www.youtube.com/shorts/Yrg0pZ5jbRg . Consulta web falhou; inspeção visual pelo navegador iniciada. Não há evidência sobre software/processo original apenas pelo vídeo final.
+
+## Pesquisa e instalações de animação — 04/11/2026
+Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
+

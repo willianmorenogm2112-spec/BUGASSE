@@ -100,3 +100,7 @@ Executado sem instalação: Node v24.14.1; npm 11.11.0; npm ls confirmou remotio
   - **Resultado**: ✅ 17 testes passaram (0 falhas).
 - **`npm run build` (`vite build`)**:
   - **Resultado**: ✅ PASSOU (bundle de produção gerado em 2.74s na pasta `dist/`).
+
+## Pesquisa e instalações de animação — 04/11/2026
+Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
+

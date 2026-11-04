@@ -15,3 +15,5 @@ coverage/
 /out/debate-ar*.mp4
 /qa/debate-ar/
 /.tmp-chrome-banner/
+.venv-whisperx/
+tools/vendor/

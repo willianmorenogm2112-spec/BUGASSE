@@ -41,3 +41,7 @@ Evidências/logs: saída dos comandos na conversa; medições resumidas em RENDE
 Rollback: reverter somente o commit de relatórios desta análise. Não usar reset/clean, pois há adições preexistentes não versionadas.
 
 Limitação: PR remoto não aberto; análise mantida local para não publicar dados e arquivos sem revisão.
+
+## Pesquisa e instalações de animação — 04/11/2026
+Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
+

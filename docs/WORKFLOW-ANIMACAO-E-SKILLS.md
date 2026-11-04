@@ -1,0 +1,13 @@
+# Workflow visual — E Se Bugasse?
+
+Este guia complementa a identidade e os critérios do projeto. Remotion continua sendo a fonte única da composição, do Player e do MP4. A adoção das ferramentas abaixo depende de teste e ganho visível no episódio; não declarar ferramenta usada só por estar instalada.
+
+1. **Roteiro e storyboard:** use `short-form-video`, `explainer-video` e `shot-composition` para abrir com ação, explicar uma ideia por beat e planejar o desfecho. As estatísticas e receitas de viralização dessas skills não são evidência e não devem ser repetidas como fatos; cortes e zooms precisam ser motivados pela ação.
+2. **Atuação e rig:** use `animation-principles` e `motion-art-direction` para poses, antecipação, arcos, contato, reação e follow-through. Avalie Rigby2D ou IK.ts para articulações, apenas após validar controle determinístico de cada frame e integração com o Player e render. Preserve o desenho do Bugi.
+3. **Rosto:** use Flubber para interpolar formas SVG quando isso melhorar a expressão; valide silhueta e ausência de deformações. Para personagens que falam, avalie Rhubarb com o áudio real e revise as bocas. Em português, use o reconhecedor fonético, que é menos preciso; não confundir esse resultado com alinhamento preciso de fonemas.
+4. **Voz e legendas:** grave Gemini TTS real primeiro. Quando WhisperX estiver instalado e funcionar no ambiente, alinhe as palavras ao áudio e revise as legendas com `caption-animation`. Indique tempos estimados quando não houver alinhamento validado. Preserve autoria e idioma.
+5. **Gráficos:** use `chart-animation`, `animated-infographic` e `diagram-animation` quando a explicação pedir. D3 pode calcular escalas e geometria; todo movimento deve ser função do frame Remotion. Indique unidades, fontes e dados ilustrativos.
+6. **Composição e ritmo:** `kinetic-typography`, `color-motion`, `beat-sync-editing` e `motion-background` orientam texto, cor, áudio e cenário. Respeite áreas seguras, não cubra os rostos e não crie uma troca de plano automática por cronômetro.
+7. **QA:** verifique Player e MP4 da mesma composição; inspecione sequência e expressões, ouça o áudio e confira dados e legendas. Filme e ferramentas externas não substituem verificação. Documente versão, origem, uso, limitações e falhas por vídeo.
+
+As demais skills instaladas dos pacotes iart.ai são opcionais e só devem ser chamadas quando aplicáveis, sem trocar identidade ou motor principal. Não execute scripts de terceiros antes de inspecionar licença, comandos e dependências.
