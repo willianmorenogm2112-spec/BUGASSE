@@ -1,5 +1,9 @@
 # Relatório de Instalação e Ambiente — E Se Bugasse? (Fase 0)
 
+## Bugi formiga 3D — 05/11/2026
+
+Execução e evidências em `reports/BUGI-FORMIGA-3D.md`. Roteiro pesquisado, Gemini TTS Charon/Puck real, alinhamento acústico (16 turnos, 213 palavras, 77,437 s), storyboard 22 planos e composição Remotion Ant3DRoot. Limitações artísticas registradas; sem publicação automática. Rollback por reversão dos commits desta branch.
+
 ## Casal Bugi v2
 
 Sem nova instalação ou geração paga. Personagem SVG original, Remotion e assets existentes. Arquivos, evidência e limites: CASAL-BUGI-V2.md.

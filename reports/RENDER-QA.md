@@ -1,5 +1,9 @@
 # QA de mídia existente — 2026-11-04
 
+## Bugi formiga 3D — 05/11/2026
+
+Execução e evidências em `reports/BUGI-FORMIGA-3D.md`. Roteiro pesquisado, Gemini TTS Charon/Puck real, alinhamento acústico (16 turnos, 213 palavras, 77,437 s), storyboard 22 planos e composição Remotion Ant3DRoot. Limitações artísticas registradas; sem publicação automática. Rollback por reversão dos commits desta branch.
+
 ## Casal Bugi v2
 
 Executado: render 52,608s, 1578 quadros, 1080×1920; lint e decode integral passaram. Nova passageira e boca do Bugi conferidas em quadros. Evidência: out/debate-ar-bugi-casal-v2.mp4 e qa/debate-ar/casal-v2-contato.png. Arquivos e limites: CASAL-BUGI-V2.md. Áudio preservado, sem nova medição nesta revisão; aprovação humana pendente.
