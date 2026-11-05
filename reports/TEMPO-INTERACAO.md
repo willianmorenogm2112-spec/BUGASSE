@@ -56,4 +56,8 @@ BUGI: Quer saber? Me dá só o botão de soneca.
 
 ## Storyboard e som
 
+## Export entregue v2
+
+`out/bugi-tempo-dialogo-v2.mp4`: 94,848 s, 12.385.924 bytes, H.264 1080×1920/30, AAC. Render direto Remotion da mesma composição com mix-final.wav; decodificação integral FFmpeg sem erros. SHA-256 79B28A39FD7FEDB1DE2AACD831E75CEAFB35C9DE09425DDB23BE2C8ED5C0280B. Mix medido na versão anterior com a mesma faixa: -16,5 LUFS, -1,9 dBTP. Stills de café e contrato v2 inspecionados. Personagem reduzido nessas explicações para desobstruir objetos; ainda há pequena sobreposição do cabelo com o rodapé interno do painel de café. Status: revisão do usuário, sem publicação; não equivale a aprovação artística integral. PR https://github.com/willianmorenogm2112-spec/BUGASSE/pull/4 .
+
 Despertador e quarto em camadas; mão toca botão com contato real. Corte seco do ruído ambiente ao congelar. Café e gotas imóveis permanecem em posições fixas. Bugi tenta inspirar; diagrama de pulmão mostra ausência de fluxo sem representar fisiologia quantitativa. Fluxo de ar retoma com a exceção. Cena escurece na explicação da luz; fótons avançam somente quando liberados. Xícara inclina, líquido mantém a regra indicada. Cláusulas acumulam como gag visual. Retomada final: gotas caem, alarme e ambiente voltam. Sem publicar automaticamente.
