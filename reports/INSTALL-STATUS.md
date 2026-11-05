@@ -117,3 +117,7 @@ Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, ali
 ## Vídeo Tempo parado — 05/11/2026
 Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento acústico WhisperX, cenário SVG, diagramas, balões por speaker, envelope de boca e SFX originais. Evidências e limites: reports/TEMPO-INTERACAO.md; composição TimeDialogueRoot.tsx; assets public/assets/tempo-interacao. Lint/build e quatro testes de movimento passaram. Montagem 94,553 s; export 94,833 s, H.264/AAC 1080×1920/30. Primeira exportação decodificada sem erros; mix -16,5 LUFS, pico -1,9 dBTP. Revisão visual amostrada detectou sobreposição de personagem em café/contrato, corrigida em v2. Limitação: escuta humana integral e aprovação artística pendentes. Sem publicação. Rollback: reverter os commits desta branch, sem apagar mídias anteriores.
 
+## Módulo Bugi 3D — 05/11/2026
+
+Executado: pacote do usuário auditado e integrado em `bugi-3d/kit`; Node 24.14.1, npm 11.11.0; `three@^0.187.0` e `puppeteer-core@^25.16.0` instalados localmente com scripts de instalação desativados. `npm audit`: 0 vulnerabilidades. Catálogo: 12 personagens, 20 animações, 9 expressões e 57 assets. Limitação: Chrome/FFmpeg e render completo do kit ainda não foram exercitados nesta etapa; instalador Kokoro e ElevenLabs não foram executados.
+
