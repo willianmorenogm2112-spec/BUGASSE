@@ -1,0 +1,1160 @@
+[
+  {
+    "word": "Você",
+    "start": 0.24,
+    "end": 0.44,
+    "score": 0.917
+  },
+  {
+    "word": "parou",
+    "start": 0.54,
+    "end": 0.82,
+    "score": 0.884
+  },
+  {
+    "word": "o",
+    "start": 0.86,
+    "end": 0.9,
+    "score": 0.504
+  },
+  {
+    "word": "tempo",
+    "start": 1.02,
+    "end": 1.3,
+    "score": 0.929
+  },
+  {
+    "word": "pra",
+    "start": 1.36,
+    "end": 1.44,
+    "score": 0.775
+  },
+  {
+    "word": "dormir",
+    "start": 1.5,
+    "end": 1.801,
+    "score": 0.779
+  },
+  {
+    "word": "mais",
+    "start": 1.881,
+    "end": 2.141,
+    "score": 0.754
+  },
+  {
+    "word": "cinco",
+    "start": 2.221,
+    "end": 2.461,
+    "score": 0.981
+  },
+  {
+    "word": "minutos.",
+    "start": 2.501,
+    "end": 2.961,
+    "score": 0.96
+  },
+  {
+    "word": "Parabéns.",
+    "start": 3.281,
+    "end": 3.841,
+    "score": 0.802
+  },
+  {
+    "word": "Agora",
+    "start": 4.161,
+    "end": 4.461,
+    "score": 0.869
+  },
+  {
+    "word": "tenta",
+    "start": 4.781,
+    "end": 4.981,
+    "score": 0.98
+  },
+  {
+    "word": "respirar.",
+    "start": 5.041,
+    "end": 5.402,
+    "score": 0.984
+  },
+  {
+    "word": "O",
+    "start": 6.162,
+    "end": 6.202,
+    "score": 0.929
+  },
+  {
+    "word": "relógio",
+    "start": 6.242,
+    "end": 6.542,
+    "score": 0.908
+  },
+  {
+    "word": "travou.",
+    "start": 6.582,
+    "end": 6.922,
+    "score": 0.831
+  },
+  {
+    "word": "O",
+    "start": 7.262,
+    "end": 7.302,
+    "score": 0.501
+  },
+  {
+    "word": "café",
+    "start": 7.342,
+    "end": 7.582,
+    "score": 0.9
+  },
+  {
+    "word": "ficou",
+    "start": 7.622,
+    "end": 7.842,
+    "score": 0.903
+  },
+  {
+    "word": "suspenso.",
+    "start": 7.882,
+    "end": 8.462,
+    "score": 0.887
+  },
+  {
+    "word": "E",
+    "start": 8.723,
+    "end": 8.763,
+    "score": 0.589
+  },
+  {
+    "word": "o",
+    "start": 8.783,
+    "end": 8.823,
+    "score": 0.501
+  },
+  {
+    "word": "vizinho",
+    "start": 8.863,
+    "end": 9.163,
+    "score": 0.815
+  },
+  {
+    "word": "finalmente",
+    "start": 9.323,
+    "end": 9.943,
+    "score": 0.982
+  },
+  {
+    "word": "calou",
+    "start": 10.003,
+    "end": 10.243,
+    "score": 0.742
+  },
+  {
+    "word": "a",
+    "start": 10.263,
+    "end": 10.303,
+    "score": 0.745
+  },
+  {
+    "word": "boca.",
+    "start": 10.363,
+    "end": 10.683,
+    "score": 0.906
+  },
+  {
+    "word": "Mas",
+    "start": 11.263,
+    "end": 11.383,
+    "score": 0.774
+  },
+  {
+    "word": "vamos",
+    "start": 11.403,
+    "end": 11.523,
+    "score": 0.174
+  },
+  {
+    "word": "combinar",
+    "start": 11.563,
+    "end": 11.863,
+    "score": 0.78
+  },
+  {
+    "word": "uma",
+    "start": 11.883,
+    "end": 11.984,
+    "score": 0.698
+  },
+  {
+    "word": "regra:",
+    "start": 12.064,
+    "end": 12.344,
+    "score": 0.964
+  },
+  {
+    "word": "o",
+    "start": 12.744,
+    "end": 12.784,
+    "score": 0.995
+  },
+  {
+    "word": "corpo",
+    "start": 12.884,
+    "end": 13.124,
+    "score": 0.914
+  },
+  {
+    "word": "do",
+    "start": 13.164,
+    "end": 13.224,
+    "score": 0.946
+  },
+  {
+    "word": "Bugi",
+    "start": 13.304,
+    "end": 13.544,
+    "score": 0.591
+  },
+  {
+    "word": "continua",
+    "start": 13.624,
+    "end": 14.124,
+    "score": 0.864
+  },
+  {
+    "word": "funcionando.",
+    "start": 14.184,
+    "end": 14.684,
+    "score": 0.828
+  },
+  {
+    "word": "Senão",
+    "start": 15.084,
+    "end": 15.325,
+    "score": 0.693
+  },
+  {
+    "word": "ele",
+    "start": 15.385,
+    "end": 15.485,
+    "score": 0.781
+  },
+  {
+    "word": "também",
+    "start": 15.565,
+    "end": 15.805,
+    "score": 0.883
+  },
+  {
+    "word": "parava",
+    "start": 15.845,
+    "end": 16.245,
+    "score": 0.953
+  },
+  {
+    "word": "e",
+    "start": 16.265,
+    "end": 16.305,
+    "score": 0.964
+  },
+  {
+    "word": "nem",
+    "start": 16.325,
+    "end": 16.445,
+    "score": 0.976
+  },
+  {
+    "word": "percebia",
+    "start": 16.485,
+    "end": 16.845,
+    "score": 0.996
+  },
+  {
+    "word": "a",
+    "start": 16.865,
+    "end": 16.885,
+    "score": 0.953
+  },
+  {
+    "word": "diferença.",
+    "start": 16.905,
+    "end": 17.385,
+    "score": 0.963
+  },
+  {
+    "word": "Respirar",
+    "start": 17.865,
+    "end": 18.305,
+    "score": 0.936
+  },
+  {
+    "word": "depende",
+    "start": 18.365,
+    "end": 18.665,
+    "score": 0.875
+  },
+  {
+    "word": "de",
+    "start": 18.705,
+    "end": 18.786,
+    "score": 0.75
+  },
+  {
+    "word": "ar",
+    "start": 18.866,
+    "end": 19.006,
+    "score": 0.704
+  },
+  {
+    "word": "entrando",
+    "start": 19.046,
+    "end": 19.466,
+    "score": 0.774
+  },
+  {
+    "word": "e",
+    "start": 19.506,
+    "end": 19.526,
+    "score": 1.0
+  },
+  {
+    "word": "saindo",
+    "start": 19.606,
+    "end": 19.846,
+    "score": 0.818
+  },
+  {
+    "word": "dos",
+    "start": 19.886,
+    "end": 19.986,
+    "score": 1.0
+  },
+  {
+    "word": "pulmões.",
+    "start": 20.066,
+    "end": 20.506,
+    "score": 0.847
+  },
+  {
+    "word": "Se",
+    "start": 20.846,
+    "end": 20.926,
+    "score": 0.909
+  },
+  {
+    "word": "o",
+    "start": 20.966,
+    "end": 20.986,
+    "score": 1.0
+  },
+  {
+    "word": "ar",
+    "start": 21.066,
+    "end": 21.126,
+    "score": 0.638
+  },
+  {
+    "word": "ao",
+    "start": 21.166,
+    "end": 21.206,
+    "score": 1.0
+  },
+  {
+    "word": "redor",
+    "start": 21.246,
+    "end": 21.506,
+    "score": 0.812
+  },
+  {
+    "word": "ficou",
+    "start": 21.546,
+    "end": 21.726,
+    "score": 0.898
+  },
+  {
+    "word": "imóvel,",
+    "start": 21.766,
+    "end": 22.207,
+    "score": 0.933
+  },
+  {
+    "word": "seu",
+    "start": 22.447,
+    "end": 22.547,
+    "score": 0.774
+  },
+  {
+    "word": "poder",
+    "start": 22.587,
+    "end": 22.827,
+    "score": 0.858
+  },
+  {
+    "word": "precisa",
+    "start": 22.867,
+    "end": 23.207,
+    "score": 0.838
+  },
+  {
+    "word": "de",
+    "start": 23.227,
+    "end": 23.287,
+    "score": 0.758
+  },
+  {
+    "word": "uma",
+    "start": 23.327,
+    "end": 23.407,
+    "score": 0.833
+  },
+  {
+    "word": "exceção",
+    "start": 23.447,
+    "end": 23.967,
+    "score": 0.774
+  },
+  {
+    "word": "para",
+    "start": 24.027,
+    "end": 24.147,
+    "score": 0.929
+  },
+  {
+    "word": "deixar",
+    "start": 24.187,
+    "end": 24.467,
+    "score": 0.85
+  },
+  {
+    "word": "você",
+    "start": 24.507,
+    "end": 24.667,
+    "score": 0.732
+  },
+  {
+    "word": "respirar.",
+    "start": 24.707,
+    "end": 25.067,
+    "score": 0.96
+  },
+  {
+    "word": "Primeira",
+    "start": 25.708,
+    "end": 25.988,
+    "score": 0.847
+  },
+  {
+    "word": "cláusula:",
+    "start": 26.048,
+    "end": 26.448,
+    "score": 0.96
+  },
+  {
+    "word": "uma",
+    "start": 26.868,
+    "end": 26.988,
+    "score": 0.957
+  },
+  {
+    "word": "região",
+    "start": 27.088,
+    "end": 27.508,
+    "score": 0.687
+  },
+  {
+    "word": "de",
+    "start": 27.548,
+    "end": 27.648,
+    "score": 0.832
+  },
+  {
+    "word": "ar",
+    "start": 27.728,
+    "end": 27.848,
+    "score": 0.785
+  },
+  {
+    "word": "pode",
+    "start": 27.988,
+    "end": 28.168,
+    "score": 0.967
+  },
+  {
+    "word": "se",
+    "start": 28.208,
+    "end": 28.288,
+    "score": 0.774
+  },
+  {
+    "word": "mover",
+    "start": 28.348,
+    "end": 28.688,
+    "score": 0.933
+  },
+  {
+    "word": "com",
+    "start": 28.728,
+    "end": 28.808,
+    "score": 1.0
+  },
+  {
+    "word": "você.",
+    "start": 28.848,
+    "end": 29.169,
+    "score": 0.996
+  },
+  {
+    "word": "Agora",
+    "start": 30.089,
+    "end": 30.309,
+    "score": 0.833
+  },
+  {
+    "word": "tenta",
+    "start": 30.489,
+    "end": 30.729,
+    "score": 0.921
+  },
+  {
+    "word": "enxergar.",
+    "start": 30.769,
+    "end": 31.229,
+    "score": 0.761
+  },
+  {
+    "word": "A",
+    "start": 31.749,
+    "end": 31.789,
+    "score": 1.0
+  },
+  {
+    "word": "luz",
+    "start": 31.889,
+    "end": 32.109,
+    "score": 0.832
+  },
+  {
+    "word": "precisa",
+    "start": 32.149,
+    "end": 32.47,
+    "score": 0.866
+  },
+  {
+    "word": "chegar",
+    "start": 32.51,
+    "end": 32.73,
+    "score": 0.912
+  },
+  {
+    "word": "aos",
+    "start": 32.75,
+    "end": 32.81,
+    "score": 0.365
+  },
+  {
+    "word": "seus",
+    "start": 32.83,
+    "end": 32.99,
+    "score": 0.878
+  },
+  {
+    "word": "olhos.",
+    "start": 33.03,
+    "end": 33.33,
+    "score": 0.89
+  },
+  {
+    "word": "Se",
+    "start": 33.75,
+    "end": 33.81,
+    "score": 0.763
+  },
+  {
+    "word": "ela",
+    "start": 33.83,
+    "end": 33.91,
+    "score": 0.833
+  },
+  {
+    "word": "também",
+    "start": 33.97,
+    "end": 34.23,
+    "score": 0.946
+  },
+  {
+    "word": "parou,",
+    "start": 34.29,
+    "end": 34.59,
+    "score": 0.82
+  },
+  {
+    "word": "o",
+    "start": 34.81,
+    "end": 34.85,
+    "score": 0.701
+  },
+  {
+    "word": "cenário",
+    "start": 34.89,
+    "end": 35.17,
+    "score": 0.82
+  },
+  {
+    "word": "congelado",
+    "start": 35.21,
+    "end": 35.63,
+    "score": 0.931
+  },
+  {
+    "word": "dos",
+    "start": 35.67,
+    "end": 35.791,
+    "score": 1.0
+  },
+  {
+    "word": "filmes",
+    "start": 35.831,
+    "end": 36.031,
+    "score": 1.0
+  },
+  {
+    "word": "precisa",
+    "start": 36.091,
+    "end": 36.391,
+    "score": 0.796
+  },
+  {
+    "word": "de",
+    "start": 36.411,
+    "end": 36.511,
+    "score": 0.831
+  },
+  {
+    "word": "mais",
+    "start": 36.651,
+    "end": 36.851,
+    "score": 0.889
+  },
+  {
+    "word": "uma",
+    "start": 36.891,
+    "end": 36.991,
+    "score": 0.876
+  },
+  {
+    "word": "exceção.",
+    "start": 37.011,
+    "end": 37.411,
+    "score": 0.853
+  },
+  {
+    "word": "Segunda",
+    "start": 38.131,
+    "end": 38.511,
+    "score": 0.759
+  },
+  {
+    "word": "cláusula:",
+    "start": 38.571,
+    "end": 38.971,
+    "score": 0.936
+  },
+  {
+    "word": "luz",
+    "start": 39.392,
+    "end": 39.692,
+    "score": 0.832
+  },
+  {
+    "word": "funcionando.",
+    "start": 39.772,
+    "end": 40.332,
+    "score": 0.898
+  },
+  {
+    "word": "E",
+    "start": 40.732,
+    "end": 40.772,
+    "score": 0.515
+  },
+  {
+    "word": "os",
+    "start": 40.792,
+    "end": 40.872,
+    "score": 0.756
+  },
+  {
+    "word": "olhos",
+    "start": 40.932,
+    "end": 41.092,
+    "score": 0.794
+  },
+  {
+    "word": "precisam",
+    "start": 41.132,
+    "end": 41.452,
+    "score": 0.866
+  },
+  {
+    "word": "continuar",
+    "start": 41.512,
+    "end": 41.812,
+    "score": 0.947
+  },
+  {
+    "word": "recebendo",
+    "start": 41.872,
+    "end": 42.292,
+    "score": 0.926
+  },
+  {
+    "word": "e",
+    "start": 42.332,
+    "end": 42.372,
+    "score": 0.504
+  },
+  {
+    "word": "processando",
+    "start": 42.432,
+    "end": 42.953,
+    "score": 0.865
+  },
+  {
+    "word": "essa",
+    "start": 42.973,
+    "end": 43.133,
+    "score": 0.591
+  },
+  {
+    "word": "luz.",
+    "start": 43.173,
+    "end": 43.433,
+    "score": 0.714
+  },
+  {
+    "word": "Inclinar",
+    "start": 44.113,
+    "end": 44.513,
+    "score": 0.814
+  },
+  {
+    "word": "a",
+    "start": 44.533,
+    "end": 44.553,
+    "score": 0.878
+  },
+  {
+    "word": "xícara",
+    "start": 44.633,
+    "end": 44.913,
+    "score": 0.999
+  },
+  {
+    "word": "não",
+    "start": 44.953,
+    "end": 45.053,
+    "score": 0.686
+  },
+  {
+    "word": "faz",
+    "start": 45.073,
+    "end": 45.233,
+    "score": 0.834
+  },
+  {
+    "word": "um",
+    "start": 45.253,
+    "end": 45.313,
+    "score": 0.75
+  },
+  {
+    "word": "líquido",
+    "start": 45.333,
+    "end": 45.553,
+    "score": 0.912
+  },
+  {
+    "word": "escorrer",
+    "start": 45.593,
+    "end": 45.974,
+    "score": 0.93
+  },
+  {
+    "word": "se",
+    "start": 46.014,
+    "end": 46.054,
+    "score": 0.998
+  },
+  {
+    "word": "ele",
+    "start": 46.074,
+    "end": 46.154,
+    "score": 0.949
+  },
+  {
+    "word": "continua",
+    "start": 46.194,
+    "end": 46.494,
+    "score": 0.938
+  },
+  {
+    "word": "congelado",
+    "start": 46.574,
+    "end": 47.094,
+    "score": 0.885
+  },
+  {
+    "word": "no",
+    "start": 47.114,
+    "end": 47.194,
+    "score": 0.9
+  },
+  {
+    "word": "tempo.",
+    "start": 47.234,
+    "end": 47.514,
+    "score": 0.941
+  },
+  {
+    "word": "Exatamente.",
+    "start": 48.214,
+    "end": 49.034,
+    "score": 0.944
+  },
+  {
+    "word": "E",
+    "start": 49.495,
+    "end": 49.615,
+    "score": 0.679
+  },
+  {
+    "word": "onde",
+    "start": 49.835,
+    "end": 49.975,
+    "score": 0.947
+  },
+  {
+    "word": "termina",
+    "start": 50.035,
+    "end": 50.315,
+    "score": 0.984
+  },
+  {
+    "word": "essa",
+    "start": 50.335,
+    "end": 50.455,
+    "score": 0.942
+  },
+  {
+    "word": "autorização?",
+    "start": 50.495,
+    "end": 51.115,
+    "score": 0.926
+  },
+  {
+    "word": "Na",
+    "start": 51.515,
+    "end": 51.595,
+    "score": 0.813
+  },
+  {
+    "word": "sua",
+    "start": 51.635,
+    "end": 51.755,
+    "score": 0.829
+  },
+  {
+    "word": "mão?",
+    "start": 51.795,
+    "end": 51.935,
+    "score": 0.925
+  },
+  {
+    "word": "Na",
+    "start": 52.335,
+    "end": 52.435,
+    "score": 0.833
+  },
+  {
+    "word": "roupa?",
+    "start": 52.495,
+    "end": 52.756,
+    "score": 0.964
+  },
+  {
+    "word": "No",
+    "start": 53.036,
+    "end": 53.136,
+    "score": 0.834
+  },
+  {
+    "word": "chão?",
+    "start": 53.216,
+    "end": 53.376,
+    "score": 0.839
+  },
+  {
+    "word": "No",
+    "start": 53.776,
+    "end": 53.896,
+    "score": 0.769
+  },
+  {
+    "word": "ar",
+    "start": 53.956,
+    "end": 54.076,
+    "score": 0.763
+  },
+  {
+    "word": "que",
+    "start": 54.096,
+    "end": 54.196,
+    "score": 0.674
+  },
+  {
+    "word": "você",
+    "start": 54.216,
+    "end": 54.396,
+    "score": 0.814
+  },
+  {
+    "word": "empurra",
+    "start": 54.436,
+    "end": 54.796,
+    "score": 0.928
+  },
+  {
+    "word": "ao",
+    "start": 54.816,
+    "end": 54.896,
+    "score": 0.502
+  },
+  {
+    "word": "andar?",
+    "start": 54.936,
+    "end": 55.196,
+    "score": 0.906
+  },
+  {
+    "word": "Cada",
+    "start": 55.796,
+    "end": 56.036,
+    "score": 0.876
+  },
+  {
+    "word": "interação",
+    "start": 56.076,
+    "end": 56.577,
+    "score": 0.889
+  },
+  {
+    "word": "exige",
+    "start": 56.637,
+    "end": 56.897,
+    "score": 0.998
+  },
+  {
+    "word": "definir",
+    "start": 56.937,
+    "end": 57.297,
+    "score": 0.925
+  },
+  {
+    "word": "o",
+    "start": 57.337,
+    "end": 57.357,
+    "score": 0.997
+  },
+  {
+    "word": "que",
+    "start": 57.477,
+    "end": 57.617,
+    "score": 0.636
+  },
+  {
+    "word": "o",
+    "start": 57.637,
+    "end": 57.657,
+    "score": 0.585
+  },
+  {
+    "word": "poder",
+    "start": 57.717,
+    "end": 57.957,
+    "score": 0.891
+  },
+  {
+    "word": "libera.",
+    "start": 57.977,
+    "end": 58.337,
+    "score": 0.893
+  },
+  {
+    "word": "Para",
+    "start": 59.037,
+    "end": 59.177,
+    "score": 0.909
+  },
+  {
+    "word": "funcionar",
+    "start": 59.217,
+    "end": 59.598,
+    "score": 0.837
+  },
+  {
+    "word": "como",
+    "start": 59.658,
+    "end": 59.818,
+    "score": 0.795
+  },
+  {
+    "word": "nos",
+    "start": 59.838,
+    "end": 59.958,
+    "score": 0.992
+  },
+  {
+    "word": "filmes,",
+    "start": 60.018,
+    "end": 60.458,
+    "score": 0.927
+  },
+  {
+    "word": "esse",
+    "start": 60.598,
+    "end": 60.718,
+    "score": 0.593
+  },
+  {
+    "word": "poder",
+    "start": 60.758,
+    "end": 60.958,
+    "score": 0.833
+  },
+  {
+    "word": "precisa",
+    "start": 61.018,
+    "end": 61.338,
+    "score": 0.998
+  },
+  {
+    "word": "selecionar",
+    "start": 61.458,
+    "end": 62.258,
+    "score": 0.818
+  },
+  {
+    "word": "o",
+    "start": 62.278,
+    "end": 62.318,
+    "score": 0.506
+  },
+  {
+    "word": "que",
+    "start": 62.358,
+    "end": 62.438,
+    "score": 0.894
+  },
+  {
+    "word": "continua",
+    "start": 62.498,
+    "end": 62.838,
+    "score": 0.935
+  },
+  {
+    "word": "acontecendo",
+    "start": 62.878,
+    "end": 63.379,
+    "score": 0.977
+  },
+  {
+    "word": "ao",
+    "start": 63.399,
+    "end": 63.459,
+    "score": 0.425
+  },
+  {
+    "word": "seu",
+    "start": 63.499,
+    "end": 63.599,
+    "score": 0.935
+  },
+  {
+    "word": "redor.",
+    "start": 63.619,
+    "end": 63.899,
+    "score": 0.989
+  },
+  {
+    "word": "O",
+    "start": 64.499,
+    "end": 64.539,
+    "score": 0.524
+  },
+  {
+    "word": "Bugi",
+    "start": 64.579,
+    "end": 64.839,
+    "score": 0.69
+  },
+  {
+    "word": "considerou",
+    "start": 64.919,
+    "end": 65.359,
+    "score": 0.877
+  },
+  {
+    "word": "todas",
+    "start": 65.579,
+    "end": 65.919,
+    "score": 0.823
+  },
+  {
+    "word": "as",
+    "start": 65.959,
+    "end": 66.019,
+    "score": 0.996
+  },
+  {
+    "word": "vantagens",
+    "start": 66.059,
+    "end": 66.66,
+    "score": 0.977
+  },
+  {
+    "word": "e",
+    "start": 66.68,
+    "end": 66.7,
+    "score": 0.0
+  },
+  {
+    "word": "ligou",
+    "start": 67.04,
+    "end": 67.24,
+    "score": 0.898
+  },
+  {
+    "word": "o",
+    "start": 67.26,
+    "end": 67.28,
+    "score": 0.002
+  },
+  {
+    "word": "tempo",
+    "start": 67.3,
+    "end": 67.48,
+    "score": 0.848
+  },
+  {
+    "word": "de",
+    "start": 67.5,
+    "end": 67.56,
+    "score": 0.995
+  },
+  {
+    "word": "novo.",
+    "start": 67.6,
+    "end": 68.04,
+    "score": 1.0
+  }
+]
