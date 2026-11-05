@@ -1,0 +1,356 @@
+[
+  {
+    "word": "Eu",
+    "start": 0.26,
+    "end": 0.34,
+    "score": 0.833
+  },
+  {
+    "word": "só",
+    "start": 0.42,
+    "end": 0.5,
+    "score": 0.712
+  },
+  {
+    "word": "queria",
+    "start": 0.54,
+    "end": 0.741,
+    "score": 0.915
+  },
+  {
+    "word": "um",
+    "start": 0.781,
+    "end": 0.821,
+    "score": 1.0
+  },
+  {
+    "word": "café.",
+    "start": 0.841,
+    "end": 1.221,
+    "score": 1.0
+  },
+  {
+    "word": "Não",
+    "start": 1.501,
+    "end": 1.641,
+    "score": 0.706
+  },
+  {
+    "word": "uma",
+    "start": 1.741,
+    "end": 1.902,
+    "score": 0.839
+  },
+  {
+    "word": "expedição,",
+    "start": 1.922,
+    "end": 2.622,
+    "score": 0.826
+  },
+  {
+    "word": "cacete!",
+    "start": 2.722,
+    "end": 3.223,
+    "score": 0.974
+  },
+  {
+    "word": "Então",
+    "start": 3.903,
+    "end": 4.103,
+    "score": 0.762
+  },
+  {
+    "word": "por",
+    "start": 4.163,
+    "end": 4.263,
+    "score": 0.899
+  },
+  {
+    "word": "que",
+    "start": 4.303,
+    "end": 4.384,
+    "score": 0.846
+  },
+  {
+    "word": "a",
+    "start": 4.424,
+    "end": 4.444,
+    "score": 1.0
+  },
+  {
+    "word": "caneca",
+    "start": 4.524,
+    "end": 4.984,
+    "score": 1.0
+  },
+  {
+    "word": "virou",
+    "start": 5.064,
+    "end": 5.204,
+    "score": 0.514
+  },
+  {
+    "word": "um",
+    "start": 5.244,
+    "end": 5.284,
+    "score": 1.0
+  },
+  {
+    "word": "prédio?",
+    "start": 5.444,
+    "end": 5.805,
+    "score": 0.981
+  },
+  {
+    "word": "Fui",
+    "start": 6.625,
+    "end": 6.705,
+    "score": 0.784
+  },
+  {
+    "word": "buscar",
+    "start": 6.745,
+    "end": 7.006,
+    "score": 0.864
+  },
+  {
+    "word": "açúcar",
+    "start": 7.046,
+    "end": 7.446,
+    "score": 0.853
+  },
+  {
+    "word": "e",
+    "start": 7.486,
+    "end": 7.506,
+    "score": 1.0
+  },
+  {
+    "word": "entrei",
+    "start": 7.546,
+    "end": 7.746,
+    "score": 0.85
+  },
+  {
+    "word": "numa",
+    "start": 7.766,
+    "end": 7.926,
+    "score": 0.643
+  },
+  {
+    "word": "maratona.",
+    "start": 7.986,
+    "end": 8.707,
+    "score": 0.941
+  },
+  {
+    "word": "Ou",
+    "start": 9.368,
+    "end": 9.468,
+    "score": 0.688
+  },
+  {
+    "word": "seja:",
+    "start": 9.548,
+    "end": 9.868,
+    "score": 0.948
+  },
+  {
+    "word": "até",
+    "start": 10.188,
+    "end": 10.428,
+    "score": 0.933
+  },
+  {
+    "word": "a",
+    "start": 10.448,
+    "end": 10.508,
+    "score": 0.333
+  },
+  {
+    "word": "água",
+    "start": 10.649,
+    "end": 10.869,
+    "score": 0.702
+  },
+  {
+    "word": "resolveu",
+    "start": 10.969,
+    "end": 11.269,
+    "score": 1.0
+  },
+  {
+    "word": "dificultar",
+    "start": 11.309,
+    "end": 11.769,
+    "score": 0.964
+  },
+  {
+    "word": "minha",
+    "start": 11.789,
+    "end": 11.91,
+    "score": 0.286
+  },
+  {
+    "word": "vida.",
+    "start": 11.95,
+    "end": 12.21,
+    "score": 0.77
+  },
+  {
+    "word": "Nem",
+    "start": 12.97,
+    "end": 13.211,
+    "score": 0.716
+  },
+  {
+    "word": "seis",
+    "start": 13.391,
+    "end": 13.631,
+    "score": 0.956
+  },
+  {
+    "word": "pernas?",
+    "start": 13.711,
+    "end": 14.171,
+    "score": 0.999
+  },
+  {
+    "word": "Que",
+    "start": 14.652,
+    "end": 14.732,
+    "score": 0.833
+  },
+  {
+    "word": "pacote",
+    "start": 14.812,
+    "end": 15.172,
+    "score": 0.944
+  },
+  {
+    "word": "de",
+    "start": 15.192,
+    "end": 15.272,
+    "score": 0.769
+  },
+  {
+    "word": "merda.",
+    "start": 15.392,
+    "end": 15.793,
+    "score": 0.952
+  },
+  {
+    "word": "Ótimo.",
+    "start": 16.553,
+    "end": 16.854,
+    "score": 0.957
+  },
+  {
+    "word": "Pequeno,",
+    "start": 17.194,
+    "end": 17.714,
+    "score": 0.816
+  },
+  {
+    "word": "perdido",
+    "start": 17.914,
+    "end": 18.555,
+    "score": 0.914
+  },
+  {
+    "word": "e",
+    "start": 18.675,
+    "end": 18.735,
+    "score": 0.667
+  },
+  {
+    "word": "sem",
+    "start": 18.815,
+    "end": 18.935,
+    "score": 0.944
+  },
+  {
+    "word": "casaco",
+    "start": 18.975,
+    "end": 19.316,
+    "score": 0.88
+  },
+  {
+    "word": "decente.",
+    "start": 19.336,
+    "end": 19.736,
+    "score": 0.875
+  },
+  {
+    "word": "Amiga,",
+    "start": 20.376,
+    "end": 20.737,
+    "score": 0.934
+  },
+  {
+    "word": "onde",
+    "start": 21.137,
+    "end": 21.277,
+    "score": 0.875
+  },
+  {
+    "word": "fica",
+    "start": 21.317,
+    "end": 21.597,
+    "score": 0.925
+  },
+  {
+    "word": "a",
+    "start": 21.617,
+    "end": 21.637,
+    "score": 0.048
+  },
+  {
+    "word": "saída?",
+    "start": 21.697,
+    "end": 22.058,
+    "score": 0.938
+  },
+  {
+    "word": "Quer",
+    "start": 22.698,
+    "end": 22.838,
+    "score": 0.754
+  },
+  {
+    "word": "saber?",
+    "start": 22.878,
+    "end": 23.179,
+    "score": 0.896
+  },
+  {
+    "word": "Hoje",
+    "start": 23.779,
+    "end": 23.959,
+    "score": 0.876
+  },
+  {
+    "word": "eu",
+    "start": 23.979,
+    "end": 24.059,
+    "score": 0.495
+  },
+  {
+    "word": "vou",
+    "start": 24.079,
+    "end": 24.139,
+    "score": 0.72
+  },
+  {
+    "word": "de",
+    "start": 24.159,
+    "end": 24.22,
+    "score": 0.38
+  },
+  {
+    "word": "farelo.",
+    "start": 24.28,
+    "end": 24.84,
+    "score": 0.942
+  }
+]

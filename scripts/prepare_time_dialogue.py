@@ -1,11 +1,15 @@
-import json, wave, subprocess
+import json, wave, subprocess, argparse
 from pathlib import Path
 import numpy as np
 import whisperx
 
 root=Path(__file__).resolve().parents[1]
-assets=root/'public/assets/tempo-interacao'
-report=(root/'reports/TEMPO-INTERACAO.md').read_text(encoding='utf8')
+parser=argparse.ArgumentParser()
+parser.add_argument('--assets',default='public/assets/tempo-interacao')
+parser.add_argument('--script',default='reports/TEMPO-INTERACAO.md')
+args=parser.parse_args()
+assets=root/args.assets
+report=(root/args.script).read_text(encoding='utf8')
 turns=[]
 for line in report.splitlines():
     for label,speaker in [('NARRADOR:','narrador'),('BUGI:','bugi')]:
