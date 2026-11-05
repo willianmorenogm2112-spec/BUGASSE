@@ -111,3 +111,6 @@ Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição
 ## Correção de atuação do Bugi — 05/11/2026
 Executado: controlador de atuação por beat e teste automatizado local, sem novas instalações. Evidência: `src/remotion/sun/sunBugiMotion.ts` e `npm run test:sun-motion` (4/4). Limitação: as skills orientam o trabalho, mas não são executáveis automáticos; ferramentas externas opcionais não foram necessárias para esta correção Remotion.
 
+## Piloto de edição por narração — 05/11/2026
+Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, alinhamento existente e SFX procedurais locais. Termômetro/calor, apontar, confirmação, marcador de segundo e feixe luminoso acompanham os trechos da voz. Arquivos: src/remotion/sun/EditingPilot.tsx e src/remotion/EditingPilotRoot.tsx. Lint passou; v1 H.264/AAC 1080×1920, 12,011 s, 1.733.420 bytes e decode integral sem erros. Folha out/edicao-contato.jpg inspecionada; fonte SVG corrigida em v2. Limitação: sem escuta contínua certificada, sem nova arte de cenário, sem aprovação artística final; este experimento não equivale ao acabamento da referência. Vídeos agendados preservados. Próximo: revisar ritmo/atuação e cenário. Rollback: reverter apenas o commit deste piloto.
+

@@ -52,3 +52,6 @@ Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição
 ## Após a correção de movimento v4 — 05/11/2026
 Executado: correção técnica e visual amostrada, novo MP4 validado. Próximo: usuário assistir à v4 inteira e aprovar atuação/ritmo; somente depois considerar publicação. Não publicar automaticamente. Para episódios futuros, usar `computeSunBugiKinematics` como referência de contrato: tempo local, ação curta, recuperação, apoio no chão e teste anti-loop; generalizar para controlador compartilhado apenas depois de validar em outro episódio.
 
+## Piloto de edição por narração — 05/11/2026
+Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, alinhamento existente e SFX procedurais locais. Termômetro/calor, apontar, confirmação, marcador de segundo e feixe luminoso acompanham os trechos da voz. Arquivos: src/remotion/sun/EditingPilot.tsx e src/remotion/EditingPilotRoot.tsx. Lint passou; v1 H.264/AAC 1080×1920, 12,011 s, 1.733.420 bytes e decode integral sem erros. Folha out/edicao-contato.jpg inspecionada; fonte SVG corrigida em v2. Limitação: sem escuta contínua certificada, sem nova arte de cenário, sem aprovação artística final; este experimento não equivale ao acabamento da referência. Vídeos agendados preservados. Próximo: revisar ritmo/atuação e cenário. Rollback: reverter apenas o commit deste piloto.
+

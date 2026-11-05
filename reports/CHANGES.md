@@ -52,3 +52,6 @@ Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição
 ## Episódio Sol v4 — atuação por beat — 05/11/2026
 Executado: novo `sunBugiMotion.ts` com gesto motivado e recuperação por cena; braços agora alteram juntas usadas pelo SVG; rig voltou ao chão canônico; pose de frio em pé e braços cruzados; testes de apoio, proibição de pose aérea e fim de loops. Arquivos: `SunShort.tsx`, `sunBugiMotion.ts`, `sunBugiMotion.test.ts`, `package.json`. Rollback: reverter o commit desta correção; MP4 permanece ignorado em `out/`.
 
+## Piloto de edição por narração — 05/11/2026
+Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, alinhamento existente e SFX procedurais locais. Termômetro/calor, apontar, confirmação, marcador de segundo e feixe luminoso acompanham os trechos da voz. Arquivos: src/remotion/sun/EditingPilot.tsx e src/remotion/EditingPilotRoot.tsx. Lint passou; v1 H.264/AAC 1080×1920, 12,011 s, 1.733.420 bytes e decode integral sem erros. Folha out/edicao-contato.jpg inspecionada; fonte SVG corrigida em v2. Limitação: sem escuta contínua certificada, sem nova arte de cenário, sem aprovação artística final; este experimento não equivale ao acabamento da referência. Vídeos agendados preservados. Próximo: revisar ritmo/atuação e cenário. Rollback: reverter apenas o commit deste piloto.
+
