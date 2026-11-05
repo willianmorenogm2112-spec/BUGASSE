@@ -58,3 +58,11 @@ Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, ali
 ## Vídeo Tempo parado — 05/11/2026
 Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento acústico WhisperX, cenário SVG, diagramas, balões por speaker, envelope de boca e SFX originais. Evidências e limites: reports/TEMPO-INTERACAO.md; composição TimeDialogueRoot.tsx; assets public/assets/tempo-interacao. Lint/build e quatro testes de movimento passaram. Montagem 94,553 s; export 94,833 s, H.264/AAC 1080×1920/30. Primeira exportação decodificada sem erros; mix -16,5 LUFS, pico -1,9 dBTP. Revisão visual amostrada detectou sobreposição de personagem em café/contrato, corrigida em v2. Limitação: escuta humana integral e aprovação artística pendentes. Sem publicação. Rollback: reverter os commits desta branch, sem apagar mídias anteriores.
 
+## Separação Bugi 2D / Bugi 3D — 05/11/2026
+
+Criados `bugi-3d/`, `docs/BUGI-2D-E-3D.md` e a skill `.agents/skills/e-se-bugasse-3d`. O kit recebeu o preset `bugi`, cabelo low-poly coral `spikes`, package namespace próprio, catálogo regenerado e check adaptado. O Bugi 2D existente não foi movido. Rollback: reverter o commit desta integração; não apagar `out/` nem alterar branches anteriores.
+
+## Adaptação completa das skills para 3D — 05/11/2026
+
+Criados `e-se-bugasse-producao-3d`, `remotion-qualidade-3d`, `skill-reel-adaptacao-3d`, `photocraft-3d` e `filmcraft-3d`. A skill `e-se-bugasse-3d` recebeu matriz, registry e verificador de cobertura; a Reel local passou a rotear 2D/3D. Adicionado `npm run test:skills-3d`. Rollback: reverter somente o commit desta adaptação; o módulo 3D base permanece independente.
+

@@ -1,6 +1,8 @@
-# E Se Bugasse? Studio
+# E Se Bugasse? Studio — Bugi 2D
 
 Sistema completo de produção audiovisual com inteligência artificial para o canal brasileiro de YouTube Shorts, TikTok e Facebook Reels **E Se Bugasse?**, protagonizado pelo personagem fixo **Bugi**.
+
+Esta raiz mantém a linha de produção **Bugi 2D**. A linha experimental **Bugi 3D** está isolada em [`bugi-3d/`](bugi-3d/README.md); veja a separação e os critérios de escolha em [`docs/BUGI-2D-E-3D.md`](docs/BUGI-2D-E-3D.md).
 
 - **Tema central**: *"E se uma regra ou condição física do mundo mudasse por alguns segundos?"*
 - **Slogan**: *"Muda uma regra. Começa o caos."*

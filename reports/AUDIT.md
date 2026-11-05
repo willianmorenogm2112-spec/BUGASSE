@@ -69,3 +69,21 @@ Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, ali
 ## Vídeo Tempo parado — 05/11/2026
 Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento acústico WhisperX, cenário SVG, diagramas, balões por speaker, envelope de boca e SFX originais. Evidências e limites: reports/TEMPO-INTERACAO.md; composição TimeDialogueRoot.tsx; assets public/assets/tempo-interacao. Lint/build e quatro testes de movimento passaram. Montagem 94,553 s; export 94,833 s, H.264/AAC 1080×1920/30. Primeira exportação decodificada sem erros; mix -16,5 LUFS, pico -1,9 dBTP. Revisão visual amostrada detectou sobreposição de personagem em café/contrato, corrigida em v2. Limitação: escuta humana integral e aprovação artística pendentes. Sem publicação. Rollback: reverter os commits desta branch, sem apagar mídias anteriores.
 
+## Auditoria do kit Bugi 3D — 05/11/2026
+
+- Origem: `kit-video-3d WillianIA.zip`, SHA-256 `80F7514D495AFC60A593D8381AA2C85799CEBD98B9ABE6E754305AF2145555CC`.
+- Dependências declaradas: Three.js e Puppeteer Core. Nenhum script npm de instalação declarado; instalação feita com `--ignore-scripts`.
+- Superfícies sensíveis: subprocessos FFmpeg/ffprobe/Chrome, downloads opcionais do Kokoro e chamadas opcionais ElevenLabs. Downloads/serviços de voz não executados.
+- O render do pacote captura frames do player Three.js e monta MP4 com FFmpeg. Ele foi classificado como diagnóstico/protótipo; não satisfaz sozinho o contrato de Remotion principal.
+- O arquivo não declara licença. Registro em `bugi-3d/PROVENANCE.json`; revisar direitos antes de merge em repositório público.
+- Instruções internas foram arquivadas como referência e não instaladas como `AGENTS.md` ativo.
+- O primeiro render diagnóstico revelou falha em `engine/fluxos.js`: material com modo `caminho` e apenas origem/destino acessava uma lista nula. Corrigido com fallback determinístico para `jato`/`sobe`; check completo e render de quadros passaram após a correção.
+
+## Auditoria de cobertura das skills 3D — 05/11/2026
+
+- 52 nomes únicos foram detectados entre o worktree, a raiz compartilhada e o clone BUGASSE; após criar cinco variantes, 57/57 estão classificados em `skill-coverage.json`.
+- Skills neutras não foram copiadas: recebem um contrato 3D comum para evitar forks divergentes.
+- Variantes específicas: produção, Remotion QA, Skill Reel, PhotoCraft e FilmCraft.
+- A Skill Reel local tinha `version` fora do schema aceito; movido para `metadata.version`.
+- Limite: cobertura documental/roteamento não comprova que cada ferramenta opcional foi executada. PhotoCraft, FilmCraft, After Effects, Figma e HyperFrames continuam condicionais à disponibilidade e ganho real.
+

@@ -1,0 +1,52 @@
+{
+  "versao": 1,
+  "titulo": "Teste visual do Bugi 3D",
+  "formato": { "largura": 1080, "altura": 1920, "fps": 30 },
+  "duracao": 6,
+  "legendas": { "ativo": false },
+  "ambiente": { "horario": "dia", "fundo": "cidade", "chao": "asfalto" },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 3,
+      "objetos": [
+        { "id": "poste", "asset": "poste_luz", "pos": [-3.5, 0, 0] },
+        { "id": "carro", "asset": "carro_sedan", "variante": "azul", "pos": [4, 0, -4], "movimentos": [{ "de": 0, "ate": 3, "para": [4, 6] }] }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [-2, 0, 5],
+          "movimentos": [{ "de": 0, "ate": 2.2, "para": [1, 5], "clip": "walk" }],
+          "viraPara": [{ "em": 2.2, "alvo": "camera" }],
+          "acoes": [{ "clip": "point", "de": 2.2, "ate": 3, "params": { "dir": "up" }, "expressao": "surprised" }]
+        }
+      ],
+      "camera": { "tipo": "enquadrar", "alvo": "bugi", "plano": "geral", "angulo": 12, "elevacao": 8, "aproxima": 0.85 },
+      "fluxos": [{ "material": "poeira", "origem": [0, 0.15, 5], "taxa": 10, "de": 0, "ate": 2.4, "dispersao": 0.8 }],
+      "textos": [{ "texto": "BUGI 3D", "de": 0.2, "ate": 2.8, "estilo": "titulo" }]
+    },
+    {
+      "inicio": 3,
+      "fim": 6,
+      "transicao": "flash",
+      "objetos": [{ "id": "poste", "asset": "poste_luz", "pos": [-3.5, 0, 0] }],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [0, 0, 5],
+          "viraPara": [{ "em": 3, "alvo": "camera" }],
+          "acoes": [
+            { "clip": "talk", "de": 3, "ate": 6, "fala": true, "expressao": "angry", "params": { "energy": 1.2 } },
+            { "clip": "point", "de": 4.3, "ate": 5.6, "camada": 1, "mascara": ["armR", "forearmR", "handR"], "params": { "dir": "up" } }
+          ]
+        }
+      ],
+      "camera": { "tipo": "enquadrar", "alvo": "bugi", "plano": "medio", "angulo": 0, "elevacao": 6, "aproxima": 0.85 },
+      "fluxos": [{ "material": "eletricidade", "origem": { "ancora": "poste", "desloca": [0, 3, 0] }, "destino": [-1.5, 0.5, 4.5], "taxa": 20, "de": 3.5, "ate": 5.6 }],
+      "textos": [{ "texto": "QUAL REGRA VOCÊ BUGARIA?", "de": 3.2, "ate": 5.8, "estilo": "pergunta" }]
+    }
+  ]
+}

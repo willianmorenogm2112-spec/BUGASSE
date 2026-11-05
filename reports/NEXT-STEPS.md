@@ -58,3 +58,18 @@ Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, ali
 ## Vídeo Tempo parado — 05/11/2026
 Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento acústico WhisperX, cenário SVG, diagramas, balões por speaker, envelope de boca e SFX originais. Evidências e limites: reports/TEMPO-INTERACAO.md; composição TimeDialogueRoot.tsx; assets public/assets/tempo-interacao. Lint/build e quatro testes de movimento passaram. Montagem 94,553 s; export 94,833 s, H.264/AAC 1080×1920/30. Primeira exportação decodificada sem erros; mix -16,5 LUFS, pico -1,9 dBTP. Revisão visual amostrada detectou sobreposição de personagem em café/contrato, corrigida em v2. Limitação: escuta humana integral e aprovação artística pendentes. Sem publicação. Rollback: reverter os commits desta branch, sem apagar mídias anteriores.
 
+## Próximos marcos do Bugi 3D
+
+1. Revisar a licença/origem antes de merge público.
+2. Renderizar quadros do preset `bugi` em idle, walk, talk, surprised e angry; corrigir silhueta/cabelo/roupa após inspeção.
+3. Criar um piloto 3D de 8–12 s com cenário, ação e contato reais.
+4. Implementar o adaptador que leva a cena aprovada à composição Remotion e provar paridade Player/export.
+5. Só depois produzir episódio completo, com Gemini TTS, alinhamento, SFX, fontes e QA artístico.
+
+## Após adaptar as skills
+
+1. Usar `e-se-bugasse-producao-3d` no piloto de 8–12 s.
+2. Implementar e provar a ligação determinística Three.js → Remotion antes de declarar `remotion-qualidade-3d` atendida.
+3. Rodar `npm run test:skills-3d` sempre que instalar/remover skills.
+4. Exercitar apenas as ferramentas opcionais que trouxerem ganho observável; registrar indisponibilidade em vez de simular uso.
+

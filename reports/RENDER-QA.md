@@ -71,3 +71,13 @@ Executado: composição isolada EditingPilot (12 s), reutilizando Puck real, ali
 ## Vídeo Tempo parado — 05/11/2026
 Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento acústico WhisperX, cenário SVG, diagramas, balões por speaker, envelope de boca e SFX originais. Evidências e limites: reports/TEMPO-INTERACAO.md; composição TimeDialogueRoot.tsx; assets public/assets/tempo-interacao. Lint/build e quatro testes de movimento passaram. Montagem 94,553 s; export 94,833 s, H.264/AAC 1080×1920/30. Primeira exportação decodificada sem erros; mix -16,5 LUFS, pico -1,9 dBTP. Revisão visual amostrada detectou sobreposição de personagem em café/contrato, corrigida em v2. Limitação: escuta humana integral e aprovação artística pendentes. Sem publicação. Rollback: reverter os commits desta branch, sem apagar mídias anteriores.
 
+## Bugi 3D — validação estrutural — 05/11/2026
+
+`npm run check` passou: 12/12 personagens, 20 clips, oito testes de apoio dos pés, três medições de patinação, timeline em camadas, 57 assets e 120 variantes, dois storyboards de exemplo. Não houve render de vídeo nesta etapa. Portanto, iluminação, enquadramento, determinismo quadro a quadro, paridade Remotion e qualidade artística do Bugi 3D permanecem pendentes.
+
+Teste visual adicional: `projects/bugi-identidade-test` validou sem erros e gerou quatro PNGs 1080×1920. O close frontal confirma paleta, olhos, expressão e silhueta básica do Bugi. Problemas observados: cabelo ainda muito cônico, cenário urbano simples e poeira excessiva cobrindo o corpo na caminhada. Não houve MP4, voz ou aceite artístico.
+
+## Skills 3D — impacto no QA
+
+A matriz de skills acrescenta verificações 3D de clipping, z-fighting, popping, materiais, sombras, contato, colisões e continuidade espacial, além do QA 2D já existente. Esta etapa validou instruções e cobertura, não produziu novo MP4 nem altera o aceite artístico pendente.
+
