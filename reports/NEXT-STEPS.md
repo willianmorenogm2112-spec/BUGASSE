@@ -1,5 +1,9 @@
 # Próximos passos — 2026-11-04
 
+## Bugi formiga 3D — 05/11/2026
+
+Execução e evidências em `reports/BUGI-FORMIGA-3D.md`. Roteiro pesquisado, Gemini TTS Charon/Puck real, alinhamento acústico (16 turnos, 213 palavras, 77,437 s), storyboard 22 planos e composição Remotion Ant3DRoot. Limitações artísticas registradas; sem publicação automática. Rollback por reversão dos commits desta branch.
+
 ## Casal Bugi v2
 
 Revisar a nova passageira, escala e abertura de boca do Bugi no MP4 antes de publicar. Evidência e arquivos: CASAL-BUGI-V2.md. Aprovação artística e auditiva humanas pendentes.

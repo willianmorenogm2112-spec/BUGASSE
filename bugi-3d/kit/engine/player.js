@@ -874,6 +874,17 @@ function bocaNaFala(t) {
 }
 
 // ---------- interpolação de keyframes [[t, valor], ...] ----------
+function chavesVec(ks, t, suave = true) {
+  if (t <= ks[0][0]) return ks[0][1].slice();
+  for (let i = 1; i < ks.length; i++) {
+    if (t <= ks[i][0]) {
+      let u = clamp((t - ks[i - 1][0]) / Math.max(1e-6, ks[i][0] - ks[i - 1][0]), 0, 1);
+      if (suave) u = u * u * (3 - 2 * u);
+      return ks[i - 1][1].map((v, j) => lerp(v, ks[i][1][j], u));
+    }
+  }
+  return ks[ks.length - 1][1].slice();
+}
 function chaves(ks, t) {
   if (t <= ks[0][0]) return ks[0][1];
   for (let i = 1; i < ks.length; i++) {
@@ -936,6 +947,7 @@ window.renderAt = (t) => {
     scene.fog.color.set(horiz);
     scene.background = new THREE.Color(horiz);
     scene.fog.near = 70;
+    scene.fog.far = 250;
     env.hemi.intensity *= 0.8;
     if (clima === 'chuva') { env.sun.intensity *= 0.45; env.hemi.intensity *= 0.9; scene.fog.near = 25; }
     for (const [nome, g] of Object.entries(FUNDOS)) g.visible = nome === fundo;

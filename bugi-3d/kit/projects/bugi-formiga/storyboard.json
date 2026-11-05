@@ -1,0 +1,6950 @@
+{
+  "versao": 1,
+  "titulo": "E se você encolhesse?",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 77.437,
+  "audio": "dialogue.wav",
+  "palavras": "palavras.json",
+  "ambiente": {
+    "fundo": "interior",
+    "chao": "madeira",
+    "horario": "nublado",
+    "decoracao": false
+  },
+  "legendas": {
+    "ativo": false
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 4.902,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pos": [
+              [
+                0,
+                [
+                  1.8,
+                  5,
+                  0
+                ]
+              ],
+              [
+                0.7,
+                [
+                  1.8,
+                  0,
+                  0
+                ]
+              ]
+            ],
+            "pulsa": 0.035
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 0,
+              "ate": 4.902,
+              "expressao": "surprised",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "DO TAMANHO DE UMA FORMIGA?",
+          "de": 0,
+          "ate": 4.902,
+          "estilo": "titulo"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 0,
+          "ate": 4.902
+        }
+      ]
+    },
+    {
+      "inicio": 4.902,
+      "fim": 8.225,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 4.902,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 4.902,
+              "ate": 8.225,
+              "expressao": "angry",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 4.902,
+          "ate": 8.225
+        }
+      ]
+    },
+    {
+      "inicio": 8.225,
+      "fim": 12.006,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 8.225,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 8.225,
+              "ate": 12.006,
+              "expressao": "surprised",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 8.225,
+          "ate": 12.006
+        }
+      ]
+    },
+    {
+      "inicio": 12.006,
+      "fim": 15.987,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 12.006,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 12.006,
+              "ate": 15.987,
+              "expressao": "surprised",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 12.006,
+          "ate": 15.987
+        }
+      ]
+    },
+    {
+      "inicio": 15.987,
+      "fim": 18.249,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 15.987,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 15.987,
+              "ate": 18.249,
+              "expressao": "surprised",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 15.987,
+          "ate": 18.249
+        }
+      ]
+    },
+    {
+      "inicio": 18.249,
+      "fim": 21.42,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 18.249,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 18.249,
+              "ate": 21.42,
+              "expressao": "worried",
+              "fala": false
+            }
+          ],
+          "movimentos": [
+            {
+              "de": 18.249,
+              "ate": 21.42,
+              "para": [
+                3,
+                3
+              ],
+              "clip": "run"
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "10 cm = 20 ALTURAS",
+          "de": 18.249,
+          "ate": 21.42,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 18.249,
+          "ate": 21.42
+        }
+      ]
+    },
+    {
+      "inicio": 21.42,
+      "fim": 24.791,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 21.42,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "run",
+              "de": 21.42,
+              "ate": 24.791,
+              "expressao": "worried",
+              "fala": false
+            }
+          ],
+          "movimentos": [
+            {
+              "de": 21.42,
+              "ate": 24.791,
+              "para": [
+                3,
+                3
+              ],
+              "clip": "run"
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "10 cm = 20 ALTURAS",
+          "de": 21.42,
+          "ate": 24.791,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 21.42,
+          "ate": 24.791
+        }
+      ]
+    },
+    {
+      "inicio": 24.791,
+      "fim": 27.233,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 24.791,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 24.791,
+              "ate": 27.233,
+              "expressao": "worried",
+              "fala": true
+            }
+          ],
+          "movimentos": [
+            {
+              "de": 24.791,
+              "ate": 27.233,
+              "para": [
+                3,
+                3
+              ],
+              "clip": "run"
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 24.791,
+          "ate": 27.233
+        }
+      ]
+    },
+    {
+      "inicio": 27.233,
+      "fim": 31.204500000000003,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 27.233,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 27.233,
+              "ate": 31.204500000000003,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "TENSÃO SUPERFICIAL",
+          "de": 27.233,
+          "ate": 31.204500000000003,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 27.233,
+          "ate": 31.204500000000003
+        }
+      ]
+    },
+    {
+      "inicio": 31.204500000000003,
+      "fim": 35.376,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 31.204500000000003,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 31.204500000000003,
+              "ate": 35.376,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "TENSÃO SUPERFICIAL",
+          "de": 31.204500000000003,
+          "ate": 35.376,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 31.204500000000003,
+          "ate": 35.376
+        }
+      ]
+    },
+    {
+      "inicio": 35.376,
+      "fim": 38.578,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 35.376,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 35.376,
+              "ate": 38.578,
+              "expressao": "angry",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 35.376,
+          "ate": 38.578
+        }
+      ]
+    },
+    {
+      "inicio": 38.578,
+      "fim": 42.219,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 38.578,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 38.578,
+              "ate": 42.219,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 38.578,
+          "ate": 42.219
+        }
+      ]
+    },
+    {
+      "inicio": 42.219,
+      "fim": 46.06,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 42.219,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 42.219,
+              "ate": 46.06,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 42.219,
+          "ate": 46.06
+        }
+      ]
+    },
+    {
+      "inicio": 46.06,
+      "fim": 49.243,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 46.06,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 46.06,
+              "ate": 49.243,
+              "expressao": "angry",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 46.06,
+          "ate": 49.243
+        }
+      ]
+    },
+    {
+      "inicio": 49.243,
+      "fim": 54.054500000000004,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 49.243,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 49.243,
+              "ate": 54.054500000000004,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "ÁREA ∝ L² • VOLUME ∝ L³",
+          "de": 49.243,
+          "ate": 54.054500000000004,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            -3,
+            1,
+            3
+          ],
+          "destino": [
+            3,
+            1,
+            3
+          ],
+          "taxa": 12,
+          "tamanho": 0.07,
+          "de": 49.243,
+          "ate": 54.054500000000004
+        }
+      ]
+    },
+    {
+      "inicio": 54.054500000000004,
+      "fim": 59.066,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 54.054500000000004,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "think",
+              "de": 54.054500000000004,
+              "ate": 59.066,
+              "expressao": "worried",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [
+        {
+          "texto": "ÁREA ∝ L² • VOLUME ∝ L³",
+          "de": 54.054500000000004,
+          "ate": 59.066,
+          "estilo": "destaque"
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            -3,
+            1,
+            3
+          ],
+          "destino": [
+            3,
+            1,
+            3
+          ],
+          "taxa": 12,
+          "tamanho": 0.07,
+          "de": 54.054500000000004,
+          "ate": 59.066
+        }
+      ]
+    },
+    {
+      "inicio": 59.066,
+      "fim": 62.609,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 59.066,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 59.066,
+              "ate": 62.609,
+              "expressao": "worried",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [
+            -3,
+            1,
+            3
+          ],
+          "destino": [
+            3,
+            1,
+            3
+          ],
+          "taxa": 12,
+          "tamanho": 0.07,
+          "de": 59.066,
+          "ate": 62.609
+        }
+      ]
+    },
+    {
+      "inicio": 62.609,
+      "fim": 65.21000000000001,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        },
+        {
+          "id": "ant-abdomen",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.55,
+            -0.6
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.8,
+              0.7,
+              1.1
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0.55,
+                  1.4
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0.55,
+                  1.4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-torax",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.45,
+              0.5,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0.5,
+                  2.1
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0.5,
+                  2.1
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-cabeca",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.6,
+            0.65
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.65,
+              0.55,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0.6,
+                  2.65
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0.6,
+                  2.65
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                -0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                -0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                -0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                -0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                -0.15,
+                0.8,
+                0.8
+              ],
+              [
+                -0.3,
+                1.1,
+                1.1
+              ],
+              [
+                -0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0.15,
+                0.8,
+                0.8
+              ],
+              [
+                0.3,
+                1.1,
+                1.1
+              ],
+              [
+                0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                62.609,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                65.21000000000001,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 62.609,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 62.609,
+              "ate": 65.21000000000001,
+              "expressao": "thinking",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 62.609,
+          "ate": 65.21000000000001
+        }
+      ]
+    },
+    {
+      "inicio": 65.21000000000001,
+      "fim": 68.011,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        },
+        {
+          "id": "ant-abdomen",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.55,
+            -0.6
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.8,
+              0.7,
+              1.1
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0.55,
+                  1.4
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0.55,
+                  1.4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-torax",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.45,
+              0.5,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0.5,
+                  2.1
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0.5,
+                  2.1
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-cabeca",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.6,
+            0.65
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.65,
+              0.55,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0.6,
+                  2.65
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0.6,
+                  2.65
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                -0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                -0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                -0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                -0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                -0.15,
+                0.8,
+                0.8
+              ],
+              [
+                -0.3,
+                1.1,
+                1.1
+              ],
+              [
+                -0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0.15,
+                0.8,
+                0.8
+              ],
+              [
+                0.3,
+                1.1,
+                1.1
+              ],
+              [
+                0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                65.21000000000001,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                68.011,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 65.21000000000001,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 65.21000000000001,
+              "ate": 68.011,
+              "expressao": "thinking",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          -5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 65.21000000000001,
+          "ate": 68.011
+        }
+      ]
+    },
+    {
+      "inicio": 68.011,
+      "fim": 70.053,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        },
+        {
+          "id": "ant-abdomen",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.55,
+            -0.6
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.8,
+              0.7,
+              1.1
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0.55,
+                  1.4
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0.55,
+                  1.4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-torax",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.45,
+              0.5,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0.5,
+                  2.1
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0.5,
+                  2.1
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-cabeca",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.6,
+            0.65
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.65,
+              0.55,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0.6,
+                  2.65
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0.6,
+                  2.65
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                -0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                -0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                -0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                -0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                -0.15,
+                0.8,
+                0.8
+              ],
+              [
+                -0.3,
+                1.1,
+                1.1
+              ],
+              [
+                -0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0.15,
+                0.8,
+                0.8
+              ],
+              [
+                0.3,
+                1.1,
+                1.1
+              ],
+              [
+                0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                68.011,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                70.053,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 68.011,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 68.011,
+              "ate": 70.053,
+              "expressao": "thinking",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 68.011,
+          "ate": 70.053
+        }
+      ]
+    },
+    {
+      "inicio": 70.053,
+      "fim": 75.035,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        },
+        {
+          "id": "ant-abdomen",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.55,
+            -0.6
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.8,
+              0.7,
+              1.1
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0.55,
+                  1.4
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0.55,
+                  1.4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-torax",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.45,
+              0.5,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0.5,
+                  2.1
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0.5,
+                  2.1
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-cabeca",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.6,
+            0.65
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.65,
+              0.55,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0.6,
+                  2.65
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0.6,
+                  2.65
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                -0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                -0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                -0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                -0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                -0.15,
+                0.8,
+                0.8
+              ],
+              [
+                -0.3,
+                1.1,
+                1.1
+              ],
+              [
+                -0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0.15,
+                0.8,
+                0.8
+              ],
+              [
+                0.3,
+                1.1,
+                1.1
+              ],
+              [
+                0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                70.053,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                75.035,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 70.053,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "look_around",
+              "de": 70.053,
+              "ate": 75.035,
+              "expressao": "thinking",
+              "fala": false
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [
+          5,
+          3.5,
+          12
+        ],
+        "olha": [
+          0,
+          1,
+          2
+        ],
+        "fov": 45
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 70.053,
+          "ate": 75.035
+        }
+      ]
+    },
+    {
+      "inicio": 75.035,
+      "fim": 77.437,
+      "objetos": [
+        {
+          "id": "bancada",
+          "asset": "forma",
+          "pos": [
+            0,
+            -0.3,
+            0
+          ],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [
+              65,
+              0.3,
+              55
+            ],
+            "cor": "#FFF7E9"
+          }
+        },
+        {
+          "id": "caneca",
+          "asset": "forma",
+          "pos": [
+            -9,
+            0,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              12,
+              15,
+              12
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "cafe",
+          "asset": "forma",
+          "pos": [
+            -9,
+            15,
+            -10
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              0.2,
+              10
+            ],
+            "cor": "#59342a"
+          }
+        },
+        {
+          "id": "alca",
+          "asset": "forma",
+          "pos": [
+            -1.8,
+            7,
+            -10
+          ],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [
+              9,
+              1.1,
+              1.1
+            ],
+            "cor": "#39C8D5"
+          }
+        },
+        {
+          "id": "migalha",
+          "asset": "forma",
+          "pos": [
+            3,
+            0,
+            1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.6,
+              0.8,
+              1.1
+            ],
+            "cor": "#d9a25e"
+          }
+        },
+        {
+          "id": "gota",
+          "asset": "forma",
+          "pos": [
+            1.8,
+            0,
+            0
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              1.7,
+              1.4,
+              1.7
+            ],
+            "cor": "#78cfec"
+          },
+          "opacidade": 0.78,
+          "anim": {
+            "pulsa": 0.035,
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.025,
+              "freq": 1.2
+            }
+          }
+        },
+        {
+          "id": "pote",
+          "asset": "forma",
+          "pos": [
+            13,
+            0,
+            -17
+          ],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [
+              10,
+              20,
+              10
+            ],
+            "cor": "#FF6B50"
+          }
+        },
+        {
+          "id": "ant-abdomen",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.55,
+            -0.6
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.8,
+              0.7,
+              1.1
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0.55,
+                  1.4
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0.55,
+                  1.4
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-torax",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.5,
+            0.1
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.45,
+              0.5,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0.5,
+                  2.1
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0.5,
+                  2.1
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "ant-cabeca",
+          "asset": "forma",
+          "pos": [
+            0,
+            0.6,
+            0.65
+          ],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [
+              0.65,
+              0.55,
+              0.6
+            ],
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0.6,
+                  2.65
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0.6,
+                  2.65
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                -0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-0-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.4
+              ],
+              [
+                0.55,
+                0.32,
+                -0.5
+              ],
+              [
+                0.8,
+                0,
+                -0.2
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                -0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                -0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-1-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                -0.050000000000000044
+              ],
+              [
+                0.55,
+                0.32,
+                -0.15000000000000002
+              ],
+              [
+                0.8,
+                0,
+                0.14999999999999997
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2--1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                -0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                -0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "leg-2-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0,
+                0.55,
+                0.29999999999999993
+              ],
+              [
+                0.55,
+                0.32,
+                0.19999999999999996
+              ],
+              [
+                0.8,
+                0,
+                0.49999999999999994
+              ]
+            ],
+            "raio": 0.035,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 0.06,
+              "freq": 4
+            },
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena-1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                -0.15,
+                0.8,
+                0.8
+              ],
+              [
+                -0.3,
+                1.1,
+                1.1
+              ],
+              [
+                -0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        },
+        {
+          "id": "antena1",
+          "asset": "tubo",
+          "params": {
+            "pontos": [
+              [
+                0.15,
+                0.8,
+                0.8
+              ],
+              [
+                0.3,
+                1.1,
+                1.1
+              ],
+              [
+                0.45,
+                1.05,
+                1.35
+              ]
+            ],
+            "raio": 0.025,
+            "cor": "#59342a"
+          },
+          "anim": {
+            "pos": [
+              [
+                75.035,
+                [
+                  3,
+                  0,
+                  2
+                ]
+              ],
+              [
+                77.437,
+                [
+                  1,
+                  0,
+                  2
+                ]
+              ]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "bugi",
+          "preset": "bugi",
+          "pos": [
+            0,
+            0,
+            3
+          ],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 75.035,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 75.035,
+              "ate": 77.437,
+              "expressao": "thinking",
+              "fala": true
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "bugi",
+        "plano": "medio",
+        "angulo": -8,
+        "elevacao": 3
+      },
+      "textos": [],
+      "fluxos": [
+        {
+          "material": "vapor",
+          "origem": [
+            -9,
+            15,
+            -10
+          ],
+          "taxa": 5,
+          "tamanho": 0.15,
+          "subida": 2,
+          "de": 75.035,
+          "ate": 77.437
+        }
+      ]
+    }
+  ]
+}
