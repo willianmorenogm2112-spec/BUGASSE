@@ -17,3 +17,7 @@
 ## Próximo marco técnico
 
 Criar um piloto 3D de 8–12 segundos com o preset `bugi`, validar o player Three.js e então provar a integração do mesmo conteúdo visual em uma composição Remotion antes do primeiro episódio completo.
+
+## Skills
+
+Todas as 52 skills de vídeo detectadas nos diretórios do projeto estão classificadas pela skill `e-se-bugasse-3d`. Cinco integrações acopladas ao 2D receberam variantes 3D próprias; skills neutras são reutilizadas por contrato, evitando forks desnecessários. O verificador de cobertura deve passar sempre que uma skill for instalada ou removida.

@@ -1,11 +1,12 @@
 ---
 name: skill-reel-esebugasse
-description: Diretrizes de edicao cinematografica, sincronizacao de palavras, efeitos sonoros e composicao Remotion adaptadas de Felpborges/skill-reel para o canal de animacao 2D E Se Bugasse? Studio.
-version: 2.0.0-windows-adapted
+description: Diretrizes de edição cinematográfica, sincronização de palavras, efeitos sonoros e composição Remotion adaptadas da Skill Reel para as linhas Bugi 2D e Bugi 3D.
 license: MIT
+metadata:
+  version: 2.0.0-windows-adapted
 ---
 
-# Skill Reel — Adaptada para E Se Bugasse? Studio (Animação 2D Bugi)
+# Skill Reel — Adaptada para E Se Bugasse? Studio (Bugi 2D e 3D)
 
 Esta skill foi inspecionada, auditada e adaptada a partir do ecossistema `https://github.com/Felpborges/skill-reel` para operação em **Windows (PowerShell + Codex + Remotion)** e integrada diretamente ao motor de vídeo do **E Se Bugasse? Studio**.
 
@@ -17,6 +18,11 @@ Esta skill foi inspecionada, auditada e adaptada a partir do ecossistema `https:
 2. **Compatibilidade Windows (Caminhos e Comandos)**:
    - Todos os caminhos relativos usam `path.join` / separadores compatíveis com Windows PowerShell (`\`).
    - Nenhum script bash remoto (`curl | sh`) é executado sem revisão.
+
+3. **Rota Bugi 3D**:
+   - Leia `../e-se-bugasse-3d/SKILL.md` e use `skill-reel-adaptacao-3d`.
+   - Substitua o rig SVG por preset/esqueleto Three.js e enquadramento por root/head/hands/bounding box.
+   - Detecção facial humana continua desativada. Cortes, legendas e SFX seguem os mesmos timestamps, mas o QA inclui contato, clipping, z-fighting, sombras e continuidade espacial.
 
 ## Referências Obrigatórias da Skill
 

@@ -5,7 +5,7 @@ description: Criar, adaptar ou revisar cenas low-poly do Bugi 3D usando o kit Th
 
 # E Se Bugasse? — Bugi 3D
 
-Leia `bugi-3d/README.md` e `bugi-3d/PROVENANCE.json` antes de trabalhar no módulo. Consulte `bugi-3d/kit/catalog/RESUMO.md` para escolher assets e `bugi-3d/kit/docs/processos.md` quando a cena explicar um processo.
+Leia `bugi-3d/README.md`, `bugi-3d/PROVENANCE.json` e [references/adaptation-guide.md](references/adaptation-guide.md) antes de trabalhar no módulo. A referência mapeia todas as skills instaladas para contratos 3D. Consulte `bugi-3d/kit/catalog/RESUMO.md` para escolher assets e `bugi-3d/kit/docs/processos.md` quando a cena explicar um processo.
 
 ## Invariantes
 
@@ -25,3 +25,11 @@ Leia `bugi-3d/README.md` e `bugi-3d/PROVENANCE.json` antes de trabalhar no módu
 4. Gere quadros diagnósticos e revise contatos, escala, rosto, cabelo, câmera e safe zones.
 5. Integre a cena aprovada ao pipeline Remotion; valide áudio, duração, H.264/AAC e paridade Player/export.
 6. Registre evidências e limitações nos relatórios do repositório. Não marque produção 3D como pronta sem render real e QA artístico.
+
+## Roteamento de skills
+
+- Produção completa: use `e-se-bugasse-producao-3d`.
+- Paridade Player/export: use `remotion-qualidade-3d` e as skills oficiais Remotion.
+- Cortes, legendas, SFX e retenção: use `skill-reel-adaptacao-3d` mais as skills neutras indicadas no mapa.
+- Pré-processamento de imagens e acabamento: `photocraft-3d` e `filmcraft-3d` somente quando os binários estiverem realmente disponíveis.
+- Rode `node .agents/skills/e-se-bugasse-3d/scripts/check-skill-coverage.mjs` após instalar ou remover skills.

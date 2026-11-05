@@ -1,0 +1,29 @@
+{
+  "channelAdapters": [
+    "e-se-bugasse-3d", "e-se-bugasse-producao", "e-se-bugasse-producao-3d",
+    "filmcraft", "filmcraft-3d", "photocraft", "photocraft-3d", "reel", "reel-upstream",
+    "remotion-qualidade", "remotion-qualidade-3d", "skill-reel-adaptacao", "skill-reel-adaptacao-3d"
+  ],
+  "remotion": [
+    "remotion-best-practices", "remotion-captions", "remotion-create", "remotion-docs",
+    "remotion-interactivity", "remotion-license", "remotion-maps", "remotion-markup",
+    "remotion-multimedia", "remotion-render", "remotion-saas", "remotion-studio",
+    "remotion-to-hyperframes", "remotion-upgrade", "remotion-video"
+  ],
+  "hyperframesAndMedia": [
+    "hyperframes", "hyperframes-cli", "hyperframes-registry", "media-use"
+  ],
+  "motionNeutral": [
+    "animation-principles", "beat-sync-editing", "caption-animation", "color-motion",
+    "explainer-video", "kinetic-typography", "motion-art-direction", "short-form-video",
+    "shot-composition"
+  ],
+  "specializedFormats": [
+    "animated-infographic", "chart-animation", "countdown-video", "diagram-animation",
+    "isometric-animation", "logo-animation", "lower-thirds", "motion-background",
+    "presentation-video", "whiteboard-animation", "wrapped-video"
+  ],
+  "optionalTools": [
+    "after-effects", "figma", "reverse-any-video", "slideshow", "style-sampling"
+  ]
+}
