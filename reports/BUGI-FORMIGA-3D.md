@@ -23,4 +23,8 @@ Materiais claros demais, cabelo cônico, rig ainda básico. Não há encolhiment
 
 ## Próximo refinamento
 
+## Export entregue para revisão
+
+`out/bugi-formiga-3d-v1.mp4`: Remotion Ant3DRoot, 2324 frames, 77,483 s, 23.703.759 bytes, H.264 1080×1920/30 + AAC. Decode integral FFmpeg passou. SHA-256 `18A0EDA259F507C40147D488CFF7581783FC5E160D3DC94A2C974D0E10FF1B48`. Quadro Remotion `out/bugi-formiga-3d-review.png` inspecionado: legenda legível; personagem claro/pequeno nos planos gerais. Player local porta 3101 usa o mesmo componente/assets. Sem aprovação artística final ou publicação. Build e 17 testes gerais passaram.
+
 Corrigir luz/contraste local, melhorar caneca e cabelo, animar contato da formiga com a migalha, variar atuação por frase e finalizar SFX. Publicação depende de pedido específico do usuário.
