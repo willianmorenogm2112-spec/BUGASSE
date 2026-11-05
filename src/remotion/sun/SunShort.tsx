@@ -1,6 +1,7 @@
 import React from 'react';
 import {AbsoluteFill,Audio,interpolate,staticFile,useCurrentFrame,useVideoConfig} from 'remotion';
-import {BugiArticulatedSvgFigure,computeBugiArticulatedKinematics} from '../../components/BugiCharacterSvg';
+import {BugiArticulatedSvgFigure} from '../../components/BugiCharacterSvg';
+import {computeSunBugiKinematics,SunBeatId} from './sunBugiMotion';
 import timing from '../../../public/assets/sol/timing.json';
 
 const clamp={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
@@ -8,11 +9,8 @@ export const SunShort:React.FC=()=>{
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),t=frame/fps;
  const beat=timing.beats.filter(b=>t>=b.start).at(-1)??timing.beats[0];
  const local=t-beat.start,space=['luz','orbita'].includes(beat.id),dark=t>=timing.dark;
- const k=computeBugiArticulatedKinematics(beat.id==='final'?'apontando':beat.id==='gravidade'?'pulando':dark?'assustando':'confiante_parado',frame,fps,t<3?.7:0,dark?'surpreso':beat.id==='gancho'?'determinado':'curioso');
- k.rootX=0;k.rootY=0;k.headRotation=k.headRotationDeg=Math.sin(t*2)*3+(dark?-8:4);
- k.mouthOpenness=t<3?.25+Math.abs(Math.sin(t*16))*.5:0;
- if(t<3.7){k.mouthShape='open_o'; k.rightArmPath=`M46 -24 Q100 -80 ${92+Math.sin(t*9)*18} -155`;k.leftBrowDeg=18;k.rightBrowDeg=-18;}
- if(beat.id==='frio'){k.leftArmPath='M-46 -24Q-65 30 22 25';k.rightArmPath='M46 -24Q65 35 -22 35';k.torsoRotation=k.torsoRotationDeg=Math.sin(t*28)*2;}
+ const characterBeat=(beat.id==='escuro'||beat.id==='gravidade'||beat.id==='frio'||beat.id==='plantas'||beat.id==='final'||beat.id==='gancho'||beat.id==='espera'?beat.id:'espera') as SunBeatId;
+ const k=computeSunBugiKinematics(characterBeat,local*fps,fps,t<4.2);
  const cap=timing.words.filter(w=>t>=w.start&&t<w.end+.08).at(-1);
  const ci=cap?timing.words.indexOf(cap):-1,group=ci<0?[]:timing.words.slice(Math.floor(ci/4)*4,Math.floor(ci/4)*4+4);
  const reveal=interpolate(local,[0,.28],[0,1],clamp);
@@ -28,8 +26,7 @@ export const SunShort:React.FC=()=>{
     <path d="M0 1010H1080V1920H0Z" fill={dark?'#304A59':'#D6C9B4'}/>
     <path d="M0 1200H1080M0 1560H1080M170 1010L80 1920M800 1010L1020 1920" stroke={dark?'#4A6571':'#B7A58B'} strokeWidth="8"/>
     <g transform="translate(900 850)"><path d="M0 0V350" stroke="#122638" strokeWidth="18"/><path d="M-70 350H70" stroke="#122638" strokeWidth="22"/><circle r="100" fill="#FFF7E9" stroke="#122638" strokeWidth="14"/><g transform={`rotate(${beat.id==='final'?local*500:0})`} fill="#39C8D5">{[0,120,240].map(a=><path key={a} transform={`rotate(${a})`} d="M0 0Q-80-100 0-80Q60-30 0 0Z"/>)}</g><circle r="16" fill="#122638"/></g>
-    <ellipse cx="460" cy="1350" rx="165" ry="28" fill="#122638" opacity=".2"/>
-    <g transform="translate(460 1120) scale(1.5)"><BugiArticulatedSvgFigure kinematics={k}/></g>
+    <g transform="translate(55 300) scale(1.5)"><BugiArticulatedSvgFigure kinematics={k}/></g>
     {!dark&&[0,1,2].map(i=><path key={i} d={`M${275+i*140} 650q${Math.sin(t*4+i)*18} -40 0 -80`} stroke="#FF6B50" strokeWidth="9" fill="none" opacity=".6"/>)}
     {beat.id==='frio'&&Array.from({length:28},(_,i)=><circle key={i} cx={(i*191+frame*.6)%1080} cy={(i*211+frame*2)%1700} r={3+i%5} fill="#FFF7E9" opacity=".65"/>)}
    </>}

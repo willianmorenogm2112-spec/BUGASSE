@@ -20,6 +20,10 @@ WhisperX 3.8.4 alinhou o roteiro original ao áudio: 122 palavras; revelar escur
 
 Estado: em revisão técnica e visual. Não publicado. Rollback: reverter apenas commits deste episódio.
 
+## Correção de atuação v4 — 05/11/2026
+
+O rig deixou de ser forçado a `rootY=0`: agora conserva o chão canônico e é posicionado pela transformação externa. Cada cena terrestre usa tempo local e uma ação motivada com recuperação. A gravidade terrestre não aciona mais `pulando`; o susto dura apenas a revelação da escuridão; frio usa postura apoiada com braços cruzados; braços alteram as juntas efetivamente renderizadas, não apenas paths legados. `sunBugiMotion.test.ts` impede regressões de chão, pose aérea, braços sem cruzar e loops eternos.
+
 ## Verificações executadas
 
-Lint e cinco testes do piloto passaram. Export v2: 48,811 s, 10.923.906 bytes, H.264 1080×1920/30 e AAC; decodificação integral sem erro. Medição da mesma locução no export v1: -14,87 LUFS e -2,20 dBTP. Quadros de gancho e noite e folha de contato inspecionados. Corrigidos caixa de legenda vazia, contraste do rodapé noturno e título sobre fundo espacial. Export v3 contém a última correção. Escuta humana e revisão artística contínua permanecem pendentes; não equivaler contact sheet a aprovação visual completa.
+Lint, 4 testes específicos do Sol, 5 testes do piloto e 17 testes gerais passaram. Export v4: 48,811 s, 6.510.888 bytes, H.264 1080×1920/30 e AAC; decodificação integral sem erro; true peak -2,2 dBFS. Quadros de gancho, susto, recuperação, gravidade, frio, plantas e final foram inspecionados; o quadro de frio após correção confirma pés apoiados e braços cruzados. A mesma locução já havia medido -14,87 LUFS. Escuta humana e aprovação artística do vídeo contínuo permanecem pendentes; não equivaler folha de contato a aprovação completa.

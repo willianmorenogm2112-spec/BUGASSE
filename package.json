@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "pilot:preview": "remotion studio src/remotion/PilotRoot.tsx --no-open --port=3100",
     "test:pilot": "tsx --test src/remotion/pilot/motion.test.ts",
+    "test:sun-motion": "tsx --test src/remotion/sun/sunBugiMotion.test.ts",
     "test": "tsx --test src/utils/studioLogic.test.ts",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"

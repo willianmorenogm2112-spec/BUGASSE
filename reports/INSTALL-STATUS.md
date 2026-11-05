@@ -108,3 +108,6 @@ Executado: instalação local de skills e auditoria de ferramentas em branch iso
 ## Episódio Sol — 04/11/2026
 Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição SVG Remotion. Evidências e limitações: reports/SOL-DESAPARECEU.md. Arquivos: src/remotion/sun/SunShort.tsx, public/assets/sol, scripts/align_sun.py. QA visual e sonoro humano pendente; não publicado.
 
+## Correção de atuação do Bugi — 05/11/2026
+Executado: controlador de atuação por beat e teste automatizado local, sem novas instalações. Evidência: `src/remotion/sun/sunBugiMotion.ts` e `npm run test:sun-motion` (4/4). Limitação: as skills orientam o trabalho, mas não são executáveis automáticos; ferramentas externas opcionais não foram necessárias para esta correção Remotion.
+

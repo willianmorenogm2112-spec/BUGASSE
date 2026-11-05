@@ -49,3 +49,6 @@ Executado: instalação local de skills e auditoria de ferramentas em branch iso
 ## Episódio Sol — 04/11/2026
 Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição SVG Remotion. Evidências e limitações: reports/SOL-DESAPARECEU.md. Arquivos: src/remotion/sun/SunShort.tsx, public/assets/sol, scripts/align_sun.py. QA visual e sonoro humano pendente; não publicado.
 
+## Após a correção de movimento v4 — 05/11/2026
+Executado: correção técnica e visual amostrada, novo MP4 validado. Próximo: usuário assistir à v4 inteira e aprovar atuação/ritmo; somente depois considerar publicação. Não publicar automaticamente. Para episódios futuros, usar `computeSunBugiKinematics` como referência de contrato: tempo local, ação curta, recuperação, apoio no chão e teste anti-loop; generalizar para controlador compartilhado apenas depois de validar em outro episódio.
+
