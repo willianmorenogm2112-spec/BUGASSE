@@ -1,0 +1,801 @@
+{
+  "alignmentType": "acoustic-forced-alignment-reviewed-text",
+  "duration": 48.36,
+  "dark": 17.827,
+  "words": [
+    {
+      "word": "Tá",
+      "start": 0.2,
+      "end": 0.36,
+      "score": 0.903
+    },
+    {
+      "word": "quente",
+      "start": 0.58,
+      "end": 1.04,
+      "score": 0.82
+    },
+    {
+      "word": "pra",
+      "start": 1.2,
+      "end": 1.381,
+      "score": 0.94
+    },
+    {
+      "word": "cacete!",
+      "start": 1.521,
+      "end": 2.401,
+      "score": 0.951
+    },
+    {
+      "word": "Alguém",
+      "start": 2.861,
+      "end": 3.101,
+      "score": 0.836
+    },
+    {
+      "word": "desliga",
+      "start": 3.241,
+      "end": 3.682,
+      "score": 0.951
+    },
+    {
+      "word": "esse",
+      "start": 3.702,
+      "end": 3.842,
+      "score": 0.884
+    },
+    {
+      "word": "Sol!",
+      "start": 3.902,
+      "end": 4.122,
+      "score": 0.845
+    },
+    {
+      "word": "Pedido",
+      "start": 4.522,
+      "end": 4.982,
+      "score": 0.871
+    },
+    {
+      "word": "atendido,",
+      "start": 5.042,
+      "end": 5.582,
+      "score": 0.988
+    },
+    {
+      "word": "Bugi.",
+      "start": 5.642,
+      "end": 5.942,
+      "score": 0.669
+    },
+    {
+      "word": "Só",
+      "start": 6.543,
+      "end": 6.663,
+      "score": 0.928
+    },
+    {
+      "word": "que,",
+      "start": 6.743,
+      "end": 6.943,
+      "score": 0.832
+    },
+    {
+      "word": "no",
+      "start": 7.023,
+      "end": 7.103,
+      "score": 0.532
+    },
+    {
+      "word": "primeiro",
+      "start": 7.163,
+      "end": 7.603,
+      "score": 0.838
+    },
+    {
+      "word": "segundo…",
+      "start": 7.643,
+      "end": 8.103,
+      "score": 0.916
+    },
+    {
+      "word": "nada",
+      "start": 8.524,
+      "end": 8.744,
+      "score": 0.888
+    },
+    {
+      "word": "muda.",
+      "start": 8.804,
+      "end": 9.024,
+      "score": 0.893
+    },
+    {
+      "word": "A",
+      "start": 9.504,
+      "end": 9.544,
+      "score": 0.997
+    },
+    {
+      "word": "luz",
+      "start": 9.604,
+      "end": 9.784,
+      "score": 0.968
+    },
+    {
+      "word": "que",
+      "start": 9.824,
+      "end": 9.944,
+      "score": 0.7
+    },
+    {
+      "word": "já",
+      "start": 10.084,
+      "end": 10.224,
+      "score": 0.959
+    },
+    {
+      "word": "saiu",
+      "start": 10.304,
+      "end": 10.524,
+      "score": 0.786
+    },
+    {
+      "word": "do",
+      "start": 10.544,
+      "end": 10.624,
+      "score": 0.964
+    },
+    {
+      "word": "Sol",
+      "start": 10.704,
+      "end": 10.905,
+      "score": 0.716
+    },
+    {
+      "word": "continua",
+      "start": 11.085,
+      "end": 11.445,
+      "score": 0.873
+    },
+    {
+      "word": "viajando.",
+      "start": 11.505,
+      "end": 11.905,
+      "score": 0.912
+    },
+    {
+      "word": "Você",
+      "start": 12.305,
+      "end": 12.485,
+      "score": 0.916
+    },
+    {
+      "word": "ganha",
+      "start": 12.525,
+      "end": 12.685,
+      "score": 0.807
+    },
+    {
+      "word": "cerca",
+      "start": 12.745,
+      "end": 12.985,
+      "score": 0.886
+    },
+    {
+      "word": "de",
+      "start": 13.025,
+      "end": 13.125,
+      "score": 0.834
+    },
+    {
+      "word": "oito",
+      "start": 13.306,
+      "end": 13.546,
+      "score": 0.854
+    },
+    {
+      "word": "minutos",
+      "start": 13.586,
+      "end": 13.986,
+      "score": 0.928
+    },
+    {
+      "word": "e",
+      "start": 14.026,
+      "end": 14.086,
+      "score": 0.666
+    },
+    {
+      "word": "vinte",
+      "start": 14.286,
+      "end": 14.586,
+      "score": 0.909
+    },
+    {
+      "word": "segundos",
+      "start": 14.646,
+      "end": 15.126,
+      "score": 0.902
+    },
+    {
+      "word": "de",
+      "start": 15.186,
+      "end": 15.266,
+      "score": 0.996
+    },
+    {
+      "word": "solzinho",
+      "start": 15.366,
+      "end": 15.807,
+      "score": 0.799
+    },
+    {
+      "word": "atrasado.",
+      "start": 15.847,
+      "end": 16.367,
+      "score": 0.95
+    },
+    {
+      "word": "Acabou",
+      "start": 16.827,
+      "end": 17.087,
+      "score": 1.0
+    },
+    {
+      "word": "o",
+      "start": 17.127,
+      "end": 17.147,
+      "score": 0.738
+    },
+    {
+      "word": "prazo?",
+      "start": 17.167,
+      "end": 17.467,
+      "score": 0.987
+    },
+    {
+      "word": "Escuridão.",
+      "start": 17.827,
+      "end": 18.568,
+      "score": 0.919
+    },
+    {
+      "word": "E",
+      "start": 19.168,
+      "end": 19.228,
+      "score": 0.667
+    },
+    {
+      "word": "a",
+      "start": 19.248,
+      "end": 19.268,
+      "score": 1.0
+    },
+    {
+      "word": "Terra",
+      "start": 19.348,
+      "end": 19.548,
+      "score": 0.989
+    },
+    {
+      "word": "também",
+      "start": 19.588,
+      "end": 19.848,
+      "score": 0.803
+    },
+    {
+      "word": "deixa",
+      "start": 19.908,
+      "end": 20.128,
+      "score": 0.884
+    },
+    {
+      "word": "de",
+      "start": 20.188,
+      "end": 20.268,
+      "score": 0.835
+    },
+    {
+      "word": "sentir",
+      "start": 20.328,
+      "end": 20.649,
+      "score": 0.954
+    },
+    {
+      "word": "a",
+      "start": 20.669,
+      "end": 20.689,
+      "score": 0.008
+    },
+    {
+      "word": "atração",
+      "start": 20.729,
+      "end": 21.209,
+      "score": 0.798
+    },
+    {
+      "word": "do",
+      "start": 21.229,
+      "end": 21.329,
+      "score": 0.772
+    },
+    {
+      "word": "Sol.",
+      "start": 21.389,
+      "end": 21.549,
+      "score": 0.948
+    },
+    {
+      "word": "Ela",
+      "start": 22.029,
+      "end": 22.149,
+      "score": 0.996
+    },
+    {
+      "word": "segue",
+      "start": 22.249,
+      "end": 22.589,
+      "score": 0.824
+    },
+    {
+      "word": "aproximadamente",
+      "start": 22.649,
+      "end": 23.51,
+      "score": 0.886
+    },
+    {
+      "word": "em",
+      "start": 23.55,
+      "end": 23.63,
+      "score": 0.893
+    },
+    {
+      "word": "linha",
+      "start": 23.71,
+      "end": 23.93,
+      "score": 0.671
+    },
+    {
+      "word": "reta",
+      "start": 24.07,
+      "end": 24.29,
+      "score": 0.875
+    },
+    {
+      "word": "pelo",
+      "start": 24.33,
+      "end": 24.47,
+      "score": 0.996
+    },
+    {
+      "word": "espaço.",
+      "start": 24.51,
+      "end": 24.91,
+      "score": 0.979
+    },
+    {
+      "word": "Calma:",
+      "start": 25.37,
+      "end": 25.731,
+      "score": 0.948
+    },
+    {
+      "word": "a",
+      "start": 25.911,
+      "end": 25.951,
+      "score": 0.735
+    },
+    {
+      "word": "gravidade",
+      "start": 26.011,
+      "end": 26.511,
+      "score": 0.894
+    },
+    {
+      "word": "da",
+      "start": 26.551,
+      "end": 26.631,
+      "score": 0.708
+    },
+    {
+      "word": "Terra",
+      "start": 26.731,
+      "end": 26.971,
+      "score": 0.81
+    },
+    {
+      "word": "continua",
+      "start": 27.031,
+      "end": 27.431,
+      "score": 0.886
+    },
+    {
+      "word": "aqui.",
+      "start": 27.451,
+      "end": 27.691,
+      "score": 0.861
+    },
+    {
+      "word": "Você",
+      "start": 27.711,
+      "end": 27.932,
+      "score": 0.512
+    },
+    {
+      "word": "não",
+      "start": 27.972,
+      "end": 28.132,
+      "score": 0.56
+    },
+    {
+      "word": "sai",
+      "start": 28.232,
+      "end": 28.372,
+      "score": 0.919
+    },
+    {
+      "word": "flutuando,",
+      "start": 28.452,
+      "end": 29.032,
+      "score": 0.941
+    },
+    {
+      "word": "espertão.",
+      "start": 29.072,
+      "end": 29.532,
+      "score": 0.94
+    },
+    {
+      "word": "Nas",
+      "start": 30.152,
+      "end": 30.333,
+      "score": 0.951
+    },
+    {
+      "word": "horas",
+      "start": 30.373,
+      "end": 30.553,
+      "score": 0.951
+    },
+    {
+      "word": "seguintes,",
+      "start": 30.593,
+      "end": 31.073,
+      "score": 0.793
+    },
+    {
+      "word": "o",
+      "start": 31.153,
+      "end": 31.193,
+      "score": 0.479
+    },
+    {
+      "word": "planeta",
+      "start": 31.233,
+      "end": 31.553,
+      "score": 0.858
+    },
+    {
+      "word": "começa",
+      "start": 31.633,
+      "end": 31.933,
+      "score": 0.918
+    },
+    {
+      "word": "a",
+      "start": 31.953,
+      "end": 31.973,
+      "score": 1.0
+    },
+    {
+      "word": "perder",
+      "start": 32.113,
+      "end": 32.553,
+      "score": 0.8
+    },
+    {
+      "word": "calor.",
+      "start": 32.633,
+      "end": 32.974,
+      "score": 0.887
+    },
+    {
+      "word": "Fotossíntese",
+      "start": 33.474,
+      "end": 34.194,
+      "score": 0.861
+    },
+    {
+      "word": "sem",
+      "start": 34.214,
+      "end": 34.334,
+      "score": 0.827
+    },
+    {
+      "word": "luz",
+      "start": 34.374,
+      "end": 34.454,
+      "score": 0.657
+    },
+    {
+      "word": "solar?",
+      "start": 34.494,
+      "end": 34.814,
+      "score": 0.878
+    },
+    {
+      "word": "Parou.",
+      "start": 35.255,
+      "end": 35.615,
+      "score": 0.866
+    },
+    {
+      "word": "Mas",
+      "start": 36.155,
+      "end": 36.395,
+      "score": 0.82
+    },
+    {
+      "word": "o",
+      "start": 36.435,
+      "end": 36.455,
+      "score": 0.158
+    },
+    {
+      "word": "oxigênio",
+      "start": 36.475,
+      "end": 36.955,
+      "score": 0.873
+    },
+    {
+      "word": "não",
+      "start": 36.995,
+      "end": 37.115,
+      "score": 0.754
+    },
+    {
+      "word": "acaba",
+      "start": 37.155,
+      "end": 37.616,
+      "score": 0.913
+    },
+    {
+      "word": "de",
+      "start": 37.656,
+      "end": 37.716,
+      "score": 1.0
+    },
+    {
+      "word": "repente.",
+      "start": 37.776,
+      "end": 38.216,
+      "score": 0.999
+    },
+    {
+      "word": "Com",
+      "start": 38.736,
+      "end": 38.836,
+      "score": 0.98
+    },
+    {
+      "word": "o",
+      "start": 38.856,
+      "end": 38.876,
+      "score": 0.024
+    },
+    {
+      "word": "tempo,",
+      "start": 38.956,
+      "end": 39.256,
+      "score": 0.816
+    },
+    {
+      "word": "o",
+      "start": 39.276,
+      "end": 39.296,
+      "score": 0.0
+    },
+    {
+      "word": "frio",
+      "start": 39.356,
+      "end": 39.516,
+      "score": 0.998
+    },
+    {
+      "word": "piora.",
+      "start": 39.576,
+      "end": 39.896,
+      "score": 0.825
+    },
+    {
+      "word": "A",
+      "start": 40.397,
+      "end": 40.437,
+      "score": 0.969
+    },
+    {
+      "word": "energia",
+      "start": 40.477,
+      "end": 40.797,
+      "score": 0.964
+    },
+    {
+      "word": "guardada",
+      "start": 40.897,
+      "end": 41.317,
+      "score": 0.936
+    },
+    {
+      "word": "no",
+      "start": 41.337,
+      "end": 41.397,
+      "score": 1.0
+    },
+    {
+      "word": "planeta",
+      "start": 41.457,
+      "end": 41.917,
+      "score": 0.905
+    },
+    {
+      "word": "adia",
+      "start": 42.057,
+      "end": 42.338,
+      "score": 0.852
+    },
+    {
+      "word": "o",
+      "start": 42.358,
+      "end": 42.378,
+      "score": 0.007
+    },
+    {
+      "word": "desastre;",
+      "start": 42.398,
+      "end": 42.898,
+      "score": 0.935
+    },
+    {
+      "word": "não",
+      "start": 43.178,
+      "end": 43.298,
+      "score": 0.707
+    },
+    {
+      "word": "resolve.",
+      "start": 43.358,
+      "end": 43.778,
+      "score": 0.948
+    },
+    {
+      "word": "Bugi,",
+      "start": 44.458,
+      "end": 44.739,
+      "score": 0.615
+    },
+    {
+      "word": "era",
+      "start": 44.899,
+      "end": 44.999,
+      "score": 0.698
+    },
+    {
+      "word": "pra",
+      "start": 45.079,
+      "end": 45.179,
+      "score": 0.824
+    },
+    {
+      "word": "ligar",
+      "start": 45.219,
+      "end": 45.419,
+      "score": 0.605
+    },
+    {
+      "word": "o",
+      "start": 45.439,
+      "end": 45.459,
+      "score": 0.0
+    },
+    {
+      "word": "ventilador…",
+      "start": 45.499,
+      "end": 46.139,
+      "score": 0.968
+    },
+    {
+      "word": "não",
+      "start": 46.319,
+      "end": 46.459,
+      "score": 0.667
+    },
+    {
+      "word": "cancelar",
+      "start": 46.579,
+      "end": 47.2,
+      "score": 0.921
+    },
+    {
+      "word": "o",
+      "start": 47.24,
+      "end": 47.28,
+      "score": 0.615
+    },
+    {
+      "word": "Sistema",
+      "start": 47.34,
+      "end": 47.66,
+      "score": 0.883
+    },
+    {
+      "word": "Solar!",
+      "start": 47.74,
+      "end": 48.12,
+      "score": 0.898
+    }
+  ],
+  "beats": [
+    {
+      "id": "gancho",
+      "start": 0,
+      "title": "DESLIGA ESSE SOL!",
+      "label": "AGORA"
+    },
+    {
+      "id": "espera",
+      "start": 4.522,
+      "title": "PEDIDO ATENDIDO.",
+      "label": "1º SEGUNDO"
+    },
+    {
+      "id": "luz",
+      "start": 9.504,
+      "title": "SOLZINHO ATRASADO.",
+      "label": "≈ 8 MIN 20 S DE VIAGEM"
+    },
+    {
+      "id": "escuro",
+      "start": 17.827,
+      "title": "ACABOU A LUZ.",
+      "label": "≈ 8 MIN 20 S DEPOIS"
+    },
+    {
+      "id": "orbita",
+      "start": 22.029,
+      "title": "A TERRA SEGUE VIAGEM.",
+      "label": "SEM A ATRAÇÃO DO SOL"
+    },
+    {
+      "id": "gravidade",
+      "start": 25.37,
+      "title": "SEU PÉ CONTINUA NO CHÃO.",
+      "label": "A GRAVIDADE DA TERRA FICA"
+    },
+    {
+      "id": "frio",
+      "start": 30.152,
+      "title": "O CALOR VAI EMBORA.",
+      "label": "NAS HORAS SEGUINTES"
+    },
+    {
+      "id": "plantas",
+      "start": 33.474,
+      "title": "SEM SOL, SEM FOTOSSÍNTESE.",
+      "label": "O OXIGÊNIO NÃO SOME NA HORA"
+    },
+    {
+      "id": "frio",
+      "start": 38.736,
+      "title": "O FRIO SÓ PIORA.",
+      "label": "COM O TEMPO"
+    },
+    {
+      "id": "final",
+      "start": 44.458,
+      "title": "ERA SÓ UM VENTILADOR!",
+      "label": "BUGI: ARREPENDIMENTO"
+    }
+  ]
+}

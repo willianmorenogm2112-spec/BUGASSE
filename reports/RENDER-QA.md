@@ -58,3 +58,10 @@ Limitações: sem escuta nesta auditoria; origem Gemini da voz não comprovada p
 ## Pesquisa e instalações de animação — 04/11/2026
 Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
 
+
+## Episódio Sol — 04/11/2026
+Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição SVG Remotion. Evidências e limitações: reports/SOL-DESAPARECEU.md. Arquivos: src/remotion/sun/SunShort.tsx, public/assets/sol, scripts/align_sun.py. QA visual e sonoro humano pendente; não publicado.
+
+## Episódio Sol v4 — movimentos corrigidos — 05/11/2026
+Executado: render Remotion da mesma composição do Player. `out/bugi-sol-desapareceu-v4-movimentos-corrigidos.mp4`: 6.510.888 bytes, 48,811 s, H.264 1080×1920/30 FPS, AAC 48 kHz estéreo; decodificação integral FFmpeg sem erros; true peak -2,2 dBFS. SHA-256 `F24423B927DED9930AEBBA6A9D031DA342EA32599E00050B5F0A5512540DA2B7`. Lint, 4 testes novos, 5 testes do piloto e 17 testes gerais passaram. Folha de contato e quadro do frio inspecionados. Limitação: sem nova escuta humana; o WAV e mix não mudaram. Aprovação artística do MP4 completo permanece pendente.
+

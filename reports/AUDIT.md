@@ -56,3 +56,10 @@ Referência adicional solicitada: https://www.youtube.com/shorts/Yrg0pZ5jbRg . C
 ## Pesquisa e instalações de animação — 04/11/2026
 Executado: instalação local de skills e auditoria de ferramentas em branch isolada. Evidências, arquivos, logs resumidos, limitações e rollback: `reports/ANIMACAO-FERRAMENTAS-20261104.md`. Fluxo: `docs/WORKFLOW-ANIMACAO-E-SKILLS.md`. Nenhum render novo foi produzido.
 
+
+## Episódio Sol — 04/11/2026
+Executado: voz Puck no Gemini TTS, alinhamento acústico WhisperX e composição SVG Remotion. Evidências e limitações: reports/SOL-DESAPARECEU.md. Arquivos: src/remotion/sun/SunShort.tsx, public/assets/sol, scripts/align_sun.py. QA visual e sonoro humano pendente; não publicado.
+
+## Auditoria de movimento do episódio Sol — 05/11/2026
+Executado: removidos `rootY=0`, pulo indevido na explicação da gravidade, susto repetido em todas as cenas noturnas, tremor rápido e caminhos de braço ignorados pelo renderer. A causa era a mistura do espaço local do rig com transform externo e presets cíclicos globais. Evidência: `sunBugiMotion.ts`, testes 4/4 e quadros `out/qa-sol-motion-*.png`. Limitação: inspeção foi por sequência amostrada; aprovação artística final continua com o usuário.
+
