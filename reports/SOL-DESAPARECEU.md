@@ -19,3 +19,7 @@ WhisperX 3.8.4 alinhou o roteiro original ao áudio: 122 palavras; revelar escur
 `Bugi-Sol-Desapareceu`, Remotion, 1080×1920, 30 FPS, 1464 frames (48,8 s com cauda final). Personagem canônico articulado, expressões, cenário rua/ventilador, transição dia/noite, partículas de luz, trajetória tangencial, legendas agrupadas por quatro palavras. Mesma composição no Player e export.
 
 Estado: em revisão técnica e visual. Não publicado. Rollback: reverter apenas commits deste episódio.
+
+## Verificações executadas
+
+Lint e cinco testes do piloto passaram. Export v2: 48,811 s, 10.923.906 bytes, H.264 1080×1920/30 e AAC; decodificação integral sem erro. Medição da mesma locução no export v1: -14,87 LUFS e -2,20 dBTP. Quadros de gancho e noite e folha de contato inspecionados. Corrigidos caixa de legenda vazia, contraste do rodapé noturno e título sobre fundo espacial. Export v3 contém a última correção. Escuta humana e revisão artística contínua permanecem pendentes; não equivaler contact sheet a aprovação visual completa.

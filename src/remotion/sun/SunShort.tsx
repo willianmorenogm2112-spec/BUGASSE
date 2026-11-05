@@ -43,9 +43,10 @@ export const SunShort:React.FC=()=>{
    </>}
   </svg>
   <div style={{position:'absolute',top:140,left:90,color:'#39C8D5',fontWeight:800,fontSize:27,letterSpacing:5}}>E SE BUGASSE?</div>
-  <div style={{position:'absolute',top:220,left:90,right:120,color:dark?'#FFF7E9':'#122638',fontWeight:900,fontSize:64,lineHeight:1.04,opacity:reveal,transform:`translateY(${(1-reveal)*25}px)`}}>{beat.title}</div>
+  <div style={{position:'absolute',top:220,left:90,right:120,color:dark||space?'#FFF7E9':'#122638',fontWeight:900,fontSize:64,lineHeight:1.04,opacity:reveal,transform:`translateY(${(1-reveal)*25}px)`}}>{beat.title}</div>
   <div style={{position:'absolute',top:410,left:90,maxWidth:790,padding:'15px 24px',background:'#FF6B50',color:'#FFF7E9',borderRadius:16,fontSize:29,fontWeight:800}}>{beat.label}</div>
   {group.length>0&&<div style={{position:'absolute',top:1480,left:85,right:135,background:'#FFF7E9',borderRadius:22,padding:'24px 26px',textAlign:'center',fontSize:48,fontWeight:800,lineHeight:1.14}}>{group.map((w,i)=><span key={i} style={{color:w===cap?'#C34C35':'#122638'}}>{w.word} </span>)}</div>}
   <div style={{position:'absolute',bottom:210,left:90,color:space||dark?'#FFF7E9':'#122638',fontSize:21,fontWeight:700}}>HIPÓTESE IMPOSSÍVEL • ANIMAÇÃO ILUSTRATIVA</div>
  </AbsoluteFill>;
 };
+
