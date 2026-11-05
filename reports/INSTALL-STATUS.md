@@ -121,3 +121,7 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 
 Executado: pacote do usuário auditado e integrado em `bugi-3d/kit`; Node 24.14.1, npm 11.11.0; `three@^0.187.0` e `puppeteer-core@^25.16.0` instalados localmente com scripts de instalação desativados. `npm audit`: 0 vulnerabilidades. Catálogo: 12 personagens, 20 animações, 9 expressões e 57 assets. Limitação: Chrome/FFmpeg e render completo do kit ainda não foram exercitados nesta etapa; instalador Kokoro e ElevenLabs não foram executados.
 
+## Skills adaptadas ao Bugi 3D — 05/11/2026
+
+Executado: inventário de 52 skills únicas em três raízes; criadas cinco variantes específicas 3D e uma matriz compartilhada para Remotion, HyperFrames, motion, gráficos e ferramentas opcionais. O verificador encontrou 57 skills instaladas após a adaptação e cobriu 57/57. Sete skills modificadas/criadas passaram no `quick_validate.py`; `npm run lint` passou. Nenhuma ferramenta paga ou binário opcional foi executado.
+

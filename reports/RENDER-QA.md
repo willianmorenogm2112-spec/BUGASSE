@@ -77,3 +77,7 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 
 Teste visual adicional: `projects/bugi-identidade-test` validou sem erros e gerou quatro PNGs 1080×1920. O close frontal confirma paleta, olhos, expressão e silhueta básica do Bugi. Problemas observados: cabelo ainda muito cônico, cenário urbano simples e poeira excessiva cobrindo o corpo na caminhada. Não houve MP4, voz ou aceite artístico.
 
+## Skills 3D — impacto no QA
+
+A matriz de skills acrescenta verificações 3D de clipping, z-fighting, popping, materiais, sombras, contato, colisões e continuidade espacial, além do QA 2D já existente. Esta etapa validou instruções e cobertura, não produziu novo MP4 nem altera o aceite artístico pendente.
+

@@ -66,3 +66,10 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 4. Implementar o adaptador que leva a cena aprovada à composição Remotion e provar paridade Player/export.
 5. Só depois produzir episódio completo, com Gemini TTS, alinhamento, SFX, fontes e QA artístico.
 
+## Após adaptar as skills
+
+1. Usar `e-se-bugasse-producao-3d` no piloto de 8–12 s.
+2. Implementar e provar a ligação determinística Three.js → Remotion antes de declarar `remotion-qualidade-3d` atendida.
+3. Rodar `npm run test:skills-3d` sempre que instalar/remover skills.
+4. Exercitar apenas as ferramentas opcionais que trouxerem ganho observável; registrar indisponibilidade em vez de simular uso.
+

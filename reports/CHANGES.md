@@ -62,3 +62,7 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 
 Criados `bugi-3d/`, `docs/BUGI-2D-E-3D.md` e a skill `.agents/skills/e-se-bugasse-3d`. O kit recebeu o preset `bugi`, cabelo low-poly coral `spikes`, package namespace próprio, catálogo regenerado e check adaptado. O Bugi 2D existente não foi movido. Rollback: reverter o commit desta integração; não apagar `out/` nem alterar branches anteriores.
 
+## Adaptação completa das skills para 3D — 05/11/2026
+
+Criados `e-se-bugasse-producao-3d`, `remotion-qualidade-3d`, `skill-reel-adaptacao-3d`, `photocraft-3d` e `filmcraft-3d`. A skill `e-se-bugasse-3d` recebeu matriz, registry e verificador de cobertura; a Reel local passou a rotear 2D/3D. Adicionado `npm run test:skills-3d`. Rollback: reverter somente o commit desta adaptação; o módulo 3D base permanece independente.
+

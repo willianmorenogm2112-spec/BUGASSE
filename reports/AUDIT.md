@@ -79,3 +79,11 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 - Instruções internas foram arquivadas como referência e não instaladas como `AGENTS.md` ativo.
 - O primeiro render diagnóstico revelou falha em `engine/fluxos.js`: material com modo `caminho` e apenas origem/destino acessava uma lista nula. Corrigido com fallback determinístico para `jato`/`sobe`; check completo e render de quadros passaram após a correção.
 
+## Auditoria de cobertura das skills 3D — 05/11/2026
+
+- 52 nomes únicos foram detectados entre o worktree, a raiz compartilhada e o clone BUGASSE; após criar cinco variantes, 57/57 estão classificados em `skill-coverage.json`.
+- Skills neutras não foram copiadas: recebem um contrato 3D comum para evitar forks divergentes.
+- Variantes específicas: produção, Remotion QA, Skill Reel, PhotoCraft e FilmCraft.
+- A Skill Reel local tinha `version` fora do schema aceito; movido para `metadata.version`.
+- Limite: cobertura documental/roteamento não comprova que cada ferramenta opcional foi executada. PhotoCraft, FilmCraft, After Effects, Figma e HyperFrames continuam condicionais à disponibilidade e ganho real.
+
