@@ -23,3 +23,12 @@ As demais skills instaladas dos pacotes iart.ai são opcionais e só devem ser c
 - Gráficos com comparação proporcional, unidades, hierarquia e entradas por fala; uma informação principal de cada vez. Não ocultar premissas científicas para reduzir texto.
 - Movimento: transições suaves entre poses, cotovelos voltados para fora do tronco, alcance limitado, joelhos sem abertura excessiva e projeção encurtada das pernas ao sentar. No salto, levantar pés e tronco juntos, pousar e recuperar; não esticar as pernas com tênis presos.
 - Testar alcance e contato em todos os frames das ações críticas; revisar sequência contínua. Gravar estes resultados por episódio, sem considerar este checklist uma aprovação automática.
+## Padrão V3 confirmado pelo usuário — 06/11/2026
+
+Referência aprovada: `out/bugi-gravidade-final-v3.mp4`, composição `Bugi-Gravidade-Dobrada` / GravityFinal. A aprovação visual explícita do usuário substitui a pendência artística anterior; não implica escuta técnica integral nem aprovação automática dos próximos episódios. Preservar tela limpa, legendas curtas, sinal ciano do narrador, gráficos por fala e rig corrigido. Não redesenhar o padrão a cada vídeo.
+
+Linguagem persistente: Bugi/Puck começa confiante, fica desconfiado, reage irritado e termina com uma piada resignada. Usar eventualmente “porra”, “merda”, “cacete” ou “sacanagem” como reação natural ao acontecimento; não há cota obrigatória. Não gritar todas as falas nem repetir palavrão para preencher texto. O narrador/Charon mantém calma e ironia seca. A irritação nasce de uma tentativa frustrada e ajuda a explicar a física.
+
+Antes do TTS, escrever intenção por fala e pausa da reação. Voz, sobrancelhas, olhar, boca, mãos e postura precisam concordar. Bugi escuta de boca fechada; gestos têm antecipação, contato e recuperação. Estrutura preferida: acontecimento → interpretação do Bugi → prova visual do narrador → tentativa frustrada → reação engraçada → conclusão. Exemplo de tom: “Eu pedi uma pausa, porra! Não um lançamento!” Não copiar falas ou cenas das referências.
+
+Próximos temas e evidências: `reports/PESQUISA-TEMAS-20261106.md`. O roteiro e o piloto do novo tema ainda precisam ser produzidos; este registro não declara novo vídeo pronto.

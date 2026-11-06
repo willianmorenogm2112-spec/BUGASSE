@@ -1,5 +1,7 @@
 # Bugi 2D — instruções de continuidade
 
+Padrão visual aprovado: Gravidade final V3. Preservar acabamento e atuação; Bugi/Puck pode reagir meio bravo com palavrões leves e naturais, contrastando com narrador/Charon calmo e irônico. Ler a seção “Padrão V3 confirmado pelo usuário” do workflow antes de roteirizar. Não confundir aprovação desta referência com QA automático de outro episódio.
+
 Aplicar também as instruções AGENTS.md da pasta pai. Este é o checkout existente BUGASSE; preservar histórico, assets, identidade, vozes e vídeos publicados.
 
 Antes de criar ou revisar qualquer episódio 2D, ler `docs/WORKFLOW-ANIMACAO-E-SKILLS.md` e `docs/DIRECAO-PROXIMO-VIDEO-2D.md`. As melhorias ali descritas foram aprovadas pelo usuário como padrão persistente em 06/11/2026: gancho em ação, diálogo Bugi/Puck e narrador/Charon, atuação articulada com contato, cenário por código em camadas, demonstração por fala, gráficos claros, câmera motivada e som ligado à ação.
