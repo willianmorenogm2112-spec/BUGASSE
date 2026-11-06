@@ -1,0 +1,314 @@
+[
+  {
+    "word": "Como",
+    "start": 0.24,
+    "end": 0.56,
+    "score": 0.86
+  },
+  {
+    "word": "assim?",
+    "start": 0.601,
+    "end": 1.221,
+    "score": 0.931
+  },
+  {
+    "word": "Eu",
+    "start": 1.742,
+    "end": 1.822,
+    "score": 0.75
+  },
+  {
+    "word": "já",
+    "start": 1.862,
+    "end": 1.942,
+    "score": 0.742
+  },
+  {
+    "word": "tava",
+    "start": 2.022,
+    "end": 2.182,
+    "score": 0.998
+  },
+  {
+    "word": "agradecendo",
+    "start": 2.222,
+    "end": 2.842,
+    "score": 0.932
+  },
+  {
+    "word": "à",
+    "start": 2.862,
+    "end": 2.903,
+    "score": 0.001
+  },
+  {
+    "word": "borracha!",
+    "start": 2.943,
+    "end": 3.443,
+    "score": 0.954
+  },
+  {
+    "word": "Então",
+    "start": 4.184,
+    "end": 4.544,
+    "score": 0.757
+  },
+  {
+    "word": "eu",
+    "start": 4.564,
+    "end": 4.604,
+    "score": 0.02
+  },
+  {
+    "word": "tô",
+    "start": 4.684,
+    "end": 4.764,
+    "score": 0.698
+  },
+  {
+    "word": "dentro",
+    "start": 4.844,
+    "end": 5.144,
+    "score": 0.885
+  },
+  {
+    "word": "de",
+    "start": 5.185,
+    "end": 5.245,
+    "score": 1.0
+  },
+  {
+    "word": "uma",
+    "start": 5.285,
+    "end": 5.365,
+    "score": 0.834
+  },
+  {
+    "word": "armadura",
+    "start": 5.405,
+    "end": 6.225,
+    "score": 0.916
+  },
+  {
+    "word": "com",
+    "start": 6.526,
+    "end": 6.646,
+    "score": 1.0
+  },
+  {
+    "word": "prestação",
+    "start": 6.726,
+    "end": 7.306,
+    "score": 0.893
+  },
+  {
+    "word": "atrasada?",
+    "start": 7.346,
+    "end": 7.927,
+    "score": 0.918
+  },
+  {
+    "word": "E",
+    "start": 8.688,
+    "end": 8.808,
+    "score": 0.98
+  },
+  {
+    "word": "o",
+    "start": 8.848,
+    "end": 8.888,
+    "score": 0.781
+  },
+  {
+    "word": "conversível?",
+    "start": 8.948,
+    "end": 9.588,
+    "score": 0.948
+  },
+  {
+    "word": "Fecho",
+    "start": 10.049,
+    "end": 10.269,
+    "score": 0.901
+  },
+  {
+    "word": "a",
+    "start": 10.309,
+    "end": 10.329,
+    "score": 1.0
+  },
+  {
+    "word": "capota",
+    "start": 10.349,
+    "end": 10.749,
+    "score": 0.996
+  },
+  {
+    "word": "e",
+    "start": 10.809,
+    "end": 10.849,
+    "score": 0.5
+  },
+  {
+    "word": "resolvo?",
+    "start": 10.889,
+    "end": 11.29,
+    "score": 0.958
+  },
+  {
+    "word": "Tá.",
+    "start": 12.131,
+    "end": 12.271,
+    "score": 0.677
+  },
+  {
+    "word": "Eu",
+    "start": 12.711,
+    "end": 12.871,
+    "score": 0.738
+  },
+  {
+    "word": "fico",
+    "start": 12.931,
+    "end": 13.091,
+    "score": 0.944
+  },
+  {
+    "word": "aqui",
+    "start": 13.131,
+    "end": 13.272,
+    "score": 0.875
+  },
+  {
+    "word": "quietinho.",
+    "start": 13.292,
+    "end": 14.132,
+    "score": 0.741
+  },
+  {
+    "word": "Sem",
+    "start": 14.913,
+    "end": 15.113,
+    "score": 0.78
+  },
+  {
+    "word": "abraçar",
+    "start": 15.153,
+    "end": 15.493,
+    "score": 0.926
+  },
+  {
+    "word": "a",
+    "start": 15.533,
+    "end": 15.554,
+    "score": 1.0
+  },
+  {
+    "word": "porta.",
+    "start": 15.594,
+    "end": 15.914,
+    "score": 0.944
+  },
+  {
+    "word": "Pelo",
+    "start": 16.735,
+    "end": 16.915,
+    "score": 0.692
+  },
+  {
+    "word": "menos",
+    "start": 16.955,
+    "end": 17.175,
+    "score": 0.899
+  },
+  {
+    "word": "o",
+    "start": 17.195,
+    "end": 17.235,
+    "score": 0.5
+  },
+  {
+    "word": "carro",
+    "start": 17.335,
+    "end": 17.595,
+    "score": 0.872
+  },
+  {
+    "word": "sai",
+    "start": 17.655,
+    "end": 17.755,
+    "score": 0.5
+  },
+  {
+    "word": "inteiro?",
+    "start": 17.795,
+    "end": 18.136,
+    "score": 0.968
+  },
+  {
+    "word": "Eu",
+    "start": 19.377,
+    "end": 19.457,
+    "score": 0.995
+  },
+  {
+    "word": "escapei",
+    "start": 19.497,
+    "end": 19.877,
+    "score": 0.952
+  },
+  {
+    "word": "do",
+    "start": 19.897,
+    "end": 19.977,
+    "score": 0.738
+  },
+  {
+    "word": "raio.",
+    "start": 20.037,
+    "end": 20.318,
+    "score": 0.903
+  },
+  {
+    "word": "Agora",
+    "start": 20.498,
+    "end": 20.738,
+    "score": 0.853
+  },
+  {
+    "word": "falta",
+    "start": 20.798,
+    "end": 21.018,
+    "score": 0.929
+  },
+  {
+    "word": "sobreviver",
+    "start": 21.058,
+    "end": 21.539,
+    "score": 0.92
+  },
+  {
+    "word": "ao",
+    "start": 21.559,
+    "end": 21.639,
+    "score": 0.387
+  },
+  {
+    "word": "orçamento",
+    "start": 21.679,
+    "end": 22.139,
+    "score": 0.99
+  },
+  {
+    "word": "da",
+    "start": 22.179,
+    "end": 22.219,
+    "score": 1.0
+  },
+  {
+    "word": "oficina.",
+    "start": 22.259,
+    "end": 23.04,
+    "score": 0.976
+  }
+]

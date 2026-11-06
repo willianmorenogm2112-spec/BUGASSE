@@ -30,6 +30,10 @@ Puck: Bugi irônico e assustado, sem gritaria. Charon: narrador claro, humor sec
 
 ## Execução
 
+## Retomada TTS bem-sucedida
+
+Nova página no mesmo link do AI Studio gerou os dois WAVs reais com estilo individual aplicado: Charon 53,32 s (Generated Audio November 05, 2026 - 11_48PM.wav, 2.559.404 bytes) e Puck 23,04 s (11_50PM.wav, 1.105.964 bytes). Modelo observado gemini-3.8-flash-tts. Custos cobrados não exibidos. Alinhamento acústico WhisperX produziu 13 turnos, 198 palavras e montagem 71,774 s. Fontes preservadas em public/assets/raio-carro. Mix com SFX procedurais originais e normalização -16 LUFS/TP -2. Root final registra Bugi-Raio-No-Carro com technical=false e timing acústico; prévia silenciosa permanece composição separada.
+
 Branch codex/bugi-2d-raio-carro-20261105. Arquivos: LightningCar.tsx, LightningCarRoot.tsx, prepare_lightning_technical.mjs e mix_lightning_audio.py. Fonte visual procedural SVG, sem imagem Google alegada. Rig Bugi canônico reutilizado com atuação por beat.
 
 ## Bloqueio real da voz
