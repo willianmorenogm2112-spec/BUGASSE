@@ -53,3 +53,12 @@ Registro por beat: fala e speaker; entrada/saída acústica; ação demonstrativ
 ## Estado e rollback
 
 Direção persistente registrada. O estado de implementação de cada episódio é independente deste guia: para a primeira aplicação, consultar reports/GRAVIDADE-2D.md e reports/RENDER-QA.md. Reverter apenas os commits da mudança desejada para desfazer; preservar vídeos publicados e assets anteriores.
+## Padrão V3 confirmado pelo usuário — 06/11/2026
+
+Referência aprovada: `out/bugi-gravidade-final-v3.mp4`, composição `Bugi-Gravidade-Dobrada` / GravityFinal. A aprovação visual explícita do usuário substitui a pendência artística anterior; não implica escuta técnica integral nem aprovação automática dos próximos episódios. Preservar tela limpa, legendas curtas, sinal ciano do narrador, gráficos por fala e rig corrigido. Não redesenhar o padrão a cada vídeo.
+
+Linguagem persistente: Bugi/Puck começa confiante, fica desconfiado, reage irritado e termina com uma piada resignada. Usar eventualmente “porra”, “merda”, “cacete” ou “sacanagem” como reação natural ao acontecimento; não há cota obrigatória. Não gritar todas as falas nem repetir palavrão para preencher texto. O narrador/Charon mantém calma e ironia seca. A irritação nasce de uma tentativa frustrada e ajuda a explicar a física.
+
+Antes do TTS, escrever intenção por fala e pausa da reação. Voz, sobrancelhas, olhar, boca, mãos e postura precisam concordar. Bugi escuta de boca fechada; gestos têm antecipação, contato e recuperação. Estrutura preferida: acontecimento → interpretação do Bugi → prova visual do narrador → tentativa frustrada → reação engraçada → conclusão. Exemplo de tom: “Eu pedi uma pausa, porra! Não um lançamento!” Não copiar falas ou cenas das referências.
+
+Próximos temas e evidências: `reports/PESQUISA-TEMAS-20261106.md`. O roteiro e o piloto do novo tema ainda precisam ser produzidos; este registro não declara novo vídeo pronto.
