@@ -98,3 +98,14 @@ O MP4 V1 passou em decodificação integral/blackdetect, mas a inspeção visual
 Lint passou, 17 testes existentes e 4 testes novos passaram. Build passou com avisos anteriores de bundles/import dinâmico e configuração Vite. Piloto V1 real: 12,011 s, 1.352.045 bytes, H.264/AAC 1080×1920/30. Piloto V2 exportado e sequência revisada. Render integral e QA final serão registrados em public/assets/sono/render-qa.json. Revisão humana artística/escuta integral pendente. Sem autorização de publicação deste episódio.
 
 Arquivos: src/remotion/SleepRoot.tsx; src/remotion/sleep; public/assets/sono; scripts/*sleep*; out/bugi-nunca-dormir*.mp4. Logs: comandos reais de alinhamento, testes, build e Remotion CLI nesta sessão; resultados finais no QA JSON. Limitação: simulação/cartoon e ilustrações explicativas, não modelo clínico individual. Rollback: reverter os commits da branch codex/bugi-sem-dormir-20261106, preservando mídia original e episódios/agendamentos anteriores.
+
+
+## Retomada do episodio Sono — 06/11/2026
+
+Executado: recuperada a V2 integral existente; QA tecnico reexecutado, fontes da composicao conferidas por SHA256 e storyboard de 20 falas consolidado. Nenhuma chamada paga nova e nenhum rerender desnecessario. Lint, 17 testes gerais, 5 testes de movimento e build passaram (avisos preexistentes de Vite/bundle).
+
+Evidencia: `public/assets/sono/render-qa.json`; `out/sono-decode.log`, `out/sono-blackdetect.log`, `out/sono-loudness.log`; imagens `out/sono-completo-contato.jpg`, `out/sono-reacao-sequencia.jpg`, `out/sono-carro-sequencia.jpg` revisadas. MP4 `out/bugi-nunca-dormir-v2.mp4`: 153,173 s, 18.500.872 bytes, 4595 frames, H.264/AAC, 1080x1920/30 fps. Audio -16,58 LUFS, pico -4,63 dBTP. Decode integral sem erros e sem intervalos pretos detectados.
+
+Arquivos: storyboard.json, sleep_storyboard.ts, teste de movimento com duracoes reais, render-qa.json e estes relatorios. Vozes Google Puck/Charon existentes preservadas; proveniencia em public/assets/sono/provenance.json. Custos cobrados nao informados; nenhuma nova geracao nesta retomada.
+
+Limitacao: revisao visual amostrada; escuta humana integral e aprovacao artistica pendentes. Sem publicacao. Proximo: assistir ao MP4 integral e avaliar ritmo/voz; a existencia dos testes nao constitui aprovacao artistica. Rollback: reverter apenas o commit da branch codex/retoma-sono-qa-20261106, preservando V1/V2 e audios originais. Base desta retomada: 58892f6.
