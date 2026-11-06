@@ -1,0 +1,1702 @@
+{
+  "composition": "Bugi-Nunca-Mais-Dormir",
+  "alignment": "acoustic-forced-alignment-whisperx",
+  "beats": [
+    {
+      "index": 0,
+      "start": 0.1,
+      "end": 8.043,
+      "fromFrame": 3,
+      "toFrame": 241,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "E",
+          "frame": 6
+        },
+        {
+          "word": "se",
+          "frame": 11
+        },
+        {
+          "word": "você",
+          "frame": 16
+        },
+        {
+          "word": "nunca",
+          "frame": 31
+        },
+        {
+          "word": "mais",
+          "frame": 47
+        },
+        {
+          "word": "dormisse?",
+          "frame": 57
+        },
+        {
+          "word": "Antes",
+          "frame": 117
+        },
+        {
+          "word": "de",
+          "frame": 127
+        },
+        {
+          "word": "virar",
+          "frame": 130
+        },
+        {
+          "word": "um",
+          "frame": 138
+        },
+        {
+          "word": "zumbi,",
+          "frame": 141
+        },
+        {
+          "word": "você",
+          "frame": 163
+        },
+        {
+          "word": "perderia",
+          "frame": 172
+        },
+        {
+          "word": "a",
+          "frame": 187
+        },
+        {
+          "word": "confiança",
+          "frame": 190
+        },
+        {
+          "word": "no",
+          "frame": 207
+        },
+        {
+          "word": "próprio",
+          "frame": 212
+        },
+        {
+          "word": "cérebro.",
+          "frame": 224
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 1,
+      "start": 8.222999999999999,
+      "end": 12.004999999999999,
+      "fromFrame": 247,
+      "toFrame": 360,
+      "action": "Agenda de tarefas entra em sequencia na promessa +8 h",
+      "cues": [
+        {
+          "word": "Oito",
+          "frame": 250
+        },
+        {
+          "word": "horas",
+          "frame": 264
+        },
+        {
+          "word": "extras",
+          "frame": 277
+        },
+        {
+          "word": "por",
+          "frame": 289
+        },
+        {
+          "word": "dia?",
+          "frame": 298
+        },
+        {
+          "word": "Vou",
+          "frame": 330
+        },
+        {
+          "word": "ficar",
+          "frame": 334
+        },
+        {
+          "word": "rico!",
+          "frame": 346
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 2,
+      "start": 12.264999999999999,
+      "end": 26.71,
+      "fromFrame": 368,
+      "toFrame": 801,
+      "action": "Cerebro, cursor de atencao, memoria que desaparece e erro",
+      "cues": [
+        {
+          "word": "Você",
+          "frame": 371
+        },
+        {
+          "word": "continua",
+          "frame": 379
+        },
+        {
+          "word": "precisando",
+          "frame": 398
+        },
+        {
+          "word": "dormir,",
+          "frame": 414
+        },
+        {
+          "word": "Bugi.",
+          "frame": 443
+        },
+        {
+          "word": "Só",
+          "frame": 460
+        },
+        {
+          "word": "perdeu",
+          "frame": 466
+        },
+        {
+          "word": "o",
+          "frame": 475
+        },
+        {
+          "word": "sono.",
+          "frame": 478
+        },
+        {
+          "word": "Depois",
+          "frame": 521
+        },
+        {
+          "word": "de",
+          "frame": 529
+        },
+        {
+          "word": "uma",
+          "frame": 532
+        },
+        {
+          "word": "noite",
+          "frame": 536
+        },
+        {
+          "word": "em",
+          "frame": 542
+        },
+        {
+          "word": "claro,",
+          "frame": 545
+        },
+        {
+          "word": "atenção,",
+          "frame": 564
+        },
+        {
+          "word": "memória",
+          "frame": 585
+        },
+        {
+          "word": "e",
+          "frame": 607
+        },
+        {
+          "word": "humor",
+          "frame": 611
+        },
+        {
+          "word": "já",
+          "frame": 630
+        },
+        {
+          "word": "podem",
+          "frame": 636
+        },
+        {
+          "word": "piorar.",
+          "frame": 645
+        },
+        {
+          "word": "Você",
+          "frame": 685
+        },
+        {
+          "word": "demora",
+          "frame": 693
+        },
+        {
+          "word": "mais",
+          "frame": 702
+        },
+        {
+          "word": "e",
+          "frame": 717
+        },
+        {
+          "word": "erra",
+          "frame": 726
+        },
+        {
+          "word": "mais,",
+          "frame": 733
+        },
+        {
+          "word": "mesmo",
+          "frame": 760
+        },
+        {
+          "word": "achando",
+          "frame": 770
+        },
+        {
+          "word": "que",
+          "frame": 779
+        },
+        {
+          "word": "está",
+          "frame": 782
+        },
+        {
+          "word": "ótimo.",
+          "frame": 789
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 3,
+      "start": 26.89,
+      "end": 31.652,
+      "fromFrame": 807,
+      "toFrame": 950,
+      "action": "Cursor percorre a mesma frase e retorna; corte ao Bugi em merda",
+      "cues": [
+        {
+          "word": "Tô",
+          "frame": 810
+        },
+        {
+          "word": "ótimo.",
+          "frame": 822
+        },
+        {
+          "word": "Só",
+          "frame": 845
+        },
+        {
+          "word": "tô",
+          "frame": 851
+        },
+        {
+          "word": "lendo",
+          "frame": 854
+        },
+        {
+          "word": "a",
+          "frame": 860
+        },
+        {
+          "word": "mesma",
+          "frame": 863
+        },
+        {
+          "word": "frase",
+          "frame": 873
+        },
+        {
+          "word": "faz",
+          "frame": 883
+        },
+        {
+          "word": "vinte",
+          "frame": 892
+        },
+        {
+          "word": "minutos.",
+          "frame": 902
+        },
+        {
+          "word": "Que",
+          "frame": 922
+        },
+        {
+          "word": "merda!",
+          "frame": 932
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 4,
+      "start": 32.052,
+      "end": 45.837,
+      "fromFrame": 962,
+      "toFrame": 1375,
+      "action": "Relogio de passagem de tempo, tarefa de resposta atrasada, comparacao e ressalva",
+      "cues": [
+        {
+          "word": "Com",
+          "frame": 965
+        },
+        {
+          "word": "cerca",
+          "frame": 970
+        },
+        {
+          "word": "de",
+          "frame": 978
+        },
+        {
+          "word": "vinte",
+          "frame": 986
+        },
+        {
+          "word": "e",
+          "frame": 991
+        },
+        {
+          "word": "quatro",
+          "frame": 992
+        },
+        {
+          "word": "horas",
+          "frame": 1001
+        },
+        {
+          "word": "acordado,",
+          "frame": 1009
+        },
+        {
+          "word": "o",
+          "frame": 1040
+        },
+        {
+          "word": "prejuízo",
+          "frame": 1046
+        },
+        {
+          "word": "em",
+          "frame": 1063
+        },
+        {
+          "word": "certos",
+          "frame": 1070
+        },
+        {
+          "word": "testes",
+          "frame": 1081
+        },
+        {
+          "word": "de",
+          "frame": 1094
+        },
+        {
+          "word": "desempenho",
+          "frame": 1097
+        },
+        {
+          "word": "pode",
+          "frame": 1118
+        },
+        {
+          "word": "se",
+          "frame": 1124
+        },
+        {
+          "word": "comparar",
+          "frame": 1128
+        },
+        {
+          "word": "ao",
+          "frame": 1156
+        },
+        {
+          "word": "de",
+          "frame": 1161
+        },
+        {
+          "word": "álcool",
+          "frame": 1166
+        },
+        {
+          "word": "no",
+          "frame": 1176
+        },
+        {
+          "word": "sangue",
+          "frame": 1181
+        },
+        {
+          "word": "a",
+          "frame": 1193
+        },
+        {
+          "word": "zero",
+          "frame": 1203
+        },
+        {
+          "word": "vírgula",
+          "frame": 1211
+        },
+        {
+          "word": "dez",
+          "frame": 1221
+        },
+        {
+          "word": "por",
+          "frame": 1228
+        },
+        {
+          "word": "cento.",
+          "frame": 1233
+        },
+        {
+          "word": "Comparação",
+          "frame": 1268
+        },
+        {
+          "word": "de",
+          "frame": 1287
+        },
+        {
+          "word": "desempenho.",
+          "frame": 1290
+        },
+        {
+          "word": "Não",
+          "frame": 1317
+        },
+        {
+          "word": "tem",
+          "frame": 1323
+        },
+        {
+          "word": "álcool",
+          "frame": 1331
+        },
+        {
+          "word": "aparecendo",
+          "frame": 1339
+        },
+        {
+          "word": "no",
+          "frame": 1354
+        },
+        {
+          "word": "seu",
+          "frame": 1358
+        },
+        {
+          "word": "sangue.",
+          "frame": 1363
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 5,
+      "start": 46.016999999999996,
+      "end": 50.239,
+      "fromFrame": 1381,
+      "toFrame": 1507,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Então",
+          "frame": 1384
+        },
+        {
+          "word": "eu",
+          "frame": 1394
+        },
+        {
+          "word": "tô",
+          "frame": 1398
+        },
+        {
+          "word": "de",
+          "frame": 1402
+        },
+        {
+          "word": "ressaca",
+          "frame": 1406
+        },
+        {
+          "word": "sem",
+          "frame": 1427
+        },
+        {
+          "word": "nem",
+          "frame": 1435
+        },
+        {
+          "word": "ter",
+          "frame": 1440
+        },
+        {
+          "word": "ido",
+          "frame": 1444
+        },
+        {
+          "word": "à",
+          "frame": 1449
+        },
+        {
+          "word": "festa?",
+          "frame": 1453
+        },
+        {
+          "word": "Sacanagem!",
+          "frame": 1478
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 6,
+      "start": 50.638999999999996,
+      "end": 60.821999999999996,
+      "fromFrame": 1519,
+      "toFrame": 1825,
+      "action": "Informacao passa, e ocultada brevemente e reaparece avancada",
+      "cues": [
+        {
+          "word": "E",
+          "frame": 1522
+        },
+        {
+          "word": "o",
+          "frame": 1525
+        },
+        {
+          "word": "cérebro",
+          "frame": 1528
+        },
+        {
+          "word": "pode",
+          "frame": 1540
+        },
+        {
+          "word": "encaixar",
+          "frame": 1547
+        },
+        {
+          "word": "microssonos:",
+          "frame": 1564
+        },
+        {
+          "word": "apagões",
+          "frame": 1605
+        },
+        {
+          "word": "breves",
+          "frame": 1619
+        },
+        {
+          "word": "que",
+          "frame": 1632
+        },
+        {
+          "word": "você",
+          "frame": 1636
+        },
+        {
+          "word": "nem",
+          "frame": 1651
+        },
+        {
+          "word": "percebe.",
+          "frame": 1658
+        },
+        {
+          "word": "Mesmo",
+          "frame": 1703
+        },
+        {
+          "word": "de",
+          "frame": 1714
+        },
+        {
+          "word": "olhos",
+          "frame": 1717
+        },
+        {
+          "word": "abertos,",
+          "frame": 1724
+        },
+        {
+          "word": "pode",
+          "frame": 1754
+        },
+        {
+          "word": "perder",
+          "frame": 1766
+        },
+        {
+          "word": "pedaços",
+          "frame": 1776
+        },
+        {
+          "word": "do",
+          "frame": 1792
+        },
+        {
+          "word": "que",
+          "frame": 1794
+        },
+        {
+          "word": "estava",
+          "frame": 1796
+        },
+        {
+          "word": "acontecendo.",
+          "frame": 1802
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 7,
+      "start": 61.001999999999995,
+      "end": 64.58399999999999,
+      "fromFrame": 1830,
+      "toFrame": 1938,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Eu",
+          "frame": 1833
+        },
+        {
+          "word": "não",
+          "frame": 1840
+        },
+        {
+          "word": "dormi!",
+          "frame": 1846
+        },
+        {
+          "word": "Só",
+          "frame": 1868
+        },
+        {
+          "word": "pulei",
+          "frame": 1879
+        },
+        {
+          "word": "um",
+          "frame": 1890
+        },
+        {
+          "word": "pedaço",
+          "frame": 1894
+        },
+        {
+          "word": "da",
+          "frame": 1910
+        },
+        {
+          "word": "realidade.",
+          "frame": 1915
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 8,
+      "start": 64.984,
+      "end": 75.00699999999999,
+      "fromFrame": 1950,
+      "toFrame": 2250,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Por",
+          "frame": 1953
+        },
+        {
+          "word": "isso,",
+          "frame": 1957
+        },
+        {
+          "word": "dirigir",
+          "frame": 1974
+        },
+        {
+          "word": "nessa",
+          "frame": 1984
+        },
+        {
+          "word": "condição",
+          "frame": 1991
+        },
+        {
+          "word": "é",
+          "frame": 2006
+        },
+        {
+          "word": "perigoso.",
+          "frame": 2009
+        },
+        {
+          "word": "A",
+          "frame": 2047
+        },
+        {
+          "word": "cem",
+          "frame": 2053
+        },
+        {
+          "word": "quilômetros",
+          "frame": 2058
+        },
+        {
+          "word": "por",
+          "frame": 2075
+        },
+        {
+          "word": "hora,",
+          "frame": 2080
+        },
+        {
+          "word": "três",
+          "frame": 2102
+        },
+        {
+          "word": "segundos",
+          "frame": 2109
+        },
+        {
+          "word": "sem",
+          "frame": 2122
+        },
+        {
+          "word": "atenção",
+          "frame": 2126
+        },
+        {
+          "word": "representam",
+          "frame": 2147
+        },
+        {
+          "word": "cerca",
+          "frame": 2165
+        },
+        {
+          "word": "de",
+          "frame": 2175
+        },
+        {
+          "word": "oitenta",
+          "frame": 2191
+        },
+        {
+          "word": "e",
+          "frame": 2205
+        },
+        {
+          "word": "três",
+          "frame": 2208
+        },
+        {
+          "word": "metros",
+          "frame": 2216
+        },
+        {
+          "word": "percorridos.",
+          "frame": 2226
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 9,
+      "start": 75.187,
+      "end": 79.069,
+      "fromFrame": 2256,
+      "toFrame": 2372,
+      "action": "Chave acompanha a mao e e deixada na mesa em aqui",
+      "cues": [
+        {
+          "word": "Oitenta",
+          "frame": 2259
+        },
+        {
+          "word": "e",
+          "frame": 2274
+        },
+        {
+          "word": "três",
+          "frame": 2278
+        },
+        {
+          "word": "metros?",
+          "frame": 2287
+        },
+        {
+          "word": "Tá.",
+          "frame": 2317
+        },
+        {
+          "word": "A",
+          "frame": 2336
+        },
+        {
+          "word": "chave",
+          "frame": 2341
+        },
+        {
+          "word": "fica",
+          "frame": 2351
+        },
+        {
+          "word": "aqui.",
+          "frame": 2359
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 10,
+      "start": 79.329,
+      "end": 87.592,
+      "fromFrame": 2380,
+      "toFrame": 2628,
+      "action": "Caneca, alerta temporario e persistencia da necessidade de sono",
+      "cues": [
+        {
+          "word": "Café",
+          "frame": 2383
+        },
+        {
+          "word": "pode",
+          "frame": 2405
+        },
+        {
+          "word": "aumentar",
+          "frame": 2411
+        },
+        {
+          "word": "o",
+          "frame": 2430
+        },
+        {
+          "word": "alerta",
+          "frame": 2432
+        },
+        {
+          "word": "por",
+          "frame": 2452
+        },
+        {
+          "word": "um",
+          "frame": 2457
+        },
+        {
+          "word": "tempo.",
+          "frame": 2461
+        },
+        {
+          "word": "Mas",
+          "frame": 2488
+        },
+        {
+          "word": "não",
+          "frame": 2499
+        },
+        {
+          "word": "substitui",
+          "frame": 2505
+        },
+        {
+          "word": "o",
+          "frame": 2521
+        },
+        {
+          "word": "sono",
+          "frame": 2526
+        },
+        {
+          "word": "nem",
+          "frame": 2547
+        },
+        {
+          "word": "elimina",
+          "frame": 2553
+        },
+        {
+          "word": "todos",
+          "frame": 2570
+        },
+        {
+          "word": "os",
+          "frame": 2582
+        },
+        {
+          "word": "efeitos",
+          "frame": 2586
+        },
+        {
+          "word": "de",
+          "frame": 2600
+        },
+        {
+          "word": "ficar",
+          "frame": 2603
+        },
+        {
+          "word": "acordado.",
+          "frame": 2609
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 11,
+      "start": 87.77199999999999,
+      "end": 91.234,
+      "fromFrame": 2633,
+      "toFrame": 2737,
+      "action": "Caneca acompanha a mao do rig; alarme aparece na palavra",
+      "cues": [
+        {
+          "word": "Então",
+          "frame": 2636
+        },
+        {
+          "word": "essa",
+          "frame": 2648
+        },
+        {
+          "word": "caneca",
+          "frame": 2655
+        },
+        {
+          "word": "é",
+          "frame": 2667
+        },
+        {
+          "word": "um",
+          "frame": 2670
+        },
+        {
+          "word": "alarme,",
+          "frame": 2673
+        },
+        {
+          "word": "não",
+          "frame": 2706
+        },
+        {
+          "word": "um",
+          "frame": 2712
+        },
+        {
+          "word": "carregador?",
+          "frame": 2715
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 12,
+      "start": 91.49399999999999,
+      "end": 105.73999999999998,
+      "fromFrame": 2745,
+      "toFrame": 3172,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Com",
+          "frame": 2748
+        },
+        {
+          "word": "a",
+          "frame": 2751
+        },
+        {
+          "word": "privação",
+          "frame": 2755
+        },
+        {
+          "word": "prolongada,",
+          "frame": 2772
+        },
+        {
+          "word": "a",
+          "frame": 2804
+        },
+        {
+          "word": "coisa",
+          "frame": 2808
+        },
+        {
+          "word": "pode",
+          "frame": 2816
+        },
+        {
+          "word": "ficar",
+          "frame": 2822
+        },
+        {
+          "word": "mais",
+          "frame": 2834
+        },
+        {
+          "word": "estranha.",
+          "frame": 2849
+        },
+        {
+          "word": "Estudos",
+          "frame": 2888
+        },
+        {
+          "word": "relatam",
+          "frame": 2905
+        },
+        {
+          "word": "distorções",
+          "frame": 2921
+        },
+        {
+          "word": "da",
+          "frame": 2941
+        },
+        {
+          "word": "percepção",
+          "frame": 2944
+        },
+        {
+          "word": "e",
+          "frame": 2971
+        },
+        {
+          "word": "alucinações.",
+          "frame": 2977
+        },
+        {
+          "word": "Você",
+          "frame": 3024
+        },
+        {
+          "word": "pode",
+          "frame": 3031
+        },
+        {
+          "word": "interpretar",
+          "frame": 3036
+        },
+        {
+          "word": "sombras",
+          "frame": 3056
+        },
+        {
+          "word": "e",
+          "frame": 3072
+        },
+        {
+          "word": "objetos",
+          "frame": 3076
+        },
+        {
+          "word": "de",
+          "frame": 3094
+        },
+        {
+          "word": "um",
+          "frame": 3098
+        },
+        {
+          "word": "jeito",
+          "frame": 3100
+        },
+        {
+          "word": "que",
+          "frame": 3108
+        },
+        {
+          "word": "não",
+          "frame": 3122
+        },
+        {
+          "word": "corresponde",
+          "frame": 3127
+        },
+        {
+          "word": "ao",
+          "frame": 3154
+        },
+        {
+          "word": "que",
+          "frame": 3156
+        },
+        {
+          "word": "está",
+          "frame": 3158
+        },
+        {
+          "word": "ali.",
+          "frame": 3163
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 13,
+      "start": 105.91999999999999,
+      "end": 111.00199999999998,
+      "fromFrame": 3178,
+      "toFrame": 3330,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Por",
+          "frame": 3181
+        },
+        {
+          "word": "que",
+          "frame": 3188
+        },
+        {
+          "word": "a",
+          "frame": 3193
+        },
+        {
+          "word": "minha",
+          "frame": 3196
+        },
+        {
+          "word": "planta",
+          "frame": 3205
+        },
+        {
+          "word": "tá",
+          "frame": 3218
+        },
+        {
+          "word": "me",
+          "frame": 3223
+        },
+        {
+          "word": "julgando?",
+          "frame": 3227
+        },
+        {
+          "word": "Cuida",
+          "frame": 3262
+        },
+        {
+          "word": "da",
+          "frame": 3274
+        },
+        {
+          "word": "tua",
+          "frame": 3280
+        },
+        {
+          "word": "fotossíntese,",
+          "frame": 3286
+        },
+        {
+          "word": "porra!",
+          "frame": 3316
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 14,
+      "start": 111.40199999999999,
+      "end": 121.24599999999998,
+      "fromFrame": 3342,
+      "toFrame": 3637,
+      "action": "Trajetorias ilustrativas diferentes; sem escala clinica",
+      "cues": [
+        {
+          "word": "Ela",
+          "frame": 3345
+        },
+        {
+          "word": "nem",
+          "frame": 3350
+        },
+        {
+          "word": "falou",
+          "frame": 3355
+        },
+        {
+          "word": "nada.",
+          "frame": 3364
+        },
+        {
+          "word": "Esses",
+          "frame": 3404
+        },
+        {
+          "word": "efeitos",
+          "frame": 3412
+        },
+        {
+          "word": "e",
+          "frame": 3433
+        },
+        {
+          "word": "os",
+          "frame": 3435
+        },
+        {
+          "word": "horários",
+          "frame": 3439
+        },
+        {
+          "word": "variam",
+          "frame": 3455
+        },
+        {
+          "word": "entre",
+          "frame": 3469
+        },
+        {
+          "word": "pessoas.",
+          "frame": 3475
+        },
+        {
+          "word": "Não",
+          "frame": 3516
+        },
+        {
+          "word": "existe",
+          "frame": 3519
+        },
+        {
+          "word": "uma",
+          "frame": 3529
+        },
+        {
+          "word": "tabelinha",
+          "frame": 3540
+        },
+        {
+          "word": "garantindo",
+          "frame": 3562
+        },
+        {
+          "word": "o",
+          "frame": 3582
+        },
+        {
+          "word": "que",
+          "frame": 3583
+        },
+        {
+          "word": "acontece",
+          "frame": 3586
+        },
+        {
+          "word": "com",
+          "frame": 3600
+        },
+        {
+          "word": "todo",
+          "frame": 3605
+        },
+        {
+          "word": "mundo",
+          "frame": 3613
+        },
+        {
+          "word": "a",
+          "frame": 3619
+        },
+        {
+          "word": "cada",
+          "frame": 3621
+        },
+        {
+          "word": "hora.",
+          "frame": 3627
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 15,
+      "start": 121.42599999999999,
+      "end": 124.228,
+      "fromFrame": 3643,
+      "toFrame": 3727,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Tá,",
+          "frame": 3646
+        },
+        {
+          "word": "mas",
+          "frame": 3665
+        },
+        {
+          "word": "em",
+          "frame": 3676
+        },
+        {
+          "word": "quantos",
+          "frame": 3683
+        },
+        {
+          "word": "dias",
+          "frame": 3697
+        },
+        {
+          "word": "eu",
+          "frame": 3704
+        },
+        {
+          "word": "morreria?",
+          "frame": 3707
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 16,
+      "start": 124.48799999999999,
+      "end": 134.19099999999997,
+      "fromFrame": 3735,
+      "toFrame": 4026,
+      "action": "Pergunta de prazo da lugar ao exemplo de risco de acidente",
+      "cues": [
+        {
+          "word": "Não",
+          "frame": 3738
+        },
+        {
+          "word": "dá",
+          "frame": 3743
+        },
+        {
+          "word": "pra",
+          "frame": 3748
+        },
+        {
+          "word": "cravar",
+          "frame": 3753
+        },
+        {
+          "word": "um",
+          "frame": 3765
+        },
+        {
+          "word": "prazo",
+          "frame": 3769
+        },
+        {
+          "word": "humano",
+          "frame": 3777
+        },
+        {
+          "word": "confiável.",
+          "frame": 3790
+        },
+        {
+          "word": "E",
+          "frame": 3837
+        },
+        {
+          "word": "você",
+          "frame": 3840
+        },
+        {
+          "word": "não",
+          "frame": 3847
+        },
+        {
+          "word": "precisa",
+          "frame": 3852
+        },
+        {
+          "word": "chegar",
+          "frame": 3863
+        },
+        {
+          "word": "perto",
+          "frame": 3873
+        },
+        {
+          "word": "de",
+          "frame": 3884
+        },
+        {
+          "word": "um",
+          "frame": 3888
+        },
+        {
+          "word": "limite:",
+          "frame": 3891
+        },
+        {
+          "word": "erros",
+          "frame": 3924
+        },
+        {
+          "word": "e",
+          "frame": 3937
+        },
+        {
+          "word": "acidentes",
+          "frame": 3939
+        },
+        {
+          "word": "já",
+          "frame": 3956
+        },
+        {
+          "word": "podem",
+          "frame": 3960
+        },
+        {
+          "word": "colocar",
+          "frame": 3967
+        },
+        {
+          "word": "sua",
+          "frame": 3978
+        },
+        {
+          "word": "vida",
+          "frame": 3983
+        },
+        {
+          "word": "em",
+          "frame": 3987
+        },
+        {
+          "word": "risco",
+          "frame": 3990
+        },
+        {
+          "word": "muito",
+          "frame": 4004
+        },
+        {
+          "word": "antes.",
+          "frame": 4013
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 17,
+      "start": 134.37099999999998,
+      "end": 138.69299999999998,
+      "fromFrame": 4031,
+      "toFrame": 4161,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Ganhei",
+          "frame": 4034
+        },
+        {
+          "word": "oito",
+          "frame": 4049
+        },
+        {
+          "word": "horas",
+          "frame": 4058
+        },
+        {
+          "word": "e",
+          "frame": 4073
+        },
+        {
+          "word": "perdi",
+          "frame": 4079
+        },
+        {
+          "word": "o",
+          "frame": 4088
+        },
+        {
+          "word": "cérebro.",
+          "frame": 4092
+        },
+        {
+          "word": "Cancela",
+          "frame": 4121
+        },
+        {
+          "word": "essa",
+          "frame": 4137
+        },
+        {
+          "word": "promoção.",
+          "frame": 4143
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 18,
+      "start": 139.093,
+      "end": 147.796,
+      "fromFrame": 4173,
+      "toFrame": 4434,
+      "action": "Cerebro/corpo e retorno ao quarto antes de Bugi, devolve",
+      "cues": [
+        {
+          "word": "Dormir",
+          "frame": 4176
+        },
+        {
+          "word": "não",
+          "frame": 4193
+        },
+        {
+          "word": "é",
+          "frame": 4199
+        },
+        {
+          "word": "tempo",
+          "frame": 4207
+        },
+        {
+          "word": "jogado",
+          "frame": 4216
+        },
+        {
+          "word": "fora.",
+          "frame": 4226
+        },
+        {
+          "word": "É",
+          "frame": 4250
+        },
+        {
+          "word": "parte",
+          "frame": 4254
+        },
+        {
+          "word": "do",
+          "frame": 4263
+        },
+        {
+          "word": "funcionamento",
+          "frame": 4266
+        },
+        {
+          "word": "do",
+          "frame": 4286
+        },
+        {
+          "word": "cérebro",
+          "frame": 4291
+        },
+        {
+          "word": "e",
+          "frame": 4307
+        },
+        {
+          "word": "do",
+          "frame": 4310
+        },
+        {
+          "word": "corpo.",
+          "frame": 4313
+        },
+        {
+          "word": "Bugi,",
+          "frame": 4348
+        },
+        {
+          "word": "devolve",
+          "frame": 4383
+        },
+        {
+          "word": "a",
+          "frame": 4407
+        },
+        {
+          "word": "cama.",
+          "frame": 4413
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    },
+    {
+      "index": 19,
+      "start": 147.976,
+      "end": 152.238,
+      "fromFrame": 4439,
+      "toFrame": 4567,
+      "action": "Atuacao com dois gestos finitos e recuperacao; cena original preservada",
+      "cues": [
+        {
+          "word": "Devolvo.",
+          "frame": 4442
+        },
+        {
+          "word": "Mas",
+          "frame": 4470
+        },
+        {
+          "word": "se",
+          "frame": 4487
+        },
+        {
+          "word": "essa",
+          "frame": 4490
+        },
+        {
+          "word": "planta",
+          "frame": 4498
+        },
+        {
+          "word": "roncar,",
+          "frame": 4508
+        },
+        {
+          "word": "eu",
+          "frame": 4528
+        },
+        {
+          "word": "peço",
+          "frame": 4536
+        },
+        {
+          "word": "reembolso.",
+          "frame": 4545
+        }
+      ],
+      "evidence": "out/bugi-nunca-dormir-v3.mp4",
+      "approval": "pending-user"
+    }
+  ]
+}

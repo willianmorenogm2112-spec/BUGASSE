@@ -32,3 +32,16 @@ test('lighting follows global time continuously across dialogue cuts',()=>{
  assert.ok(Math.abs(sleepNight(40,12,91)-.3)<1e-7);
  assert.ok(Math.abs(sleepNight(120,12,91)-.85)<1e-7);
 });
+
+// Geometric tests complement artistic review: the old IK crossed both knees inward.
+test('knees preserve an uncrossed silhouette across the entire episode',()=>{
+ for(const turn of timing.turns)for(let f=0;f<Math.ceil((turn.end-turn.start)*30);f++){
+  const k=sleepActing(turn.index,f/30,turn.end-turn.start,0);
+  assert.ok(k.leftKnee.x<0 && k.rightKnee.x>0);
+ }
+});
+test('gestures return to rest within a long spoken explanation',()=>{
+ const k=sleepActing(2,4,14.45,0);
+ assert.ok(Math.abs(k.rightWrist.y-48)<.001);
+ assert.ok(Math.abs(sleepActing(2,.7,14.45,0).rightWrist.y-48)>10);
+});
