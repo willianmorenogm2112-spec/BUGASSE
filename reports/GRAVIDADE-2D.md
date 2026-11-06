@@ -30,4 +30,12 @@ BUGI: Pronto. Treino do ano concluído. Vou cancelar a academia que eu nunca pag
 
 ## Estado
 
-Em produção. Voz e render só considerados concluídos com arquivo e QA. Timestamps técnicos, se usados, são estimados. Custos cobrados não informados pela interface.
+V2 exportada para revisão: `out/bugi-gravidade-dobrada-v2.mp4`, 69,184 s, 7.623.050 bytes, H.264/AAC, 1080×1920, 30 FPS, 2.075 frames. SHA256: `168BCE5C5E5A8C23C5B1E75921C2375A8363E80E7CDE511C1BFA4759178B0F35`. Decodificação integral FFmpeg sem erros. Não publicada.
+
+TTS real Gemini 3.8 Flash TTS, Charon 46,52 s e Puck 29,32 s, baixados em novas abas AI Studio. `provenance.json` registra origem e hashes. WhisperX alinhou 13 turnos e 200 palavras, 69,153 s de montagem; não são tempos estimados. SFX procedurais originais e discretos; sem música externa ou imagens geradas. Custos cobrados não informados pela interface.
+
+Validação: lint, build, 17 testes existentes e 3 testes novos de contato/recuperação/física passaram. Build mantém avisos de bundle e importação dinâmica existentes. Na revisão V1 foram corrigidos piso com preenchimento indevido, pernas agachadas em pé, apresentação do celular e sincronização dos números. V2: revisão amostrada do episódio (`out/gravidade-v2-contato.jpg`), sequência do celular (`out/gravidade-celular-v2-sequencia.jpg`) e quadro de postura (`out/gravidade-postura-v2.png`). Apoio dos pés e comprimento de segmentos verificados por frame em testes. Os quadros não equivalem a aprovação humana por reprodução integral. Escuta humana integral e aprovação artística pendentes; não declarar qualidade final aprovada automaticamente.
+
+Técnicas aplicadas: diálogo e contraste de speakers (0–69 s); atuação com tentativa/queda/recuperação (0–3,7 s, 28,7–38,3 s, 44,2–47,7 s); demonstrações de massa/peso (15,5–25,1 s), salto (38,5–44 s), queda (47,9–56,3 s); gráficos escalonados, movimentos por frame, cenários e objetos originais SVG. Referências orientam linguagem sem copiar assets. HyperFrames, PhotoCraft e FilmCraft não executados neste episódio: o ganho foi implementado diretamente na composição principal.
+
+Workflow persistente: AGENTS.md local remete a docs/WORKFLOW-ANIMACAO-E-SKILLS.md e docs/DIRECAO-PROXIMO-VIDEO-2D.md. Rollback: reverter os commits da branch deste episódio, mantendo assets e vídeos anteriores.

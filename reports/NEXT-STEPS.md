@@ -93,3 +93,7 @@ Executado: Aplicar docs/DIRECAO-PROXIMO-VIDEO-2D.md ao próximo tema: pesquisa c
 
 Executado: Concluir QA da V2, inspecionar movimento contínuo e entregar MP4 para revisão do usuário. Não publicar este episódio automaticamente. Próximos vídeos devem ler AGENTS.md e workflow persistente; validar cada técnica por evidência, sem alegar todas as skills usadas. Arquivos, comandos, fontes e limites em reports/GRAVIDADE-2D.md. Logs: saídas reais de npm run lint, npm test, npm run build, tsx --test e Remotion CLI. Rollback: reverter os commits da branch codex/bugi-gravidade-2d-20261106; preservar mídia e episódios anteriores.
 
+## Entrega Gravidade V2 — 06/11/2026
+
+Executado: exportação revisada concluída; arquivo real out/bugi-gravidade-dobrada-v2.mp4 (69,184 s, 7.623.050 bytes, 2.075 frames, H.264/AAC 1080×1920/30). Evidência e arquivos: reports/GRAVIDADE-2D.md, out/gravidade-v2-contato.jpg e out/gravidade-celular-v2-sequencia.jpg. Logs: ffprobe confirmou formato; FFmpeg decode integral sem erros; blackdetect sem intervalos pretos; áudio do MP4 medido -17,08 LUFS / -4,96 dBTP / LRA 4,4. Lint/build e 20 testes totais passaram. Limitação: revisão humana integral de imagem/escuta e aprovação artística pendentes; sem publicação. Nenhuma instalação adicional ou ferramenta opcional simulada. Próximo: usuário revisar V2. Rollback conforme relatório do episódio. Este registro substitui o estado anterior de V2 em render.
+
