@@ -99,3 +99,7 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 - A Skill Reel local tinha `version` fora do schema aceito; movido para `metadata.version`.
 - Limite: cobertura documental/roteamento não comprova que cada ferramenta opcional foi executada. PhotoCraft, FilmCraft, After Effects, Figma e HyperFrames continuam condicionais à disponibilidade e ganho real.
 
+## Direção combinada do próximo vídeo 2D — 06/11/2026
+
+Executado: Adaptação das quatro referências delimitada a técnicas originais. Tema não escolhido; o exemplo da bateria não é autorização para esse tema. Sem métricas de retenção presumidas. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
+

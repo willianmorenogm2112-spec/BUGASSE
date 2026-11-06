@@ -2,6 +2,8 @@
 
 Este guia complementa a identidade e os critérios do projeto. Remotion continua sendo a fonte única da composição, do Player e do MP4. A adoção das ferramentas abaixo depende de teste e ganho visível no episódio; não declarar ferramenta usada só por estar instalada.
 
+Direção aprovada para o próximo episódio 2D: seguir [DIRECAO-PROXIMO-VIDEO-2D.md](DIRECAO-PROXIMO-VIDEO-2D.md). Combinar diálogo narrador/Bugi, atuação expressiva, demonstração visual por fala e gráficos/cenários com hierarquia. Preservar identidade e vozes Puck/Charon. Exigir piloto de 12 s com evidência das quatro contribuições antes de afirmar aplicação no vídeo final.
+
 1. **Roteiro e storyboard:** use `short-form-video`, `explainer-video` e `shot-composition` para abrir com ação, explicar uma ideia por beat e planejar o desfecho. As estatísticas e receitas de viralização dessas skills não são evidência e não devem ser repetidas como fatos; cortes e zooms precisam ser motivados pela ação.
 2. **Atuação e rig:** use `animation-principles` e `motion-art-direction` para poses, antecipação, arcos, contato, reação e follow-through. Avalie Rigby2D ou IK.ts para articulações, apenas após validar controle determinístico de cada frame e integração com o Player e render. Preserve o desenho do Bugi.
 3. **Rosto:** use Flubber para interpolar formas SVG quando isso melhorar a expressão; valide silhueta e ausência de deformações. Para personagens que falam, avalie Rhubarb com o áudio real e revise as bocas. Em português, use o reconhecedor fonético, que é menos preciso; não confundir esse resultado com alinhamento preciso de fonemas.

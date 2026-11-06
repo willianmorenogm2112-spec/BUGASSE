@@ -137,3 +137,7 @@ Executado: pacote do usuário auditado e integrado em `bugi-3d/kit`; Node 24.14.
 
 Executado: inventário de 52 skills únicas em três raízes; criadas cinco variantes específicas 3D e uma matriz compartilhada para Remotion, HyperFrames, motion, gráficos e ferramentas opcionais. O verificador encontrou 57 skills instaladas após a adaptação e cobriu 57/57. Sete skills modificadas/criadas passaram no `quick_validate.py`; `npm run lint` passou. Nenhuma ferramenta paga ou binário opcional foi executado.
 
+## Direção combinada do próximo vídeo 2D — 06/11/2026
+
+Executado: Nenhuma instalação necessária. Skills locais motion-art-direction e animated-infographic lidas; ferramentas existentes preservadas. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
+
