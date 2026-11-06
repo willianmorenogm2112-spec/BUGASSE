@@ -1,0 +1,374 @@
+[
+  {
+    "word": "Meu",
+    "start": 0.54,
+    "end": 0.68,
+    "score": 0.828
+  },
+  {
+    "word": "joelho",
+    "start": 0.761,
+    "end": 1.001,
+    "score": 0.912
+  },
+  {
+    "word": "pediu",
+    "start": 1.061,
+    "end": 1.341,
+    "score": 0.858
+  },
+  {
+    "word": "demissão!",
+    "start": 1.381,
+    "end": 2.101,
+    "score": 0.866
+  },
+  {
+    "word": "Eu",
+    "start": 2.682,
+    "end": 2.722,
+    "score": 1.0
+  },
+  {
+    "word": "só",
+    "start": 2.762,
+    "end": 2.842,
+    "score": 0.833
+  },
+  {
+    "word": "fui",
+    "start": 2.882,
+    "end": 2.962,
+    "score": 0.712
+  },
+  {
+    "word": "levantar",
+    "start": 3.002,
+    "end": 3.442,
+    "score": 0.878
+  },
+  {
+    "word": "do",
+    "start": 3.462,
+    "end": 3.502,
+    "score": 0.495
+  },
+  {
+    "word": "sofá!",
+    "start": 3.562,
+    "end": 4.043,
+    "score": 0.998
+  },
+  {
+    "word": "Engordei",
+    "start": 5.404,
+    "end": 6.144,
+    "score": 0.934
+  },
+  {
+    "word": "sem",
+    "start": 6.264,
+    "end": 6.404,
+    "score": 0.953
+  },
+  {
+    "word": "comer?",
+    "start": 6.484,
+    "end": 6.865,
+    "score": 0.917
+  },
+  {
+    "word": "Aí",
+    "start": 7.085,
+    "end": 7.285,
+    "score": 0.919
+  },
+  {
+    "word": "é",
+    "start": 7.325,
+    "end": 7.345,
+    "score": 0.001
+  },
+  {
+    "word": "sacanagem!",
+    "start": 7.425,
+    "end": 9.026,
+    "score": 0.933
+  },
+  {
+    "word": "Meu",
+    "start": 9.426,
+    "end": 9.526,
+    "score": 0.852
+  },
+  {
+    "word": "sofá",
+    "start": 9.587,
+    "end": 9.947,
+    "score": 0.894
+  },
+  {
+    "word": "virou",
+    "start": 10.027,
+    "end": 10.227,
+    "score": 0.832
+  },
+  {
+    "word": "uma",
+    "start": 10.267,
+    "end": 10.367,
+    "score": 0.734
+  },
+  {
+    "word": "academia.",
+    "start": 10.387,
+    "end": 11.048,
+    "score": 0.955
+  },
+  {
+    "word": "E",
+    "start": 11.428,
+    "end": 11.468,
+    "score": 0.501
+  },
+  {
+    "word": "eu",
+    "start": 11.488,
+    "end": 11.548,
+    "score": 0.934
+  },
+  {
+    "word": "nem",
+    "start": 11.608,
+    "end": 11.768,
+    "score": 0.828
+  },
+  {
+    "word": "assinei",
+    "start": 11.808,
+    "end": 12.108,
+    "score": 0.811
+  },
+  {
+    "word": "o",
+    "start": 12.148,
+    "end": 12.188,
+    "score": 0.528
+  },
+  {
+    "word": "plano!",
+    "start": 12.228,
+    "end": 12.529,
+    "score": 0.772
+  },
+  {
+    "word": "E",
+    "start": 13.789,
+    "end": 13.829,
+    "score": 0.963
+  },
+  {
+    "word": "se",
+    "start": 13.93,
+    "end": 13.99,
+    "score": 0.978
+  },
+  {
+    "word": "eu",
+    "start": 14.01,
+    "end": 14.07,
+    "score": 0.252
+  },
+  {
+    "word": "pular?",
+    "start": 14.19,
+    "end": 14.51,
+    "score": 0.974
+  },
+  {
+    "word": "Aí",
+    "start": 15.13,
+    "end": 15.33,
+    "score": 0.729
+  },
+  {
+    "word": "eu",
+    "start": 15.35,
+    "end": 15.451,
+    "score": 0.728
+  },
+  {
+    "word": "escapo,",
+    "start": 15.491,
+    "end": 16.071,
+    "score": 0.757
+  },
+  {
+    "word": "gênio!",
+    "start": 16.251,
+    "end": 16.611,
+    "score": 0.743
+  },
+  {
+    "word": "Pulei",
+    "start": 17.412,
+    "end": 17.872,
+    "score": 0.922
+  },
+  {
+    "word": "uma",
+    "start": 17.912,
+    "end": 18.032,
+    "score": 0.834
+  },
+  {
+    "word": "vergonha.",
+    "start": 18.112,
+    "end": 18.793,
+    "score": 0.881
+  },
+  {
+    "word": "E",
+    "start": 19.814,
+    "end": 19.854,
+    "score": 0.998
+  },
+  {
+    "word": "ainda",
+    "start": 19.894,
+    "end": 20.114,
+    "score": 0.793
+  },
+  {
+    "word": "cansei.",
+    "start": 20.194,
+    "end": 20.694,
+    "score": 0.952
+  },
+  {
+    "word": "Até",
+    "start": 21.775,
+    "end": 22.075,
+    "score": 0.885
+  },
+  {
+    "word": "meu",
+    "start": 22.115,
+    "end": 22.235,
+    "score": 0.833
+  },
+  {
+    "word": "celular",
+    "start": 22.295,
+    "end": 22.675,
+    "score": 0.981
+  },
+  {
+    "word": "tá",
+    "start": 22.736,
+    "end": 22.796,
+    "score": 0.964
+  },
+  {
+    "word": "com",
+    "start": 22.856,
+    "end": 22.956,
+    "score": 0.999
+  },
+  {
+    "word": "pressa",
+    "start": 23.036,
+    "end": 23.336,
+    "score": 0.914
+  },
+  {
+    "word": "de",
+    "start": 23.356,
+    "end": 23.416,
+    "score": 0.758
+  },
+  {
+    "word": "quebrar!",
+    "start": 23.456,
+    "end": 23.776,
+    "score": 0.93
+  },
+  {
+    "word": "Pronto.",
+    "start": 24.577,
+    "end": 24.997,
+    "score": 0.853
+  },
+  {
+    "word": "Treino",
+    "start": 25.377,
+    "end": 25.678,
+    "score": 0.774
+  },
+  {
+    "word": "do",
+    "start": 25.718,
+    "end": 25.798,
+    "score": 0.913
+  },
+  {
+    "word": "ano",
+    "start": 25.858,
+    "end": 25.998,
+    "score": 0.835
+  },
+  {
+    "word": "concluído.",
+    "start": 26.098,
+    "end": 26.698,
+    "score": 0.949
+  },
+  {
+    "word": "Vou",
+    "start": 27.319,
+    "end": 27.399,
+    "score": 0.651
+  },
+  {
+    "word": "cancelar",
+    "start": 27.439,
+    "end": 27.819,
+    "score": 0.801
+  },
+  {
+    "word": "a",
+    "start": 27.839,
+    "end": 27.859,
+    "score": 0.347
+  },
+  {
+    "word": "academia",
+    "start": 27.879,
+    "end": 28.199,
+    "score": 0.819
+  },
+  {
+    "word": "que",
+    "start": 28.239,
+    "end": 28.299,
+    "score": 0.999
+  },
+  {
+    "word": "eu",
+    "start": 28.319,
+    "end": 28.359,
+    "score": 1.0
+  },
+  {
+    "word": "nunca",
+    "start": 28.399,
+    "end": 28.539,
+    "score": 0.902
+  },
+  {
+    "word": "paguei.",
+    "start": 28.6,
+    "end": 28.86,
+    "score": 0.949
+  }
+]

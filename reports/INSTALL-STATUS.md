@@ -141,3 +141,7 @@ Executado: inventário de 52 skills únicas em três raízes; criadas cinco vari
 
 Executado: Nenhuma instalação necessária. Skills locais motion-art-direction e animated-infographic lidas; ferramentas existentes preservadas. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
 
+## Gravidade dobrada — produção 06/11/2026
+
+Executado: Reutilizados Remotion 4.0.540, FFmpeg, WhisperX CPU e skills locais; nenhuma nova dependência. Gemini 3.8 Flash TTS via AI Studio: Charon 46,52 s e Puck 29,32 s, WAVs reais baixados. Proveniência e hashes em public/assets/gravidade/provenance.json. Custo cobrado não informado. Arquivos, comandos, fontes e limites em reports/GRAVIDADE-2D.md. Logs: saídas reais de npm run lint, npm test, npm run build, tsx --test e Remotion CLI. Rollback: reverter os commits da branch codex/bugi-gravidade-2d-20261106; preservar mídia e episódios anteriores.
+

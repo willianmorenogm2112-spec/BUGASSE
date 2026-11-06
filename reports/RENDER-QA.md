@@ -97,3 +97,7 @@ A matriz de skills acrescenta verificações 3D de clipping, z-fighting, popping
 
 Executado: Sem novo render nesta etapa editorial. Gate definido: piloto de 12 s com diálogo, atuação, demonstração e transição; evidência por frame e escuta exigidas antes do episódio completo. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
 
+## Gravidade dobrada — produção 06/11/2026
+
+Executado: Piloto real 12,011 s H.264/AAC 1080×1920/30, 1.310.129 bytes. V1 completa 69,184 s, 2.075 frames, 7.232.104 bytes, decode integral passou. Revisão amostrada: out/gravidade-piloto-contato.jpg, out/gravidade-completo-contato.jpg e out/gravidade-postura-v2.png. Mix medido -17,06 LUFS, -2 dBTP, LRA 4,3. V2 em render após correção de postura/celular/expressões; não confundir com V1. Escuta humana integral e aprovação artística ainda pendentes. Arquivos, comandos, fontes e limites em reports/GRAVIDADE-2D.md. Logs: saídas reais de npm run lint, npm test, npm run build, tsx --test e Remotion CLI. Rollback: reverter os commits da branch codex/bugi-gravidade-2d-20261106; preservar mídia e episódios anteriores.
+
