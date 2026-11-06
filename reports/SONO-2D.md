@@ -8,6 +8,7 @@ Hipótese: adulto ainda precisa dormir, mas sofre privação. Não confundir com
 
 - NIH/NHLBI: atenção, memória, humor, microssonos, prejuízo de desempenho e funcionamento normal sustentado pelo sono. https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects
 - CDC/NIOSH: cerca de 24 h acordado comparadas a BAC 0,10% em desempenho; cafeína temporária não substitui sono; direção prejudicada. Comparação não significa álcool real no sangue nem valor universal individual. https://www.cdc.gov/niosh/motor-vehicle/driver-fatigue/index.html
+- CDC/NIOSH, módulo específico de microssonos: aparência acordada/olhos abertos pode coexistir com perda de processamento da informação; sustenta a fala e o gesto desta cena. https://www.cdc.gov/niosh/work-hour-training-for-nurses/longhours/mod3/03.html
 - Waters et al., revisão sistemática de estudos de privação: distorções e alucinações na privação prolongada. Estudos históricos e heterogêneos; o vídeo não usa janelas como calendário clínico individual. https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2018.00303/full
 - Cálculo próprio: (100 km/h ÷ 3,6) × 3 s = 83,333… m. Distância percorrida, não de frenagem. O desenho não mede tempo de reação específico de uma pessoa.
 - Não há prazo humano confiável estabelecido aqui para morte por privação; não transpor resultados de animais, doença priônica ou recordes como limite universal.
@@ -86,7 +87,11 @@ BUGI: Devolvo. Mas se essa planta roncar, eu peço reembolso.
 - Cenário, objetos e movimento: SVG original por código, conforme preferência persistente do usuário. generationSource=original_svg_code; nenhuma imagem Google alegada. Remotion SleepRoot/SleepEpisode é a composição única no Player e export. Novo quarto com janela/cidade, relógio, cama, mesa/monitor, estante, tapete, planta, luz e sombras.
 - Rig reaproveita desenho oficial e cinemática corrigida, IK com comprimentos e limites, pés apoiados, olhos/boca/sobrancelhas/cabeça e recuperação de gestos. Boca por envelope acústico dentro de palavras de Bugi; não é alinhamento de visemas fonéticos. Narrador tem sinal ciano reativo.
 - Skills efetivamente aplicadas: e-se-bugasse-producao (contrato/QA), Remotion create/markup/render, Skill Reel adaptada (pausas/legendas/áudio), animation-principles e motion-art-direction (gestos finitos, hierarquia e recuperação). HyperFrames, FilmCraft, PhotoCraft, Rhubarb e Flubber não foram executados neste episódio; presença instalada não equivale a uso.
-- Piloto V1 revelou título encostando no sinal e boca de sorriso aberto no silêncio na prévia técnica inicial: corrigidos título e boca antes do piloto aprovado tecnicamente. V2 acrescentou reação cansada e cérebro no gancho; não alegar aprovação artística do usuário. Sequência piloto inspecionada a 2 fps e Player em reprodução contínua.
+- A prévia técnica inicial revelou título encostando no sinal e boca de sorriso aberto no silêncio: corrigidos antes do piloto V1. O piloto V2 acrescentou reação cansada e cérebro no gancho; não alegar aprovação artística do usuário. Sequência piloto inspecionada a 2 fps e Player em reprodução contínua.
+
+## Correção na revisão do vídeo completo
+
+O MP4 V1 passou em decodificação integral/blackdetect, mas a inspeção visual identificou que a luz da janela reiniciava a passagem noite/dia num corte de diálogo. Corrigido: iluminação agora depende do tempo global, com amanhecer no turno 2 e anoitecer no turno 12, sem reinício por fala. Acrescentado teste de continuidade e suavizada a transição de cabeça/olhos entre os turnos 0/1. Cinco testes do novo módulo passaram. V1 preservado como evidência; V2 exporta a correção.
 
 ## Validação em andamento
 

@@ -11,8 +11,7 @@ export const Bed:React.FC<{x:number}>=({x})=><g transform={`translate(${x} 1120)
  <ellipse cx="210" cy="235" rx="255" ry="35" fill="#122638" opacity=".16" stroke="none"/>
  <path d="M-20 220v-205q0-20 20-20h65q20 0 20 20v90" fill="#C58770"/><path d="M25 150h430v78H25Z" fill="#9A6B5F"/><path d="M10 94h460v95H10Z" fill="#FFF7E9"/><rect x="26" y="76" width="150" height="75" rx="30" fill="#E3D8C2"/><path d="M174 95h292v100H174Z" fill="#39A8AD"/><path d="M200 111v57m30-57v57m30-57v57m30-57v57m30-57v57m30-57v57m30-57v57m30-57v57" stroke="#8AD2CD" strokeWidth="4"/><path d="M35 227v22m390-22v22" strokeWidth="15"/>
  </g>;
-export const SleepRoom:React.FC<{index:number;local:number;time:number;bedReturnAt?:number}>=({index:i,local,time,bedReturnAt=0})=>{
- const night=i<2?1:i<4?1-smooth(local/3):i<12?.3:.85;
+export const SleepRoom:React.FC<{index:number;local:number;time:number;nightLevel:number;bedReturnAt?:number}>=({index:i,local,time,nightLevel:night,bedReturnAt=0})=>{
  const bedX=i===0?50-640*smooth((local-.15)/1):i===18?-590+640*smooth((local-bedReturnAt)/1):i>=19?50:-590;
  return <g strokeLinejoin="round">
  <defs>

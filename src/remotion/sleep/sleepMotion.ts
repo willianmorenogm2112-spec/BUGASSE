@@ -1,6 +1,8 @@
 import {gravityActing,smooth} from '../gravity/gravityMotion';
 export {smooth};
 export const travelMeters=(kmh:number,seconds:number)=>kmh/3.6*seconds;
+/** Global time drives lighting: dialogue cuts must never restart a sunrise. */
+export const sleepNight=(time:number,dawn:number,dusk:number)=>1-.7*smooth((time-dawn)/3)+.55*smooth((time-dusk)/2);
 type P={x:number;y:number};
 export function elbow(a:P,b:P,l1=46,l2=42,side=1):P{
  const dx=b.x-a.x,dy=b.y-a.y,d=Math.max(.001,Math.hypot(dx,dy)),q=Math.min(l1+l2-.01,d);

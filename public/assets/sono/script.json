@@ -145,5 +145,5 @@
     "distanceMeters": 83.33333333333334,
     "label": "Exemplo de distância percorrida; não distância de frenagem."
   },
-  "productionStatus": "script-ready-audio-pending"
+  "productionStatus": "audio-aligned-final-render-in-progress"
 }

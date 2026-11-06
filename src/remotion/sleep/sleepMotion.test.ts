@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {sleepActing,travelMeters} from './sleepMotion';
+import {sleepActing,travelMeters,sleepNight} from './sleepMotion';
 test('feet remain anchored and arm bones keep length in every acting frame',()=>{
  for(let index=0;index<20;index++)for(let f=0;f<=360;f++){
   const k=sleepActing(index,f/30,12,.4);
@@ -25,3 +25,9 @@ test('all gestures recover before cuts and body changes start continuously',()=>
  }
 });
 test('road example uses km/h conversion, not braking distance',()=>{assert.ok(Math.abs(travelMeters(100,3)-83.3333333333)<1e-7);});
+test('lighting follows global time continuously across dialogue cuts',()=>{
+ assert.equal(sleepNight(0,12,91),1);
+ assert.ok(Math.abs(sleepNight(26.89-.001,12,91)-sleepNight(26.89+.001,12,91))<1e-5);
+ assert.ok(Math.abs(sleepNight(40,12,91)-.3)<1e-7);
+ assert.ok(Math.abs(sleepNight(120,12,91)-.85)<1e-7);
+});

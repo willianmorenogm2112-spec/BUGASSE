@@ -3,7 +3,7 @@ import {AbsoluteFill,Audio,staticFile,useCurrentFrame,useVideoConfig} from 'remo
 import {BugiArticulatedSvgFigure} from '../../components/BugiCharacterSvg';
 import timing from '../../../public/assets/sono/timing.json';
 import {captionPages} from '../gravity/GravityCaptions';
-import {sleepActing,smooth} from './sleepMotion';
+import {sleepActing,smooth,sleepNight} from './sleepMotion';
 import {SleepRoom,SC as C} from './SleepRoom';
 import {Performance,Micro,Road,Coffee,Perception,Variation,Risk,Brain} from './SleepGraphics';
 const pages=timing.turns.flatMap(turn=>captionPages(timing.words.filter(w=>w.turn===turn.index)));
@@ -15,6 +15,7 @@ export const SleepEpisode:React.FC=()=>{
  const cue=(token:string,fallback=0)=>{const word=timing.words.find(w=>w.turn===i&&w.word.toLocaleLowerCase('pt-BR').replace(/[.,!?;:]/g,'')===token);return word?word.start-turn.start:fallback;};
  const k=sleepActing(i,Math.max(0,local),turn.end-turn.start,bugi&&wordActive?amp:0,cue('microssonos',1.85));
  if(i===0){const tired=smooth((local-cue('zumbi',3))/.4);k.eyeScaleY=1-.48*tired;k.headRotation=k.headRotationDeg=6*tired;k.pupilOffsetX=5*tired;}
+ if(i===1){const blend=smooth(local/.38);k.headRotation=k.headRotationDeg=6+(k.headRotationDeg-6)*blend;k.eyeScaleY=.52+(k.eyeScaleY-.52)*blend;}
  if(i===2){const irritated=smooth((local-cue('humor',6))/.4);k.leftBrowDeg=18*irritated;k.rightBrowDeg=-18*irritated;k.mouthShape='determined';}
  const diagram=[4,8,14,16].includes(i),close=bugi&&![1,9,13,19].includes(i),zoom=close?1.28:1;
  const page=pages.find((p,j)=>t>=p[0].start&&t<(pages[j+1]?.[0].start??timing.duration)&&t<=p.at(-1)!.end+.16);
@@ -22,7 +23,7 @@ export const SleepEpisode:React.FC=()=>{
  {!technical&&<Audio src={staticFile('assets/sono/mix-final.wav')}/>}
  <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{position:'absolute'}}>
  <g transform={`translate(${440*(1-zoom)} ${1040*(1-zoom)}) scale(${zoom})`}>
- <SleepRoom index={i} local={local} time={t} bedReturnAt={i===18?cue('devolve'):0}/>
+ <SleepRoom index={i} local={local} time={t} nightLevel={sleepNight(t,timing.turns[2].start,timing.turns[12].start)} bedReturnAt={i===18?cue('devolve'):0}/>
  {i===6&&local>=cue('microssonos',1.7)&&<Micro local={local-cue('microssonos',1.7)}/>}
  {i===12&&local>=cue('distorções',2)&&<Perception local={local-cue('distorções',2)} judging={false}/>}
  <g opacity={diagram?.14:1} transform="translate(-45 180) scale(1.8)"><BugiArticulatedSvgFigure kinematics={k}/></g>
