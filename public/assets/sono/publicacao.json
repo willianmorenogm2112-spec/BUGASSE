@@ -1,5 +1,25 @@
 {
   "title": "E se você NUNCA mais dormisse? 💤",
   "description": "Bugi achou que ficar sem dormir renderia oito horas extras. O cérebro discordou.\n\nUma hipótese sobre privação de sono, com microssonos, riscos no trânsito e percepção. Os efeitos variam entre pessoas. Não existe um cronograma universal por hora.\n\nFontes: NIH/NHLBI (sleep deprivation/health effects), CDC/NIOSH (driver fatigue) e Waters et al. (Frontiers in Psychiatry, 2018, doi:10.3389/fpsyt.2018.00303).\n\n#ESeBugasse #Bugi #Sono #Ciencia #Animacao #Shorts",
-  "publicationStatus": "not-authorized-not-published"
+  "publicationStatus": "scheduled",
+  "userAuthorized": true,
+  "scheduledAt": "2026-11-06T15:00:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "file": "out/bugi-nunca-dormir-v3.mp4",
+  "sha256": "1362c16f5b508511ba1ff19df90716b545a09bc3b78cedb975a153a94dc1e077",
+  "youtube": {
+    "status": "scheduled-confirmed",
+    "url": "https://youtube.com/shorts/WhgKj1uHSCA",
+    "checks": "completed-no-problems"
+  },
+  "facebook": {
+    "status": "scheduled-confirmed",
+    "page": "E Se Bugasse?",
+    "assetId": "108437747426946",
+    "note": "Reel programado confirmado; processamento ainda pode estar em andamento."
+  },
+  "evidence": [
+    "out/sono-agendado-youtube.png",
+    "out/sono-agendado-facebook.png"
+  ]
 }

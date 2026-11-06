@@ -40,3 +40,8 @@ Executado: novas demonstracoes por fala e atuacao revisada; MP4 integral exporta
 | Voz e export | Audio existente preservado | Decode, ffprobe, loudness | render-qa-v3.json | Escuta humana integral pendente |
 
 Comandos executados: npm run lint; npm test; npm run build; npx tsx --test src/remotion/sleep/sleepMotion.test.ts; npx remotion render src/remotion/SleepRoot.tsx Bugi-Nunca-Mais-Dormir out/bugi-nunca-dormir-v3.mp4 --concurrency=4 --log=error; python scripts/qa_sleep_v3.py. Render inicial com restricoes falhou ao iniciar navegador; render local autorizado funcionou. Custo novo: nenhuma chamada de geracao; custos historicos de TTS nao informados.
+
+
+## Agendamento autorizado — 06/11/2026
+
+Usuario autorizou postar a V3 hoje as 15h. Enviada a V3 (SHA256 1362c16f5b508511ba1ff19df90716b545a09bc3b78cedb975a153a94dc1e077) e confirmados os dois agendamentos para 06/11/2026, 15:00 America/Sao_Paulo. YouTube: https://youtube.com/shorts/WhgKj1uHSCA, dialogo Video programado com data/hora; verificacoes concluidas sem problemas. Facebook: pagina E Se Bugasse?, asset 108437747426946, horario 15:00 e fuso conferidos antes de Programar; dialogo Reel programado confirmado. Limite: agendado nao significa ja publicado; Meta informa publicacao apos processamento. Evidencias: out/sono-agendado-youtube.png e out/sono-agendado-facebook.png; metadados public/assets/sono/publicacao.json. Sem impulsionamento ou anuncio. Para desfazer o agendamento, cancelar nas plataformas; reverter Git nao cancela posts.

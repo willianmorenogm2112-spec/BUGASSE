@@ -117,3 +117,8 @@ Limitacao: revisao visual amostrada; escuta humana integral e aprovacao artistic
 ## Sono V3 dinamico — 06/11/2026
 
 Executado: novas demonstracoes por fala e atuacao revisada; MP4 integral exportado. Evidencias/arquivos/logs: reports/SONO-V3-DINAMICA.md, public/assets/sono/render-qa-v3.json e storyboard-v3.json; out/bugi-nunca-dormir-v3.mp4, sono-v3-*.jpg e logs. Lint/build, 17 testes gerais e 7 de movimento passaram. Exportacao Remotion 4.0.540: 153,173 s, 17.089.680 bytes, H.264/AAC 1080x1920/30, 4595 frames. Decode sem erros, blackdetect sem intervalos; -16,58 LUFS e -4,63 dBTP. Revisao visual amostrada e reproducao parcial do Player; escuta humana integral e aprovacao artistica pendentes. Sem chamadas pagas novas ou publicacao. Vozes/mix/SRT e V2 preservados. Rollback: reverter commits de codex/sono-direcao-dinamica-20261106, base 5d80d92.
+
+
+## Agendamento autorizado — 06/11/2026
+
+Usuario autorizou postar a V3 hoje as 15h. Enviada a V3 (SHA256 1362c16f5b508511ba1ff19df90716b545a09bc3b78cedb975a153a94dc1e077) e confirmados os dois agendamentos para 06/11/2026, 15:00 America/Sao_Paulo. YouTube: https://youtube.com/shorts/WhgKj1uHSCA, dialogo Video programado com data/hora; verificacoes concluidas sem problemas. Facebook: pagina E Se Bugasse?, asset 108437747426946, horario 15:00 e fuso conferidos antes de Programar; dialogo Reel programado confirmado. Limite: agendado nao significa ja publicado; Meta informa publicacao apos processamento. Evidencias: out/sono-agendado-youtube.png e out/sono-agendado-facebook.png; metadados public/assets/sono/publicacao.json. Sem impulsionamento ou anuncio. Para desfazer o agendamento, cancelar nas plataformas; reverter Git nao cancela posts.
