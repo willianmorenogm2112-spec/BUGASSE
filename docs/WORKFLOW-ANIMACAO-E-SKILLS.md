@@ -32,3 +32,8 @@ Linguagem persistente: Bugi/Puck começa confiante, fica desconfiado, reage irri
 Antes do TTS, escrever intenção por fala e pausa da reação. Voz, sobrancelhas, olhar, boca, mãos e postura precisam concordar. Bugi escuta de boca fechada; gestos têm antecipação, contato e recuperação. Estrutura preferida: acontecimento → interpretação do Bugi → prova visual do narrador → tentativa frustrada → reação engraçada → conclusão. Exemplo de tom: “Eu pedi uma pausa, porra! Não um lançamento!” Não copiar falas ou cenas das referências.
 
 Próximos temas e evidências: `reports/PESQUISA-TEMAS-20261106.md`. O roteiro e o piloto do novo tema ainda precisam ser produzidos; este registro não declara novo vídeo pronto.
+
+
+## Revisao dinamica aprovada — 06/11/2026
+
+Pedido do usuario: menos tempo no Bugi parado; animar o que a voz explica e corrigir atuacao estranha. Cada conceito importante deve produzir uma acao ou transformacao visivel. Planejar planos por trechos de frase, sem obrigar cortes por intervalo fixo. Alternar demonstracao, detalhe e reacao; reservar pausas para leitura. Gestos finitos com recuperacao e silhueta de pernas sem cruzamento involuntario. Props usados devem acompanhar as maos ate o contato/liberacao. A V3 de Sono aplica parte desta direcao; aprovacao humana e qualidade final continuam individuais. Nao declarar novos passos, visemas ou captura de objeto que nao foram implementados.

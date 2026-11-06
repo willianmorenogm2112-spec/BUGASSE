@@ -1,0 +1,55 @@
+{
+  "composition": "Bugi-Nunca-Mais-Dormir",
+  "source": "src/remotion/SleepRoot.tsx",
+  "engine": "Remotion 4.0.540",
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-animacao\\out\\bugi-nunca-dormir-v3.mp4",
+  "sha256": "1362c16f5b508511ba1ff19df90716b545a09bc3b78cedb975a153a94dc1e077",
+  "duration": 153.173,
+  "size": 17089680,
+  "frames": 4595,
+  "fps": "30/1",
+  "width": 1080,
+  "height": 1920,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "loudness": {
+    "input_i": -16.58,
+    "input_tp": -4.63,
+    "input_lra": 5.0
+  },
+  "fullDecodePassed": true,
+  "blackIntervals": [],
+  "alignmentType": "acoustic-forced-alignment-whisperx",
+  "words": 364,
+  "turns": 20,
+  "sourceHashes": {
+    "src/remotion/SleepRoot.tsx": "4caafe1478feba9bee6269d36a412322338fbb85295dd28560fbfb988a658847",
+    "src/remotion/sleep/SleepEpisode.tsx": "22d719e4938988d6ead11397ab0fc4f7d1ec85686f221d877e24d754fcd09ccc",
+    "src/remotion/sleep/SleepGraphics.tsx": "0c18f12f9dd2f67694337d68e72e5be615cf16debd8cfd171414e1e153217e95",
+    "src/remotion/sleep/SleepDemonstrations.tsx": "83b68a0d9e6945ac57f1c57e3e84dd1e742ab3ab7d0261ea4050205c30ebd26b",
+    "src/remotion/sleep/SleepRoom.tsx": "d76fd47f698a5b82fd86257865d5a7c8ed6f67f1e6a43e9dfe5f8bc0da7f962d",
+    "src/remotion/sleep/sleepMotion.ts": "2a59cbb85f8bdcb410ec93a99bcef94a1c3c5b987ac2b7bdde356a27c15ff57b",
+    "src/components/BugiCharacterSvg.tsx": "be8e41399b0b12c6910161e92062421ebf5162b119f4719bb830cfff9b6ba0d7",
+    "public/assets/sono/timing.json": "70df20be72840034c267e1f1be50dbdd11bbd3a83b095ad310a3665f44676f17",
+    "public/assets/sono/mix-final.wav": "3d73fed64e1d3f9918065a4a5c06790042b341dd700d2087b5a394fbf863e24d"
+  },
+  "autoTechnicalChecksPassed": true,
+  "agentVisualReview": "Contact sheet integral, piloto revisado, sequencias de microssono/chave e quadros de cafe/planta revisados; reproducao parcial do Player na porta 3114 (FPS reduzido sob carga).",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false,
+  "limitations": [
+    "ASR and forced alignment are not human listening.",
+    "Cartoon illustrates mechanisms; it is not an individual clinical model.",
+    "No external music or generated-image background was used."
+  ],
+  "validation": {
+    "lint": "passed",
+    "generalTests": 17,
+    "motionTests": 7,
+    "build": "passed with preexisting warnings",
+    "pilot": "frames 780-1139, 12.011 seconds",
+    "newPaidGenerations": 0,
+    "previousVersionPreserved": true
+  }
+}

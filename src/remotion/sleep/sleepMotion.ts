@@ -12,14 +12,16 @@ export function elbow(a:P,b:P,l1=46,l2=42,side=1):P{
 export function sleepActing(index:number,local:number,duration:number,amplitude:number,microsleepAt=1.85){
  const k=gravityActing(7,100,amplitude);
  const intensity=Math.min(1,index/14),before=Math.min(1,Math.max(0,index-1)/14),fatigue=before+(intensity-before)*smooth(local/.45);
- const gesture=smooth(local/.38)*(1-smooth((local-duration+.48)/.4));
+ // Finite gestures leave space for listening and a second, distinct reaction.
+ const pulse=(at:number,hold=.55)=>smooth((local-at)/.28)*(1-smooth((local-at-.28-hold)/.38));
+ const gesture=(pulse(.12)+.65*pulse(duration*.57,.32))*(1-smooth((local-duration+.48)/.4));
  const angry=[3,5,13].includes(index),startled=[7,9,15].includes(index);
  const nod=index===6?8*smooth((local-microsleepAt)/.5)*(1-smooth((local-microsleepAt-.8)/.35)):0;
  k.rootX=270;k.rootY=477+fatigue*5;k.groundY=685;
  // Bend knees slightly as fatigue accumulates while keeping both soles on the same floor.
  for(const side of ['left','right'] as const){
   const sign=side==='left'?-1:1,ankle={x:sign*42,y:675-k.rootY},hip=k[`${side}Hip`];
-  const knee=elbow(hip,ankle,68,65,sign);
+  const knee=elbow(hip,ankle,68,65,-sign);
   k[`${side}Knee`]={...knee,angleDeg:0};k[`${side}Ankle`]=ankle;
   k[`${side}Foot`]={...ankle,rotDeg:0};k[`${side}ShoePos`]={...ankle,rot:0};
   k[`${side}LegPath`]=`M${hip.x} ${hip.y}L${knee.x} ${knee.y}L${ankle.x} ${ankle.y}`;
@@ -37,7 +39,7 @@ export function sleepActing(index:number,local:number,duration:number,amplitude:
  k.eyeScaleY=Math.max(.35,1-fatigue*.35-nod*.05+(startled?.20:0)*gesture);
  k.isBlinking=local%4.7>3.8&&local%4.7<3.95;
  if(index===6&&local>microsleepAt&&local<microsleepAt+1.15)k.isBlinking=false; // Microsleep can occur with eyes open.
- k.pupilOffsetX=index===13?6:index%2===0?-3:0;k.pupilOffsetY=fatigue*2;
+ k.pupilOffsetX=index===13?6:index===3?-6+12*smooth((local%.95)/.7):index%2===0?-3:0;k.pupilOffsetY=fatigue*2;
  k.sweatDrops=false;k.hairFollowDeg=0;
  k.mouthOpenness=amplitude;k.mouthShape=amplitude>.06?'open_o':angry?'determined':'smile';
  return k;
