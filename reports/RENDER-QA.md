@@ -93,3 +93,7 @@ Teste visual adicional: `projects/bugi-identidade-test` validou sem erros e gero
 
 A matriz de skills acrescenta verificações 3D de clipping, z-fighting, popping, materiais, sombras, contato, colisões e continuidade espacial, além do QA 2D já existente. Esta etapa validou instruções e cobertura, não produziu novo MP4 nem altera o aceite artístico pendente.
 
+## Direção combinada do próximo vídeo 2D — 06/11/2026
+
+Executado: Sem novo render nesta etapa editorial. Gate definido: piloto de 12 s com diálogo, atuação, demonstração e transição; evidência por frame e escuta exigidas antes do episódio completo. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
+

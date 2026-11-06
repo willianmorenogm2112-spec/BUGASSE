@@ -78,3 +78,7 @@ Criados `bugi-3d/`, `docs/BUGI-2D-E-3D.md` e a skill `.agents/skills/e-se-bugass
 
 Criados `e-se-bugasse-producao-3d`, `remotion-qualidade-3d`, `skill-reel-adaptacao-3d`, `photocraft-3d` e `filmcraft-3d`. A skill `e-se-bugasse-3d` recebeu matriz, registry e verificador de cobertura; a Reel local passou a rotear 2D/3D. Adicionado `npm run test:skills-3d`. Rollback: reverter somente o commit desta adaptação; o módulo 3D base permanece independente.
 
+## Direção combinada do próximo vídeo 2D — 06/11/2026
+
+Executado: Criado docs/DIRECAO-PROXIMO-VIDEO-2D.md e vinculado ao workflow. Preservados personagens, vozes Puck/Charon, composição existente, assets e vídeos publicados. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
+

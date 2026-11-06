@@ -85,3 +85,7 @@ Executado: diálogo de 18 turnos com Gemini TTS real (Puck/Charon), alinhamento 
 3. Rodar `npm run test:skills-3d` sempre que instalar/remover skills.
 4. Exercitar apenas as ferramentas opcionais que trouxerem ganho observável; registrar indisponibilidade em vez de simular uso.
 
+## Direção combinada do próximo vídeo 2D — 06/11/2026
+
+Executado: Aplicar docs/DIRECAO-PROXIMO-VIDEO-2D.md ao próximo tema: pesquisa científica, roteiro por beat, TTS real, alinhamento, piloto de 12 s e QA antes do render completo. Tema ainda pendente. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
+
