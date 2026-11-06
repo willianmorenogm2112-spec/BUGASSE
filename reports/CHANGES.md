@@ -82,3 +82,11 @@ Criados `e-se-bugasse-producao-3d`, `remotion-qualidade-3d`, `skill-reel-adaptac
 
 Executado: Criado docs/DIRECAO-PROXIMO-VIDEO-2D.md e vinculado ao workflow. Preservados personagens, vozes Puck/Charon, composição existente, assets e vídeos publicados. Evidência/arquivos: docs/DIRECAO-PROXIMO-VIDEO-2D.md e docs/WORKFLOW-ANIMACAO-E-SKILLS.md. Log de verificação: git diff --check. Limitação: direção documentada, sem implementação audiovisual ou aprovação artística desta combinação. Rollback: reverter apenas o commit desta direção.
 
+## Gravidade dobrada — produção 06/11/2026
+
+Executado: Criados GravityRoot, GravityEpisode, GravityRoom e gravityMotion; rig canônico reutilizado com IK de joelhos/cotovelos, gesto finito, boca por envelope acústico, gráficos e cenário SVG. Scripts prepare_gravity, mix_gravity e gravity_provenance; TTS real alinhado em 13 turnos/200 palavras/69,153 s. AGENTS.md local e workflow tornam melhorias persistentes. Lint passou; 17 testes existentes e 3 de movimento/física passaram; build passou com avisos existentes de bundle. Um teste inicialmente estrito para cabelo em repouso foi corrigido para tolerância subvisual, mantendo invariantes de membros. Arquivos, comandos, fontes e limites em reports/GRAVIDADE-2D.md. Logs: saídas reais de npm run lint, npm test, npm run build, tsx --test e Remotion CLI. Rollback: reverter os commits da branch codex/bugi-gravidade-2d-20261106; preservar mídia e episódios anteriores.
+
+## Entrega Gravidade V2 — 06/11/2026
+
+Executado: exportação revisada concluída; arquivo real out/bugi-gravidade-dobrada-v2.mp4 (69,184 s, 7.623.050 bytes, 2.075 frames, H.264/AAC 1080×1920/30). Evidência e arquivos: reports/GRAVIDADE-2D.md, out/gravidade-v2-contato.jpg e out/gravidade-celular-v2-sequencia.jpg. Logs: ffprobe confirmou formato; FFmpeg decode integral sem erros; blackdetect sem intervalos pretos; áudio do MP4 medido -17,08 LUFS / -4,96 dBTP / LRA 4,4. Lint/build e 20 testes totais passaram. Limitação: revisão humana integral de imagem/escuta e aprovação artística pendentes; sem publicação. Nenhuma instalação adicional ou ferramenta opcional simulada. Próximo: usuário revisar V2. Rollback conforme relatório do episódio. Este registro substitui o estado anterior de V2 em render.
+

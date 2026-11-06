@@ -1,0 +1,49 @@
+{
+  "episode": "gravidade-dobrada",
+  "version": 2,
+  "voices": [
+    {
+      "speaker": "bugi",
+      "voice": "Puck",
+      "model": "gemini-3.8-flash-tts",
+      "generationSource": "google_ai_studio_ui",
+      "uri": "https://aistudio.google.com/u/0/generate-speech?model=gemini-3.8-flash-tts",
+      "originalDownload": "Generated Audio November 06, 2026 - 12_17AM.wav",
+      "path": "public/assets/gravidade/bugi-puck.wav",
+      "sha256": "ec66ad2ed6695d3bdcb5eccc9f29b4fc1bc7a6c476abb99949917622d0d61f03",
+      "durationSeconds": 29.32,
+      "sampleRate": 24000,
+      "chargedCost": null,
+      "costNote": "Interface não forneceu custo cobrado; sem chave paga selecionada."
+    },
+    {
+      "speaker": "narrador",
+      "voice": "Charon",
+      "model": "gemini-3.8-flash-tts",
+      "generationSource": "google_ai_studio_ui",
+      "uri": "https://aistudio.google.com/u/0/generate-speech?model=gemini-3.8-flash-tts",
+      "originalDownload": "Generated Audio November 06, 2026 - 12_13AM.wav",
+      "path": "public/assets/gravidade/narrador-charon.wav",
+      "sha256": "31c58c6cd92b01afdd0bd6edc4e798c294aebb603f23fdb2ee8e31243b9172b1",
+      "durationSeconds": 46.52,
+      "sampleRate": 24000,
+      "chargedCost": null,
+      "costNote": "Interface não forneceu custo cobrado; sem chave paga selecionada."
+    }
+  ],
+  "background": {
+    "generationSource": "authored_svg_code",
+    "path": "src/remotion/gravity/GravityRoom.tsx",
+    "model": null,
+    "note": "Cenário por código conforme preferência do usuário. Nenhuma imagem Google gerada ou alegada."
+  },
+  "sfx": {
+    "source": "original_procedural",
+    "script": "scripts/mix_gravity.py",
+    "seed": 20261106,
+    "note": "Sons sintéticos de contato e gráfico; não são usados como voz."
+  },
+  "alignment": "WhisperX forced acoustic alignment, CPU, language pt",
+  "humanVisualApproved": false,
+  "humanListenApproved": false
+}

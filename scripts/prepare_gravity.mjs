@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const dir='public/assets/gravidade';fs.mkdirSync(dir,{recursive:true});
+const lines=fs.readFileSync('reports/GRAVIDADE-2D.md','utf8').split(/\r?\n/).filter(s=>/^(BUGI|NARRADOR):/.test(s));
+let cursor=0;const words=[];
+const turns=lines.map((line,index)=>{const speaker=line.startsWith('BUGI:')?'bugi':'narrador',text=line.slice(line.indexOf(':')+1).trim(),start=cursor;
+ const tokens=text.split(/\s+/),duration=tokens.length/2.8;
+ tokens.forEach((word,j)=>words.push({word,start:start+j*duration/tokens.length,end:start+(j+1)*duration/tokens.length,speaker,turn:index}));cursor+=duration+.2;
+ return{speaker,text,index,start,end:cursor-.2};});
+for(const speaker of ['bugi','narrador']) fs.writeFileSync(`${dir}/${speaker}-texto.txt`,turns.filter(t=>t.speaker===speaker).map(t=>t.text).join('\n\n'));
+if(!fs.existsSync(`${dir}/timing.json`))fs.writeFileSync(`${dir}/timing.json`,JSON.stringify({duration:cursor,alignmentType:'estimated',turns,words,envelope:[]},null,2));
+console.log('Prepared',turns.length,'turns; estimated seconds',cursor);

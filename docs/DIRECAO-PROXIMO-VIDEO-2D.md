@@ -1,6 +1,6 @@
 # Próximo vídeo 2D — direção aprovada em 06/11/2026
 
-O usuário pediu combinar as quatro referências apresentadas. Este documento define a direção do próximo episódio; não comprova animação implementada ou vídeo renderizado. Tema ainda não escolhido. O exemplo de bateria foi apenas uma ilustração de diálogo, não uma escolha do usuário.
+O usuário pediu combinar as quatro referências apresentadas e tornou as melhorias padrão persistente para os próximos vídeos em 06/11/2026. Este documento define direção e aceite; sua existência não comprova animação implementada ou vídeo renderizado. Tema atual escolhido: gravidade dobrada por dez segundos, gancho da academia involuntária no sofá. Roteiro e fontes em reports/GRAVIDADE-2D.md.
 
 ## Uma identidade, quatro contribuições
 
@@ -14,6 +14,13 @@ O usuário pediu combinar as quatro referências apresentadas. Este documento de
 Referências: https://www.youtube.com/watch?v=qYgA2gxzjEk ; https://www.youtube.com/watch?v=N9GbqLImOGA ; https://www.youtube.com/watch?v=aOiH-SSnyHs ; https://www.youtube.com/watch?v=hiIIGMeMEuE . São referências de linguagem; não copiar personagens, enquadramentos, cenas, música ou roteiro. Contagens públicas de visualizações não demonstram causalidade ou retenção.
 
 ## Contrato visual e sonoro
+
+- Começar pelo acontecimento, não pela apresentação: problema visível no primeiro segundo e pergunta que a ação começa a responder.
+- Atuação específica por cena: olhar, antecipação, esforço, reação e recuperação; não reutilizar balanço automático durante toda fala.
+- Cenário por código com primeiro plano, ambiente e fundo, iluminação coerente, texturas discretas, sombras de contato e escala consistente.
+- Interação contínua: mão acompanha objeto, pés mantêm apoio e móvel reage ao contato. Nada surge no meio da interação sem apresentação.
+- Câmera alterna aberto/detalhe/close conforme informação; gráfico nasce de um objeto da cena e volta à ação. Pausa de leitura antes da reação cômica.
+- Sons ligados a causa física e pausas para humor; não pontuar cada movimento. Estas exigências persistem no workflow, mas a evidência de cumprimento é individual por episódio.
 
 - Preservar rig canônico, cabelo coral, roupa, proporção, paleta e cenários 2D construídos por código. Sem migrar para o estilo gráfico de outro canal.
 - Remotion controla Player e exportação, 1080×1920 a 30 FPS. Todos os movimentos dependem do frame; tempo local por ação.
@@ -45,4 +52,4 @@ Registro por beat: fala e speaker; entrada/saída acústica; ação demonstrativ
 
 ## Estado e rollback
 
-Executado: adaptação editorial e contrato de QA registrados. Sem novo TTS, chamadas pagas, alteração do rig, composição nova ou MP4 nesta etapa. Tema pendente, portanto não existe validação renderizada desta combinação. Reverter somente o commit desta direção para desfazer; preservar vídeos publicados e assets anteriores.
+Direção persistente registrada. O estado de implementação de cada episódio é independente deste guia: para a primeira aplicação, consultar reports/GRAVIDADE-2D.md e reports/RENDER-QA.md. Reverter apenas os commits da mudança desejada para desfazer; preservar vídeos publicados e assets anteriores.
