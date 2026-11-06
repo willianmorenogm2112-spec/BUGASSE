@@ -1,0 +1,1334 @@
+{
+  "segments": [
+    {
+      "start": 0.38,
+      "end": 2.301,
+      "text": "Oito horas extras por dia?",
+      "words": [
+        {
+          "word": "Oito",
+          "start": 0.38,
+          "end": 0.76,
+          "score": 0.886
+        },
+        {
+          "word": "horas",
+          "start": 0.86,
+          "end": 1.201,
+          "score": 0.821
+        },
+        {
+          "word": "extras",
+          "start": 1.281,
+          "end": 1.601,
+          "score": 0.796
+        },
+        {
+          "word": "por",
+          "start": 1.681,
+          "end": 1.841,
+          "score": 0.804
+        },
+        {
+          "word": "dia?",
+          "start": 2.001,
+          "end": 2.301,
+          "score": 0.966
+        }
+      ]
+    },
+    {
+      "start": 3.041,
+      "end": 3.902,
+      "text": "Vou ficar rico!",
+      "words": [
+        {
+          "word": "Vou",
+          "start": 3.041,
+          "end": 3.141,
+          "score": 0.793
+        },
+        {
+          "word": "ficar",
+          "start": 3.201,
+          "end": 3.542,
+          "score": 0.797
+        },
+        {
+          "word": "rico!",
+          "start": 3.602,
+          "end": 3.902,
+          "score": 0.899
+        }
+      ]
+    },
+    {
+      "start": 4.682,
+      "end": 5.482,
+      "text": "Tô ótimo.",
+      "words": [
+        {
+          "word": "Tô",
+          "start": 4.682,
+          "end": 4.902,
+          "score": 0.834
+        },
+        {
+          "word": "ótimo.",
+          "start": 5.082,
+          "end": 5.482,
+          "score": 0.89
+        }
+      ]
+    },
+    {
+      "start": 5.863,
+      "end": 8.304,
+      "text": "Só tô lendo a mesma frase faz vinte minutos.",
+      "words": [
+        {
+          "word": "Só",
+          "start": 5.863,
+          "end": 5.983,
+          "score": 0.804
+        },
+        {
+          "word": "tô",
+          "start": 6.043,
+          "end": 6.123,
+          "score": 0.662
+        },
+        {
+          "word": "lendo",
+          "start": 6.163,
+          "end": 6.343,
+          "score": 0.781
+        },
+        {
+          "word": "a",
+          "start": 6.363,
+          "end": 6.403,
+          "score": 0.509
+        },
+        {
+          "word": "mesma",
+          "start": 6.463,
+          "end": 6.723,
+          "score": 0.985
+        },
+        {
+          "word": "frase",
+          "start": 6.803,
+          "end": 7.063,
+          "score": 0.871
+        },
+        {
+          "word": "faz",
+          "start": 7.123,
+          "end": 7.323,
+          "score": 0.788
+        },
+        {
+          "word": "vinte",
+          "start": 7.423,
+          "end": 7.743,
+          "score": 0.849
+        },
+        {
+          "word": "minutos.",
+          "start": 7.763,
+          "end": 8.304,
+          "score": 0.936
+        }
+      ]
+    },
+    {
+      "start": 8.424,
+      "end": 9.184,
+      "text": "Que merda!",
+      "words": [
+        {
+          "word": "Que",
+          "start": 8.424,
+          "end": 8.544,
+          "score": 0.723
+        },
+        {
+          "word": "merda!",
+          "start": 8.764,
+          "end": 9.184,
+          "score": 0.961
+        }
+      ]
+    },
+    {
+      "start": 10.104,
+      "end": 12.806,
+      "text": "Então eu tô de ressaca sem nem ter ido à festa?",
+      "words": [
+        {
+          "word": "Então",
+          "start": 10.104,
+          "end": 10.404,
+          "score": 0.738
+        },
+        {
+          "word": "eu",
+          "start": 10.444,
+          "end": 10.505,
+          "score": 1.0
+        },
+        {
+          "word": "tô",
+          "start": 10.585,
+          "end": 10.665,
+          "score": 0.599
+        },
+        {
+          "word": "de",
+          "start": 10.705,
+          "end": 10.785,
+          "score": 0.75
+        },
+        {
+          "word": "ressaca",
+          "start": 10.845,
+          "end": 11.445,
+          "score": 0.946
+        },
+        {
+          "word": "sem",
+          "start": 11.565,
+          "end": 11.725,
+          "score": 0.841
+        },
+        {
+          "word": "nem",
+          "start": 11.805,
+          "end": 11.945,
+          "score": 0.567
+        },
+        {
+          "word": "ter",
+          "start": 11.985,
+          "end": 12.065,
+          "score": 0.562
+        },
+        {
+          "word": "ido",
+          "start": 12.125,
+          "end": 12.245,
+          "score": 0.983
+        },
+        {
+          "word": "à",
+          "start": 12.285,
+          "end": 12.305,
+          "score": 0.003
+        },
+        {
+          "word": "festa?",
+          "start": 12.405,
+          "end": 12.806,
+          "score": 0.937
+        }
+      ]
+    },
+    {
+      "start": 13.266,
+      "end": 14.066,
+      "text": "Sacanagem!",
+      "words": [
+        {
+          "word": "Sacanagem!",
+          "start": 13.266,
+          "end": 14.066,
+          "score": 0.917
+        }
+      ]
+    },
+    {
+      "start": 15.026,
+      "end": 15.787,
+      "text": "Eu não dormi!",
+      "words": [
+        {
+          "word": "Eu",
+          "start": 15.026,
+          "end": 15.207,
+          "score": 0.586
+        },
+        {
+          "word": "não",
+          "start": 15.267,
+          "end": 15.387,
+          "score": 0.618
+        },
+        {
+          "word": "dormi!",
+          "start": 15.447,
+          "end": 15.787,
+          "score": 0.956
+        }
+      ]
+    },
+    {
+      "start": 16.187,
+      "end": 18.348,
+      "text": "Só pulei um pedaço da realidade.",
+      "words": [
+        {
+          "word": "Só",
+          "start": 16.187,
+          "end": 16.387,
+          "score": 0.937
+        },
+        {
+          "word": "pulei",
+          "start": 16.547,
+          "end": 16.887,
+          "score": 0.928
+        },
+        {
+          "word": "um",
+          "start": 16.927,
+          "end": 16.987,
+          "score": 1.0
+        },
+        {
+          "word": "pedaço",
+          "start": 17.067,
+          "end": 17.528,
+          "score": 0.961
+        },
+        {
+          "word": "da",
+          "start": 17.588,
+          "end": 17.668,
+          "score": 0.696
+        },
+        {
+          "word": "realidade.",
+          "start": 17.748,
+          "end": 18.348,
+          "score": 0.958
+        }
+      ]
+    },
+    {
+      "start": 19.268,
+      "end": 20.769,
+      "text": "Oitenta e três metros?",
+      "words": [
+        {
+          "word": "Oitenta",
+          "start": 19.268,
+          "end": 19.748,
+          "score": 0.963
+        },
+        {
+          "word": "e",
+          "start": 19.789,
+          "end": 19.829,
+          "score": 0.5
+        },
+        {
+          "word": "três",
+          "start": 19.929,
+          "end": 20.169,
+          "score": 0.774
+        },
+        {
+          "word": "metros?",
+          "start": 20.229,
+          "end": 20.769,
+          "score": 0.94
+        }
+      ]
+    },
+    {
+      "start": 21.229,
+      "end": 21.409,
+      "text": "Tá.",
+      "words": [
+        {
+          "word": "Tá.",
+          "start": 21.229,
+          "end": 21.409,
+          "score": 0.791
+        }
+      ]
+    },
+    {
+      "start": 21.849,
+      "end": 22.89,
+      "text": "A chave fica aqui.",
+      "words": [
+        {
+          "word": "A",
+          "start": 21.849,
+          "end": 21.909,
+          "score": 0.751
+        },
+        {
+          "word": "chave",
+          "start": 22.029,
+          "end": 22.29,
+          "score": 0.933
+        },
+        {
+          "word": "fica",
+          "start": 22.35,
+          "end": 22.57,
+          "score": 0.972
+        },
+        {
+          "word": "aqui.",
+          "start": 22.61,
+          "end": 22.89,
+          "score": 0.882
+        }
+      ]
+    },
+    {
+      "start": 23.87,
+      "end": 27.072,
+      "text": "Então essa caneca é um alarme, não um carregador?",
+      "words": [
+        {
+          "word": "Então",
+          "start": 23.87,
+          "end": 24.21,
+          "score": 0.787
+        },
+        {
+          "word": "essa",
+          "start": 24.27,
+          "end": 24.451,
+          "score": 0.873
+        },
+        {
+          "word": "caneca",
+          "start": 24.511,
+          "end": 24.871,
+          "score": 1.0
+        },
+        {
+          "word": "é",
+          "start": 24.911,
+          "end": 24.951,
+          "score": 0.5
+        },
+        {
+          "word": "um",
+          "start": 24.991,
+          "end": 25.051,
+          "score": 0.75
+        },
+        {
+          "word": "alarme,",
+          "start": 25.111,
+          "end": 25.651,
+          "score": 0.948
+        },
+        {
+          "word": "não",
+          "start": 26.191,
+          "end": 26.331,
+          "score": 0.723
+        },
+        {
+          "word": "um",
+          "start": 26.391,
+          "end": 26.471,
+          "score": 0.616
+        },
+        {
+          "word": "carregador?",
+          "start": 26.511,
+          "end": 27.072,
+          "score": 0.896
+        }
+      ]
+    },
+    {
+      "start": 27.992,
+      "end": 30.153,
+      "text": "Por que a minha planta tá me julgando?",
+      "words": [
+        {
+          "word": "Por",
+          "start": 27.992,
+          "end": 28.112,
+          "score": 0.888
+        },
+        {
+          "word": "que",
+          "start": 28.232,
+          "end": 28.372,
+          "score": 0.568
+        },
+        {
+          "word": "a",
+          "start": 28.412,
+          "end": 28.452,
+          "score": 0.941
+        },
+        {
+          "word": "minha",
+          "start": 28.492,
+          "end": 28.672,
+          "score": 0.708
+        },
+        {
+          "word": "planta",
+          "start": 28.812,
+          "end": 29.173,
+          "score": 0.843
+        },
+        {
+          "word": "tá",
+          "start": 29.253,
+          "end": 29.333,
+          "score": 0.839
+        },
+        {
+          "word": "me",
+          "start": 29.393,
+          "end": 29.473,
+          "score": 0.856
+        },
+        {
+          "word": "julgando?",
+          "start": 29.533,
+          "end": 30.153,
+          "score": 0.857
+        }
+      ]
+    },
+    {
+      "start": 30.693,
+      "end": 32.814,
+      "text": "Cuida da tua fotossíntese, porra!",
+      "words": [
+        {
+          "word": "Cuida",
+          "start": 30.693,
+          "end": 31.033,
+          "score": 0.912
+        },
+        {
+          "word": "da",
+          "start": 31.093,
+          "end": 31.173,
+          "score": 0.742
+        },
+        {
+          "word": "tua",
+          "start": 31.293,
+          "end": 31.454,
+          "score": 0.805
+        },
+        {
+          "word": "fotossíntese,",
+          "start": 31.514,
+          "end": 32.294,
+          "score": 0.921
+        },
+        {
+          "word": "porra!",
+          "start": 32.494,
+          "end": 32.814,
+          "score": 0.928
+        }
+      ]
+    },
+    {
+      "start": 33.674,
+      "end": 36.216,
+      "text": "Tá, mas em quantos dias eu morreria?",
+      "words": [
+        {
+          "word": "Tá,",
+          "start": 33.674,
+          "end": 33.855,
+          "score": 0.893
+        },
+        {
+          "word": "mas",
+          "start": 34.315,
+          "end": 34.635,
+          "score": 0.832
+        },
+        {
+          "word": "em",
+          "start": 34.675,
+          "end": 34.755,
+          "score": 1.0
+        },
+        {
+          "word": "quantos",
+          "start": 34.915,
+          "end": 35.335,
+          "score": 0.706
+        },
+        {
+          "word": "dias",
+          "start": 35.375,
+          "end": 35.575,
+          "score": 0.855
+        },
+        {
+          "word": "eu",
+          "start": 35.615,
+          "end": 35.675,
+          "score": 1.0
+        },
+        {
+          "word": "morreria?",
+          "start": 35.715,
+          "end": 36.216,
+          "score": 0.959
+        }
+      ]
+    },
+    {
+      "start": 37.096,
+      "end": 39.417,
+      "text": "Ganhei oito horas e perdi o cérebro.",
+      "words": [
+        {
+          "word": "Ganhei",
+          "start": 37.096,
+          "end": 37.416,
+          "score": 0.729
+        },
+        {
+          "word": "oito",
+          "start": 37.576,
+          "end": 37.836,
+          "score": 0.782
+        },
+        {
+          "word": "horas",
+          "start": 37.896,
+          "end": 38.357,
+          "score": 0.741
+        },
+        {
+          "word": "e",
+          "start": 38.397,
+          "end": 38.457,
+          "score": 0.981
+        },
+        {
+          "word": "perdi",
+          "start": 38.577,
+          "end": 38.877,
+          "score": 0.91
+        },
+        {
+          "word": "o",
+          "start": 38.897,
+          "end": 38.937,
+          "score": 0.568
+        },
+        {
+          "word": "cérebro.",
+          "start": 39.037,
+          "end": 39.417,
+          "score": 0.926
+        }
+      ]
+    },
+    {
+      "start": 39.977,
+      "end": 41.158,
+      "text": "Cancela essa promoção.",
+      "words": [
+        {
+          "word": "Cancela",
+          "start": 39.977,
+          "end": 40.497,
+          "score": 0.971
+        },
+        {
+          "word": "essa",
+          "start": 40.537,
+          "end": 40.678,
+          "score": 0.877
+        },
+        {
+          "word": "promoção.",
+          "start": 40.738,
+          "end": 41.158,
+          "score": 0.918
+        }
+      ]
+    },
+    {
+      "start": 42.178,
+      "end": 42.618,
+      "text": "Devolvo.",
+      "words": [
+        {
+          "word": "Devolvo.",
+          "start": 42.178,
+          "end": 42.618,
+          "score": 0.934
+        }
+      ]
+    },
+    {
+      "start": 43.099,
+      "end": 46.18,
+      "text": "Mas se essa planta roncar, eu peço reembolso.",
+      "words": [
+        {
+          "word": "Mas",
+          "start": 43.099,
+          "end": 43.379,
+          "score": 0.829
+        },
+        {
+          "word": "se",
+          "start": 43.659,
+          "end": 43.739,
+          "score": 0.786
+        },
+        {
+          "word": "essa",
+          "start": 43.759,
+          "end": 43.919,
+          "score": 0.982
+        },
+        {
+          "word": "planta",
+          "start": 44.039,
+          "end": 44.259,
+          "score": 0.928
+        },
+        {
+          "word": "roncar,",
+          "start": 44.359,
+          "end": 44.819,
+          "score": 0.825
+        },
+        {
+          "word": "eu",
+          "start": 45.019,
+          "end": 45.119,
+          "score": 0.752
+        },
+        {
+          "word": "peço",
+          "start": 45.299,
+          "end": 45.52,
+          "score": 0.914
+        },
+        {
+          "word": "reembolso.",
+          "start": 45.6,
+          "end": 46.18,
+          "score": 0.92
+        }
+      ]
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Oito",
+      "start": 0.38,
+      "end": 0.76,
+      "score": 0.886
+    },
+    {
+      "word": "horas",
+      "start": 0.86,
+      "end": 1.201,
+      "score": 0.821
+    },
+    {
+      "word": "extras",
+      "start": 1.281,
+      "end": 1.601,
+      "score": 0.796
+    },
+    {
+      "word": "por",
+      "start": 1.681,
+      "end": 1.841,
+      "score": 0.804
+    },
+    {
+      "word": "dia?",
+      "start": 2.001,
+      "end": 2.301,
+      "score": 0.966
+    },
+    {
+      "word": "Vou",
+      "start": 3.041,
+      "end": 3.141,
+      "score": 0.793
+    },
+    {
+      "word": "ficar",
+      "start": 3.201,
+      "end": 3.542,
+      "score": 0.797
+    },
+    {
+      "word": "rico!",
+      "start": 3.602,
+      "end": 3.902,
+      "score": 0.899
+    },
+    {
+      "word": "Tô",
+      "start": 4.682,
+      "end": 4.902,
+      "score": 0.834
+    },
+    {
+      "word": "ótimo.",
+      "start": 5.082,
+      "end": 5.482,
+      "score": 0.89
+    },
+    {
+      "word": "Só",
+      "start": 5.863,
+      "end": 5.983,
+      "score": 0.804
+    },
+    {
+      "word": "tô",
+      "start": 6.043,
+      "end": 6.123,
+      "score": 0.662
+    },
+    {
+      "word": "lendo",
+      "start": 6.163,
+      "end": 6.343,
+      "score": 0.781
+    },
+    {
+      "word": "a",
+      "start": 6.363,
+      "end": 6.403,
+      "score": 0.509
+    },
+    {
+      "word": "mesma",
+      "start": 6.463,
+      "end": 6.723,
+      "score": 0.985
+    },
+    {
+      "word": "frase",
+      "start": 6.803,
+      "end": 7.063,
+      "score": 0.871
+    },
+    {
+      "word": "faz",
+      "start": 7.123,
+      "end": 7.323,
+      "score": 0.788
+    },
+    {
+      "word": "vinte",
+      "start": 7.423,
+      "end": 7.743,
+      "score": 0.849
+    },
+    {
+      "word": "minutos.",
+      "start": 7.763,
+      "end": 8.304,
+      "score": 0.936
+    },
+    {
+      "word": "Que",
+      "start": 8.424,
+      "end": 8.544,
+      "score": 0.723
+    },
+    {
+      "word": "merda!",
+      "start": 8.764,
+      "end": 9.184,
+      "score": 0.961
+    },
+    {
+      "word": "Então",
+      "start": 10.104,
+      "end": 10.404,
+      "score": 0.738
+    },
+    {
+      "word": "eu",
+      "start": 10.444,
+      "end": 10.505,
+      "score": 1.0
+    },
+    {
+      "word": "tô",
+      "start": 10.585,
+      "end": 10.665,
+      "score": 0.599
+    },
+    {
+      "word": "de",
+      "start": 10.705,
+      "end": 10.785,
+      "score": 0.75
+    },
+    {
+      "word": "ressaca",
+      "start": 10.845,
+      "end": 11.445,
+      "score": 0.946
+    },
+    {
+      "word": "sem",
+      "start": 11.565,
+      "end": 11.725,
+      "score": 0.841
+    },
+    {
+      "word": "nem",
+      "start": 11.805,
+      "end": 11.945,
+      "score": 0.567
+    },
+    {
+      "word": "ter",
+      "start": 11.985,
+      "end": 12.065,
+      "score": 0.562
+    },
+    {
+      "word": "ido",
+      "start": 12.125,
+      "end": 12.245,
+      "score": 0.983
+    },
+    {
+      "word": "à",
+      "start": 12.285,
+      "end": 12.305,
+      "score": 0.003
+    },
+    {
+      "word": "festa?",
+      "start": 12.405,
+      "end": 12.806,
+      "score": 0.937
+    },
+    {
+      "word": "Sacanagem!",
+      "start": 13.266,
+      "end": 14.066,
+      "score": 0.917
+    },
+    {
+      "word": "Eu",
+      "start": 15.026,
+      "end": 15.207,
+      "score": 0.586
+    },
+    {
+      "word": "não",
+      "start": 15.267,
+      "end": 15.387,
+      "score": 0.618
+    },
+    {
+      "word": "dormi!",
+      "start": 15.447,
+      "end": 15.787,
+      "score": 0.956
+    },
+    {
+      "word": "Só",
+      "start": 16.187,
+      "end": 16.387,
+      "score": 0.937
+    },
+    {
+      "word": "pulei",
+      "start": 16.547,
+      "end": 16.887,
+      "score": 0.928
+    },
+    {
+      "word": "um",
+      "start": 16.927,
+      "end": 16.987,
+      "score": 1.0
+    },
+    {
+      "word": "pedaço",
+      "start": 17.067,
+      "end": 17.528,
+      "score": 0.961
+    },
+    {
+      "word": "da",
+      "start": 17.588,
+      "end": 17.668,
+      "score": 0.696
+    },
+    {
+      "word": "realidade.",
+      "start": 17.748,
+      "end": 18.348,
+      "score": 0.958
+    },
+    {
+      "word": "Oitenta",
+      "start": 19.268,
+      "end": 19.748,
+      "score": 0.963
+    },
+    {
+      "word": "e",
+      "start": 19.789,
+      "end": 19.829,
+      "score": 0.5
+    },
+    {
+      "word": "três",
+      "start": 19.929,
+      "end": 20.169,
+      "score": 0.774
+    },
+    {
+      "word": "metros?",
+      "start": 20.229,
+      "end": 20.769,
+      "score": 0.94
+    },
+    {
+      "word": "Tá.",
+      "start": 21.229,
+      "end": 21.409,
+      "score": 0.791
+    },
+    {
+      "word": "A",
+      "start": 21.849,
+      "end": 21.909,
+      "score": 0.751
+    },
+    {
+      "word": "chave",
+      "start": 22.029,
+      "end": 22.29,
+      "score": 0.933
+    },
+    {
+      "word": "fica",
+      "start": 22.35,
+      "end": 22.57,
+      "score": 0.972
+    },
+    {
+      "word": "aqui.",
+      "start": 22.61,
+      "end": 22.89,
+      "score": 0.882
+    },
+    {
+      "word": "Então",
+      "start": 23.87,
+      "end": 24.21,
+      "score": 0.787
+    },
+    {
+      "word": "essa",
+      "start": 24.27,
+      "end": 24.451,
+      "score": 0.873
+    },
+    {
+      "word": "caneca",
+      "start": 24.511,
+      "end": 24.871,
+      "score": 1.0
+    },
+    {
+      "word": "é",
+      "start": 24.911,
+      "end": 24.951,
+      "score": 0.5
+    },
+    {
+      "word": "um",
+      "start": 24.991,
+      "end": 25.051,
+      "score": 0.75
+    },
+    {
+      "word": "alarme,",
+      "start": 25.111,
+      "end": 25.651,
+      "score": 0.948
+    },
+    {
+      "word": "não",
+      "start": 26.191,
+      "end": 26.331,
+      "score": 0.723
+    },
+    {
+      "word": "um",
+      "start": 26.391,
+      "end": 26.471,
+      "score": 0.616
+    },
+    {
+      "word": "carregador?",
+      "start": 26.511,
+      "end": 27.072,
+      "score": 0.896
+    },
+    {
+      "word": "Por",
+      "start": 27.992,
+      "end": 28.112,
+      "score": 0.888
+    },
+    {
+      "word": "que",
+      "start": 28.232,
+      "end": 28.372,
+      "score": 0.568
+    },
+    {
+      "word": "a",
+      "start": 28.412,
+      "end": 28.452,
+      "score": 0.941
+    },
+    {
+      "word": "minha",
+      "start": 28.492,
+      "end": 28.672,
+      "score": 0.708
+    },
+    {
+      "word": "planta",
+      "start": 28.812,
+      "end": 29.173,
+      "score": 0.843
+    },
+    {
+      "word": "tá",
+      "start": 29.253,
+      "end": 29.333,
+      "score": 0.839
+    },
+    {
+      "word": "me",
+      "start": 29.393,
+      "end": 29.473,
+      "score": 0.856
+    },
+    {
+      "word": "julgando?",
+      "start": 29.533,
+      "end": 30.153,
+      "score": 0.857
+    },
+    {
+      "word": "Cuida",
+      "start": 30.693,
+      "end": 31.033,
+      "score": 0.912
+    },
+    {
+      "word": "da",
+      "start": 31.093,
+      "end": 31.173,
+      "score": 0.742
+    },
+    {
+      "word": "tua",
+      "start": 31.293,
+      "end": 31.454,
+      "score": 0.805
+    },
+    {
+      "word": "fotossíntese,",
+      "start": 31.514,
+      "end": 32.294,
+      "score": 0.921
+    },
+    {
+      "word": "porra!",
+      "start": 32.494,
+      "end": 32.814,
+      "score": 0.928
+    },
+    {
+      "word": "Tá,",
+      "start": 33.674,
+      "end": 33.855,
+      "score": 0.893
+    },
+    {
+      "word": "mas",
+      "start": 34.315,
+      "end": 34.635,
+      "score": 0.832
+    },
+    {
+      "word": "em",
+      "start": 34.675,
+      "end": 34.755,
+      "score": 1.0
+    },
+    {
+      "word": "quantos",
+      "start": 34.915,
+      "end": 35.335,
+      "score": 0.706
+    },
+    {
+      "word": "dias",
+      "start": 35.375,
+      "end": 35.575,
+      "score": 0.855
+    },
+    {
+      "word": "eu",
+      "start": 35.615,
+      "end": 35.675,
+      "score": 1.0
+    },
+    {
+      "word": "morreria?",
+      "start": 35.715,
+      "end": 36.216,
+      "score": 0.959
+    },
+    {
+      "word": "Ganhei",
+      "start": 37.096,
+      "end": 37.416,
+      "score": 0.729
+    },
+    {
+      "word": "oito",
+      "start": 37.576,
+      "end": 37.836,
+      "score": 0.782
+    },
+    {
+      "word": "horas",
+      "start": 37.896,
+      "end": 38.357,
+      "score": 0.741
+    },
+    {
+      "word": "e",
+      "start": 38.397,
+      "end": 38.457,
+      "score": 0.981
+    },
+    {
+      "word": "perdi",
+      "start": 38.577,
+      "end": 38.877,
+      "score": 0.91
+    },
+    {
+      "word": "o",
+      "start": 38.897,
+      "end": 38.937,
+      "score": 0.568
+    },
+    {
+      "word": "cérebro.",
+      "start": 39.037,
+      "end": 39.417,
+      "score": 0.926
+    },
+    {
+      "word": "Cancela",
+      "start": 39.977,
+      "end": 40.497,
+      "score": 0.971
+    },
+    {
+      "word": "essa",
+      "start": 40.537,
+      "end": 40.678,
+      "score": 0.877
+    },
+    {
+      "word": "promoção.",
+      "start": 40.738,
+      "end": 41.158,
+      "score": 0.918
+    },
+    {
+      "word": "Devolvo.",
+      "start": 42.178,
+      "end": 42.618,
+      "score": 0.934
+    },
+    {
+      "word": "Mas",
+      "start": 43.099,
+      "end": 43.379,
+      "score": 0.829
+    },
+    {
+      "word": "se",
+      "start": 43.659,
+      "end": 43.739,
+      "score": 0.786
+    },
+    {
+      "word": "essa",
+      "start": 43.759,
+      "end": 43.919,
+      "score": 0.982
+    },
+    {
+      "word": "planta",
+      "start": 44.039,
+      "end": 44.259,
+      "score": 0.928
+    },
+    {
+      "word": "roncar,",
+      "start": 44.359,
+      "end": 44.819,
+      "score": 0.825
+    },
+    {
+      "word": "eu",
+      "start": 45.019,
+      "end": 45.119,
+      "score": 0.752
+    },
+    {
+      "word": "peço",
+      "start": 45.299,
+      "end": 45.52,
+      "score": 0.914
+    },
+    {
+      "word": "reembolso.",
+      "start": 45.6,
+      "end": 46.18,
+      "score": 0.92
+    }
+  ]
+}

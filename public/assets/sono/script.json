@@ -1,0 +1,149 @@
+{
+  "title": "E se você nunca mais dormisse?",
+  "durationPolicy": "Sem duração forçada; estimativa editorial 120–150 s, medir após TTS.",
+  "premise": "Adulto mantém necessidade biológica de sono, mas fica privado dele. Microssonos são uma consequência real e quebram a ideia literal de zero sono; explicar em vez de fingir que são impossíveis.",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "narrador",
+      "text": "E se você nunca mais dormisse? Antes de virar um zumbi, você perderia a confiança no próprio cérebro."
+    },
+    {
+      "index": 1,
+      "speaker": "bugi",
+      "text": "Oito horas extras por dia? Vou ficar rico!"
+    },
+    {
+      "index": 2,
+      "speaker": "narrador",
+      "text": "Você continua precisando dormir, Bugi. Só perdeu o sono. Depois de uma noite em claro, atenção, memória e humor já podem piorar. Você demora mais e erra mais, mesmo achando que está ótimo."
+    },
+    {
+      "index": 3,
+      "speaker": "bugi",
+      "text": "Tô ótimo. Só tô lendo a mesma frase faz vinte minutos. Que merda!"
+    },
+    {
+      "index": 4,
+      "speaker": "narrador",
+      "text": "Com cerca de vinte e quatro horas acordado, o prejuízo em certos testes de desempenho pode se comparar ao de álcool no sangue a zero vírgula dez por cento. Comparação de desempenho. Não tem álcool aparecendo no seu sangue."
+    },
+    {
+      "index": 5,
+      "speaker": "bugi",
+      "text": "Então eu tô de ressaca sem nem ter ido à festa? Sacanagem!"
+    },
+    {
+      "index": 6,
+      "speaker": "narrador",
+      "text": "E o cérebro pode encaixar microssonos: apagões breves que você nem percebe. Mesmo de olhos abertos, pode perder pedaços do que estava acontecendo."
+    },
+    {
+      "index": 7,
+      "speaker": "bugi",
+      "text": "Eu não dormi! Só pulei um pedaço da realidade."
+    },
+    {
+      "index": 8,
+      "speaker": "narrador",
+      "text": "Por isso, dirigir nessa condição é perigoso. A cem quilômetros por hora, três segundos sem atenção representam cerca de oitenta e três metros percorridos."
+    },
+    {
+      "index": 9,
+      "speaker": "bugi",
+      "text": "Oitenta e três metros? Tá. A chave fica aqui."
+    },
+    {
+      "index": 10,
+      "speaker": "narrador",
+      "text": "Café pode aumentar o alerta por um tempo. Mas não substitui o sono nem elimina todos os efeitos de ficar acordado."
+    },
+    {
+      "index": 11,
+      "speaker": "bugi",
+      "text": "Então essa caneca é um alarme, não um carregador?"
+    },
+    {
+      "index": 12,
+      "speaker": "narrador",
+      "text": "Com a privação prolongada, a coisa pode ficar mais estranha. Estudos relatam distorções da percepção e alucinações. Você pode interpretar sombras e objetos de um jeito que não corresponde ao que está ali."
+    },
+    {
+      "index": 13,
+      "speaker": "bugi",
+      "text": "Por que a minha planta tá me julgando? Cuida da tua fotossíntese, porra!"
+    },
+    {
+      "index": 14,
+      "speaker": "narrador",
+      "text": "Ela nem falou nada. Esses efeitos e os horários variam entre pessoas. Não existe uma tabelinha garantindo o que acontece com todo mundo a cada hora."
+    },
+    {
+      "index": 15,
+      "speaker": "bugi",
+      "text": "Tá, mas em quantos dias eu morreria?"
+    },
+    {
+      "index": 16,
+      "speaker": "narrador",
+      "text": "Não dá pra cravar um prazo humano confiável. E você não precisa chegar perto de um limite: erros e acidentes já podem colocar sua vida em risco muito antes."
+    },
+    {
+      "index": 17,
+      "speaker": "bugi",
+      "text": "Ganhei oito horas e perdi o cérebro. Cancela essa promoção."
+    },
+    {
+      "index": 18,
+      "speaker": "narrador",
+      "text": "Dormir não é tempo jogado fora. É parte do funcionamento do cérebro e do corpo. Bugi, devolve a cama."
+    },
+    {
+      "index": 19,
+      "speaker": "bugi",
+      "text": "Devolvo. Mas se essa planta roncar, eu peço reembolso."
+    }
+  ],
+  "voices": {
+    "bugi": {
+      "voice": "Puck",
+      "style": "Português brasileiro. Jovem adulto cartoon, confiante no início; vai ficando impaciente e cansado. Humor seco, irritação natural, sem gritar continuamente. Xingamentos espontâneos. Pausas entre falas. Não ler instruções."
+    },
+    "narrador": {
+      "voice": "Charon",
+      "style": "Português brasileiro, voz masculina adulta, clara, conversada, calma e ironia seca. Explicação com tempo para compreender dados. Não acelerar para encurtar. Pausas entre parágrafos e ênfase discreta em números. Não ler instruções."
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation/health-effects",
+      "claims": [
+        "atenção, memória, humor e microssonos",
+        "sono sustenta funcionamento do corpo"
+      ],
+      "caveat": "Sem cronograma universal."
+    },
+    {
+      "url": "https://www.cdc.gov/niosh/motor-vehicle/driver-fatigue/index.html",
+      "claims": [
+        "24 horas acordado e comparação desempenho BAC 0,10%",
+        "sono e segurança; cafeína tem efeito temporário"
+      ],
+      "caveat": "Equivalência de desempenho, não álcool real ou diagnóstico individual."
+    },
+    {
+      "url": "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2018.00303/full",
+      "claims": [
+        "distorções e alucinações na privação prolongada"
+      ],
+      "caveat": "Revisão de estudos heterogêneos, inclusive históricos; não fixar efeitos por hora."
+    }
+  ],
+  "calculation": {
+    "speedKmh": 100,
+    "seconds": 3,
+    "distanceMeters": 83.33333333333334,
+    "label": "Exemplo de distância percorrida; não distância de frenagem."
+  },
+  "productionStatus": "script-ready-audio-pending"
+}

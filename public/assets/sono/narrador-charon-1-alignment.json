@@ -1,0 +1,1741 @@
+{
+  "segments": [
+    {
+      "start": 0.28,
+      "end": 2.541,
+      "text": "E se você nunca mais dormisse?",
+      "words": [
+        {
+          "word": "E",
+          "start": 0.28,
+          "end": 0.36,
+          "score": 0.893
+        },
+        {
+          "word": "se",
+          "start": 0.44,
+          "end": 0.54,
+          "score": 0.996
+        },
+        {
+          "word": "você",
+          "start": 0.6,
+          "end": 0.9,
+          "score": 0.938
+        },
+        {
+          "word": "nunca",
+          "start": 1.12,
+          "end": 1.561,
+          "score": 0.957
+        },
+        {
+          "word": "mais",
+          "start": 1.661,
+          "end": 1.941,
+          "score": 0.875
+        },
+        {
+          "word": "dormisse?",
+          "start": 1.981,
+          "end": 2.541,
+          "score": 0.971
+        }
+      ]
+    },
+    {
+      "start": 3.981,
+      "end": 7.963,
+      "text": "Antes de virar um zumbi, você perderia a confiança no próprio cérebro.",
+      "words": [
+        {
+          "word": "Antes",
+          "start": 3.981,
+          "end": 4.261,
+          "score": 1.0
+        },
+        {
+          "word": "de",
+          "start": 4.301,
+          "end": 4.361,
+          "score": 1.0
+        },
+        {
+          "word": "virar",
+          "start": 4.421,
+          "end": 4.662,
+          "score": 0.684
+        },
+        {
+          "word": "um",
+          "start": 4.682,
+          "end": 4.722,
+          "score": 0.0
+        },
+        {
+          "word": "zumbi,",
+          "start": 4.782,
+          "end": 5.122,
+          "score": 0.948
+        },
+        {
+          "word": "você",
+          "start": 5.522,
+          "end": 5.742,
+          "score": 0.999
+        },
+        {
+          "word": "perderia",
+          "start": 5.822,
+          "end": 6.262,
+          "score": 0.936
+        },
+        {
+          "word": "a",
+          "start": 6.302,
+          "end": 6.342,
+          "score": 0.513
+        },
+        {
+          "word": "confiança",
+          "start": 6.402,
+          "end": 6.962,
+          "score": 0.898
+        },
+        {
+          "word": "no",
+          "start": 6.982,
+          "end": 7.062,
+          "score": 0.94
+        },
+        {
+          "word": "próprio",
+          "start": 7.162,
+          "end": 7.462,
+          "score": 0.928
+        },
+        {
+          "word": "cérebro.",
+          "start": 7.563,
+          "end": 7.963,
+          "score": 0.839
+        }
+      ]
+    },
+    {
+      "start": 8.903,
+      "end": 11.584,
+      "text": "Você continua precisando dormir, Bugi.",
+      "words": [
+        {
+          "word": "Você",
+          "start": 8.903,
+          "end": 9.123,
+          "score": 1.0
+        },
+        {
+          "word": "continua",
+          "start": 9.183,
+          "end": 9.743,
+          "score": 0.813
+        },
+        {
+          "word": "precisando",
+          "start": 9.803,
+          "end": 10.263,
+          "score": 0.824
+        },
+        {
+          "word": "dormir,",
+          "start": 10.343,
+          "end": 10.624,
+          "score": 0.789
+        },
+        {
+          "word": "Bugi.",
+          "start": 11.304,
+          "end": 11.584,
+          "score": 0.832
+        }
+      ]
+    },
+    {
+      "start": 11.884,
+      "end": 12.744,
+      "text": "Só perdeu o sono.",
+      "words": [
+        {
+          "word": "Só",
+          "start": 11.884,
+          "end": 11.984,
+          "score": 1.0
+        },
+        {
+          "word": "perdeu",
+          "start": 12.064,
+          "end": 12.344,
+          "score": 0.819
+        },
+        {
+          "word": "o",
+          "start": 12.364,
+          "end": 12.404,
+          "score": 0.505
+        },
+        {
+          "word": "sono.",
+          "start": 12.484,
+          "end": 12.744,
+          "score": 0.77
+        }
+      ]
+    },
+    {
+      "start": 13.905,
+      "end": 18.326,
+      "text": "Depois de uma noite em claro, atenção, memória e humor já podem piorar.",
+      "words": [
+        {
+          "word": "Depois",
+          "start": 13.905,
+          "end": 14.165,
+          "score": 0.899
+        },
+        {
+          "word": "de",
+          "start": 14.185,
+          "end": 14.225,
+          "score": 1.0
+        },
+        {
+          "word": "uma",
+          "start": 14.265,
+          "end": 14.365,
+          "score": 0.67
+        },
+        {
+          "word": "noite",
+          "start": 14.405,
+          "end": 14.585,
+          "score": 0.94
+        },
+        {
+          "word": "em",
+          "start": 14.605,
+          "end": 14.645,
+          "score": 0.026
+        },
+        {
+          "word": "claro,",
+          "start": 14.705,
+          "end": 14.985,
+          "score": 0.945
+        },
+        {
+          "word": "atenção,",
+          "start": 15.345,
+          "end": 15.945,
+          "score": 0.832
+        },
+        {
+          "word": "memória",
+          "start": 16.025,
+          "end": 16.546,
+          "score": 0.903
+        },
+        {
+          "word": "e",
+          "start": 16.786,
+          "end": 16.886,
+          "score": 0.408
+        },
+        {
+          "word": "humor",
+          "start": 16.906,
+          "end": 17.226,
+          "score": 0.887
+        },
+        {
+          "word": "já",
+          "start": 17.526,
+          "end": 17.646,
+          "score": 0.832
+        },
+        {
+          "word": "podem",
+          "start": 17.746,
+          "end": 17.986,
+          "score": 0.891
+        },
+        {
+          "word": "piorar.",
+          "start": 18.026,
+          "end": 18.326,
+          "score": 0.917
+        }
+      ]
+    },
+    {
+      "start": 19.386,
+      "end": 23.088,
+      "text": "Você demora mais e erra mais, mesmo achando que está ótimo.",
+      "words": [
+        {
+          "word": "Você",
+          "start": 19.386,
+          "end": 19.587,
+          "score": 0.998
+        },
+        {
+          "word": "demora",
+          "start": 19.627,
+          "end": 19.887,
+          "score": 0.919
+        },
+        {
+          "word": "mais",
+          "start": 19.947,
+          "end": 20.427,
+          "score": 0.975
+        },
+        {
+          "word": "e",
+          "start": 20.447,
+          "end": 20.467,
+          "score": 0.0
+        },
+        {
+          "word": "erra",
+          "start": 20.727,
+          "end": 20.927,
+          "score": 0.994
+        },
+        {
+          "word": "mais,",
+          "start": 20.987,
+          "end": 21.347,
+          "score": 0.999
+        },
+        {
+          "word": "mesmo",
+          "start": 21.887,
+          "end": 22.187,
+          "score": 0.9
+        },
+        {
+          "word": "achando",
+          "start": 22.207,
+          "end": 22.468,
+          "score": 0.687
+        },
+        {
+          "word": "que",
+          "start": 22.508,
+          "end": 22.588,
+          "score": 0.833
+        },
+        {
+          "word": "está",
+          "start": 22.608,
+          "end": 22.768,
+          "score": 0.106
+        },
+        {
+          "word": "ótimo.",
+          "start": 22.828,
+          "end": 23.088,
+          "score": 0.834
+        }
+      ]
+    },
+    {
+      "start": 24.248,
+      "end": 33.491,
+      "text": "Com cerca de vinte e quatro horas acordado, o prejuízo em certos testes de desempenho pode se comparar ao de álcool no sangue a zero vírgula dez por cento.",
+      "words": [
+        {
+          "word": "Com",
+          "start": 24.248,
+          "end": 24.368,
+          "score": 0.679
+        },
+        {
+          "word": "cerca",
+          "start": 24.428,
+          "end": 24.668,
+          "score": 1.0
+        },
+        {
+          "word": "de",
+          "start": 24.708,
+          "end": 24.868,
+          "score": 0.541
+        },
+        {
+          "word": "vinte",
+          "start": 24.948,
+          "end": 25.108,
+          "score": 0.935
+        },
+        {
+          "word": "e",
+          "start": 25.128,
+          "end": 25.148,
+          "score": 0.041
+        },
+        {
+          "word": "quatro",
+          "start": 25.168,
+          "end": 25.429,
+          "score": 0.759
+        },
+        {
+          "word": "horas",
+          "start": 25.469,
+          "end": 25.709,
+          "score": 0.876
+        },
+        {
+          "word": "acordado,",
+          "start": 25.729,
+          "end": 26.229,
+          "score": 0.893
+        },
+        {
+          "word": "o",
+          "start": 26.749,
+          "end": 26.829,
+          "score": 0.753
+        },
+        {
+          "word": "prejuízo",
+          "start": 26.949,
+          "end": 27.489,
+          "score": 0.887
+        },
+        {
+          "word": "em",
+          "start": 27.529,
+          "end": 27.649,
+          "score": 0.676
+        },
+        {
+          "word": "certos",
+          "start": 27.769,
+          "end": 28.069,
+          "score": 0.907
+        },
+        {
+          "word": "testes",
+          "start": 28.129,
+          "end": 28.51,
+          "score": 0.894
+        },
+        {
+          "word": "de",
+          "start": 28.55,
+          "end": 28.63,
+          "score": 0.726
+        },
+        {
+          "word": "desempenho",
+          "start": 28.67,
+          "end": 29.27,
+          "score": 0.796
+        },
+        {
+          "word": "pode",
+          "start": 29.35,
+          "end": 29.53,
+          "score": 1.0
+        },
+        {
+          "word": "se",
+          "start": 29.57,
+          "end": 29.63,
+          "score": 0.75
+        },
+        {
+          "word": "comparar",
+          "start": 29.71,
+          "end": 30.19,
+          "score": 0.9
+        },
+        {
+          "word": "ao",
+          "start": 30.63,
+          "end": 30.73,
+          "score": 0.954
+        },
+        {
+          "word": "de",
+          "start": 30.79,
+          "end": 30.91,
+          "score": 0.812
+        },
+        {
+          "word": "álcool",
+          "start": 30.97,
+          "end": 31.25,
+          "score": 0.793
+        },
+        {
+          "word": "no",
+          "start": 31.29,
+          "end": 31.37,
+          "score": 0.384
+        },
+        {
+          "word": "sangue",
+          "start": 31.471,
+          "end": 31.851,
+          "score": 0.881
+        },
+        {
+          "word": "a",
+          "start": 31.871,
+          "end": 31.891,
+          "score": 0.0
+        },
+        {
+          "word": "zero",
+          "start": 32.191,
+          "end": 32.431,
+          "score": 0.908
+        },
+        {
+          "word": "vírgula",
+          "start": 32.471,
+          "end": 32.771,
+          "score": 0.916
+        },
+        {
+          "word": "dez",
+          "start": 32.811,
+          "end": 32.991,
+          "score": 0.556
+        },
+        {
+          "word": "por",
+          "start": 33.031,
+          "end": 33.131,
+          "score": 0.947
+        },
+        {
+          "word": "cento.",
+          "start": 33.191,
+          "end": 33.491,
+          "score": 0.939
+        }
+      ]
+    },
+    {
+      "start": 34.372,
+      "end": 35.552,
+      "text": "Comparação de desempenho.",
+      "words": [
+        {
+          "word": "Comparação",
+          "start": 34.372,
+          "end": 34.952,
+          "score": 0.867
+        },
+        {
+          "word": "de",
+          "start": 34.992,
+          "end": 35.072,
+          "score": 0.76
+        },
+        {
+          "word": "desempenho.",
+          "start": 35.112,
+          "end": 35.552,
+          "score": 0.896
+        }
+      ]
+    },
+    {
+      "start": 36.012,
+      "end": 37.773,
+      "text": "Não tem álcool aparecendo no seu sangue.",
+      "words": [
+        {
+          "word": "Não",
+          "start": 36.012,
+          "end": 36.132,
+          "score": 0.747
+        },
+        {
+          "word": "tem",
+          "start": 36.212,
+          "end": 36.372,
+          "score": 0.835
+        },
+        {
+          "word": "álcool",
+          "start": 36.472,
+          "end": 36.692,
+          "score": 0.598
+        },
+        {
+          "word": "aparecendo",
+          "start": 36.732,
+          "end": 37.192,
+          "score": 0.925
+        },
+        {
+          "word": "no",
+          "start": 37.232,
+          "end": 37.292,
+          "score": 0.75
+        },
+        {
+          "word": "seu",
+          "start": 37.353,
+          "end": 37.453,
+          "score": 0.907
+        },
+        {
+          "word": "sangue.",
+          "start": 37.533,
+          "end": 37.773,
+          "score": 0.924
+        }
+      ]
+    },
+    {
+      "start": 38.873,
+      "end": 43.895,
+      "text": "E o cérebro pode encaixar microssonos: apagões breves que você nem percebe.",
+      "words": [
+        {
+          "word": "E",
+          "start": 38.873,
+          "end": 38.933,
+          "score": 0.679
+        },
+        {
+          "word": "o",
+          "start": 38.953,
+          "end": 38.993,
+          "score": 0.962
+        },
+        {
+          "word": "cérebro",
+          "start": 39.053,
+          "end": 39.373,
+          "score": 0.913
+        },
+        {
+          "word": "pode",
+          "start": 39.453,
+          "end": 39.673,
+          "score": 0.976
+        },
+        {
+          "word": "encaixar",
+          "start": 39.693,
+          "end": 40.133,
+          "score": 0.77
+        },
+        {
+          "word": "microssonos:",
+          "start": 40.273,
+          "end": 41.074,
+          "score": 0.871
+        },
+        {
+          "word": "apagões",
+          "start": 41.634,
+          "end": 42.034,
+          "score": 0.84
+        },
+        {
+          "word": "breves",
+          "start": 42.094,
+          "end": 42.494,
+          "score": 0.833
+        },
+        {
+          "word": "que",
+          "start": 42.534,
+          "end": 42.614,
+          "score": 0.999
+        },
+        {
+          "word": "você",
+          "start": 42.654,
+          "end": 42.934,
+          "score": 0.953
+        },
+        {
+          "word": "nem",
+          "start": 43.174,
+          "end": 43.335,
+          "score": 0.875
+        },
+        {
+          "word": "percebe.",
+          "start": 43.395,
+          "end": 43.895,
+          "score": 0.878
+        }
+      ]
+    },
+    {
+      "start": 44.915,
+      "end": 48.796,
+      "text": "Mesmo de olhos abertos, pode perder pedaços do que estava acontecendo.",
+      "words": [
+        {
+          "word": "Mesmo",
+          "start": 44.915,
+          "end": 45.215,
+          "score": 0.989
+        },
+        {
+          "word": "de",
+          "start": 45.255,
+          "end": 45.315,
+          "score": 0.994
+        },
+        {
+          "word": "olhos",
+          "start": 45.355,
+          "end": 45.555,
+          "score": 0.869
+        },
+        {
+          "word": "abertos,",
+          "start": 45.595,
+          "end": 46.155,
+          "score": 0.921
+        },
+        {
+          "word": "pode",
+          "start": 46.616,
+          "end": 46.896,
+          "score": 0.857
+        },
+        {
+          "word": "perder",
+          "start": 47.016,
+          "end": 47.256,
+          "score": 0.815
+        },
+        {
+          "word": "pedaços",
+          "start": 47.336,
+          "end": 47.856,
+          "score": 0.727
+        },
+        {
+          "word": "do",
+          "start": 47.876,
+          "end": 47.916,
+          "score": 1.0
+        },
+        {
+          "word": "que",
+          "start": 47.936,
+          "end": 47.996,
+          "score": 1.0
+        },
+        {
+          "word": "estava",
+          "start": 48.016,
+          "end": 48.196,
+          "score": 0.881
+        },
+        {
+          "word": "acontecendo.",
+          "start": 48.216,
+          "end": 48.796,
+          "score": 0.898
+        }
+      ]
+    },
+    {
+      "start": 49.837,
+      "end": 52.217,
+      "text": "Por isso, dirigir nessa condição é perigoso.",
+      "words": [
+        {
+          "word": "Por",
+          "start": 49.837,
+          "end": 49.957,
+          "score": 0.923
+        },
+        {
+          "word": "isso,",
+          "start": 49.997,
+          "end": 50.257,
+          "score": 0.927
+        },
+        {
+          "word": "dirigir",
+          "start": 50.537,
+          "end": 50.857,
+          "score": 0.939
+        },
+        {
+          "word": "nessa",
+          "start": 50.897,
+          "end": 51.057,
+          "score": 0.984
+        },
+        {
+          "word": "condição",
+          "start": 51.117,
+          "end": 51.557,
+          "score": 0.935
+        },
+        {
+          "word": "é",
+          "start": 51.617,
+          "end": 51.657,
+          "score": 0.661
+        },
+        {
+          "word": "perigoso.",
+          "start": 51.717,
+          "end": 52.217,
+          "score": 0.923
+        }
+      ]
+    },
+    {
+      "start": 52.978,
+      "end": 59.76,
+      "text": "A cem quilômetros por hora, três segundos sem atenção representam cerca de oitenta e três metros percorridos.",
+      "words": [
+        {
+          "word": "A",
+          "start": 52.978,
+          "end": 53.018,
+          "score": 1.0
+        },
+        {
+          "word": "cem",
+          "start": 53.178,
+          "end": 53.318,
+          "score": 0.692
+        },
+        {
+          "word": "quilômetros",
+          "start": 53.358,
+          "end": 53.878,
+          "score": 0.852
+        },
+        {
+          "word": "por",
+          "start": 53.918,
+          "end": 54.038,
+          "score": 0.948
+        },
+        {
+          "word": "hora,",
+          "start": 54.078,
+          "end": 54.298,
+          "score": 0.811
+        },
+        {
+          "word": "três",
+          "start": 54.818,
+          "end": 55.018,
+          "score": 0.952
+        },
+        {
+          "word": "segundos",
+          "start": 55.058,
+          "end": 55.439,
+          "score": 0.869
+        },
+        {
+          "word": "sem",
+          "start": 55.479,
+          "end": 55.579,
+          "score": 0.994
+        },
+        {
+          "word": "atenção",
+          "start": 55.619,
+          "end": 56.119,
+          "score": 0.86
+        },
+        {
+          "word": "representam",
+          "start": 56.319,
+          "end": 56.859,
+          "score": 0.917
+        },
+        {
+          "word": "cerca",
+          "start": 56.919,
+          "end": 57.199,
+          "score": 0.783
+        },
+        {
+          "word": "de",
+          "start": 57.259,
+          "end": 57.459,
+          "score": 0.792
+        },
+        {
+          "word": "oitenta",
+          "start": 57.779,
+          "end": 58.239,
+          "score": 0.895
+        },
+        {
+          "word": "e",
+          "start": 58.259,
+          "end": 58.28,
+          "score": 0.0
+        },
+        {
+          "word": "três",
+          "start": 58.34,
+          "end": 58.56,
+          "score": 0.799
+        },
+        {
+          "word": "metros",
+          "start": 58.62,
+          "end": 58.9,
+          "score": 0.952
+        },
+        {
+          "word": "percorridos.",
+          "start": 58.96,
+          "end": 59.76,
+          "score": 0.943
+        }
+      ]
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "E",
+      "start": 0.28,
+      "end": 0.36,
+      "score": 0.893
+    },
+    {
+      "word": "se",
+      "start": 0.44,
+      "end": 0.54,
+      "score": 0.996
+    },
+    {
+      "word": "você",
+      "start": 0.6,
+      "end": 0.9,
+      "score": 0.938
+    },
+    {
+      "word": "nunca",
+      "start": 1.12,
+      "end": 1.561,
+      "score": 0.957
+    },
+    {
+      "word": "mais",
+      "start": 1.661,
+      "end": 1.941,
+      "score": 0.875
+    },
+    {
+      "word": "dormisse?",
+      "start": 1.981,
+      "end": 2.541,
+      "score": 0.971
+    },
+    {
+      "word": "Antes",
+      "start": 3.981,
+      "end": 4.261,
+      "score": 1.0
+    },
+    {
+      "word": "de",
+      "start": 4.301,
+      "end": 4.361,
+      "score": 1.0
+    },
+    {
+      "word": "virar",
+      "start": 4.421,
+      "end": 4.662,
+      "score": 0.684
+    },
+    {
+      "word": "um",
+      "start": 4.682,
+      "end": 4.722,
+      "score": 0.0
+    },
+    {
+      "word": "zumbi,",
+      "start": 4.782,
+      "end": 5.122,
+      "score": 0.948
+    },
+    {
+      "word": "você",
+      "start": 5.522,
+      "end": 5.742,
+      "score": 0.999
+    },
+    {
+      "word": "perderia",
+      "start": 5.822,
+      "end": 6.262,
+      "score": 0.936
+    },
+    {
+      "word": "a",
+      "start": 6.302,
+      "end": 6.342,
+      "score": 0.513
+    },
+    {
+      "word": "confiança",
+      "start": 6.402,
+      "end": 6.962,
+      "score": 0.898
+    },
+    {
+      "word": "no",
+      "start": 6.982,
+      "end": 7.062,
+      "score": 0.94
+    },
+    {
+      "word": "próprio",
+      "start": 7.162,
+      "end": 7.462,
+      "score": 0.928
+    },
+    {
+      "word": "cérebro.",
+      "start": 7.563,
+      "end": 7.963,
+      "score": 0.839
+    },
+    {
+      "word": "Você",
+      "start": 8.903,
+      "end": 9.123,
+      "score": 1.0
+    },
+    {
+      "word": "continua",
+      "start": 9.183,
+      "end": 9.743,
+      "score": 0.813
+    },
+    {
+      "word": "precisando",
+      "start": 9.803,
+      "end": 10.263,
+      "score": 0.824
+    },
+    {
+      "word": "dormir,",
+      "start": 10.343,
+      "end": 10.624,
+      "score": 0.789
+    },
+    {
+      "word": "Bugi.",
+      "start": 11.304,
+      "end": 11.584,
+      "score": 0.832
+    },
+    {
+      "word": "Só",
+      "start": 11.884,
+      "end": 11.984,
+      "score": 1.0
+    },
+    {
+      "word": "perdeu",
+      "start": 12.064,
+      "end": 12.344,
+      "score": 0.819
+    },
+    {
+      "word": "o",
+      "start": 12.364,
+      "end": 12.404,
+      "score": 0.505
+    },
+    {
+      "word": "sono.",
+      "start": 12.484,
+      "end": 12.744,
+      "score": 0.77
+    },
+    {
+      "word": "Depois",
+      "start": 13.905,
+      "end": 14.165,
+      "score": 0.899
+    },
+    {
+      "word": "de",
+      "start": 14.185,
+      "end": 14.225,
+      "score": 1.0
+    },
+    {
+      "word": "uma",
+      "start": 14.265,
+      "end": 14.365,
+      "score": 0.67
+    },
+    {
+      "word": "noite",
+      "start": 14.405,
+      "end": 14.585,
+      "score": 0.94
+    },
+    {
+      "word": "em",
+      "start": 14.605,
+      "end": 14.645,
+      "score": 0.026
+    },
+    {
+      "word": "claro,",
+      "start": 14.705,
+      "end": 14.985,
+      "score": 0.945
+    },
+    {
+      "word": "atenção,",
+      "start": 15.345,
+      "end": 15.945,
+      "score": 0.832
+    },
+    {
+      "word": "memória",
+      "start": 16.025,
+      "end": 16.546,
+      "score": 0.903
+    },
+    {
+      "word": "e",
+      "start": 16.786,
+      "end": 16.886,
+      "score": 0.408
+    },
+    {
+      "word": "humor",
+      "start": 16.906,
+      "end": 17.226,
+      "score": 0.887
+    },
+    {
+      "word": "já",
+      "start": 17.526,
+      "end": 17.646,
+      "score": 0.832
+    },
+    {
+      "word": "podem",
+      "start": 17.746,
+      "end": 17.986,
+      "score": 0.891
+    },
+    {
+      "word": "piorar.",
+      "start": 18.026,
+      "end": 18.326,
+      "score": 0.917
+    },
+    {
+      "word": "Você",
+      "start": 19.386,
+      "end": 19.587,
+      "score": 0.998
+    },
+    {
+      "word": "demora",
+      "start": 19.627,
+      "end": 19.887,
+      "score": 0.919
+    },
+    {
+      "word": "mais",
+      "start": 19.947,
+      "end": 20.427,
+      "score": 0.975
+    },
+    {
+      "word": "e",
+      "start": 20.447,
+      "end": 20.467,
+      "score": 0.0
+    },
+    {
+      "word": "erra",
+      "start": 20.727,
+      "end": 20.927,
+      "score": 0.994
+    },
+    {
+      "word": "mais,",
+      "start": 20.987,
+      "end": 21.347,
+      "score": 0.999
+    },
+    {
+      "word": "mesmo",
+      "start": 21.887,
+      "end": 22.187,
+      "score": 0.9
+    },
+    {
+      "word": "achando",
+      "start": 22.207,
+      "end": 22.468,
+      "score": 0.687
+    },
+    {
+      "word": "que",
+      "start": 22.508,
+      "end": 22.588,
+      "score": 0.833
+    },
+    {
+      "word": "está",
+      "start": 22.608,
+      "end": 22.768,
+      "score": 0.106
+    },
+    {
+      "word": "ótimo.",
+      "start": 22.828,
+      "end": 23.088,
+      "score": 0.834
+    },
+    {
+      "word": "Com",
+      "start": 24.248,
+      "end": 24.368,
+      "score": 0.679
+    },
+    {
+      "word": "cerca",
+      "start": 24.428,
+      "end": 24.668,
+      "score": 1.0
+    },
+    {
+      "word": "de",
+      "start": 24.708,
+      "end": 24.868,
+      "score": 0.541
+    },
+    {
+      "word": "vinte",
+      "start": 24.948,
+      "end": 25.108,
+      "score": 0.935
+    },
+    {
+      "word": "e",
+      "start": 25.128,
+      "end": 25.148,
+      "score": 0.041
+    },
+    {
+      "word": "quatro",
+      "start": 25.168,
+      "end": 25.429,
+      "score": 0.759
+    },
+    {
+      "word": "horas",
+      "start": 25.469,
+      "end": 25.709,
+      "score": 0.876
+    },
+    {
+      "word": "acordado,",
+      "start": 25.729,
+      "end": 26.229,
+      "score": 0.893
+    },
+    {
+      "word": "o",
+      "start": 26.749,
+      "end": 26.829,
+      "score": 0.753
+    },
+    {
+      "word": "prejuízo",
+      "start": 26.949,
+      "end": 27.489,
+      "score": 0.887
+    },
+    {
+      "word": "em",
+      "start": 27.529,
+      "end": 27.649,
+      "score": 0.676
+    },
+    {
+      "word": "certos",
+      "start": 27.769,
+      "end": 28.069,
+      "score": 0.907
+    },
+    {
+      "word": "testes",
+      "start": 28.129,
+      "end": 28.51,
+      "score": 0.894
+    },
+    {
+      "word": "de",
+      "start": 28.55,
+      "end": 28.63,
+      "score": 0.726
+    },
+    {
+      "word": "desempenho",
+      "start": 28.67,
+      "end": 29.27,
+      "score": 0.796
+    },
+    {
+      "word": "pode",
+      "start": 29.35,
+      "end": 29.53,
+      "score": 1.0
+    },
+    {
+      "word": "se",
+      "start": 29.57,
+      "end": 29.63,
+      "score": 0.75
+    },
+    {
+      "word": "comparar",
+      "start": 29.71,
+      "end": 30.19,
+      "score": 0.9
+    },
+    {
+      "word": "ao",
+      "start": 30.63,
+      "end": 30.73,
+      "score": 0.954
+    },
+    {
+      "word": "de",
+      "start": 30.79,
+      "end": 30.91,
+      "score": 0.812
+    },
+    {
+      "word": "álcool",
+      "start": 30.97,
+      "end": 31.25,
+      "score": 0.793
+    },
+    {
+      "word": "no",
+      "start": 31.29,
+      "end": 31.37,
+      "score": 0.384
+    },
+    {
+      "word": "sangue",
+      "start": 31.471,
+      "end": 31.851,
+      "score": 0.881
+    },
+    {
+      "word": "a",
+      "start": 31.871,
+      "end": 31.891,
+      "score": 0.0
+    },
+    {
+      "word": "zero",
+      "start": 32.191,
+      "end": 32.431,
+      "score": 0.908
+    },
+    {
+      "word": "vírgula",
+      "start": 32.471,
+      "end": 32.771,
+      "score": 0.916
+    },
+    {
+      "word": "dez",
+      "start": 32.811,
+      "end": 32.991,
+      "score": 0.556
+    },
+    {
+      "word": "por",
+      "start": 33.031,
+      "end": 33.131,
+      "score": 0.947
+    },
+    {
+      "word": "cento.",
+      "start": 33.191,
+      "end": 33.491,
+      "score": 0.939
+    },
+    {
+      "word": "Comparação",
+      "start": 34.372,
+      "end": 34.952,
+      "score": 0.867
+    },
+    {
+      "word": "de",
+      "start": 34.992,
+      "end": 35.072,
+      "score": 0.76
+    },
+    {
+      "word": "desempenho.",
+      "start": 35.112,
+      "end": 35.552,
+      "score": 0.896
+    },
+    {
+      "word": "Não",
+      "start": 36.012,
+      "end": 36.132,
+      "score": 0.747
+    },
+    {
+      "word": "tem",
+      "start": 36.212,
+      "end": 36.372,
+      "score": 0.835
+    },
+    {
+      "word": "álcool",
+      "start": 36.472,
+      "end": 36.692,
+      "score": 0.598
+    },
+    {
+      "word": "aparecendo",
+      "start": 36.732,
+      "end": 37.192,
+      "score": 0.925
+    },
+    {
+      "word": "no",
+      "start": 37.232,
+      "end": 37.292,
+      "score": 0.75
+    },
+    {
+      "word": "seu",
+      "start": 37.353,
+      "end": 37.453,
+      "score": 0.907
+    },
+    {
+      "word": "sangue.",
+      "start": 37.533,
+      "end": 37.773,
+      "score": 0.924
+    },
+    {
+      "word": "E",
+      "start": 38.873,
+      "end": 38.933,
+      "score": 0.679
+    },
+    {
+      "word": "o",
+      "start": 38.953,
+      "end": 38.993,
+      "score": 0.962
+    },
+    {
+      "word": "cérebro",
+      "start": 39.053,
+      "end": 39.373,
+      "score": 0.913
+    },
+    {
+      "word": "pode",
+      "start": 39.453,
+      "end": 39.673,
+      "score": 0.976
+    },
+    {
+      "word": "encaixar",
+      "start": 39.693,
+      "end": 40.133,
+      "score": 0.77
+    },
+    {
+      "word": "microssonos:",
+      "start": 40.273,
+      "end": 41.074,
+      "score": 0.871
+    },
+    {
+      "word": "apagões",
+      "start": 41.634,
+      "end": 42.034,
+      "score": 0.84
+    },
+    {
+      "word": "breves",
+      "start": 42.094,
+      "end": 42.494,
+      "score": 0.833
+    },
+    {
+      "word": "que",
+      "start": 42.534,
+      "end": 42.614,
+      "score": 0.999
+    },
+    {
+      "word": "você",
+      "start": 42.654,
+      "end": 42.934,
+      "score": 0.953
+    },
+    {
+      "word": "nem",
+      "start": 43.174,
+      "end": 43.335,
+      "score": 0.875
+    },
+    {
+      "word": "percebe.",
+      "start": 43.395,
+      "end": 43.895,
+      "score": 0.878
+    },
+    {
+      "word": "Mesmo",
+      "start": 44.915,
+      "end": 45.215,
+      "score": 0.989
+    },
+    {
+      "word": "de",
+      "start": 45.255,
+      "end": 45.315,
+      "score": 0.994
+    },
+    {
+      "word": "olhos",
+      "start": 45.355,
+      "end": 45.555,
+      "score": 0.869
+    },
+    {
+      "word": "abertos,",
+      "start": 45.595,
+      "end": 46.155,
+      "score": 0.921
+    },
+    {
+      "word": "pode",
+      "start": 46.616,
+      "end": 46.896,
+      "score": 0.857
+    },
+    {
+      "word": "perder",
+      "start": 47.016,
+      "end": 47.256,
+      "score": 0.815
+    },
+    {
+      "word": "pedaços",
+      "start": 47.336,
+      "end": 47.856,
+      "score": 0.727
+    },
+    {
+      "word": "do",
+      "start": 47.876,
+      "end": 47.916,
+      "score": 1.0
+    },
+    {
+      "word": "que",
+      "start": 47.936,
+      "end": 47.996,
+      "score": 1.0
+    },
+    {
+      "word": "estava",
+      "start": 48.016,
+      "end": 48.196,
+      "score": 0.881
+    },
+    {
+      "word": "acontecendo.",
+      "start": 48.216,
+      "end": 48.796,
+      "score": 0.898
+    },
+    {
+      "word": "Por",
+      "start": 49.837,
+      "end": 49.957,
+      "score": 0.923
+    },
+    {
+      "word": "isso,",
+      "start": 49.997,
+      "end": 50.257,
+      "score": 0.927
+    },
+    {
+      "word": "dirigir",
+      "start": 50.537,
+      "end": 50.857,
+      "score": 0.939
+    },
+    {
+      "word": "nessa",
+      "start": 50.897,
+      "end": 51.057,
+      "score": 0.984
+    },
+    {
+      "word": "condição",
+      "start": 51.117,
+      "end": 51.557,
+      "score": 0.935
+    },
+    {
+      "word": "é",
+      "start": 51.617,
+      "end": 51.657,
+      "score": 0.661
+    },
+    {
+      "word": "perigoso.",
+      "start": 51.717,
+      "end": 52.217,
+      "score": 0.923
+    },
+    {
+      "word": "A",
+      "start": 52.978,
+      "end": 53.018,
+      "score": 1.0
+    },
+    {
+      "word": "cem",
+      "start": 53.178,
+      "end": 53.318,
+      "score": 0.692
+    },
+    {
+      "word": "quilômetros",
+      "start": 53.358,
+      "end": 53.878,
+      "score": 0.852
+    },
+    {
+      "word": "por",
+      "start": 53.918,
+      "end": 54.038,
+      "score": 0.948
+    },
+    {
+      "word": "hora,",
+      "start": 54.078,
+      "end": 54.298,
+      "score": 0.811
+    },
+    {
+      "word": "três",
+      "start": 54.818,
+      "end": 55.018,
+      "score": 0.952
+    },
+    {
+      "word": "segundos",
+      "start": 55.058,
+      "end": 55.439,
+      "score": 0.869
+    },
+    {
+      "word": "sem",
+      "start": 55.479,
+      "end": 55.579,
+      "score": 0.994
+    },
+    {
+      "word": "atenção",
+      "start": 55.619,
+      "end": 56.119,
+      "score": 0.86
+    },
+    {
+      "word": "representam",
+      "start": 56.319,
+      "end": 56.859,
+      "score": 0.917
+    },
+    {
+      "word": "cerca",
+      "start": 56.919,
+      "end": 57.199,
+      "score": 0.783
+    },
+    {
+      "word": "de",
+      "start": 57.259,
+      "end": 57.459,
+      "score": 0.792
+    },
+    {
+      "word": "oitenta",
+      "start": 57.779,
+      "end": 58.239,
+      "score": 0.895
+    },
+    {
+      "word": "e",
+      "start": 58.259,
+      "end": 58.28,
+      "score": 0.0
+    },
+    {
+      "word": "três",
+      "start": 58.34,
+      "end": 58.56,
+      "score": 0.799
+    },
+    {
+      "word": "metros",
+      "start": 58.62,
+      "end": 58.9,
+      "score": 0.952
+    },
+    {
+      "word": "percorridos.",
+      "start": 58.96,
+      "end": 59.76,
+      "score": 0.943
+    }
+  ]
+}

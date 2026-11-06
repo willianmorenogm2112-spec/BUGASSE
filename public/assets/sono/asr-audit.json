@@ -1,0 +1,232 @@
+{
+  "model": "faster-whisper-base",
+  "language": "pt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.76,
+      "text": " E se você nunca mais dormisse?"
+    },
+    {
+      "start": 3.72,
+      "end": 8.06,
+      "text": " Antes de virar um zumbi, você perderia a confiança no próprio cérebro."
+    },
+    {
+      "start": 8.06,
+      "end": 10.4,
+      "text": " Oito horas extras por dia?"
+    },
+    {
+      "start": 10.4,
+      "end": 12.16,
+      "text": " Ha! Vou ficar rico!"
+    },
+    {
+      "start": 12.16,
+      "end": 14.48,
+      "text": " Você continua precisando dormir."
+    },
+    {
+      "start": 14.48,
+      "end": 16.48,
+      "text": " Vugo só perdeu o sono."
+    },
+    {
+      "start": 17.12,
+      "end": 22.08,
+      "text": " Depois de uma noite em claro, a atenção, memória e humor já podem piorar."
+    },
+    {
+      "start": 22.68,
+      "end": 26.8,
+      "text": " Você demora mais e erra mais, mesmo achando que está ótimo."
+    },
+    {
+      "start": 26.96,
+      "end": 31.84,
+      "text": " Tô ótimo! Só estou lendo a mesma frase e faz 20 minutos, que merda."
+    },
+    {
+      "start": 31.84,
+      "end": 38.32,
+      "text": " Com cerca de 24 horas acordado, o prejuízo em certos testes de desempenho pode se comparar"
+    },
+    {
+      "start": 38.32,
+      "end": 41.76,
+      "text": " ao dia ao comum no sangue a 0,10%."
+    },
+    {
+      "start": 41.76,
+      "end": 45.92,
+      "text": " Comparação de desempenho. Não tem algo aparecendo no seu sangue."
+    },
+    {
+      "start": 45.92,
+      "end": 49.0,
+      "text": " Então eu tô de ressaca sem nem ter ido a festa?"
+    },
+    {
+      "start": 49.0,
+      "end": 50.48,
+      "text": " Sa canagem."
+    },
+    {
+      "start": 50.48,
+      "end": 56.16,
+      "text": " E o cérebro pode encaixar a micro-sonos, a pagões breves que você nem percebe."
+    },
+    {
+      "start": 56.64,
+      "end": 60.96,
+      "text": " Mesmo de olhos abertos, pode perder pedaços do que estava acontecendo."
+    },
+    {
+      "start": 60.96,
+      "end": 65.0,
+      "text": " Eu não dormi. Só pulei um pedaço da realidade."
+    },
+    {
+      "start": 65.0,
+      "end": 68.08,
+      "text": " Por isso dirigir nessa condição é perigoso."
+    },
+    {
+      "start": 68.08,
+      "end": 75.16,
+      "text": " À 100 km por hora, 3 segundos em atenção representam cerca de 83 metros percorridos."
+    },
+    {
+      "start": 75.16,
+      "end": 77.16,
+      "text": " 83 metros?"
+    },
+    {
+      "start": 77.16,
+      "end": 79.36,
+      "text": " Tá, na chave fica aqui."
+    },
+    {
+      "start": 79.36,
+      "end": 82.84,
+      "text": " Café pode aumentar o alerta por um tempo."
+    },
+    {
+      "start": 82.84,
+      "end": 84.8,
+      "text": " Mas não substituir o sono."
+    },
+    {
+      "start": 84.8,
+      "end": 87.8,
+      "text": " Nem elimina todos os efeitos de ficar acordado."
+    },
+    {
+      "start": 87.8,
+      "end": 91.56,
+      "text": " Então essa canéque é um alarme, não um carregador?"
+    },
+    {
+      "start": 91.56,
+      "end": 96.24,
+      "text": " Com a privação prolongada, a coisa pode ficar mais estranha."
+    },
+    {
+      "start": 96.24,
+      "end": 100.76,
+      "text": " Estudos relatam distorções da percepção e alucinações."
+    },
+    {
+      "start": 100.76,
+      "end": 106.0,
+      "text": " Você pode interpretar sombras e objetos de um jeito que não corresponde ao que talha."
+    },
+    {
+      "start": 106.0,
+      "end": 108.68,
+      "text": " Porque a minha planta tá me julgando?"
+    },
+    {
+      "start": 108.68,
+      "end": 111.44,
+      "text": " Cuida da tua fotoci inteza e porra."
+    },
+    {
+      "start": 111.44,
+      "end": 113.44,
+      "text": " Ela nem falou nada."
+    },
+    {
+      "start": 113.44,
+      "end": 117.16,
+      "text": " Esses efeitos e os horários variam entre pessoas."
+    },
+    {
+      "start": 117.16,
+      "end": 121.52,
+      "text": " Não existe uma tabelinha garantindo o que acontece com todo mundo a cada hora."
+    },
+    {
+      "start": 121.52,
+      "end": 124.52,
+      "text": " Tá, mas em quantos dias eu morreria?"
+    },
+    {
+      "start": 124.52,
+      "end": 127.84,
+      "text": " Não dá pra gravar um brazo humano confiável."
+    },
+    {
+      "start": 127.84,
+      "end": 130.72,
+      "text": " E você não precisa chegar perto de um limite."
+    },
+    {
+      "start": 130.72,
+      "end": 134.4,
+      "text": " Erros e acidentes já podem colocar sua vida em risco muito antes."
+    },
+    {
+      "start": 134.4,
+      "end": 137.32,
+      "text": " Ganhei 8 horas e perdi o cérebro."
+    },
+    {
+      "start": 137.32,
+      "end": 139.08,
+      "text": " Cancella essa promoção."
+    },
+    {
+      "start": 139.08,
+      "end": 141.56,
+      "text": " Dormir não é tempo jogado fora."
+    },
+    {
+      "start": 141.56,
+      "end": 144.96,
+      "text": " É parte do funcionamento do cérebro e do corpo?"
+    },
+    {
+      "start": 144.96,
+      "end": 145.96,
+      "text": " Bujo."
+    },
+    {
+      "start": 145.96,
+      "end": 147.96,
+      "text": " Devolve a cama."
+    },
+    {
+      "start": 147.96,
+      "end": 148.96,
+      "text": " Devolvo."
+    },
+    {
+      "start": 148.96,
+      "end": 152.04,
+      "text": " Mas se essa planta romcar, eu peço o reenbolso."
+    }
+  ],
+  "limitation": "ASR independente; não substitui escuta humana ou revisão clínica."
+}

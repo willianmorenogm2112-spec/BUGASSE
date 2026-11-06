@@ -1,0 +1,43 @@
+{
+  "audio": [
+    {
+      "file": "bugi-puck.wav",
+      "sha256": "8c047d06434365a19af104b399462f76c977f4618d16bbb0680d2c37a2a1fb03",
+      "duration": 46.48,
+      "sampleRate": 24000,
+      "generationSource": "google_ai_studio_ui",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Puck",
+      "chargedCost": null
+    },
+    {
+      "file": "narrador-charon-1.wav",
+      "sha256": "2ae3735c8085294cea141b02bc6c28d88fa6ccf671492bbcfcc39cd93e7845f7",
+      "duration": 59.76,
+      "sampleRate": 24000,
+      "generationSource": "google_ai_studio_ui",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "chargedCost": null
+    },
+    {
+      "file": "narrador-charon-2.wav",
+      "sha256": "feacd859ef3af984d98e4ef834860d2f2e13e5c69e975a197acfe00dd147d133",
+      "duration": 54.04,
+      "sampleRate": 24000,
+      "generationSource": "google_ai_studio_ui",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "chargedCost": null
+    }
+  ],
+  "background": {
+    "generationSource": "original_svg_code",
+    "model": null,
+    "note": "Cenário por código solicitado pelo usuário; não é imagem Google."
+  },
+  "failures": [
+    "Tentativas de narração longa no primeiro AI Studio sem arquivo; HTTP403 observado. Nova aba e geração em partes."
+  ],
+  "chargedCost": null
+}
