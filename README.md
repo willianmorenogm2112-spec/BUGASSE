@@ -60,3 +60,8 @@ npm run build
    - Integrado como gerador opcional de motion graphics e infográficos determinísticos em HTML + GSAP (`window.__timelines[compositionId]`).
    - Os arquivos `hyperframes/*.html` são exportados dentro do pacote ZIP da aba **Codex & Remotion** para pré-renderização opcional como asset de vídeo sem executar dois motores concorrentes simultaneamente.
 
+
+
+## Continuar no Antigravity
+
+Abra `BUGASSE-animacao.code-workspace` desta raiz e siga [o guia de continuidade](docs/ABRIR-NO-ANTIGRAVITY.md). `GEMINI.md` e `AGENTS.md` apontam para o mesmo contrato; confira o checkout antes de retomar.

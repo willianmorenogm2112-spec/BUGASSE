@@ -9,3 +9,6 @@ Antes de criar ou revisar qualquer episódio 2D, ler `docs/WORKFLOW-ANIMACAO-E-S
 O guia é direção, não evidência de execução. Registrar por vídeo quais técnicas foram usadas e seus frames. Remotion é composição única do Player e MP4; áudio Gemini real e alinhamento acústico quando disponível. Nunca declarar todas as skills usadas por estarem instaladas. Piloto de 12 s, QA de movimento/áudio/dados e revisão visual precedem entrega completa. Publicar somente mediante autorização para o episódio correspondente.
 
 Episódio atual em produção: `reports/SONO-2D.md`, `src/remotion/SleepRoot.tsx`. O usuário autorizou duração suficiente para explicar sem correr; o áudio deste episódio mede 153,138 s. Referência anterior preservada: `reports/GRAVIDADE-2D.md`, `src/remotion/GravityRoot.tsx`. Manter o módulo 3D separado.
+
+
+Continuidade entre agentes: ler docs/CONTINUIDADE-AGENTES.md. O Antigravity tem entrada em GEMINI.md; ambos usam o mesmo contrato e os guias existentes. Estado do sono atualizado: reports/SONO-V3-DINAMICA.md, render-qa-v3.json e public/assets/sono/publicacao.json. Conferir estes artefatos antes de repetir geracao ou publicacao.
