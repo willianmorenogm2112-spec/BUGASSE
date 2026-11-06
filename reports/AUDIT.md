@@ -122,3 +122,14 @@ Executado: aprovação visual explícita do usuário registrada como referência
 ## Episódio Sono — produção em 06/11/2026
 
 Executado: pesquisa NIH/CDC/Waters, roteiro original de 364 palavras, Puck e Charon reais no Gemini 3.8, alinhamento acústico dos 20 turnos e mix de 153,138 s; cenário/objetos SVG, rig oficial, gráficos e 117 páginas de legendas/SRT. Evidência/arquivos: reports/SONO-2D.md, public/assets/sono, src/remotion/SleepRoot.tsx, src/remotion/sleep e scripts/*sleep*. Logs: Node 24.14.1, npm 11.11.0, Remotion 4.0.540, FFmpeg 9.0; lint, 17 testes existentes e 4 novos passaram; build passou com avisos já presentes. Pilotos V1/V2 exportados, sequência inspecionada e Player real em reprodução; render integral em andamento neste registro. Limitação: aprovação artística e escuta humana integrais pendentes; não publicado. HTTP403 no AI Studio recuperado na sessão que gerou Puck, mantendo Charon/3.8; 2.5 tentou sem asset e não foi usado. ASR independente recuperado de incompatibilidade PyAV carregando PCM; nenhuma instalação nova. Custos cobrados não disponíveis. Próximo: QA do MP4 integral e revisão do usuário. Rollback: reverter commits da branch codex/bugi-sem-dormir-20261106, sem tocar vídeos ou agendamentos anteriores.
+
+
+## Retomada do episodio Sono — 06/11/2026
+
+Executado: recuperada a V2 integral existente; QA tecnico reexecutado, fontes da composicao conferidas por SHA256 e storyboard de 20 falas consolidado. Nenhuma chamada paga nova e nenhum rerender desnecessario. Lint, 17 testes gerais, 5 testes de movimento e build passaram (avisos preexistentes de Vite/bundle).
+
+Evidencia: `public/assets/sono/render-qa.json`; `out/sono-decode.log`, `out/sono-blackdetect.log`, `out/sono-loudness.log`; imagens `out/sono-completo-contato.jpg`, `out/sono-reacao-sequencia.jpg`, `out/sono-carro-sequencia.jpg` revisadas. MP4 `out/bugi-nunca-dormir-v2.mp4`: 153,173 s, 18.500.872 bytes, 4595 frames, H.264/AAC, 1080x1920/30 fps. Audio -16,58 LUFS, pico -4,63 dBTP. Decode integral sem erros e sem intervalos pretos detectados.
+
+Arquivos: storyboard.json, sleep_storyboard.ts, teste de movimento com duracoes reais, render-qa.json e estes relatorios. Vozes Google Puck/Charon existentes preservadas; proveniencia em public/assets/sono/provenance.json. Custos cobrados nao informados; nenhuma nova geracao nesta retomada.
+
+Limitacao: revisao visual amostrada; escuta humana integral e aprovacao artistica pendentes. Sem publicacao. Proximo: assistir ao MP4 integral e avaliar ritmo/voz; a existencia dos testes nao constitui aprovacao artistica. Rollback: reverter apenas o commit da branch codex/retoma-sono-qa-20261106, preservando V1/V2 e audios originais. Base desta retomada: 58892f6.

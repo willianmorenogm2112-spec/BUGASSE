@@ -1,9 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {sleepActing,travelMeters,sleepNight} from './sleepMotion';
+import timing from '../../../public/assets/sono/timing.json';
 test('feet remain anchored and arm bones keep length in every acting frame',()=>{
- for(let index=0;index<20;index++)for(let f=0;f<=360;f++){
-  const k=sleepActing(index,f/30,12,.4);
+ for(const turn of timing.turns)for(let f=0;f<=Math.ceil((turn.end-turn.start)*30);f++){
+  const k=sleepActing(turn.index,f/30,turn.end-turn.start,.4);
   for(const side of ['left','right'] as const){
    assert.ok(Math.abs(k.rootY+k[`${side}Ankle`].y-675)<1e-7);
    const a=k[`${side}Shoulder`],b=k[`${side}Elbow`],c=k[`${side}Wrist`];
