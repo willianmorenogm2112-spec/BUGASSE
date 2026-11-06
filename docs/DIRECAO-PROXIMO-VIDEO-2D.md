@@ -62,3 +62,10 @@ Linguagem persistente: Bugi/Puck começa confiante, fica desconfiado, reage irri
 Antes do TTS, escrever intenção por fala e pausa da reação. Voz, sobrancelhas, olhar, boca, mãos e postura precisam concordar. Bugi escuta de boca fechada; gestos têm antecipação, contato e recuperação. Estrutura preferida: acontecimento → interpretação do Bugi → prova visual do narrador → tentativa frustrada → reação engraçada → conclusão. Exemplo de tom: “Eu pedi uma pausa, porra! Não um lançamento!” Não copiar falas ou cenas das referências.
 
 Próximos temas e evidências: `reports/PESQUISA-TEMAS-20261106.md`. O roteiro e o piloto do novo tema ainda precisam ser produzidos; este registro não declara novo vídeo pronto.
+
+
+## Referencia Claude recebida — prioridade de movimento em 06/11/2026
+
+O usuario aprovou a linguagem de dinamismo do arquivo files.zip (predio/reflexo/carro) para os proximos episodios. Ler reports/REFERENCIA-CLAUDE-20261106.md antes de criar o proximo roteiro/storyboard. Preservar Bugi/vozes/identidade e Remotion; a nova referencia substitui o ritmo e encenacao limitados da V3 como alvo de movimento. O desenho da Gravidade V3 continua referencia de identidade, nao teto de animacao.
+
+A cena precisa evoluir por acao e transformacao do objeto, nao por icones sobre painel ou gestos programados pelo comprimento da fala. Roteiro audiovisual com estado inicial → acao → efeito → reacao/revelacao. Camera segue olhar/objeto/causa; props tem contato e continuidade; cenarios reagem. Um plano de varios segundos deve conter etapas internas legiveis. Ambiente vivo com hierarquia, sem impor movimentos aleatorios ou impedir pausas de leitura. Bugi pode sair do quadro quando o objeto/processo e o protagonista. Provar no piloto de 12 s antes de expandir. Esta mudanca e direcao documentada; implementacao do proximo episodio ainda pendente de escolha de tema.

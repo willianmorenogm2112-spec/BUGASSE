@@ -1,0 +1,14 @@
+{
+  "source": "user-provided files.zip",
+  "filesSha256": {
+    "final.mp4": "e7770f74c72513dcfef94cf7c73dc4098b2a24a62eff12d1239c29fc4fb6748f",
+    "projeto_editavel.zip": "34a78f73caa30eba8350f41495a103109d9eff7b856d6f8ed62b5e6cf962bd3b",
+    "SOURCES.md": "ec5d40b36c5bdb40cc21b6118eae7bce6137dfc4f454a91b1cf1c45636caa24e",
+    "qa-report.json": "8b749cb8135ad53b3b571507e31e1b945c9d63ba07d27882aab466788754d89d"
+  },
+  "measuredDuration": 80.04,
+  "sceneCountFromProject": 12,
+  "review": "contact sheet + sampled sequences + partial playback; no full-listen certification",
+  "thirdPartyCodeExecuted": false,
+  "newVideoProduced": false
+}

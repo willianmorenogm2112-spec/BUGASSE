@@ -12,3 +12,6 @@ Episódio atual em produção: `reports/SONO-2D.md`, `src/remotion/SleepRoot.tsx
 
 
 Continuidade entre agentes: ler docs/CONTINUIDADE-AGENTES.md. O Antigravity tem entrada em GEMINI.md; ambos usam o mesmo contrato e os guias existentes. Estado do sono atualizado: reports/SONO-V3-DINAMICA.md, render-qa-v3.json e public/assets/sono/publicacao.json. Conferir estes artefatos antes de repetir geracao ou publicacao.
+
+
+Referencia de movimento mais recente: files.zip do Claude, analisada em reports/REFERENCIA-CLAUDE-20261106.md. Aplicar encenacao continua e transformacoes por fala no proximo episodio; guias compartilhados atualizados. Preservar identidade do Bugi e Remotion. Novo tema/video ainda nao escolhido/iniciado.
