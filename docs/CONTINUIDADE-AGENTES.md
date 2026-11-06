@@ -1,0 +1,25 @@
+# Contrato compartilhado — Codex e Antigravity
+
+## Contexto antes de executar
+
+1. Conferir git status, branch e raiz. Preservar mudancas existentes e trabalhar em branch nova. Nao executar reset/clean nem trocar para main para resolver divergencia.
+2. Ler docs/WORKFLOW-ANIMACAO-E-SKILLS.md e docs/DIRECAO-PROXIMO-VIDEO-2D.md. Elas registram preferencias e melhorias aprovadas. Ler README.md para arquitetura, conferindo afirmacoes antigas contra fontes atuais e QA.
+3. Identificar o episodio no pedido, conferir composicao/asset/relatorio e sua versao mais recente. Para continuidade do sono: reports/SONO-V3-DINAMICA.md, public/assets/sono/render-qa-v3.json, public/assets/sono/publicacao.json e src/remotion/SleepRoot.tsx. Conferir se surgiram versoes posteriores antes de editar.
+4. Ler SKILL.md das ferramentas realmente utilizadas. Encontrar skills locais em .agents/skills; nao presumir que uma skill do Codex esteja disponivel no Antigravity. Se faltar, registrar e usar o fluxo comprovado disponivel, sem inventar execucao.
+
+## Direcao persistente aprovada
+
+- Preservar o Bugi canonico, roupa, proporcoes, paleta e vozes Puck/Bugi e Charon/narrador. Referencia de acabamento: Gravidade final V3. Aprovacao de uma referencia nao aprova automaticamente outro video.
+- Bugi confiante e sarcástico; narrador calmo e ironico. Humor de situacao e palavroes pontuais, sem gritaria permanente.
+- O usuario aprovou cenarios 2D originais por codigo, em camadas, com sombras e objetos coerentes. Essa direcao mais recente substitui a exigencia antiga de fundo Google em todos os episodios. Registrar generationSource=original_svg_code; nunca alegar imagem Google sem geracao real.
+- Mostrar a explicacao: cada conceito importante deve produzir acao ou transformacao visual ligada a fala. Alternar demonstracao, detalhe e reacao. Evitar longas falas no personagem parado e graficos que apenas entram e ficam prontos. Cortes motivados, pausa de leitura e um foco por plano.
+- Gestos especificos, antecipacao, contato e recuperacao; olhar para o objeto antes de agir; silhueta legivel de joelhos e alcance de membros. Objetos usados acompanham as maos ate contato/liberacao. Nao substituir por slides com zoom.
+- Remotion e a composicao unica do Player e MP4. Voz real; duracao segue o conteudo sem cortar palavras. Sono tem excecao autorizada ao alvo antigo de 35–55 s. Separar alinhamento acustico de estimativa e envelope de visemas.
+
+## Execucao e entrega
+
+Pesquisar fontes, roteiro/dialogo, gerar/reutilizar audio real, alinhar, planejar por fala, animar, exportar piloto de 12 s, revisar movimento e som, corrigir e exportar episodio. Retomar assets validos sem refazer chamadas pagas. Nunca iniciar um novo estudio ou descartar o existente.
+
+Rodar verificacoes apropriadas e registrar comandos/resultados. Confirmar MP4 com ffprobe, decode, loudness, sequencias e contato visual. Atualizar reports/INSTALL-STATUS.md, AUDIT.md, RENDER-QA.md, CHANGES.md e NEXT-STEPS.md com executado/evidencia/arquivos/logs/limites. Separar QA tecnico de aprovacao artistica e escuta humana.
+
+Publicar/agendar somente com autorizacao para o episodio, versao, destino e horario correspondentes. Conferir publicacao.json para evitar duplicata. Reverter Git nao cancela posts nas plataformas. Nao tocar em Firebase, segredos, historico, dados ou modulo 3D sem necessidade do pedido. Commit pequeno, rollback documentado e PR, sem merge automatico.
