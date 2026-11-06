@@ -40,5 +40,9 @@ Prévia técnica usa technical-timing.json, alignmentType=estimated-technical-on
 
 ## Vozes para retomada
 
+## Prévia técnica exportada
+
+`out/bugi-raio-carro-tecnico-sem-voz.mp4`: Remotion, H.264 1080×1920/30, 2211 frames, 73,700 s e 10.465.640 bytes. Sem stream de áudio por projeto; decode integral FFmpeg passou. Interior e exterior inspecionados por quadros. Não houve escuta, alinhamento acústico, boca sincronizada nem aprovação artística. Lint e 17 testes passaram. PR draft #7; sem publicação.
+
 - Charon: Português brasileiro; narrador adulto grave e claro, ritmo conversado ágil, humor seco. Tensão no gancho e pausa antes de Não. Recomendações tranquilas e firmes, sem tom publicitário.
 - Puck: Português brasileiro; Bugi adulto curioso, assustado e irônico. Agradece à borracha com falsa confiança, brinca com a prestação e termina resignado com a oficina. Dicção clara, energia natural e pausas curtas, sem gritaria.
