@@ -13,3 +13,13 @@ Padrão persistente aprovado para os episódios 2D: seguir [DIRECAO-PROXIMO-VIDE
 7. **QA:** verifique Player e MP4 da mesma composição; inspecione sequência e expressões, ouça o áudio e confira dados e legendas. Filme e ferramentas externas não substituem verificação. Documente versão, origem, uso, limitações e falhas por vídeo.
 
 As demais skills instaladas dos pacotes iart.ai são opcionais e só devem ser chamadas quando aplicáveis, sem trocar identidade ou motor principal. Não execute scripts de terceiros antes de inspecionar licença, comandos e dependências.
+
+## Acabamento obrigatório aprovado — 06/11/2026
+
+- Limpar textos: retirar títulos que repetem a legenda, rótulos fixos de speaker e rodapés decorativos. Manter apenas dados, unidades e premissas indispensáveis à explicação, no instante necessário.
+- Legendas em páginas curtas guiadas por pontuação/limite de caracteres e áudio real; até duas linhas, contraste forte, área segura e uma palavra destacada. Exportar SRT da mesma timeline.
+- Identificar narrador por sinal ciano discreto que responde ao envelope real da voz; Bugi mantém a boca fechada enquanto escuta. Não encher a tela de efeitos ou textos sobre quem está falando.
+- Explicação rápida em diálogo: Bugi pergunta, interpreta errado e tenta resolver; objetos e gráficos respondem visualmente. Interrupções devem esclarecer a ideia e ter pausa para a reação.
+- Gráficos com comparação proporcional, unidades, hierarquia e entradas por fala; uma informação principal de cada vez. Não ocultar premissas científicas para reduzir texto.
+- Movimento: transições suaves entre poses, cotovelos voltados para fora do tronco, alcance limitado, joelhos sem abertura excessiva e projeção encurtada das pernas ao sentar. No salto, levantar pés e tronco juntos, pousar e recuperar; não esticar as pernas com tênis presos.
+- Testar alcance e contato em todos os frames das ações críticas; revisar sequência contínua. Gravar estes resultados por episódio, sem considerar este checklist uma aprovação automática.
