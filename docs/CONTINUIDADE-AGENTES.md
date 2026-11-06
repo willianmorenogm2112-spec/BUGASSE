@@ -23,3 +23,10 @@ Pesquisar fontes, roteiro/dialogo, gerar/reutilizar audio real, alinhar, planeja
 Rodar verificacoes apropriadas e registrar comandos/resultados. Confirmar MP4 com ffprobe, decode, loudness, sequencias e contato visual. Atualizar reports/INSTALL-STATUS.md, AUDIT.md, RENDER-QA.md, CHANGES.md e NEXT-STEPS.md com executado/evidencia/arquivos/logs/limites. Separar QA tecnico de aprovacao artistica e escuta humana.
 
 Publicar/agendar somente com autorizacao para o episodio, versao, destino e horario correspondentes. Conferir publicacao.json para evitar duplicata. Reverter Git nao cancela posts nas plataformas. Nao tocar em Firebase, segredos, historico, dados ou modulo 3D sem necessidade do pedido. Commit pequeno, rollback documentado e PR, sem merge automatico.
+
+
+## Referencia Claude recebida — prioridade de movimento em 06/11/2026
+
+O usuario aprovou a linguagem de dinamismo do arquivo files.zip (predio/reflexo/carro) para os proximos episodios. Ler reports/REFERENCIA-CLAUDE-20261106.md antes de criar o proximo roteiro/storyboard. Preservar Bugi/vozes/identidade e Remotion; a nova referencia substitui o ritmo e encenacao limitados da V3 como alvo de movimento. O desenho da Gravidade V3 continua referencia de identidade, nao teto de animacao.
+
+A cena precisa evoluir por acao e transformacao do objeto, nao por icones sobre painel ou gestos programados pelo comprimento da fala. Roteiro audiovisual com estado inicial → acao → efeito → reacao/revelacao. Camera segue olhar/objeto/causa; props tem contato e continuidade; cenarios reagem. Um plano de varios segundos deve conter etapas internas legiveis. Ambiente vivo com hierarquia, sem impor movimentos aleatorios ou impedir pausas de leitura. Bugi pode sair do quadro quando o objeto/processo e o protagonista. Provar no piloto de 12 s antes de expandir. Esta mudanca e direcao documentada; implementacao do proximo episodio ainda pendente de escolha de tema.
