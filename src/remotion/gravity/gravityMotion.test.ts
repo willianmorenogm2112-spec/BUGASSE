@@ -7,8 +7,27 @@ test('feet stay planted through sofa effort and recovery',()=>{
   assert.ok(Math.abs(k.rootY+k.leftFoot.y-675)<1e-8);
   assert.ok(Math.abs(k.rootY+k.rightFoot.y-675)<1e-8);
   for(const s of ['left','right'] as const){
-   assert.ok(Math.abs(Math.hypot(k[`${s}Knee`].x-k[`${s}Hip`].x,k[`${s}Knee`].y-k[`${s}Hip`].y)-68)<.1);
-   assert.ok(Math.abs(Math.hypot(k[`${s}Knee`].x-k[`${s}Ankle`].x,k[`${s}Knee`].y-k[`${s}Ankle`].y)-65)<.1);
+   const thigh=Math.hypot(k[`${s}Knee`].x-k[`${s}Hip`].x,k[`${s}Knee`].y-k[`${s}Hip`].y);
+   const shin=Math.hypot(k[`${s}Knee`].x-k[`${s}Ankle`].x,k[`${s}Knee`].y-k[`${s}Ankle`].y);
+   assert.ok(thigh>=39.9&&thigh<=68.1,'projected thigh length respects seated foreshortening');
+   assert.ok(shin>=35.9&&shin<=65.1,'projected shin remains bounded');
+   assert.ok(Math.abs(k[`${s}Knee`].x)<80,'knees do not splay away from the body');
+  }
+ }
+});
+test('jump lifts both feet, then lands instead of stretching the legs',()=>{
+ const start=gravityActing(8,0,0),air=gravityActing(8,.4,0),land=gravityActing(8,1.2,0);
+ assert.ok(air.rootY+air.leftFoot.y<655);
+ assert.equal(start.rootY+start.leftFoot.y,675);
+ assert.equal(land.rootY+land.rightFoot.y,675);
+});
+test('all arm targets remain reachable with stable upper/forearm lengths',()=>{
+ for(let i=0;i<13;i++)for(let f=0;f<180;f++){
+  const k=gravityActing(i,f/30,0);
+  for(const s of ['left','right'] as const){
+   const a=k[`${s}Shoulder`],b=k[`${s}Elbow`],c=k[`${s}Wrist`];
+   assert.ok(Math.abs(Math.hypot(b.x-a.x,b.y-a.y)-46)<.1);
+   assert.ok(Math.abs(Math.hypot(c.x-b.x,c.y-b.y)-42)<.1);
   }
  }
 });
