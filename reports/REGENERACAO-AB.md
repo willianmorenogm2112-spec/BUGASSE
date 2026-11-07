@@ -66,3 +66,6 @@ Proximo: usuario comparar A/B e escolher controle antes de ampliar episodio. Rol
 | Contato e articulacoes | Sim | 4 testes, frames revisados | regenMotion.test.ts / contatos | Estilizacao cartoon |
 | Render principal unico | Sim | Comparacao Remotion, A/B derivados por crop | RegenerationRoot / qa_regeneration.py | Export isolado tem reencode do video |
 | Episodio completo/publicacao | Nao | Escopo preservado | script.json / relatorio | Depende de escolha e nova producao |
+
+
+Atualizacao: usuario rejeitou ambos os pilotos A/B. Nao sao referencia aprovada. A nova tentativa independente esta em reports/REGENERACAO-NOVA-BASE.md; nao escolher A/B automaticamente.

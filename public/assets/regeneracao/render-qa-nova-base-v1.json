@@ -1,0 +1,36 @@
+{
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-nova-base-v1.mp4",
+  "sha256": "8549a9e78918bf02d923fad62e3c8317242a680e3d184c43f6973e89dc3027d3",
+  "bytes": 2929131,
+  "duration": 12.011,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 360,
+  "engine": "Remotion 4.0.540",
+  "composition": "Regeneracao-NovaBase",
+  "sourceHashes": {
+    "src/remotion/RegenerationFluidRoot.tsx": "461dffe036a68209cf8940b1f32f04133664533d5e508b26187b8c50a44a0840",
+    "src/remotion/regeneration-fluid/FluidPilot.tsx": "5d7cbd587d71399a6b4a16ad4e9b7a4969c87148d67938718716f4e4d537f459",
+    "src/remotion/regeneration-fluid/fluidMotion.ts": "9f6fe4632a5a908eb557c787d1de7dbaac560789113d0bf8f7e64a23625be50b",
+    "public/assets/regeneracao/mix-final.wav": "0730348217fdab121f021e9557d6f3cb717d19bc90b4f69cc52f6a6efb0c2295",
+    "public/assets/regeneracao/timing.json": "38c31fac65a3e1b1003401e42c82d33363860eb1980988c8ef2050307fabb172"
+  },
+  "fullDecodePassed": true,
+  "blackIntervals": [],
+  "sameUserAudioVerified": true,
+  "audioPcmSha256": "e42c4955f81a13dc5aa60d6822a8ce52e5ec53f9619e3948c6da2898d0fcfa01",
+  "loudness": {
+    "input_i": -16.54,
+    "input_tp": -5.0,
+    "input_lra": 3.4
+  },
+  "lintPassed": true,
+  "generalTestsPassed": 17,
+  "newMotionTestsPassed": 3,
+  "buildPassed": true,
+  "agentVisualReview": "pending",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false
+}

@@ -24,3 +24,6 @@ Referencia visual mais recente: dor_final.mp4, analisada e aplicada em reports/F
 
 
 Producao atual: pilotos A/B de regeneracao em reports/REGENERACAO-AB.md, src/remotion/RegenerationRoot.tsx e public/assets/regeneracao/render-qa.json. Continuacao isolada em Code/BUGASSE-regeneracao apos troca concorrente de branch na copia anterior. Videos V3 em out; audio enviado pelo usuario. Comparacao pronta para escolha humana; nao e episodio completo nem publicacao. Player final porta 3119.
+
+
+ATUAL: A e B de regeneracao foram rejeitados pelo usuario. Nova tentativa em reports/REGENERACAO-NOVA-BASE.md, RegenerationFluidRoot.tsx e regeneration-fluid/*; puppet independente, sem herdar controles rejeitados. Export unico out/regeneracao-nova-base-v2.mp4 e render-qa-nova-base.json; Player 3120. Nao afirmar equivalencia/aprovacao visual sem retorno do usuario. Sem publicacao ou episodio completo.
