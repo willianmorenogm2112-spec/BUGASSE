@@ -1,0 +1,31 @@
+{
+  "hypothesis": "Superficie freada abruptamente por 1 s, retomando depois; objetos livres/ar nao recebem freio magico. Mecanismo da parada/retomada nao e fisicamente explicado.",
+  "sources": [
+    {
+      "url": "https://imagine.gsfc.nasa.gov/ask_astro/earth.html",
+      "supports": "circunferencia, periodo sideral, latitude/cosseno e sentido oeste-leste"
+    },
+    {
+      "url": "https://spdf.gsfc.nasa.gov/pub/documents/archived_websites/pwg.gsfc.nasa.gov/stargaze/StarFAQ6.htm",
+      "supports": "parada exige mecanismo/energia; objetos tendem a conservar movimento; hipotese ficcional"
+    },
+    {
+      "url": "https://spdf.gsfc.nasa.gov/pub/documents/archived_websites/pwg.gsfc.nasa.gov/stargaze/StarFAQ10.htm",
+      "supports": "indice para pergunta sobre parada da rotacao"
+    }
+  ],
+  "calculation": {
+    "circumferenceKm": 40075.036,
+    "siderealSeconds": 86164.09053,
+    "roundedNarrationKmh": 1670,
+    "idealMetersOneSecond": 463.88888888888886,
+    "onScreenRoundedMeters": 460
+  },
+  "limits": [
+    "Nao prever velocidade apos colisoes, arrasto, danos ou geometria do terreno.",
+    "Escalas de deslocamento reduzidas e camera lenta cartoon.",
+    "Cena de pole nao e recomendacao de sobrevivencia.",
+    "Nao aplicar consequencias de parada permanente a 1 segundo.",
+    "Mecanismo de retomada e parte da hipotese; danos nao sao desfeitos."
+  ]
+}

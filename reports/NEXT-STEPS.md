@@ -139,3 +139,14 @@ Executado: entrada GEMINI.md com includes de AGENTS.md/contrato, workspace apont
 ## Analise da referencia Claude — 06/11/2026
 
 Executado: inspecao do ZIP/MP4/fontes (sem executar codigo externo), ffprobe, contact sheet, sequencias precisas e reproducao parcial. Evidencias/arquivos/logica de correcao: reports/REFERENCIA-CLAUDE-20261106.md e manifesto JSON. Guias compartilhados atualizados para encenacao por acao, props/camera/ambiente e prova em piloto. Limites: sem escuta integral certificada, sem auditoria cientifica completa, sem novo episodio ou alteracao do Sono agendado. Proximo: escolher tema e criar roteiro audiovisual/piloto representativo antes do episodio integral. Nao considerar direcao documentada como animacao implementada. Nenhuma instalacao, chamada paga ou mudanca de engine. Rollback: reverter commit da branch codex/referencia-claude-movimento-20261106.
+
+
+## Terra para 1 segundo — fechamento em 07/11/2026
+
+Executado: episodio de 14 falas, vozes Gemini Puck/Charon reais, alinhamento acustico e 64 paginas de legenda; Remotion unico no Player e export. V2 foi rejeitado na revisao por ausencia das demonstracoes finais. V3 restaura polos/latitude, ar/agua, gravidade/orbita e payoff; caneca solta da ancora da mao.
+
+Evidencia: public/assets/terra-1s/render-qa.json, provenance.json, sources.json e reports/TERRA-PARA-1S.md. Arquivos: src/remotion/EarthStopRoot.tsx, earthstop/*, scripts/*earthstop*, public/assets/terra-1s/*. Logs locais: out/terra-1s-v3-render.log, terra-1s-decode.log, terra-1s-blackdetect.log, terra-1s-loudness.log e terra-1s-build.log. MP4 local out/bugi-terra-para-1s-v3.mp4: 79,872 s; 18.243.059 bytes; 2396 frames; H.264/AAC; 1080x1920/30 fps; -16,54 LUFS e -4,95 dBTP; decode integral sem erros e blackdetect sem intervalos. SHA256 9f2f59509edb41044f48e4274bdeb06b14bdf9368a1ee6c8af37a2340bc144cd.
+
+Validacao: build, 17 testes gerais e 4 de movimento passaram. Lint geral impedido por 8 erros nos arquivos locais nao versionados claude-style/ClaudeStylePilot.tsx e PainEpisode.tsx; nenhum erro earthstop reportado. Sem nova instalacao nesta retomada. Vozes ja geradas em 06/11; nenhuma nova chamada de geracao em 07/11, custos cobrados nao informados. Cenarios SVG originais; sem alegar Google para fundos. Revisao visual amostrada da sequencia integral e abertura/onibus/orbita. Limites: nao equivale a escuta humana integral nem aprovacao artistica; onibus sustenta pose apos a reacao. Hipotese fisica simplificada, nao simulacao planetaria completa. Publicacao nao autorizada e nao realizada.
+
+Proximo: assistir ao V3 integral e avaliar ritmo/atuacao; resolver erros do outro piloto em seu proprio trabalho. Rollback: reverter commits desta branch codex/terra-para-1s-20261106, preservando WAVs/exports anteriores e Sono agendado. Base e1dbb31. MP4s/logs/imagens permanecem locais; fontes, audio e manifesto QA versionados.

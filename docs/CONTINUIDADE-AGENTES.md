@@ -30,3 +30,11 @@ Publicar/agendar somente com autorizacao para o episodio, versao, destino e hora
 O usuario aprovou a linguagem de dinamismo do arquivo files.zip (predio/reflexo/carro) para os proximos episodios. Ler reports/REFERENCIA-CLAUDE-20261106.md antes de criar o proximo roteiro/storyboard. Preservar Bugi/vozes/identidade e Remotion; a nova referencia substitui o ritmo e encenacao limitados da V3 como alvo de movimento. O desenho da Gravidade V3 continua referencia de identidade, nao teto de animacao.
 
 A cena precisa evoluir por acao e transformacao do objeto, nao por icones sobre painel ou gestos programados pelo comprimento da fala. Roteiro audiovisual com estado inicial → acao → efeito → reacao/revelacao. Camera segue olhar/objeto/causa; props tem contato e continuidade; cenarios reagem. Um plano de varios segundos deve conter etapas internas legiveis. Ambiente vivo com hierarquia, sem impor movimentos aleatorios ou impedir pausas de leitura. Bugi pode sair do quadro quando o objeto/processo e o protagonista. Provar no piloto de 12 s antes de expandir. Esta mudanca e direcao documentada; implementacao do proximo episodio ainda pendente de escolha de tema.
+
+
+## Producao atual — Terra para 1 segundo
+
+Tema escolhido pelo usuario em 06/11/2026. Fonte de estado: reports/TERRA-PARA-1S.md, src/remotion/EarthStopRoot.tsx e public/assets/terra-1s. Roteiro, TTS real, alinhamento e piloto ja executados; consultar QA antes de repetir geracoes. Sono preservado. Este novo episodio nao tem autorizacao de publicacao.
+
+
+Terra: export atual out/bugi-terra-para-1s-v3.mp4 (79,872 s), QA em public/assets/terra-1s/render-qa.json. V2 reprovado visualmente por cenas finais ausentes; V3 corrige. Ler reports/TERRA-PARA-1S.md. Sem publicacao; aprovacao humana pendente. Lint bloqueado por arquivos locais claude-style externos ao episodio.

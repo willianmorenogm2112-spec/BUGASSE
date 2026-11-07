@@ -1,0 +1,38 @@
+{
+  "audio": [
+    {
+      "file": "bugi-puck.wav",
+      "sha256": "f783af2c18ddbb6ed3521fac4406a8895985dc26b2abb0b852886c7b4962c152",
+      "duration": 21.0,
+      "sampleRate": 24000,
+      "generationSource": "google_ai_studio_ui",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Puck",
+      "chargedCost": null
+    },
+    {
+      "file": "narrador-charon.wav",
+      "sha256": "a658003f301ee5d5c5adef080a84ed61bbc013ce4517f35155c979f5ae304066",
+      "duration": 61.88,
+      "sampleRate": 24000,
+      "generationSource": "google_ai_studio_ui",
+      "model": "gemini-3.8-flash-tts",
+      "voice": "Charon",
+      "chargedCost": null
+    }
+  ],
+  "background": {
+    "generationSource": "original_svg_code",
+    "model": null,
+    "note": "Cenário por código solicitado pelo usuário; não é imagem Google."
+  },
+  "failures": [],
+  "chargedCost": null,
+  "sfx": {
+    "source": "original procedural noise/percussion",
+    "script": "scripts/mix_earthstop.py",
+    "count": 5,
+    "externalMusic": false
+  },
+  "captionTiming": "WhisperX forced alignment; independent ASR audit also saved, not human listening"
+}
