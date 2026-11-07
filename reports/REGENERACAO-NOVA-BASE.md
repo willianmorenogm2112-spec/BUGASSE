@@ -62,3 +62,14 @@ Limites: regeneracao instantanea explicitamente ficticia; sem afirmacao clinica.
 | Audio original preservado | Sim | Hash PCM igual | render-qa-nova-base.json | Sem escuta humana integral |
 | Player e export na mesma composicao | Sim | Seek e MP4 | Root e Player3120 | Playback continuo IAB nao verificado |
 | Pesquisa clinica/episodio completo/publicacao | Nao | Escopo preservado | sources.json / relatorio | Fora do piloto autorizado |
+
+
+## Correção dos braços — 07/11/2026, V3
+
+Executado: corrigida a trajetória das mãos e limitada a distância ombro–punho a 90–217 px, preservando os comprimentos dos ossos. A mão direita passava quase sobre o ombro: alcance mínimo de 8,397 px e salto de cotovelo de 215,016 px entre quadros em 9,067 s. Agora percorre arco abaixo do ombro; maior passo do cotovelo direito 14,902 px, esquerdo 20,778 px a 30 fps. Também suavizada a saída do balanço da caminhada em 3,05 s. A direção da nova base foi elogiada pelo usuário; a correção V3 ainda aguarda avaliação humana.
+
+Evidência/arquivos: src/remotion/regeneration-fluid/fluidMotion.ts e fluidMotion.test.ts; scripts/qa_regeneration_fluid.py; render-qa-nova-base.json (V3), render-qa-nova-base-v2.json (histórico). Export local out/regeneracao-nova-base-v3.mp4, 12,011 s, 360 frames, 1080×1920/30, H.264/AAC, 2.945.325 bytes; SHA256 d6b13a2444bb089f7022a69b8026eeaeb816fd12ad25ace4ce16b316c5726a89. Player/export mantêm a composição Regeneracao-NovaBase; Player não rechecado nesta revisão.
+
+Testado/logs: 6 testes de movimento passaram (incluem continuidade a 30/60 fps, folga do rosto e apoio fixo das mãos), 17 testes gerais, lint e build passaram. Logs out/regeneracao-bracos-motion-test.log, regeneracao-bracos-general-test.log, regeneracao-bracos-lint.log, regeneracao-bracos-build.log, regeneracao-bracos-qa.log e regeneracao-nova-base-v3-render.log. Decode integral sem erro, sem intervalos pretos. Áudio PCM idêntico ao anterior; -16,54 LUFS e -5,00 dBTP. Revisados contato geral a 2 fps e braços em 8,6–10,4 s a 20 fps (regeneracao-fluid-bracos-v3.jpg), comparados à sequência anterior bracos-antes.jpg. Build mantém avisos preexistentes de tamanho de bundle/import dinâmico.
+
+Limitação/próximo: verificações de trajetória e amostras visuais não garantem ausência de qualquer colisão em futuros gestos. Reaplicar os testes ao alterar poses; avaliar V3 antes de expandir o episódio. Sem nova instalação, serviço pago, geração ou publicação. Arquivos de áudio e exports anteriores preservados. Trabalho isolado em BUGASSE-regeneracao, branch codex/regeneracao-bracos-20261107, base 3997103; rollback por reversão dos commits desta branch, sem tocar na main ou na cópia concorrente.

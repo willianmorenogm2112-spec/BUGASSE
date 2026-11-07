@@ -1,7 +1,7 @@
 {
-  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-nova-base-v2.mp4",
-  "sha256": "11ae5e0ca8f9c0a844e370edf3a3ff16d0fa65eb4a8cbddf519301bec8ad0c5a",
-  "bytes": 2927909,
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-nova-base-v3.mp4",
+  "sha256": "d6b13a2444bb089f7022a69b8026eeaeb816fd12ad25ace4ce16b316c5726a89",
+  "bytes": 2945325,
   "duration": 12.011,
   "width": 1080,
   "height": 1920,
@@ -12,7 +12,7 @@
   "sourceHashes": {
     "src/remotion/RegenerationFluidRoot.tsx": "461dffe036a68209cf8940b1f32f04133664533d5e508b26187b8c50a44a0840",
     "src/remotion/regeneration-fluid/FluidPilot.tsx": "c36ca5c7eca6b02e456453cca826140ea7d445be972bd33eebdf32c606c967d0",
-    "src/remotion/regeneration-fluid/fluidMotion.ts": "9f6fe4632a5a908eb557c787d1de7dbaac560789113d0bf8f7e64a23625be50b",
+    "src/remotion/regeneration-fluid/fluidMotion.ts": "b1daefe37cd4c9471c8742c9b722b18b3058a5230c9e27c136347e5e8805b9c7",
     "public/assets/regeneracao/mix-final.wav": "0730348217fdab121f021e9557d6f3cb717d19bc90b4f69cc52f6a6efb0c2295",
     "public/assets/regeneracao/timing.json": "38c31fac65a3e1b1003401e42c82d33363860eb1980988c8ef2050307fabb172"
   },
@@ -27,39 +27,33 @@
   },
   "lintPassed": true,
   "generalTestsPassed": 17,
-  "newMotionTestsPassed": 3,
+  "newMotionTestsPassed": 6,
   "buildPassed": true,
-  "agentVisualReview": "contact at 2fps; impact at 10fps; skin at 9fps; reaction at 4fps; final inspection still after caption-area cleanup",
+  "agentVisualReview": "MP4 contact sheet at 2fps; before/after arm transition; corrected 8.6–10.4s at 20fps. No elbow-side pop observed in sampled sequence.",
   "humanVisualApproved": false,
   "humanListenApproved": false,
   "published": false,
-  "playerFrameSeekVerified": true,
+  "playerFrameSeekVerified": false,
   "playerContinuousPlaybackVerified": false,
-  "playerLimitation": "IAB reported playing=true but stayed at frame 0; paused and sought frame 234 successfully, no Studio error. No claim of realtime playback or full human listening.",
-  "referenceComparison": {
-    "file": "dor_final.mp4",
-    "sampledIntervalsSeconds": [
-      [
-        0,
-        4
-      ],
-      [
-        51,
-        55
-      ]
+  "playerLimitation": "V3 uses the same registered composition. Player was not rechecked this revision; prior V2 seek evidence is archived separately.",
+  "armFix": {
+    "rightElbowMaxFrameStepBeforePx": 215.016,
+    "rightElbowMaxFrameStepAfterPx": 14.90177,
+    "leftElbowMaxFrameStepAfterPx": 20.77761,
+    "testedRates": [
+      30,
+      60
     ],
-    "referenceFps": 4,
-    "applied": [
-      "simplified independently articulated parts",
-      "finite follow-through",
-      "process changes its geometry",
-      "close detail replaces an inert small panel"
+    "reachRangePx": [
+      90,
+      217
     ],
-    "artisticEquivalenceApproved": false
+    "tests": "bone lengths, palm contacts, temporal continuity, walking transition and face clearance"
   },
   "limitations": [
-    "Not human artistic approval or complete listening.",
-    "New original SVG puppet preserves Bugi visual identifiers; user has not approved the rearticulation.",
+    "Sampled visual review and geometry checks do not establish universal collision safety.",
+    "User liked the new direction but requested arm corrections; V3 human review pending.",
+    "No full human listening or realtime Player verification this revision.",
     "Instant regeneration is a fictional premise."
   ]
 }
