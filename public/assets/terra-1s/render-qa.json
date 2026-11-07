@@ -1,0 +1,55 @@
+{
+  "composition": "Bugi-Terra-Para-1s",
+  "source": "src/remotion/EarthStopRoot.tsx",
+  "engine": "Remotion 4.0.540",
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-animacao\\out\\bugi-terra-para-1s-v3.mp4",
+  "sha256": "9f2f59509edb41044f48e4274bdeb06b14bdf9368a1ee6c8af37a2340bc144cd",
+  "duration": 79.872,
+  "size": 18243059,
+  "frames": 2396,
+  "fps": "30/1",
+  "width": 1080,
+  "height": 1920,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "loudness": {
+    "input_i": -16.54,
+    "input_tp": -4.95,
+    "input_lra": 3.4
+  },
+  "fullDecodePassed": true,
+  "blackIntervals": [],
+  "alignmentType": "acoustic-forced-alignment-whisperx",
+  "words": 198,
+  "turns": 14,
+  "sourceHashes": {
+    "src/remotion/EarthStopRoot.tsx": "ee192cfa591291a979bcb2442936cdd74098093b37da1a2ab6879e4dd6e50d6c",
+    "src/remotion/earthstop/EarthStopEpisode.tsx": "522045a5db771f8bac52b8c0076d227e9031ac27ad344721737a694b27ddeb90",
+    "src/remotion/earthstop/EarthWorld.tsx": "26014743955eb9b9b13779d3368200451cf18f33008da1a640aed9a112494c13",
+    "src/remotion/earthstop/earthMotion.ts": "184fc68d31322895282f033c0c6c29ca3882755f46a11f29946b7932ce784cc7",
+    "src/components/BugiCharacterSvg.tsx": "be8e41399b0b12c6910161e92062421ebf5162b119f4719bb830cfff9b6ba0d7",
+    "public/assets/terra-1s/timing.json": "abee60f53c4aeac7e774ce111a84dab63359669e572ece0cabf400dfa74b19b2",
+    "public/assets/terra-1s/mix-final.wav": "08e1631127a3a2641893ef100234c08c1bdcbb803527ab6e4e5b61b748b12d48"
+  },
+  "autoTechnicalChecksPassed": true,
+  "agentVisualReview": "sampled-full-contact-sheet-opening-bus-sequences-and-orbit-frame-reviewed",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false,
+  "limitations": [
+    "ASR and forced alignment are not human listening.",
+    "Cartoon illustrates mechanisms; it is not a full planetary simulation.",
+    "No external music or generated-image background was used.",
+    "Sampled visual review, not full realtime playback or human artistic approval; bus retains a held braking pose after the reaction."
+  ],
+  "visualEvidence": [
+    "out/terra-1s-completo-contato.jpg",
+    "out/terra-1s-abertura-sequencia.jpg",
+    "out/terra-1s-onibus-sequencia.jpg",
+    "out/terra-1s-orbita.png"
+  ],
+  "lintStatus": "blocked-by-8-errors-in-untracked-claude-style-files; no-earthstop-errors-reported",
+  "buildPassed": true,
+  "generalTestsPassed": 17,
+  "earthMotionTestsPassed": 4
+}
