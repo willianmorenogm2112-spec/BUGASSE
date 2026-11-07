@@ -1,0 +1,286 @@
+{
+  "segments": [
+    {
+      "start": 0.241,
+      "end": 2.666,
+      "text": "E se você se regenerasse em segundos?",
+      "words": [
+        {
+          "word": "E",
+          "start": 0.241,
+          "end": 0.321,
+          "score": 0.999
+        },
+        {
+          "word": "se",
+          "start": 0.401,
+          "end": 0.501,
+          "score": 0.834
+        },
+        {
+          "word": "você",
+          "start": 0.541,
+          "end": 0.882,
+          "score": 0.95
+        },
+        {
+          "word": "se",
+          "start": 0.942,
+          "end": 1.022,
+          "score": 0.834
+        },
+        {
+          "word": "regenerasse",
+          "start": 1.082,
+          "end": 1.824,
+          "score": 0.987
+        },
+        {
+          "word": "em",
+          "start": 1.864,
+          "end": 1.924,
+          "score": 0.75
+        },
+        {
+          "word": "segundos?",
+          "start": 2.005,
+          "end": 2.666,
+          "score": 0.917
+        }
+      ]
+    },
+    {
+      "start": 3.167,
+      "end": 3.809,
+      "text": "Um tropeço.",
+      "words": [
+        {
+          "word": "Um",
+          "start": 3.167,
+          "end": 3.247,
+          "score": 0.75
+        },
+        {
+          "word": "tropeço.",
+          "start": 3.287,
+          "end": 3.809,
+          "score": 0.924
+        }
+      ]
+    },
+    {
+      "start": 4.089,
+      "end": 6.074,
+      "text": "Um arranhão... e a pele já está inteira.",
+      "words": [
+        {
+          "word": "Um",
+          "start": 4.089,
+          "end": 4.169,
+          "score": 0.75
+        },
+        {
+          "word": "arranhão...",
+          "start": 4.19,
+          "end": 4.57,
+          "score": 0.867
+        },
+        {
+          "word": "e",
+          "start": 5.011,
+          "end": 5.072,
+          "score": 0.668
+        },
+        {
+          "word": "a",
+          "start": 5.112,
+          "end": 5.132,
+          "score": 1.0
+        },
+        {
+          "word": "pele",
+          "start": 5.232,
+          "end": 5.432,
+          "score": 0.999
+        },
+        {
+          "word": "já",
+          "start": 5.472,
+          "end": 5.533,
+          "score": 0.983
+        },
+        {
+          "word": "está",
+          "start": 5.553,
+          "end": 5.673,
+          "score": 0.356
+        },
+        {
+          "word": "inteira.",
+          "start": 5.693,
+          "end": 6.074,
+          "score": 0.846
+        }
+      ]
+    },
+    {
+      "start": 6.815,
+      "end": 8.8,
+      "text": "Você se sentiria indestrutível?",
+      "words": [
+        {
+          "word": "Você",
+          "start": 6.815,
+          "end": 7.076,
+          "score": 0.901
+        },
+        {
+          "word": "se",
+          "start": 7.116,
+          "end": 7.196,
+          "score": 0.751
+        },
+        {
+          "word": "sentiria",
+          "start": 7.236,
+          "end": 7.637,
+          "score": 0.86
+        },
+        {
+          "word": "indestrutível?",
+          "start": 7.718,
+          "end": 8.8,
+          "score": 0.956
+        }
+      ]
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "E",
+      "start": 0.241,
+      "end": 0.321,
+      "score": 0.999
+    },
+    {
+      "word": "se",
+      "start": 0.401,
+      "end": 0.501,
+      "score": 0.834
+    },
+    {
+      "word": "você",
+      "start": 0.541,
+      "end": 0.882,
+      "score": 0.95
+    },
+    {
+      "word": "se",
+      "start": 0.942,
+      "end": 1.022,
+      "score": 0.834
+    },
+    {
+      "word": "regenerasse",
+      "start": 1.082,
+      "end": 1.824,
+      "score": 0.987
+    },
+    {
+      "word": "em",
+      "start": 1.864,
+      "end": 1.924,
+      "score": 0.75
+    },
+    {
+      "word": "segundos?",
+      "start": 2.005,
+      "end": 2.666,
+      "score": 0.917
+    },
+    {
+      "word": "Um",
+      "start": 3.167,
+      "end": 3.247,
+      "score": 0.75
+    },
+    {
+      "word": "tropeço.",
+      "start": 3.287,
+      "end": 3.809,
+      "score": 0.924
+    },
+    {
+      "word": "Um",
+      "start": 4.089,
+      "end": 4.169,
+      "score": 0.75
+    },
+    {
+      "word": "arranhão...",
+      "start": 4.19,
+      "end": 4.57,
+      "score": 0.867
+    },
+    {
+      "word": "e",
+      "start": 5.011,
+      "end": 5.072,
+      "score": 0.668
+    },
+    {
+      "word": "a",
+      "start": 5.112,
+      "end": 5.132,
+      "score": 1.0
+    },
+    {
+      "word": "pele",
+      "start": 5.232,
+      "end": 5.432,
+      "score": 0.999
+    },
+    {
+      "word": "já",
+      "start": 5.472,
+      "end": 5.533,
+      "score": 0.983
+    },
+    {
+      "word": "está",
+      "start": 5.553,
+      "end": 5.673,
+      "score": 0.356
+    },
+    {
+      "word": "inteira.",
+      "start": 5.693,
+      "end": 6.074,
+      "score": 0.846
+    },
+    {
+      "word": "Você",
+      "start": 6.815,
+      "end": 7.076,
+      "score": 0.901
+    },
+    {
+      "word": "se",
+      "start": 7.116,
+      "end": 7.196,
+      "score": 0.751
+    },
+    {
+      "word": "sentiria",
+      "start": 7.236,
+      "end": 7.637,
+      "score": 0.86
+    },
+    {
+      "word": "indestrutível?",
+      "start": 7.718,
+      "end": 8.8,
+      "score": 0.956
+    }
+  ]
+}
