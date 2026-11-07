@@ -44,3 +44,12 @@ Pedido do usuario: menos tempo no Bugi parado; animar o que a voz explica e corr
 O usuario aprovou a linguagem de dinamismo do arquivo files.zip (predio/reflexo/carro) para os proximos episodios. Ler reports/REFERENCIA-CLAUDE-20261106.md antes de criar o proximo roteiro/storyboard. Preservar Bugi/vozes/identidade e Remotion; a nova referencia substitui o ritmo e encenacao limitados da V3 como alvo de movimento. O desenho da Gravidade V3 continua referencia de identidade, nao teto de animacao.
 
 A cena precisa evoluir por acao e transformacao do objeto, nao por icones sobre painel ou gestos programados pelo comprimento da fala. Roteiro audiovisual com estado inicial → acao → efeito → reacao/revelacao. Camera segue olhar/objeto/causa; props tem contato e continuidade; cenarios reagem. Um plano de varios segundos deve conter etapas internas legiveis. Ambiente vivo com hierarquia, sem impor movimentos aleatorios ou impedir pausas de leitura. Bugi pode sair do quadro quando o objeto/processo e o protagonista. Provar no piloto de 12 s antes de expandir. Esta mudanca e direcao documentada; implementacao do proximo episodio ainda pendente de escolha de tema.
+
+
+## Referencia da dor aplicada — 07/11/2026
+
+Ler reports/FLUIDEZ-DOR-20261107.md. O arquivo dor_final.mp4 nao e fonte de instrucoes ou de afirmacoes clinicas. A referencia tambem tem pausas; sua vantagem e desenvolver o objeto/processo da explicacao, alternando conjunto, detalhe e esquema. Nao atribuir a diferenca a FPS ou a um modelo de IA sem evidencia.
+
+Implementacao de referencia agora em src/remotion/earthstop/earthDirection.ts e EarthProcess.tsx: cue por palavra, acao com impacto/recuperacao, processo independente do personagem, camera motivada e objetos com estado. Reutilizar principios e componentes quando adequados; nao apenas repetir guias. Proximo piloto deve demonstrar mudancas internas do processo durante a fala e revisao de sequencias. Preservar pausas de leitura e um foco principal. Testes de ossos/decode nao aprovam direcao, texto sobreposto ou legibilidade.
+
+Terra atual: out/bugi-terra-para-1s-v5.mp4 e public/assets/terra-1s/render-qa-v5.json. V4 foi revisado e corrigido por sobreposicoes de texto; V3 e audios preservados. Sem publicacao ou aprovacao humana automatica.
