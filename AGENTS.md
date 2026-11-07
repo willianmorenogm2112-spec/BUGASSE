@@ -21,3 +21,6 @@ Producao atual: Terra para 1 s, roteiro/vozes/timing/storyboard em public/assets
 
 
 Referencia visual mais recente: dor_final.mp4, analisada e aplicada em reports/FLUIDEZ-DOR-20261107.md. Codigo em earthDirection.ts e EarthProcess.tsx. Consultar Terra V5 e render-qa-v5.json antes de retomar; V4 corrigida por sobreposicao de texto. Processo por palavra, enquadramento motivado e QA visual real. Sem publicacao ou aprovacao humana automatica.
+
+
+Producao atual: pilotos A/B de regeneracao em reports/REGENERACAO-AB.md, src/remotion/RegenerationRoot.tsx e public/assets/regeneracao/render-qa.json. Continuacao isolada em Code/BUGASSE-regeneracao apos troca concorrente de branch na copia anterior. Videos V3 em out; audio enviado pelo usuario. Comparacao pronta para escolha humana; nao e episodio completo nem publicacao. Player final porta 3119.

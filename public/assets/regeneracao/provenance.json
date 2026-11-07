@@ -1,0 +1,31 @@
+{
+  "audio": {
+    "file": "narrador-original.wav",
+    "sha256": "68508e60d72b256a4b26ea19ca17127bb70d1cb088403ad7bbac328c89ba2b31",
+    "duration": 8.8,
+    "generationSource": "user_supplied_wav",
+    "requestedVoice": "Charon",
+    "requestedModel": "gemini-3.8-flash-tts",
+    "modelVerifiedFromFile": false,
+    "chargedCost": null
+  },
+  "failures": [
+    {
+      "service": "AI Studio earlier tab",
+      "error": "HTTP 403",
+      "fakeFallbackUsed": false
+    }
+  ],
+  "background": {
+    "generationSource": "original_svg_code",
+    "model": null
+  },
+  "comparison": {
+    "sameAudio": true,
+    "sameCharacter": true,
+    "sameCamera": true,
+    "sameNarrativeMilestones": true,
+    "differentMotionController": true
+  },
+  "published": false
+}
