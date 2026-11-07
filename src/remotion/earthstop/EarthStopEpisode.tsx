@@ -231,7 +231,6 @@ export const EarthStopEpisode: React.FC = () => {
               </g>
               <g opacity={1-phase(u,at,.4)}><Label y={320} size={66}>É A INÉRCIA</Label></g>
               {brake > 0.1 && <ForceVector x={450} y={900} length={230 * brake} />}
-              <Label y={1440} size={26}>Analogia do ônibus • aceleração de frenagem</Label>
             </>
           );
         })()}
@@ -344,7 +343,7 @@ export const EarthStopEpisode: React.FC = () => {
               <Label y={1180} color={C.cream} size={42}>A Terra continua ao redor do Sol</Label>
               <Label y={1260} color={C.gold} size={32}>Esquema sem escala • órbita ≠ rotação</Label>
             </g>
-            <Label y={1390} color={C.cream} size={30}>Parada e retomada são a hipótese fictícia</Label>
+            <Label y={1450} color={C.cream} size={24}>Parada e retomada são a hipótese fictícia</Label>
           </>;
         })()}
 

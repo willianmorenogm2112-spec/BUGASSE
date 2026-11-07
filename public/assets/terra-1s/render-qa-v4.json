@@ -1,0 +1,51 @@
+{
+  "composition": "Bugi-Terra-Para-1s",
+  "source": "src/remotion/EarthStopRoot.tsx",
+  "engine": "Remotion 4.0.540",
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-animacao\\out\\bugi-terra-para-1s-v4.mp4",
+  "sha256": "08a793cd8685ae068f90bda0a086e6d6905b22171fc602e6d94287bbb514137d",
+  "duration": 79.872,
+  "size": 21889719,
+  "frames": 2396,
+  "fps": "30/1",
+  "width": 1080,
+  "height": 1920,
+  "videoCodec": "h264",
+  "audioCodec": "aac",
+  "loudness": {
+    "input_i": -16.54,
+    "input_tp": -4.95,
+    "input_lra": 3.4
+  },
+  "fullDecodePassed": true,
+  "blackIntervals": [],
+  "alignmentType": "acoustic-forced-alignment-whisperx",
+  "words": 198,
+  "turns": 14,
+  "sourceHashes": {
+    "src/remotion/EarthStopRoot.tsx": "ee192cfa591291a979bcb2442936cdd74098093b37da1a2ab6879e4dd6e50d6c",
+    "src/remotion/earthstop/EarthStopEpisode.tsx": "0ccc1edbd6b22c8b051323f83d564ad55375d248083fdf557bfb222f71dbfb03",
+    "src/remotion/earthstop/EarthWorld.tsx": "934252cfca8827ad0aaca1d106978d2f2b49e501a97299dfe2f73941df3fb5f2",
+    "src/remotion/earthstop/earthMotion.ts": "e124fdfea8ba636b2f4cefe5cd1b18ec94de4487d2f7b40d3165575a5cd7ab0a",
+    "src/components/BugiCharacterSvg.tsx": "be8e41399b0b12c6910161e92062421ebf5162b119f4719bb830cfff9b6ba0d7",
+    "public/assets/terra-1s/timing.json": "abee60f53c4aeac7e774ce111a84dab63359669e572ece0cabf400dfa74b19b2",
+    "public/assets/terra-1s/mix-final.wav": "08e1631127a3a2641893ef100234c08c1bdcbb803527ab6e4e5b61b748b12d48",
+    "src/remotion/earthstop/earthDirection.ts": "bc6a01c7bcb3c9650f1b2e115c99e6918b88e63b5894f2c41871bb296392c190",
+    "src/remotion/earthstop/EarthProcess.tsx": "02bb3f35bb0ab94f5a2c657a0242009bdb7f235d92c98542f715aba66c0c2a16"
+  },
+  "autoTechnicalChecksPassed": true,
+  "agentVisualReview": "rejected-text-overlap-in-bus-and-gravity-labels",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false,
+  "limitations": [
+    "ASR and forced alignment are not human listening.",
+    "Cartoon illustrates mechanisms; it is not a full planetary simulation.",
+    "No external music or generated-image background was used."
+  ],
+  "issues": [
+    "Bus analogy note too close to captions after camera framing.",
+    "Hypothesis footer overlaps gravity and impact labels."
+  ],
+  "supersededBy": "out/bugi-terra-para-1s-v5.mp4"
+}
