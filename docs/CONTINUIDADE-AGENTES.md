@@ -47,3 +47,6 @@ Ler reports/FLUIDEZ-DOR-20261107.md. O arquivo dor_final.mp4 nao e fonte de inst
 Implementacao de referencia agora em src/remotion/earthstop/earthDirection.ts e EarthProcess.tsx: cue por palavra, acao com impacto/recuperacao, processo independente do personagem, camera motivada e objetos com estado. Reutilizar principios e componentes quando adequados; nao apenas repetir guias. Proximo piloto deve demonstrar mudancas internas do processo durante a fala e revisao de sequencias. Preservar pausas de leitura e um foco principal. Testes de ossos/decode nao aprovam direcao, texto sobreposto ou legibilidade.
 
 Terra atual: out/bugi-terra-para-1s-v5.mp4 e public/assets/terra-1s/render-qa-v5.json. V4 foi revisado e corrigido por sobreposicoes de texto; V3 e audios preservados. Sem publicacao ou aprovacao humana automatica.
+
+
+Producao atual: pilotos A/B de regeneracao em reports/REGENERACAO-AB.md, src/remotion/RegenerationRoot.tsx e public/assets/regeneracao/render-qa.json. Continuacao isolada em Code/BUGASSE-regeneracao apos troca concorrente de branch na copia anterior. Videos V3 em out; audio enviado pelo usuario. Comparacao pronta para escolha humana; nao e episodio completo nem publicacao. Player final porta 3119.

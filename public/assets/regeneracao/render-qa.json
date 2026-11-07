@@ -1,0 +1,84 @@
+{
+  "outputs": [
+    {
+      "label": "comparison",
+      "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-comparacao-v3.mp4",
+      "duration": 12.011,
+      "bytes": 7533538,
+      "sha256": "310bbfc6b134b01e8f77d9569f4515a4d8ed88427bc55b45ee17bc88313eed63",
+      "audioPcmSha256": "e42c4955f81a13dc5aa60d6822a8ce52e5ec53f9619e3948c6da2898d0fcfa01",
+      "width": 2160,
+      "height": 1920,
+      "fps": 30,
+      "frames": 360,
+      "fullDecodePassed": true,
+      "blackIntervals": []
+    },
+    {
+      "label": "a",
+      "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-piloto-a-v3.mp4",
+      "duration": 12.011,
+      "bytes": 3513266,
+      "sha256": "3208a8f500789f9583dfe9de42d888e14eaccd9688b1ea749adad362a1e4a508",
+      "audioPcmSha256": "e42c4955f81a13dc5aa60d6822a8ce52e5ec53f9619e3948c6da2898d0fcfa01",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 360,
+      "fullDecodePassed": true,
+      "blackIntervals": []
+    },
+    {
+      "label": "b",
+      "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-piloto-b-v3.mp4",
+      "duration": 12.011,
+      "bytes": 3769091,
+      "sha256": "b329ddc908baaa78a8ec08a0e0798203b5abac4c4662dc9cbc4d3f03bc7a55c3",
+      "audioPcmSha256": "e42c4955f81a13dc5aa60d6822a8ce52e5ec53f9619e3948c6da2898d0fcfa01",
+      "width": 1080,
+      "height": 1920,
+      "fps": 30,
+      "frames": 360,
+      "fullDecodePassed": true,
+      "blackIntervals": []
+    }
+  ],
+  "sameAudioVerified": true,
+  "isolatedPilots": "pixel-crops of left/right halves of the same Remotion comparison, reencoded video, copied AAC",
+  "sameCharacter": true,
+  "sameBackground": true,
+  "sameCamera": true,
+  "sameAcousticMilestones": true,
+  "differentMotionController": true,
+  "renderEngine": "Remotion 4.0.540",
+  "source": "src/remotion/RegenerationRoot.tsx",
+  "sourceHashes": {
+    "src/remotion/RegenerationRoot.tsx": "c91e7401bc2963cbb14af7db17190dcbfffebb8e85d544847f2cdddb338b1a89",
+    "src/remotion/regeneration/RegenerationPilot.tsx": "8e128915dbeb1052f5a78ca2cd68b9c01fd00c22289c4724871af31789a46396",
+    "src/remotion/regeneration/regenMotion.ts": "b6c4188441329c87580f52958500ce53472632f377f984cc060e41eacbd48a67",
+    "src/components/BugiCharacterSvg.tsx": "be8e41399b0b12c6910161e92062421ebf5162b119f4719bb830cfff9b6ba0d7",
+    "public/assets/regeneracao/mix-final.wav": "0730348217fdab121f021e9557d6f3cb717d19bc90b4f69cc52f6a6efb0c2295",
+    "public/assets/regeneracao/timing.json": "38c31fac65a3e1b1003401e42c82d33363860eb1980988c8ef2050307fabb172"
+  },
+  "audioLoudness": {
+    "input_i": -16.54,
+    "input_tp": -5.0,
+    "input_lra": 3.4
+  },
+  "alignmentType": "acoustic-forced-alignment-whisperx",
+  "agentVisualReview": "sampled-contact-sheets-A-B-and-continuous-fall-sequence; final-impact-healing-and-restored-frames-reviewed; V2-camera-gap-corrected-in-V3",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false,
+  "lintPassed": true,
+  "generalTestsPassed": 17,
+  "motionTestsPassed": 4,
+  "buildPassed": true,
+  "playerVerified": "http://localhost:3119/Regeneracao-Comparacao; frame 180; no Studio error; same final source",
+  "limitations": [
+    "Visual inspection uses sampled sequences, not complete realtime playback or human artistic approval.",
+    "Audio supplied by user; requested voice/model cannot be authenticated from WAV metadata.",
+    "Not a complete scientific episode; regeneration is explicitly fictional.",
+    "Original reference animation engine not verified; both pilots use original Remotion code."
+  ]
+}
