@@ -53,3 +53,6 @@ Producao atual: pilotos A/B de regeneracao em reports/REGENERACAO-AB.md, src/rem
 
 
 ATUAL: A e B de regeneracao foram rejeitados pelo usuario. Nova tentativa em reports/REGENERACAO-NOVA-BASE.md, RegenerationFluidRoot.tsx e regeneration-fluid/*; puppet independente, sem herdar controles rejeitados. Export unico out/regeneracao-nova-base-v2.mp4 e render-qa-nova-base.json; Player 3120. Nao afirmar equivalencia/aprovacao visual sem retorno do usuario. Sem publicacao ou episodio completo.
+
+
+ATUAL V3: usuário gostou da nova direção, mas exigiu corrigir os braços. Corrigido salto do cotovelo por mão quase sobre o ombro; trajetória segura e 6 testes (incluem continuidade a 30/60fps, rosto e apoio). Export out/regeneracao-nova-base-v3.mp4; QA render-qa-nova-base.json e reports/REGENERACAO-NOVA-BASE.md. Preservar esta direção e versões anteriores. V3 aguarda avaliação humana; sem publicação ou episódio completo. Branch codex/regeneracao-bracos-20261107, base 3997103.

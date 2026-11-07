@@ -1,0 +1,65 @@
+{
+  "file": "C:\\Users\\willi\\OneDrive\\Área de Trabalho\\Projetos\\Code\\BUGASSE-regeneracao\\out\\regeneracao-nova-base-v2.mp4",
+  "sha256": "11ae5e0ca8f9c0a844e370edf3a3ff16d0fa65eb4a8cbddf519301bec8ad0c5a",
+  "bytes": 2927909,
+  "duration": 12.011,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "frames": 360,
+  "engine": "Remotion 4.0.540",
+  "composition": "Regeneracao-NovaBase",
+  "sourceHashes": {
+    "src/remotion/RegenerationFluidRoot.tsx": "461dffe036a68209cf8940b1f32f04133664533d5e508b26187b8c50a44a0840",
+    "src/remotion/regeneration-fluid/FluidPilot.tsx": "c36ca5c7eca6b02e456453cca826140ea7d445be972bd33eebdf32c606c967d0",
+    "src/remotion/regeneration-fluid/fluidMotion.ts": "9f6fe4632a5a908eb557c787d1de7dbaac560789113d0bf8f7e64a23625be50b",
+    "public/assets/regeneracao/mix-final.wav": "0730348217fdab121f021e9557d6f3cb717d19bc90b4f69cc52f6a6efb0c2295",
+    "public/assets/regeneracao/timing.json": "38c31fac65a3e1b1003401e42c82d33363860eb1980988c8ef2050307fabb172"
+  },
+  "fullDecodePassed": true,
+  "blackIntervals": [],
+  "sameUserAudioVerified": true,
+  "audioPcmSha256": "e42c4955f81a13dc5aa60d6822a8ce52e5ec53f9619e3948c6da2898d0fcfa01",
+  "loudness": {
+    "input_i": -16.54,
+    "input_tp": -5.0,
+    "input_lra": 3.4
+  },
+  "lintPassed": true,
+  "generalTestsPassed": 17,
+  "newMotionTestsPassed": 3,
+  "buildPassed": true,
+  "agentVisualReview": "contact at 2fps; impact at 10fps; skin at 9fps; reaction at 4fps; final inspection still after caption-area cleanup",
+  "humanVisualApproved": false,
+  "humanListenApproved": false,
+  "published": false,
+  "playerFrameSeekVerified": true,
+  "playerContinuousPlaybackVerified": false,
+  "playerLimitation": "IAB reported playing=true but stayed at frame 0; paused and sought frame 234 successfully, no Studio error. No claim of realtime playback or full human listening.",
+  "referenceComparison": {
+    "file": "dor_final.mp4",
+    "sampledIntervalsSeconds": [
+      [
+        0,
+        4
+      ],
+      [
+        51,
+        55
+      ]
+    ],
+    "referenceFps": 4,
+    "applied": [
+      "simplified independently articulated parts",
+      "finite follow-through",
+      "process changes its geometry",
+      "close detail replaces an inert small panel"
+    ],
+    "artisticEquivalenceApproved": false
+  },
+  "limitations": [
+    "Not human artistic approval or complete listening.",
+    "New original SVG puppet preserves Bugi visual identifiers; user has not approved the rearticulation.",
+    "Instant regeneration is a fictional premise."
+  ]
+}
