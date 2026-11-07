@@ -80,5 +80,7 @@
     "Audio supplied by user; requested voice/model cannot be authenticated from WAV metadata.",
     "Not a complete scientific episode; regeneration is explicitly fictional.",
     "Original reference animation engine not verified; both pilots use original Remotion code."
-  ]
+  ],
+  "userRejected": true,
+  "userRejection": "Usuario rejeitou A e B e pediu movimento igual ao video do Claude; nao escolher vencedor."
 }
