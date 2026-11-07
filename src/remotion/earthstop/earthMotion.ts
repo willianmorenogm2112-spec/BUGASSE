@@ -14,7 +14,7 @@ export type EarthAction='carry'|'brake'|'drift'|'brace'|'point'|'run'|'recover';
 // Action-local poses. No inherited acting from an earlier episode, and no pulse per dialogue length.
 export function earthActing(action:EarthAction,u:number,speech=0){
  const k=computeBugiArticulatedKinematics('confiante_parado',0,30,0,'curioso');
- const phase=Math.max(0,u),brake=action==='brake'?ease(phase/.55):0;
+ const phase=Math.max(0,u),brake=action==='brake'?(ease(phase/.35)*(1-.65*ease((phase-.65)/1.6))):0;
  const drift=action==='drift'?ease(phase/.7):0,brace=action==='brace'?ease(phase/.4):0;
  const flight=action==='drift'?ease((phase-.7)/2.6):0;
  const lift=action==='carry'?ease(phase/2.4):0;
@@ -48,8 +48,8 @@ export function earthActing(action:EarthAction,u:number,speech=0){
  k.headRotation=k.headRotationDeg=4*brake+8*drift-11*flight-4*brace-4*lift;
  k.pupilOffsetX=action==='point'?7:drift?7-5*flight:2+3*lift;k.pupilOffsetY=drift?-3+7*flight:-2*lift;
  k.eyeScaleX=1;k.eyeScaleY=1+.13*brake+.2*drift;k.isBlinking=phase%4.1>3.91;
- k.leftBrowDeg=drift?-18:brace?20:-4;k.rightBrowDeg=drift?18:brace?-20:6;
- k.mouthOpenness=speech;k.mouthShape=speech>.05?'open_o':drift?'determined':'smile';
+ k.leftBrowDeg=drift?-18:brace?20:brake?-18:-4;k.rightBrowDeg=drift?18:brace?-20:brake?18:6;
+ k.mouthOpenness=speech;k.mouthShape=speech>.05?'open_o':drift||brace?'determined':brake?'panic_wave':'smile';
  return k;
 }
 export function cupAnchor(action:EarthAction,local:number,x:number,floor=1330,scale=1.9){
