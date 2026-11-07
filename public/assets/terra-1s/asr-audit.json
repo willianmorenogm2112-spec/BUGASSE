@@ -1,0 +1,127 @@
+{
+  "model": "faster-whisper-base",
+  "language": "pt",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.3,
+      "text": " A Terra parou. Você não?"
+    },
+    {
+      "start": 2.3,
+      "end": 5.44,
+      "text": " E se o planeta freace por um segundo?"
+    },
+    {
+      "start": 5.44,
+      "end": 6.84,
+      "text": " Um segundo?"
+    },
+    {
+      "start": 6.84,
+      "end": 8.88,
+      "text": " Nem dá tempo de derramar o café."
+    },
+    {
+      "start": 8.88,
+      "end": 11.82,
+      "text": " Nesta hipótese, só o chão para digirar."
+    },
+    {
+      "start": 11.82,
+      "end": 15.92,
+      "text": " Você, o café e o ar continuam inicialmente em movimento."
+    },
+    {
+      "start": 15.92,
+      "end": 19.42,
+      "text": " Eu pedi uma pausa porra, não um lançamento."
+    },
+    {
+      "start": 19.42,
+      "end": 23.56,
+      "text": " É a inércia. No ônibus que freia, seu corpo tende a continuar."
+    },
+    {
+      "start": 23.56,
+      "end": 26.4,
+      "text": " Agora, imagine o chão inteiro freando."
+    },
+    {
+      "start": 26.4,
+      "end": 28.4,
+      "text": " Tá, mas eu tava parado."
+    },
+    {
+      "start": 28.5,
+      "end": 31.32,
+      "text": " Em relação à rua, perto do equador,"
+    },
+    {
+      "start": 31.32,
+      "end": 36.08,
+      "text": " você já acompanha a rotação acerca de 1670 quilômetros por hora."
+    },
+    {
+      "start": 36.08,
+      "end": 38.28,
+      "text": " Meu café veio no modo mício?"
+    },
+    {
+      "start": 38.28,
+      "end": 45.78,
+      "text": " Sem obstáculos, essa velocidade corresponde a aproximadamente 460 metros em um segundo."
+    },
+    {
+      "start": 45.78,
+      "end": 49.14,
+      "text": " É uma conta idealizada, não a previsão do seu trajeto."
+    },
+    {
+      "start": 49.14,
+      "end": 51.12,
+      "text": " Então, eu fujo para o polo."
+    },
+    {
+      "start": 51.12,
+      "end": 54.72,
+      "text": " A velocidade da rotação diminui em direção aos polos."
+    },
+    {
+      "start": 54.8,
+      "end": 58.9,
+      "text": " Mas isso não transforma uma parada planetária em passeio."
+    },
+    {
+      "start": 58.9,
+      "end": 63.0,
+      "text": " Ar, água e estruturas também entram na confusão."
+    },
+    {
+      "start": 63.0,
+      "end": 65.12,
+      "text": " E quando acabar esse segundo?"
+    },
+    {
+      "start": 65.12,
+      "end": 68.16,
+      "text": " Voltar a girar, não desfaz os impactos."
+    },
+    {
+      "start": 68.16,
+      "end": 72.04,
+      "text": " A gravidade não desligou e o planeta não saiu da órbita."
+    },
+    {
+      "start": 72.04,
+      "end": 75.36,
+      "text": " O problema foi mudar a velocidade de repente."
+    },
+    {
+      "start": 75.36,
+      "end": 79.84,
+      "text": " Cancela o botão de pausa e eu tiro férias com a terra gerando mesmo."
+    }
+  ],
+  "limitation": "ASR independente; não substitui escuta humana ou revisão humana."
+}

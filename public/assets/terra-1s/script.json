@@ -1,0 +1,75 @@
+{
+  "title": "E se a Terra parasse de girar por 1 segundo?",
+  "turns": [
+    {
+      "index": 0,
+      "speaker": "narrador",
+      "text": "A Terra parou. Você não. E se o planeta freasse por um segundo?"
+    },
+    {
+      "index": 1,
+      "speaker": "bugi",
+      "text": "Um segundo? Nem dá tempo de derramar o café."
+    },
+    {
+      "index": 2,
+      "speaker": "narrador",
+      "text": "Nesta hipótese, só o chão para de girar. Você, o café e o ar continuam inicialmente em movimento."
+    },
+    {
+      "index": 3,
+      "speaker": "bugi",
+      "text": "Eu pedi uma pausa, porra! Não um lançamento!"
+    },
+    {
+      "index": 4,
+      "speaker": "narrador",
+      "text": "É a inércia. Num ônibus que freia, seu corpo tende a continuar. Agora imagine o chão inteiro freando."
+    },
+    {
+      "index": 5,
+      "speaker": "bugi",
+      "text": "Tá. Mas eu tava parado!"
+    },
+    {
+      "index": 6,
+      "speaker": "narrador",
+      "text": "Em relação à rua. Perto do Equador, você já acompanha a rotação a cerca de mil seiscentos e setenta quilômetros por hora."
+    },
+    {
+      "index": 7,
+      "speaker": "bugi",
+      "text": "Meu café veio no modo míssil?"
+    },
+    {
+      "index": 8,
+      "speaker": "narrador",
+      "text": "Sem obstáculos, essa velocidade corresponde a aproximadamente quatrocentos e sessenta metros em um segundo. É uma conta idealizada, não a previsão do seu trajeto."
+    },
+    {
+      "index": 9,
+      "speaker": "bugi",
+      "text": "Então eu fujo pro polo!"
+    },
+    {
+      "index": 10,
+      "speaker": "narrador",
+      "text": "A velocidade da rotação diminui em direção aos polos. Mas isso não transforma uma parada planetária em passeio: ar, água e estruturas também entram na confusão."
+    },
+    {
+      "index": 11,
+      "speaker": "bugi",
+      "text": "E quando acabar esse segundo?"
+    },
+    {
+      "index": 12,
+      "speaker": "narrador",
+      "text": "Voltar a girar não desfaz os impactos. A gravidade não desligou, e o planeta não saiu da órbita. O problema foi mudar a velocidade de repente."
+    },
+    {
+      "index": 13,
+      "speaker": "bugi",
+      "text": "Cancela o botão de pausa. Eu tiro férias com a Terra girando mesmo."
+    }
+  ]
+}

@@ -1,0 +1,1388 @@
+[
+  {
+    "text": "A",
+    "startMs": 200,
+    "endMs": 240,
+    "timestampMs": 200,
+    "confidence": null
+  },
+  {
+    "text": "Terra",
+    "startMs": 360,
+    "endMs": 580,
+    "timestampMs": 360,
+    "confidence": null
+  },
+  {
+    "text": "parou.",
+    "startMs": 640,
+    "endMs": 940,
+    "timestampMs": 640,
+    "confidence": null
+  },
+  {
+    "text": "Você",
+    "startMs": 1420,
+    "endMs": 1661,
+    "timestampMs": 1420,
+    "confidence": null
+  },
+  {
+    "text": "não.",
+    "startMs": 1701,
+    "endMs": 1841,
+    "timestampMs": 1701,
+    "confidence": null
+  },
+  {
+    "text": "E",
+    "startMs": 2661,
+    "endMs": 2741,
+    "timestampMs": 2661,
+    "confidence": null
+  },
+  {
+    "text": "se",
+    "startMs": 2821,
+    "endMs": 2921,
+    "timestampMs": 2821,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 2941,
+    "endMs": 2981,
+    "timestampMs": 2941,
+    "confidence": null
+  },
+  {
+    "text": "planeta",
+    "startMs": 3041,
+    "endMs": 3421,
+    "timestampMs": 3041,
+    "confidence": null
+  },
+  {
+    "text": "freasse",
+    "startMs": 3541,
+    "endMs": 4061,
+    "timestampMs": 3541,
+    "confidence": null
+  },
+  {
+    "text": "por",
+    "startMs": 4201,
+    "endMs": 4381,
+    "timestampMs": 4201,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 4501,
+    "endMs": 4662,
+    "timestampMs": 4501,
+    "confidence": null
+  },
+  {
+    "text": "segundo?",
+    "startMs": 4742,
+    "endMs": 5162,
+    "timestampMs": 4742,
+    "confidence": null
+  },
+  {
+    "text": "Um",
+    "startMs": 5602,
+    "endMs": 5782,
+    "timestampMs": 5602,
+    "confidence": null
+  },
+  {
+    "text": "segundo?",
+    "startMs": 5943,
+    "endMs": 6443,
+    "timestampMs": 5943,
+    "confidence": null
+  },
+  {
+    "text": "Nem",
+    "startMs": 7124,
+    "endMs": 7264,
+    "timestampMs": 7124,
+    "confidence": null
+  },
+  {
+    "text": "dá",
+    "startMs": 7284,
+    "endMs": 7384,
+    "timestampMs": 7284,
+    "confidence": null
+  },
+  {
+    "text": "tempo",
+    "startMs": 7484,
+    "endMs": 7724,
+    "timestampMs": 7484,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 7764,
+    "endMs": 7824,
+    "timestampMs": 7764,
+    "confidence": null
+  },
+  {
+    "text": "derramar",
+    "startMs": 7864,
+    "endMs": 8145,
+    "timestampMs": 7864,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 8185,
+    "endMs": 8205,
+    "timestampMs": 8185,
+    "confidence": null
+  },
+  {
+    "text": "café.",
+    "startMs": 8245,
+    "endMs": 8565,
+    "timestampMs": 8245,
+    "confidence": null
+  },
+  {
+    "text": "Nesta",
+    "startMs": 9085,
+    "endMs": 9325,
+    "timestampMs": 9085,
+    "confidence": null
+  },
+  {
+    "text": "hipótese,",
+    "startMs": 9345,
+    "endMs": 9885,
+    "timestampMs": 9345,
+    "confidence": null
+  },
+  {
+    "text": "só",
+    "startMs": 10245,
+    "endMs": 10425,
+    "timestampMs": 10245,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 10445,
+    "endMs": 10465,
+    "timestampMs": 10445,
+    "confidence": null
+  },
+  {
+    "text": "chão",
+    "startMs": 10605,
+    "endMs": 10806,
+    "timestampMs": 10605,
+    "confidence": null
+  },
+  {
+    "text": "para",
+    "startMs": 10886,
+    "endMs": 11066,
+    "timestampMs": 10886,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 11106,
+    "endMs": 11166,
+    "timestampMs": 11106,
+    "confidence": null
+  },
+  {
+    "text": "girar.",
+    "startMs": 11206,
+    "endMs": 11486,
+    "timestampMs": 11206,
+    "confidence": null
+  },
+  {
+    "text": "Você,",
+    "startMs": 12066,
+    "endMs": 12606,
+    "timestampMs": 12066,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 12666,
+    "endMs": 12706,
+    "timestampMs": 12666,
+    "confidence": null
+  },
+  {
+    "text": "café",
+    "startMs": 12766,
+    "endMs": 13146,
+    "timestampMs": 12766,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 13206,
+    "endMs": 13246,
+    "timestampMs": 13206,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 13286,
+    "endMs": 13326,
+    "timestampMs": 13286,
+    "confidence": null
+  },
+  {
+    "text": "ar",
+    "startMs": 13406,
+    "endMs": 13546,
+    "timestampMs": 13406,
+    "confidence": null
+  },
+  {
+    "text": "continuam",
+    "startMs": 13666,
+    "endMs": 14447,
+    "timestampMs": 13666,
+    "confidence": null
+  },
+  {
+    "text": "inicialmente",
+    "startMs": 14487,
+    "endMs": 15067,
+    "timestampMs": 14487,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 15087,
+    "endMs": 15127,
+    "timestampMs": 15087,
+    "confidence": null
+  },
+  {
+    "text": "movimento.",
+    "startMs": 15167,
+    "endMs": 15647,
+    "timestampMs": 15167,
+    "confidence": null
+  },
+  {
+    "text": "Eu",
+    "startMs": 16087,
+    "endMs": 16167,
+    "timestampMs": 16087,
+    "confidence": null
+  },
+  {
+    "text": "pedi",
+    "startMs": 16227,
+    "endMs": 16488,
+    "timestampMs": 16227,
+    "confidence": null
+  },
+  {
+    "text": "uma",
+    "startMs": 16548,
+    "endMs": 16668,
+    "timestampMs": 16548,
+    "confidence": null
+  },
+  {
+    "text": "pausa,",
+    "startMs": 16928,
+    "endMs": 17328,
+    "timestampMs": 16928,
+    "confidence": null
+  },
+  {
+    "text": "porra!",
+    "startMs": 17468,
+    "endMs": 17849,
+    "timestampMs": 17468,
+    "confidence": null
+  },
+  {
+    "text": "Não",
+    "startMs": 17989,
+    "endMs": 18129,
+    "timestampMs": 17989,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 18189,
+    "endMs": 18269,
+    "timestampMs": 18189,
+    "confidence": null
+  },
+  {
+    "text": "lançamento!",
+    "startMs": 18329,
+    "endMs": 19010,
+    "timestampMs": 18329,
+    "confidence": null
+  },
+  {
+    "text": "É",
+    "startMs": 19670,
+    "endMs": 19750,
+    "timestampMs": 19670,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 19770,
+    "endMs": 19810,
+    "timestampMs": 19770,
+    "confidence": null
+  },
+  {
+    "text": "inércia.",
+    "startMs": 19850,
+    "endMs": 20291,
+    "timestampMs": 19850,
+    "confidence": null
+  },
+  {
+    "text": "Num",
+    "startMs": 20811,
+    "endMs": 20931,
+    "timestampMs": 20811,
+    "confidence": null
+  },
+  {
+    "text": "ônibus",
+    "startMs": 20991,
+    "endMs": 21231,
+    "timestampMs": 20991,
+    "confidence": null
+  },
+  {
+    "text": "que",
+    "startMs": 21251,
+    "endMs": 21331,
+    "timestampMs": 21251,
+    "confidence": null
+  },
+  {
+    "text": "freia,",
+    "startMs": 21451,
+    "endMs": 21811,
+    "timestampMs": 21451,
+    "confidence": null
+  },
+  {
+    "text": "seu",
+    "startMs": 21951,
+    "endMs": 22051,
+    "timestampMs": 21951,
+    "confidence": null
+  },
+  {
+    "text": "corpo",
+    "startMs": 22111,
+    "endMs": 22351,
+    "timestampMs": 22111,
+    "confidence": null
+  },
+  {
+    "text": "tende",
+    "startMs": 22491,
+    "endMs": 22711,
+    "timestampMs": 22491,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 22731,
+    "endMs": 22771,
+    "timestampMs": 22731,
+    "confidence": null
+  },
+  {
+    "text": "continuar.",
+    "startMs": 22811,
+    "endMs": 23332,
+    "timestampMs": 22811,
+    "confidence": null
+  },
+  {
+    "text": "Agora",
+    "startMs": 23692,
+    "endMs": 23912,
+    "timestampMs": 23692,
+    "confidence": null
+  },
+  {
+    "text": "imagine",
+    "startMs": 24112,
+    "endMs": 24652,
+    "timestampMs": 24112,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 24692,
+    "endMs": 24752,
+    "timestampMs": 24692,
+    "confidence": null
+  },
+  {
+    "text": "chão",
+    "startMs": 24912,
+    "endMs": 25092,
+    "timestampMs": 24912,
+    "confidence": null
+  },
+  {
+    "text": "inteiro",
+    "startMs": 25152,
+    "endMs": 25672,
+    "timestampMs": 25152,
+    "confidence": null
+  },
+  {
+    "text": "freando.",
+    "startMs": 25712,
+    "endMs": 26132,
+    "timestampMs": 25712,
+    "confidence": null
+  },
+  {
+    "text": "Tá.",
+    "startMs": 26572,
+    "endMs": 26792,
+    "timestampMs": 26572,
+    "confidence": null
+  },
+  {
+    "text": "Mas",
+    "startMs": 26812,
+    "endMs": 27012,
+    "timestampMs": 26812,
+    "confidence": null
+  },
+  {
+    "text": "eu",
+    "startMs": 27232,
+    "endMs": 27272,
+    "timestampMs": 27232,
+    "confidence": null
+  },
+  {
+    "text": "tava",
+    "startMs": 27353,
+    "endMs": 27493,
+    "timestampMs": 27353,
+    "confidence": null
+  },
+  {
+    "text": "parado!",
+    "startMs": 27553,
+    "endMs": 27993,
+    "timestampMs": 27553,
+    "confidence": null
+  },
+  {
+    "text": "Em",
+    "startMs": 28653,
+    "endMs": 28733,
+    "timestampMs": 28653,
+    "confidence": null
+  },
+  {
+    "text": "relação",
+    "startMs": 28773,
+    "endMs": 29153,
+    "timestampMs": 28773,
+    "confidence": null
+  },
+  {
+    "text": "à",
+    "startMs": 29193,
+    "endMs": 29253,
+    "timestampMs": 29193,
+    "confidence": null
+  },
+  {
+    "text": "rua.",
+    "startMs": 29333,
+    "endMs": 29653,
+    "timestampMs": 29333,
+    "confidence": null
+  },
+  {
+    "text": "Perto",
+    "startMs": 30453,
+    "endMs": 30673,
+    "timestampMs": 30453,
+    "confidence": null
+  },
+  {
+    "text": "do",
+    "startMs": 30713,
+    "endMs": 30773,
+    "timestampMs": 30713,
+    "confidence": null
+  },
+  {
+    "text": "Equador,",
+    "startMs": 30813,
+    "endMs": 31294,
+    "timestampMs": 30813,
+    "confidence": null
+  },
+  {
+    "text": "você",
+    "startMs": 31434,
+    "endMs": 31634,
+    "timestampMs": 31434,
+    "confidence": null
+  },
+  {
+    "text": "já",
+    "startMs": 31654,
+    "endMs": 31754,
+    "timestampMs": 31654,
+    "confidence": null
+  },
+  {
+    "text": "acompanha",
+    "startMs": 31774,
+    "endMs": 32234,
+    "timestampMs": 31774,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 32254,
+    "endMs": 32274,
+    "timestampMs": 32254,
+    "confidence": null
+  },
+  {
+    "text": "rotação",
+    "startMs": 32314,
+    "endMs": 32754,
+    "timestampMs": 32314,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 32814,
+    "endMs": 32854,
+    "timestampMs": 32814,
+    "confidence": null
+  },
+  {
+    "text": "cerca",
+    "startMs": 32934,
+    "endMs": 33174,
+    "timestampMs": 32934,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 33214,
+    "endMs": 33314,
+    "timestampMs": 33214,
+    "confidence": null
+  },
+  {
+    "text": "mil",
+    "startMs": 33474,
+    "endMs": 33714,
+    "timestampMs": 33474,
+    "confidence": null
+  },
+  {
+    "text": "seiscentos",
+    "startMs": 33794,
+    "endMs": 34455,
+    "timestampMs": 33794,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 34495,
+    "endMs": 34535,
+    "timestampMs": 34495,
+    "confidence": null
+  },
+  {
+    "text": "setenta",
+    "startMs": 34595,
+    "endMs": 34955,
+    "timestampMs": 34595,
+    "confidence": null
+  },
+  {
+    "text": "quilômetros",
+    "startMs": 34995,
+    "endMs": 35455,
+    "timestampMs": 34995,
+    "confidence": null
+  },
+  {
+    "text": "por",
+    "startMs": 35515,
+    "endMs": 35635,
+    "timestampMs": 35515,
+    "confidence": null
+  },
+  {
+    "text": "hora.",
+    "startMs": 35655,
+    "endMs": 35875,
+    "timestampMs": 35655,
+    "confidence": null
+  },
+  {
+    "text": "Meu",
+    "startMs": 36315,
+    "endMs": 36455,
+    "timestampMs": 36315,
+    "confidence": null
+  },
+  {
+    "text": "café",
+    "startMs": 36515,
+    "endMs": 36775,
+    "timestampMs": 36515,
+    "confidence": null
+  },
+  {
+    "text": "veio",
+    "startMs": 36816,
+    "endMs": 36936,
+    "timestampMs": 36816,
+    "confidence": null
+  },
+  {
+    "text": "no",
+    "startMs": 36976,
+    "endMs": 37036,
+    "timestampMs": 36976,
+    "confidence": null
+  },
+  {
+    "text": "modo",
+    "startMs": 37076,
+    "endMs": 37236,
+    "timestampMs": 37076,
+    "confidence": null
+  },
+  {
+    "text": "míssil?",
+    "startMs": 37356,
+    "endMs": 37776,
+    "timestampMs": 37356,
+    "confidence": null
+  },
+  {
+    "text": "Sem",
+    "startMs": 38436,
+    "endMs": 38576,
+    "timestampMs": 38436,
+    "confidence": null
+  },
+  {
+    "text": "obstáculos,",
+    "startMs": 38616,
+    "endMs": 39237,
+    "timestampMs": 38616,
+    "confidence": null
+  },
+  {
+    "text": "essa",
+    "startMs": 39537,
+    "endMs": 39677,
+    "timestampMs": 39537,
+    "confidence": null
+  },
+  {
+    "text": "velocidade",
+    "startMs": 39717,
+    "endMs": 40217,
+    "timestampMs": 39717,
+    "confidence": null
+  },
+  {
+    "text": "corresponde",
+    "startMs": 40277,
+    "endMs": 40837,
+    "timestampMs": 40277,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 40857,
+    "endMs": 40877,
+    "timestampMs": 40857,
+    "confidence": null
+  },
+  {
+    "text": "aproximadamente",
+    "startMs": 40897,
+    "endMs": 41997,
+    "timestampMs": 40897,
+    "confidence": null
+  },
+  {
+    "text": "quatrocentos",
+    "startMs": 42198,
+    "endMs": 43178,
+    "timestampMs": 42198,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 43218,
+    "endMs": 43278,
+    "timestampMs": 43218,
+    "confidence": null
+  },
+  {
+    "text": "sessenta",
+    "startMs": 43338,
+    "endMs": 43818,
+    "timestampMs": 43338,
+    "confidence": null
+  },
+  {
+    "text": "metros",
+    "startMs": 43898,
+    "endMs": 44318,
+    "timestampMs": 43898,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 44398,
+    "endMs": 44498,
+    "timestampMs": 44398,
+    "confidence": null
+  },
+  {
+    "text": "um",
+    "startMs": 44538,
+    "endMs": 44618,
+    "timestampMs": 44538,
+    "confidence": null
+  },
+  {
+    "text": "segundo.",
+    "startMs": 44678,
+    "endMs": 45098,
+    "timestampMs": 44678,
+    "confidence": null
+  },
+  {
+    "text": "É",
+    "startMs": 45999,
+    "endMs": 46059,
+    "timestampMs": 45999,
+    "confidence": null
+  },
+  {
+    "text": "uma",
+    "startMs": 46099,
+    "endMs": 46219,
+    "timestampMs": 46099,
+    "confidence": null
+  },
+  {
+    "text": "conta",
+    "startMs": 46299,
+    "endMs": 46519,
+    "timestampMs": 46299,
+    "confidence": null
+  },
+  {
+    "text": "idealizada,",
+    "startMs": 46559,
+    "endMs": 47259,
+    "timestampMs": 46559,
+    "confidence": null
+  },
+  {
+    "text": "não",
+    "startMs": 47439,
+    "endMs": 47619,
+    "timestampMs": 47439,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 47679,
+    "endMs": 47719,
+    "timestampMs": 47679,
+    "confidence": null
+  },
+  {
+    "text": "previsão",
+    "startMs": 47799,
+    "endMs": 48179,
+    "timestampMs": 47799,
+    "confidence": null
+  },
+  {
+    "text": "do",
+    "startMs": 48199,
+    "endMs": 48279,
+    "timestampMs": 48199,
+    "confidence": null
+  },
+  {
+    "text": "seu",
+    "startMs": 48320,
+    "endMs": 48400,
+    "timestampMs": 48320,
+    "confidence": null
+  },
+  {
+    "text": "trajeto.",
+    "startMs": 48440,
+    "endMs": 48860,
+    "timestampMs": 48440,
+    "confidence": null
+  },
+  {
+    "text": "Então",
+    "startMs": 49300,
+    "endMs": 49700,
+    "timestampMs": 49300,
+    "confidence": null
+  },
+  {
+    "text": "eu",
+    "startMs": 49780,
+    "endMs": 49880,
+    "timestampMs": 49780,
+    "confidence": null
+  },
+  {
+    "text": "fujo",
+    "startMs": 50041,
+    "endMs": 50301,
+    "timestampMs": 50041,
+    "confidence": null
+  },
+  {
+    "text": "pro",
+    "startMs": 50321,
+    "endMs": 50441,
+    "timestampMs": 50321,
+    "confidence": null
+  },
+  {
+    "text": "polo!",
+    "startMs": 50501,
+    "endMs": 50761,
+    "timestampMs": 50501,
+    "confidence": null
+  },
+  {
+    "text": "A",
+    "startMs": 51281,
+    "endMs": 51301,
+    "timestampMs": 51281,
+    "confidence": null
+  },
+  {
+    "text": "velocidade",
+    "startMs": 51341,
+    "endMs": 51901,
+    "timestampMs": 51341,
+    "confidence": null
+  },
+  {
+    "text": "da",
+    "startMs": 51941,
+    "endMs": 52021,
+    "timestampMs": 51941,
+    "confidence": null
+  },
+  {
+    "text": "rotação",
+    "startMs": 52061,
+    "endMs": 52581,
+    "timestampMs": 52061,
+    "confidence": null
+  },
+  {
+    "text": "diminui",
+    "startMs": 52641,
+    "endMs": 53102,
+    "timestampMs": 52641,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 53122,
+    "endMs": 53182,
+    "timestampMs": 53122,
+    "confidence": null
+  },
+  {
+    "text": "direção",
+    "startMs": 53202,
+    "endMs": 53622,
+    "timestampMs": 53202,
+    "confidence": null
+  },
+  {
+    "text": "aos",
+    "startMs": 53682,
+    "endMs": 53822,
+    "timestampMs": 53682,
+    "confidence": null
+  },
+  {
+    "text": "polos.",
+    "startMs": 53902,
+    "endMs": 54302,
+    "timestampMs": 53902,
+    "confidence": null
+  },
+  {
+    "text": "Mas",
+    "startMs": 54882,
+    "endMs": 55142,
+    "timestampMs": 54882,
+    "confidence": null
+  },
+  {
+    "text": "isso",
+    "startMs": 55482,
+    "endMs": 55642,
+    "timestampMs": 55482,
+    "confidence": null
+  },
+  {
+    "text": "não",
+    "startMs": 55682,
+    "endMs": 55782,
+    "timestampMs": 55682,
+    "confidence": null
+  },
+  {
+    "text": "transforma",
+    "startMs": 55842,
+    "endMs": 56383,
+    "timestampMs": 55842,
+    "confidence": null
+  },
+  {
+    "text": "uma",
+    "startMs": 56423,
+    "endMs": 56543,
+    "timestampMs": 56423,
+    "confidence": null
+  },
+  {
+    "text": "parada",
+    "startMs": 56663,
+    "endMs": 57043,
+    "timestampMs": 56663,
+    "confidence": null
+  },
+  {
+    "text": "planetária",
+    "startMs": 57103,
+    "endMs": 57643,
+    "timestampMs": 57103,
+    "confidence": null
+  },
+  {
+    "text": "em",
+    "startMs": 57683,
+    "endMs": 57743,
+    "timestampMs": 57683,
+    "confidence": null
+  },
+  {
+    "text": "passeio:",
+    "startMs": 57823,
+    "endMs": 58323,
+    "timestampMs": 57823,
+    "confidence": null
+  },
+  {
+    "text": "ar,",
+    "startMs": 59063,
+    "endMs": 59324,
+    "timestampMs": 59063,
+    "confidence": null
+  },
+  {
+    "text": "água",
+    "startMs": 59944,
+    "endMs": 60244,
+    "timestampMs": 59944,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 60264,
+    "endMs": 60284,
+    "timestampMs": 60264,
+    "confidence": null
+  },
+  {
+    "text": "estruturas",
+    "startMs": 60364,
+    "endMs": 60904,
+    "timestampMs": 60364,
+    "confidence": null
+  },
+  {
+    "text": "também",
+    "startMs": 61024,
+    "endMs": 61384,
+    "timestampMs": 61024,
+    "confidence": null
+  },
+  {
+    "text": "entram",
+    "startMs": 61464,
+    "endMs": 61704,
+    "timestampMs": 61464,
+    "confidence": null
+  },
+  {
+    "text": "na",
+    "startMs": 61724,
+    "endMs": 61804,
+    "timestampMs": 61724,
+    "confidence": null
+  },
+  {
+    "text": "confusão.",
+    "startMs": 61844,
+    "endMs": 63085,
+    "timestampMs": 61844,
+    "confidence": null
+  },
+  {
+    "text": "E",
+    "startMs": 63525,
+    "endMs": 63605,
+    "timestampMs": 63525,
+    "confidence": null
+  },
+  {
+    "text": "quando",
+    "startMs": 63665,
+    "endMs": 63845,
+    "timestampMs": 63665,
+    "confidence": null
+  },
+  {
+    "text": "acabar",
+    "startMs": 63865,
+    "endMs": 64166,
+    "timestampMs": 63865,
+    "confidence": null
+  },
+  {
+    "text": "esse",
+    "startMs": 64206,
+    "endMs": 64326,
+    "timestampMs": 64206,
+    "confidence": null
+  },
+  {
+    "text": "segundo?",
+    "startMs": 64366,
+    "endMs": 64726,
+    "timestampMs": 64366,
+    "confidence": null
+  },
+  {
+    "text": "Voltar",
+    "startMs": 65246,
+    "endMs": 65606,
+    "timestampMs": 65246,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 65666,
+    "endMs": 65706,
+    "timestampMs": 65666,
+    "confidence": null
+  },
+  {
+    "text": "girar",
+    "startMs": 65766,
+    "endMs": 66166,
+    "timestampMs": 65766,
+    "confidence": null
+  },
+  {
+    "text": "não",
+    "startMs": 66286,
+    "endMs": 66406,
+    "timestampMs": 66286,
+    "confidence": null
+  },
+  {
+    "text": "desfaz",
+    "startMs": 66466,
+    "endMs": 66946,
+    "timestampMs": 66466,
+    "confidence": null
+  },
+  {
+    "text": "os",
+    "startMs": 66966,
+    "endMs": 67046,
+    "timestampMs": 66966,
+    "confidence": null
+  },
+  {
+    "text": "impactos.",
+    "startMs": 67086,
+    "endMs": 67647,
+    "timestampMs": 67086,
+    "confidence": null
+  },
+  {
+    "text": "A",
+    "startMs": 68267,
+    "endMs": 68287,
+    "timestampMs": 68267,
+    "confidence": null
+  },
+  {
+    "text": "gravidade",
+    "startMs": 68327,
+    "endMs": 68787,
+    "timestampMs": 68327,
+    "confidence": null
+  },
+  {
+    "text": "não",
+    "startMs": 68867,
+    "endMs": 69007,
+    "timestampMs": 68867,
+    "confidence": null
+  },
+  {
+    "text": "desligou,",
+    "startMs": 69027,
+    "endMs": 69507,
+    "timestampMs": 69027,
+    "confidence": null
+  },
+  {
+    "text": "e",
+    "startMs": 69847,
+    "endMs": 69887,
+    "timestampMs": 69847,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 69907,
+    "endMs": 69947,
+    "timestampMs": 69907,
+    "confidence": null
+  },
+  {
+    "text": "planeta",
+    "startMs": 69987,
+    "endMs": 70347,
+    "timestampMs": 69987,
+    "confidence": null
+  },
+  {
+    "text": "não",
+    "startMs": 70387,
+    "endMs": 70507,
+    "timestampMs": 70387,
+    "confidence": null
+  },
+  {
+    "text": "saiu",
+    "startMs": 70568,
+    "endMs": 70868,
+    "timestampMs": 70568,
+    "confidence": null
+  },
+  {
+    "text": "da",
+    "startMs": 70908,
+    "endMs": 70988,
+    "timestampMs": 70908,
+    "confidence": null
+  },
+  {
+    "text": "órbita.",
+    "startMs": 71088,
+    "endMs": 71408,
+    "timestampMs": 71088,
+    "confidence": null
+  },
+  {
+    "text": "O",
+    "startMs": 72108,
+    "endMs": 72148,
+    "timestampMs": 72108,
+    "confidence": null
+  },
+  {
+    "text": "problema",
+    "startMs": 72248,
+    "endMs": 72708,
+    "timestampMs": 72248,
+    "confidence": null
+  },
+  {
+    "text": "foi",
+    "startMs": 72768,
+    "endMs": 72888,
+    "timestampMs": 72768,
+    "confidence": null
+  },
+  {
+    "text": "mudar",
+    "startMs": 72928,
+    "endMs": 73208,
+    "timestampMs": 72928,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 73228,
+    "endMs": 73248,
+    "timestampMs": 73228,
+    "confidence": null
+  },
+  {
+    "text": "velocidade",
+    "startMs": 73288,
+    "endMs": 73969,
+    "timestampMs": 73288,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 74129,
+    "endMs": 74269,
+    "timestampMs": 74129,
+    "confidence": null
+  },
+  {
+    "text": "repente.",
+    "startMs": 74329,
+    "endMs": 75189,
+    "timestampMs": 74329,
+    "confidence": null
+  },
+  {
+    "text": "Cancela",
+    "startMs": 75469,
+    "endMs": 75869,
+    "timestampMs": 75469,
+    "confidence": null
+  },
+  {
+    "text": "o",
+    "startMs": 75889,
+    "endMs": 75909,
+    "timestampMs": 75889,
+    "confidence": null
+  },
+  {
+    "text": "botão",
+    "startMs": 75949,
+    "endMs": 76149,
+    "timestampMs": 75949,
+    "confidence": null
+  },
+  {
+    "text": "de",
+    "startMs": 76189,
+    "endMs": 76249,
+    "timestampMs": 76189,
+    "confidence": null
+  },
+  {
+    "text": "pausa.",
+    "startMs": 76330,
+    "endMs": 76690,
+    "timestampMs": 76330,
+    "confidence": null
+  },
+  {
+    "text": "Eu",
+    "startMs": 77110,
+    "endMs": 77170,
+    "timestampMs": 77110,
+    "confidence": null
+  },
+  {
+    "text": "tiro",
+    "startMs": 77210,
+    "endMs": 77370,
+    "timestampMs": 77210,
+    "confidence": null
+  },
+  {
+    "text": "férias",
+    "startMs": 77431,
+    "endMs": 77671,
+    "timestampMs": 77431,
+    "confidence": null
+  },
+  {
+    "text": "com",
+    "startMs": 77691,
+    "endMs": 77751,
+    "timestampMs": 77691,
+    "confidence": null
+  },
+  {
+    "text": "a",
+    "startMs": 77771,
+    "endMs": 77811,
+    "timestampMs": 77771,
+    "confidence": null
+  },
+  {
+    "text": "Terra",
+    "startMs": 77851,
+    "endMs": 78051,
+    "timestampMs": 77851,
+    "confidence": null
+  },
+  {
+    "text": "girando",
+    "startMs": 78091,
+    "endMs": 78411,
+    "timestampMs": 78091,
+    "confidence": null
+  },
+  {
+    "text": "mesmo.",
+    "startMs": 78452,
+    "endMs": 78952,
+    "timestampMs": 78452,
+    "confidence": null
+  }
+]
