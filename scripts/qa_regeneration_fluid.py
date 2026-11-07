@@ -1,6 +1,8 @@
 from pathlib import Path
-import subprocess,json,hashlib,re
-root=Path(__file__).resolve().parents[1];out=root/'out';assets=root/'public/assets/regeneracao';video=out/'regeneracao-nova-base-v2.mp4'
+import subprocess,json,hashlib,re,sys
+root=Path(__file__).resolve().parents[1];out=root/'out';assets=root/'public/assets/regeneracao'
+version=sys.argv[1] if len(sys.argv)>1 else 'v3'
+video=out/f'regeneracao-nova-base-{version}.mp4'
 def run(args):
  r=subprocess.run(args,capture_output=True)
  if r.returncode:raise RuntimeError(r.stderr.decode('utf8',errors='replace'))
@@ -21,9 +23,10 @@ for name,start,length,fps,grid in [('queda',3,1.8,10,'6x3'),('pele',4.75,2,9,'6x
  run(['ffmpeg','-y','-v','error','-ss',str(start),'-i',str(video),'-t',str(length),'-vf',f'fps={fps},scale=216:-1,tile={grid}','-frames:v','1',str(out/f'regeneracao-fluid-{name}-sequencia.jpg')])
 for name,t in [('andando',1.5),('apoio',4.4),('pele',5.7),('restaurada',6.6),('inspecao',7.8),('final',11.6)]:
  run(['ffmpeg','-y','-v','error','-ss',str(t),'-i',str(video),'-frames:v','1',str(out/f'regeneracao-fluid-{name}.png')])
+run(['ffmpeg','-y','-v','error','-ss','8.6','-i',str(video),'-t','1.8','-vf','crop=700:700:200:700,fps=20,scale=250:-1,tile=6x6','-frames:v','1',str(out/f'regeneracao-fluid-bracos-{version}.jpg')])
 loud=run(['ffmpeg','-hide_banner','-i',str(video),'-af','loudnorm=I=-16:TP=-2:LRA=9:print_format=json','-f','null','-']).stderr.decode('utf8',errors='replace')
 (out/'regeneracao-fluid-loudness.log').write_text(loud,encoding='utf8');levels=json.loads(re.findall(r'\{[^{}]+\}',loud)[-1])
 paths=['src/remotion/RegenerationFluidRoot.tsx','src/remotion/regeneration-fluid/FluidPilot.tsx','src/remotion/regeneration-fluid/fluidMotion.ts','public/assets/regeneracao/mix-final.wav','public/assets/regeneracao/timing.json']
-q=dict(file=str(video),sha256=hashlib.sha256(video.read_bytes()).hexdigest(),bytes=video.stat().st_size,duration=float(probe['format']['duration']),width=1080,height=1920,fps=30,frames=360,engine='Remotion 4.0.540',composition='Regeneracao-NovaBase',sourceHashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in paths},fullDecodePassed=True,blackIntervals=[],sameUserAudioVerified=True,audioPcmSha256=audioHash,loudness={k:float(levels[k]) for k in ['input_i','input_tp','input_lra']},lintPassed=True,generalTestsPassed=17,newMotionTestsPassed=3,buildPassed=True,agentVisualReview='pending',humanVisualApproved=False,humanListenApproved=False,published=False)
+q=dict(file=str(video),sha256=hashlib.sha256(video.read_bytes()).hexdigest(),bytes=video.stat().st_size,duration=float(probe['format']['duration']),width=1080,height=1920,fps=30,frames=360,engine='Remotion 4.0.540',composition='Regeneracao-NovaBase',sourceHashes={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in paths},fullDecodePassed=True,blackIntervals=[],sameUserAudioVerified=True,audioPcmSha256=audioHash,loudness={k:float(levels[k]) for k in ['input_i','input_tp','input_lra']},lintPassed=True,generalTestsPassed=17,newMotionTestsPassed=6,buildPassed=True,agentVisualReview='pending',humanVisualApproved=False,humanListenApproved=False,published=False)
 (assets/'render-qa-nova-base.json').write_text(json.dumps(q,ensure_ascii=False,indent=2),encoding='utf8')
 print(json.dumps({k:v for k,v in q.items() if k!='sourceHashes'},ensure_ascii=False,indent=2))

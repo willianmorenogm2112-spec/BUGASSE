@@ -29,3 +29,39 @@ test('impact palms stay anchored while torso and head recover independently',()=
  const a=fluidPose(4.25),b=fluidPose(4.4);
  assert.ok(Math.abs(a.chest.y-b.chest.y)>2&&Math.abs(a.headAngle-b.headAngle)>2);
 });
+test('arms do not snap between adjacent visible frames at 30 or 60 fps',()=>{
+ for(const fps of [30,60])for(let f=1;f<12*fps;f++){
+  const t=f/fps,previous=(f-1)/fps;
+  if(t>=4.75&&t<6.9||t>=6.9&&previous<6.9)continue; // Actual shot cuts, not arm transitions.
+  const p=fluidPose(t),before=fluidPose(previous);
+  for(const side of ['left','right'] as const){
+   const arm=p.arms[side],shoulder=p.shoulders[side];
+   const reach=Math.hypot(arm.end.x-shoulder.x,arm.end.y-shoulder.y);
+   assert.ok(reach>=90-1e-6&&reach<=217+1e-6,`${side} reach at ${t}`);
+   for(const part of ['elbow','end'] as const){
+    const a=arm[part],b=before.arms[side][part];
+    assert.ok(Math.hypot(a.x-b.x,a.y-b.y)<=28*30/fps,`${side} ${part} snap at ${t}`);
+   }
+  }
+ }
+});
+test('walking-to-bracing transition is continuous rather than dropping the gait offset',()=>{
+ const a=fluidPose(3.05-1e-6),b=fluidPose(3.05+1e-6);
+ for(const side of ['left','right'] as const)for(const part of ['elbow','end'] as const){
+  assert.ok(Math.hypot(a.arms[side][part].x-b.arms[side][part].x,a.arms[side][part].y-b.arms[side][part].y)<.001);
+ }
+});
+test('visible arm segments keep clear of the face silhouette',()=>{
+ for(let f=0;f<720;f++){
+  const t=f/60;if(t>=4.75&&t<6.9)continue;
+  const p=fluidPose(t),angle=-p.headAngle*Math.PI/180;
+  for(const side of ['left','right'] as const){
+   const arm=p.arms[side];
+   for(const [a,b] of [[p.shoulders[side],arm.elbow],[arm.elbow,arm.end]])for(let j=0;j<=20;j++){
+    const u=j/20,x=a.x+(b.x-a.x)*u-p.head.x,y=a.y+(b.y-a.y)*u-p.head.y;
+    const rx=x*Math.cos(angle)-y*Math.sin(angle),ry=x*Math.sin(angle)+y*Math.cos(angle);
+    assert.ok((rx/102)**2+(ry/103)**2>=1,`${side} crosses face at ${t}`);
+   }
+  }
+ }
+});

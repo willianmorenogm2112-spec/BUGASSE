@@ -20,6 +20,13 @@ export function joint(a:Point,b:Point,l1:number,l2:number,bend:number){
  const end={x:a.x+dx/d0*d,y:a.y+dy/d0*d},u=(l1*l1-l2*l2+d*d)/(2*d),h=Math.sqrt(Math.max(0,l1*l1-u*u));
  return {elbow:{x:a.x+dx/d0*u-dy/d0*h*bend,y:a.y+dy/d0*u+dx/d0*h*bend},end};
 }
+/** Keep arms away from folded/straight singularities; choreography still owns hand paths. */
+export function armChain(shoulder:Point,target:Point,bend:number){
+ const dx=target.x-shoulder.x,dy=target.y-shoulder.y,d=Math.hypot(dx,dy);
+ const reach=Math.max(90,Math.min(217,d));
+ const direction=d>.001?{x:dx/d,y:dy/d}:{x:0,y:1};
+ return joint(shoulder,{x:shoulder.x+direction.x*reach,y:shoulder.y+direction.y*reach},112,110,bend);
+}
 const step=(t:number,a:number,b:number,x0:number,x1:number,y:number)=>{
  const p=limit((t-a)/(b-a)),s=p-Math.sin(2*Math.PI*p)/(2*Math.PI);
  return {x:x0+(x1-x0)*s,y:y-34*Math.pow(Math.sin(Math.PI*p),2)};
@@ -46,14 +53,16 @@ export function fluidPose(t:number){
  }
  const shoulders={left:{x:chest.x-51,y:chest.y+10},right:{x:chest.x+51,y:chest.y+10}};
  let lh:Point={x:chest.x-73,y:chest.y+198},rh:Point={x:chest.x+78,y:chest.y+198};
- if(t<3.05){lh.x+=Math.sin(t*7)*22;rh.x-=Math.sin(t*7)*22;lh.y-=Math.sin(t*7)*10;rh.y+=Math.sin(t*7)*10;}
+ if(t<3.05){const walking=1-ease((t-2.7)/.35);lh.x+=Math.sin(t*7)*22*walking;rh.x-=Math.sin(t*7)*22*walking;lh.y-=Math.sin(t*7)*10*walking;rh.y+=Math.sin(t*7)*10*walking;}
  else if(!returning){
   const p=ease((t-3.05)/1.18);lh={x:lh.x+(730-lh.x)*p,y:lh.y+(1293-lh.y)*p};rh={x:rh.x+(790-rh.x)*p,y:rh.y+(1293-rh.y)*p};
  }
  if(returning){
-  lh={x:flow(t,[[6.9,410],[7.5,406],[8,417],[8.5,414],[9,430],[9.5,460],[10,480],[12,560]]),y:flow(t,[[6.9,886],[7.5,880],[8.1,895],[8.5,887],[9,910],[9.6,985],[10.2,1125],[12,1130]])};
-  rh={x:flow(t,[[6.9,420],[7.5,417],[8,426],[8.3,422],[8.8,480],[9.3,675],[9.7,680],[10.2,625],[11,690],[12,710]]),y:flow(t,[[6.9,930],[7.5,914],[8,926],[8.3,918],[8.8,965],[9.3,950],[9.7,960],[10.2,1110],[12,1120]])};
+  // Lower the inspected arm outside the shoulder, not through the shoulder joint.
+  lh={x:flow(t,[[6.9,410],[7.5,406],[8,417],[8.5,414],[8.8,410],[9.1,388],[9.4,385],[9.8,425],[10.2,480],[12,560]]),y:flow(t,[[6.9,886],[7.5,880],[8.1,895],[8.5,887],[8.8,916],[9.1,970],[9.4,1040],[9.8,1100],[10.2,1125],[12,1130]])};
+  // The right hand travels under the shoulder on its outward gesture.
+  rh={x:flow(t,[[6.9,420],[7.5,417],[8,426],[8.3,422],[8.6,440],[9,505],[9.4,665],[9.7,725],[10,720],[10.4,665],[11,690],[12,710]]),y:flow(t,[[6.9,930],[7.5,914],[8,926],[8.3,918],[8.6,965],[9,1085],[9.4,1100],[9.7,1030],[10,1000],[10.4,1110],[12,1120]])};
  }
- const arms={left:joint(shoulders.left,lh,112,110,returning?-1:1),right:joint(shoulders.right,rh,112,110,-1)};
+ const arms={left:armChain(shoulders.left,lh,returning?-1:1),right:armChain(shoulders.right,rh,-1)};
  return {hip,chest,neck,head,hips,shoulders,legs,arms,drop,lean,headAngle:flow(t,[[0,-2],[2.5,1],[3.2,-9],[4.1,12],[4.38,-4],[4.7,5],[6.9,-7],[7.6,-10],[8.1,-4],[8.7,2],[9.3,-3],[10,0],[12,1]]),worry:flow(t,[[0,0],[3.05,0],[3.6,1],[6.9,.4],[8.2,.1],[9,0],[12,0]]),lookX:returning?-5:flow(t,[[0,3],[3,4],[4.2,8],[6.9,-5]]),lookY:returning?4:flow(t,[[0,0],[3,0],[4.2,6],[6.9,4]])};
 }
