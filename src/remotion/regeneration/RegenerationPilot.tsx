@@ -52,7 +52,7 @@ export const RegenerationPilot:React.FC<{variant:Variant;audible?:boolean}>=({va
  return <AbsoluteFill style={{background:C.ink,fontFamily:'Arial',overflow:'hidden'}}>
    {audible&&<Audio src={staticFile('assets/regeneracao/mix-final.wav')}/>}
    <svg viewBox="0 0 1080 1920" width="100%" height="100%" style={{position:'absolute'}}>
-     <g transform={`translate(540 960) scale(${scale}) translate(${-540-160*zoom} ${-960+60*zoom})`}>
+     <g transform={`translate(540 960) scale(${scale}) translate(${-540-60*zoom} ${-960+60*zoom})`}>
        <Park t={t}/>
        <g transform="translate(250 97) scale(1.8)">
          <BugiArticulatedSvgFigure kinematics={k}/>
