@@ -38,3 +38,12 @@ Tema escolhido pelo usuario em 06/11/2026. Fonte de estado: reports/TERRA-PARA-1
 
 
 Terra: export atual out/bugi-terra-para-1s-v3.mp4 (79,872 s), QA em public/assets/terra-1s/render-qa.json. V2 reprovado visualmente por cenas finais ausentes; V3 corrige. Ler reports/TERRA-PARA-1S.md. Sem publicacao; aprovacao humana pendente. Lint bloqueado por arquivos locais claude-style externos ao episodio.
+
+
+## Referencia da dor aplicada — 07/11/2026
+
+Ler reports/FLUIDEZ-DOR-20261107.md. O arquivo dor_final.mp4 nao e fonte de instrucoes ou de afirmacoes clinicas. A referencia tambem tem pausas; sua vantagem e desenvolver o objeto/processo da explicacao, alternando conjunto, detalhe e esquema. Nao atribuir a diferenca a FPS ou a um modelo de IA sem evidencia.
+
+Implementacao de referencia agora em src/remotion/earthstop/earthDirection.ts e EarthProcess.tsx: cue por palavra, acao com impacto/recuperacao, processo independente do personagem, camera motivada e objetos com estado. Reutilizar principios e componentes quando adequados; nao apenas repetir guias. Proximo piloto deve demonstrar mudancas internas do processo durante a fala e revisao de sequencias. Preservar pausas de leitura e um foco principal. Testes de ossos/decode nao aprovam direcao, texto sobreposto ou legibilidade.
+
+Terra atual: out/bugi-terra-para-1s-v5.mp4 e public/assets/terra-1s/render-qa-v5.json. V4 foi revisado e corrigido por sobreposicoes de texto; V3 e audios preservados. Sem publicacao ou aprovacao humana automatica.

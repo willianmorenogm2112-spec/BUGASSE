@@ -293,7 +293,6 @@ export const Globe: React.FC<{ time: number; latitude?: number; stop?: number; r
         <ellipse cy={-Math.sin(lat) * radius} rx={Math.cos(lat) * radius} ry={Math.max(3, Math.cos(lat) * radius * 0.12)} fill="none" stroke={C.gold} strokeWidth="9" />
       </g>
       <circle r={radius} fill="none" stroke={C.ink} strokeWidth="12" />
-      <path d={`M${-radius - 45} 0h-70m0 0 30-25m-30 25 30 25`} stroke={C.gold} strokeWidth="9" fill="none" />
     </g>
   );
 };

@@ -4,6 +4,8 @@ import timing from '../../../public/assets/terra-1s/timing.json';
 import {captionPages} from '../gravity/GravityCaptions';
 import {BugiActor, CaptionLabel as Label, DynamicCup as Cup, Street, Globe, EC as C} from './EarthWorld';
 import {ease, mix, rotationKmh, cupAnchor} from './earthMotion';
+import {earthCamera,phase} from './earthDirection';
+import {EnvironmentChain,PlanetBrakeStreet,AftermathProcess} from './EarthProcess';
 
 const pages = timing.turns.flatMap(turn => captionPages(timing.words.filter(w => w.turn === turn.index)));
 
@@ -35,6 +37,7 @@ export const EarthStopEpisode: React.FC = () => {
   const f = useCurrentFrame(), {fps} = useVideoConfig(), t = f / fps;
   const turn = timing.turns.filter(q => q.start <= t).at(-1) ?? timing.turns[0];
   const i = turn.index, u = Math.max(0, t - turn.start), bugi = turn.speaker === 'bugi';
+  const camera=earthCamera(i,u);
   const amp = (timing.envelope as number[])[Math.floor(t * 30)] ?? 0;
   const speaking = bugi && timing.words.some(w => w.turn === i && t >= w.start && t < w.end) ? amp : 0;
 
@@ -57,6 +60,7 @@ export const EarthStopEpisode: React.FC = () => {
       <Audio src={staticFile('assets/terra-1s/mix-final.wav')} />
 
       <svg width="100%" height="100%" viewBox="0 0 1080 1920" style={{position: 'absolute'}}>
+        <g transform={`translate(540 960) scale(${camera.scale}) translate(${-camera.x} ${-camera.y})`}>
         {/* CENÁRIO VIVO COM FÍSICA DE PARADA */}
         {skyScene && (
           <Street
@@ -90,7 +94,7 @@ export const EarthStopEpisode: React.FC = () => {
             <BugiActor
               x={300 + brakeProgress * 360}
               action={u < 0.6 ? 'carry' : u < 2.0 ? 'brake' : 'drift'}
-              local={Math.max(0, u - 0.6)}
+              local={u < 2 ? Math.max(0,u-.6) : Math.max(0,u-2)}
               cup={u < 1.7}
               spill={ease((u - 0.8) / 0.9)}
             />
@@ -112,9 +116,8 @@ export const EarthStopEpisode: React.FC = () => {
             {/* Impacto conceitual na tela conectado à inércia */}
             {u > 0.65 && (
               <g opacity={ease((u - 0.65) / 0.25)}>
-                <Label y={300} size={70}>A TERRA PAROU.</Label>
-                <Label y={385} size={70} color={C.coral}>VOCÊ NÃO.</Label>
-                <ForceVector x={370} y={640} length={280 * brakeProgress + 60} label="INÉRCIA" />
+                <Label y={420} size={46}>1 SEGUNDO</Label>
+                <g opacity={1-phase(u,2.8,.5)}><ForceVector x={370} y={640} length={280 * brakeProgress + 60} /></g>
               </g>
             )}
 
@@ -177,8 +180,13 @@ export const EarthStopEpisode: React.FC = () => {
                 <path d="M 60 1390 h 880" stroke={C.cyan} strokeWidth="12" />
                 <Label y={1440} size={32} color={C.cream}>Chão travado instantaneamente</Label>
               </g>
-              {/* Vetores mostrando que o ar e objetos continuam a 1.600 km/h */}
-              <ForceVector x={actorX + 30} y={690} length={260} label="AR + BUGI: 1.670 km/h" />
+              <g opacity={phase(u,cue('você',3),.35)*(1-phase(u,cue('ar',4.2),.4))}>
+                <ForceVector x={actorX - 160} y={610} length={240} label="CORPO + CAFÉ" />
+              </g>
+              <g opacity={phase(u,cue('ar',4.2),.4)}>
+                {[0,1,2].map(j=><path key={j} d={`M${-100+(u*210+j*370)%1200} ${600+j*165}h200q60 0 40-35`} fill="none" stroke={C.cream} strokeWidth="10"/>)}
+                <Label y={400} size={55}>O ar também continua.</Label>
+              </g>
             </>
           );
         })()}
@@ -200,12 +208,17 @@ export const EarthStopEpisode: React.FC = () => {
 
         {/* DEMAIS TURNOS PRESERVADOS INTEGRALMENTE */}
         {i === 4 && (() => {
-          const at = cue('freia', 2), brake = ease((u - at) / 0.6);
+          const at = cue('freia', 2), brake = ease((u - at) / 0.6),whole=cue('agora',4.5);
+          if(u>=whole)return <PlanetBrakeStreet u={u-whole}/>;
           return (
             <>
               <g transform={`translate(${-180 * (1 - brake) * ease(u / 1)} 0)`}>
                 <rect x="90" y="440" width="900" height="910" rx="80" fill={C.gold} stroke={C.ink} strokeWidth="15" />
                 <rect x="130" y="500" width="820" height="330" rx="25" fill="#AADCE0" />
+                <clipPath id="bus-window"><rect x="130" y="500" width="820" height="330" rx="25"/></clipPath>
+                <g clipPath="url(#bus-window)" opacity=".55">
+                  {[0,1,2,3,4,5].map(j=><rect key={j} x={110+((j*190-u*200*(1-brake))%1100)} y="570" width="75" height="260" fill="#75958F"/>)}
+                </g>
                 {[0, 1, 2].map(j => (
                   <path key={j} d={`M${380 + j * 260} 510v310`} stroke={C.ink} strokeWidth="10" />
                 ))}
@@ -216,9 +229,8 @@ export const EarthStopEpisode: React.FC = () => {
                 <circle cx="270" cy="1360" r="73" fill={C.ink} />
                 <circle cx="810" cy="1360" r="73" fill={C.ink} />
               </g>
-              <Label y={320} size={66}>É A INÉRCIA</Label>
+              <g opacity={1-phase(u,at,.4)}><Label y={320} size={66}>É A INÉRCIA</Label></g>
               {brake > 0.1 && <ForceVector x={450} y={900} length={230 * brake} />}
-              <Label y={1440} size={26}>Analogia do ônibus • aceleração de frenagem</Label>
             </>
           );
         })()}
@@ -235,8 +247,11 @@ export const EarthStopEpisode: React.FC = () => {
           const p = ease((u - cue('rotação', 3)) / 0.8), number = ease((u - cue('mil', 4)) / 0.3);
           return (
             <>
-              <Label y={280} color={C.cream} size={53}>Você já acompanha a Terra</Label>
+              <g opacity={1-phase(u,cue('equador',1.5),.5)}><Label y={280} color={C.cream} size={53}>Parado em relação à rua.</Label></g>
               <Globe time={u} />
+              <g transform={`translate(${540+325*Math.sin(u*.314)} ${850+38*Math.cos(u*.314)})`}>
+                <path d="M-70-20h140v-22H-70Z" fill={C.cream}/><circle cy="-75" r="18" fill={C.coral}/><path d="M0-57v35m-25-20h50" stroke={C.cream} strokeWidth="9"/>
+              </g>
               <circle cx={540 + 325 * Math.sin(u * 0.314)} cy={850 + 38 * Math.cos(u * 0.314)} r="20" fill={C.coral} />
               <g opacity={p}>
                 <ForceVector x={370} y={1300} length={340} color={C.gold} />
@@ -256,12 +271,12 @@ export const EarthStopEpisode: React.FC = () => {
               <path d="M-300 0h170m-130 50h90" stroke={C.cream} strokeWidth="15" strokeLinecap="round" />
             </g>
             <BugiActor x={350} action="point" local={u} speech={speaking} />
-            <Label y={350} size={54}>O café também estava indo junto.</Label>
           </>
         )}
 
         {i === 8 && (() => {
           const east = ease((u - cue('quatrocentos', 3)) / 2);
+          const limit=phase(u,cue('idealizada',7),.5);
           return (
             <>
               <g transform={`translate(${-east * 90} 0)`}>
@@ -277,9 +292,13 @@ export const EarthStopEpisode: React.FC = () => {
                 <Cup x={110 + east * 850} y={1040} scale={2.1} spill={east} rotation={east * 90} />
               </g>
               <Label y={330} size={53}>1 segundo de movimento livre</Label>
+              <g transform="translate(850 650)"><circle r="95" fill={C.cream} stroke={C.ink} strokeWidth="9"/><path d="M0 0v-70" transform={`rotate(${east*360})`} stroke={C.coral} strokeWidth="10"/><circle r="9" fill={C.ink}/><text y="140" textAnchor="middle" fontSize="40" fill={C.ink} fontWeight="900">{east.toFixed(1).replace('.',',')} s</text></g>
               <Label y={430} size={79} color={C.coral}>≈ {Math.round(east * 460)} metros</Label>
-              <Label y={1350} size={31}>Conta idealizada: velocidade × tempo</Label>
-              <Label y={1400} size={28}>Sem obstáculos • não prevê o trajeto real</Label>
+              <g opacity={limit}>
+                <rect x="150" y="1310" width="780" height="135" rx="20" fill={C.ink}/>
+                <Label y={1360} size={38} color={C.gold}>≈ 1.670 ÷ 3,6 × 1 = 460 m</Label>
+                <Label y={1410} size={27} color={C.cream}>Sem obstáculos • não prevê o trajeto real</Label>
+              </g>
             </>
           );
         })()}
@@ -292,17 +311,13 @@ export const EarthStopEpisode: React.FC = () => {
         </>}
 
         {i === 10 && (() => {
-          const latitude=75*ease(u/6), weather=ease((u-cue('ar',6))/1.3);
+          const latitude=75*ease(u/6),air=cue('ar',7),water=cue('água',8),structures=cue('estruturas',8.7);
+          if(u>=air)return <EnvironmentChain u={u-air} waterAt={water-air} structuresAt={structures-air}/>;
           return <>
             <Label y={280} color={C.cream} size={48}>Mais perto do polo, menor velocidade</Label>
             <g transform="translate(0 -80)"><Globe time={u} latitude={latitude}/></g>
             <Label y={1170} color={C.gold} size={64}>{Math.round(latitude)}° → {Math.round(rotationKmh(latitude)).toLocaleString('pt-BR')} km/h</Label>
             <Label y={1240} color={C.cream} size={28}>Velocidade da superfície pela rotação</Label>
-            <g opacity={weather}>
-              {[0,1,2,3].map(j=><path key={j} d={`M${90+((u*140+j*250)%900)} ${480+j*130} h150 q60 0 30 -35`} fill="none" stroke={C.cream} strokeWidth="10"/ >)}
-              <path d={`M0 1390 Q135 ${1340+Math.sin(u*3)*30} 270 1390 T540 1390 T810 1390 T1080 1390 V1480 H0Z`} fill={C.cyan} opacity=".6"/>
-              <Label y={1370} color={C.cream} size={37}>Ar • água • estruturas</Label>
-            </g>
           </>;
         })()}
 
@@ -313,24 +328,22 @@ export const EarthStopEpisode: React.FC = () => {
         </>}
 
         {i === 12 && (() => {
-          const orbit=ease((u-cue('órbita',5))/0.6), gravity=ease((u-cue('gravidade',3))/0.5);
+          const orbit=ease((u-cue('órbita',5))/0.6);
           return <>
-            <Label y={280} color={C.cream} size={50}>Retomar não desfaz os impactos</Label>
+            <g opacity={1-orbit}><Label y={280} color={C.cream} size={50}>O estrago permanece.</Label></g>
             <g opacity={1-orbit}>
-              <g transform="translate(0 -80)"><Globe time={u}/></g>
-              <g opacity={gravity}><path d="M540 410v150m-30-35 30 35 30-35" stroke={C.gold} strokeWidth="12" fill="none"/>
-              <Label y={1240} size={48} color={C.gold}>A gravidade continua</Label></g>
+              <AftermathProcess u={u} gravityAt={cue('gravidade',3)}/>
             </g>
             <g opacity={orbit}>
               <ellipse cx="540" cy="820" rx="385" ry="220" stroke={C.cream} strokeWidth="5" fill="none" strokeDasharray="18 15"/>
-              <circle cx="540" cy="820" r={95+3*Math.sin(u*2)} fill={C.gold}/>
+              <circle cx="540" cy="820" r="95" fill={C.gold}/>
               <g transform={`translate(${540+385*Math.cos(u*.65)} ${820+220*Math.sin(u*.65)})`}>
                 <circle r="48" fill={C.cyan} stroke={C.cream} strokeWidth="4"/><path d="M-25-25 5-32 24-5 3 30-20 10Z" fill="#78A868"/>
               </g>
               <Label y={1180} color={C.cream} size={42}>A Terra continua ao redor do Sol</Label>
               <Label y={1260} color={C.gold} size={32}>Esquema sem escala • órbita ≠ rotação</Label>
             </g>
-            <Label y={1390} color={C.cream} size={30}>Parada e retomada são a hipótese fictícia</Label>
+            <Label y={1450} color={C.cream} size={24}>Parada e retomada são a hipótese fictícia</Label>
           </>;
         })()}
 
@@ -346,9 +359,10 @@ export const EarthStopEpisode: React.FC = () => {
             <path d="M-35-30v-50h70v50" stroke={C.ink} strokeWidth="10" fill="none"/>
             <circle cx="-50" cy="160" r="13" fill={C.ink}/><circle cx="50" cy="160" r="13" fill={C.ink}/>
           </g>
-          <Label y={320} size={56}>Férias, com a Terra girando.</Label>
+          <g opacity={phase(u,cue('férias',2),.3)}><Label y={320} size={56}>Férias, com a Terra girando.</Label></g>
         </>}
 
+        </g>
         {/* Indicador de fala do narrador */}
         {!bugi && t >= turn.start && t < turn.end && (
           <g transform="translate(105 170)">

@@ -18,3 +18,6 @@ Referencia de movimento mais recente: files.zip do Claude, analisada em reports/
 
 
 Producao atual: Terra para 1 s, roteiro/vozes/timing/storyboard em public/assets/terra-1s. Ler reports/TERRA-PARA-1S.md antes de retomar. Pilotos V1/V2 existem; conferir QA final e artefatos antes de repetir chamadas ou declarar entrega. Publicacao nao autorizada para este episodio.
+
+
+Referencia visual mais recente: dor_final.mp4, analisada e aplicada em reports/FLUIDEZ-DOR-20261107.md. Codigo em earthDirection.ts e EarthProcess.tsx. Consultar Terra V5 e render-qa-v5.json antes de retomar; V4 corrigida por sobreposicao de texto. Processo por palavra, enquadramento motivado e QA visual real. Sem publicacao ou aprovacao humana automatica.
